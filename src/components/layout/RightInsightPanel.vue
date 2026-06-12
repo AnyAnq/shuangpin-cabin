@@ -8,15 +8,15 @@
     <p class="panel-title">当前方案</p>
     <section class="stat-card"><strong>{{ schemeName }}</strong><span>声母 + 韵母键位提示随输入高亮</span></section>
     <section class="quote-card">
-      <span>每日一言</span>
-      <strong>心有猛虎，细嗅蔷薇。</strong>
-      <em>- 萨松</em>
+      <span>某日一言</span>
+      <strong>{{ quote.text }}</strong>
     </section>
   </aside>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import type { DailyQuote } from '../../content/quotes';
 
 const props = defineProps<{
   accuracy: number;
@@ -24,6 +24,7 @@ const props = defineProps<{
   maxCombo: number;
   wpm: number;
   schemeName: string;
+  quote: DailyQuote;
 }>();
 
 const formattedElapsed = computed(() => {

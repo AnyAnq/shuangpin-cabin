@@ -6,10 +6,12 @@ export function createSession(input: {
   scheme: ShuangpinScheme;
   now: number;
 }): PracticeSession {
+  const textCharIndices = buildTextCharIndices(input.unit);
   return {
     unit: input.unit,
     scheme: input.scheme,
     codes: input.unit.syllables.map(input.scheme.encodeSyllable),
+    textCharIndices,
     cursor: { charIndex: 0, codeIndex: 0 },
     stats: {
       startedAt: input.now,
@@ -24,7 +26,15 @@ export function createSession(input: {
   };
 }
 
+export function getActiveTextIndex(session: PracticeSession): number {
+  return session.textCharIndices[session.cursor.charIndex] ?? Array.from(session.unit.text).length;
+}
+
 export function handlePracticeKey(session: PracticeSession, rawKey: string, now: number): KeyEventResult {
+  if (rawKey === 'Backspace') {
+    return handleBackspace(session, now);
+  }
+
   const key = rawKey.toLowerCase();
   if (!/^[a-z]$/.test(key)) {
     return toResult('ignored', session);
@@ -60,6 +70,27 @@ export function handlePracticeKey(session: PracticeSession, rawKey: string, now:
   return toResult(status, session, expectedKey, key);
 }
 
+function handleBackspace(session: PracticeSession, now: number): KeyEventResult {
+  if (session.cursor.charIndex === 0 && session.cursor.codeIndex === 0) {
+    return toResult('ignored', session);
+  }
+
+  session.stats.elapsedMs = now - session.stats.startedAt;
+
+  if (session.cursor.codeIndex === 0) {
+    session.cursor.charIndex -= 1;
+    session.cursor.codeIndex = session.codes[session.cursor.charIndex].length;
+    session.stats.completedChars = Math.max(0, session.stats.completedChars - 1);
+  }
+
+  session.cursor.codeIndex -= 1;
+  session.stats.correctKeystrokes = Math.max(0, session.stats.correctKeystrokes - 1);
+  session.stats.currentCombo = Math.max(0, session.stats.currentCombo - 1);
+
+  const expectedKey = session.codes[session.cursor.charIndex]?.[session.cursor.codeIndex];
+  return toResult('correct', session, expectedKey);
+}
+
 function toResult(
   status: KeyEventResult['status'],
   session: PracticeSession,
@@ -71,6 +102,17 @@ function toResult(
     expectedKey,
     actualKey,
     currentCharIndex: session.cursor.charIndex,
+    currentTextIndex: getActiveTextIndex(session),
     currentCodeIndex: session.cursor.codeIndex,
   };
+}
+
+function buildTextCharIndices(unit: PracticeUnit): number[] {
+  const chars = Array.from(unit.text);
+  const indices = chars.flatMap((char, index) => (isPracticeChar(char) ? [index] : []));
+  return indices.length === unit.syllables.length ? indices : unit.syllables.map((_, index) => index);
+}
+
+function isPracticeChar(char: string): boolean {
+  return /\p{Script=Han}/u.test(char);
 }

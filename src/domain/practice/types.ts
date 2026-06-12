@@ -15,6 +15,7 @@ export interface PracticeSession {
   unit: PracticeUnit;
   scheme: ShuangpinScheme;
   codes: string[];
+  textCharIndices: number[];
   cursor: { charIndex: number; codeIndex: number };
   stats: {
     startedAt: number;
@@ -33,5 +34,6 @@ export interface KeyEventResult {
   expectedKey?: string;
   actualKey?: string;
   currentCharIndex: number;
+  currentTextIndex: number;
   currentCodeIndex: number;
 }

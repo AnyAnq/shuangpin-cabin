@@ -19,7 +19,10 @@ function onKeydown(event: KeyboardEvent) {
   }
 }
 
-onMounted(() => window.addEventListener('keydown', onKeydown));
+onMounted(() => {
+  void practice.hydratePreferences();
+  window.addEventListener('keydown', onKeydown);
+});
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', onKeydown);
   window.clearTimeout(wrongTimer);

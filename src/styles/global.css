@@ -13,6 +13,7 @@ body,
 
 button {
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .app-shell {
@@ -73,6 +74,11 @@ button {
   background: transparent;
   color: rgba(255, 235, 205, 0.54);
   cursor: pointer;
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.9, 0.2, 1.25),
+    background 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .rail-item svg {
@@ -84,6 +90,18 @@ button {
   background: rgba(255, 246, 229, 0.15);
   color: #fff9ef;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.rail-item:hover {
+  transform: translateY(-2px) scale(1.04);
+  background: rgba(255, 246, 229, 0.11);
+  color: #fff7e8;
+  box-shadow: 0 10px 22px rgba(33, 20, 12, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.rail-item:active {
+  transform: translateY(1px) scale(0.96);
+  transition-duration: 80ms;
 }
 
 .rail-item.is-active::after {
@@ -125,6 +143,9 @@ button {
 
 .segment,
 .soft-pill {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   border: 1px solid rgba(123, 74, 43, 0.16);
   border-radius: 999px;
   background: rgba(255, 252, 246, 0.72);
@@ -132,6 +153,29 @@ button {
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
+  box-shadow: 0 5px 14px rgba(97, 63, 33, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.9, 0.2, 1.25),
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease,
+    filter 180ms ease;
+}
+
+.segment::after,
+.soft-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(115deg, transparent 12%, rgba(255, 255, 255, 0.58) 45%, transparent 72%);
+  opacity: 0;
+  transform: translateX(-130%) skewX(-16deg);
+  transition:
+    transform 460ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 180ms ease;
 }
 
 .segment {
@@ -146,12 +190,73 @@ button {
   border-color: transparent;
   background: var(--color-brown);
   color: #fff5e7;
+  box-shadow: 0 12px 26px rgba(116, 69, 38, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  animation: button-settle 220ms cubic-bezier(0.2, 0.9, 0.2, 1.25);
 }
 
 .segment.is-green {
   border-color: transparent;
   background: var(--color-green);
   color: #fff;
+  box-shadow: 0 12px 26px rgba(38, 135, 84, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  animation: button-settle 220ms cubic-bezier(0.2, 0.9, 0.2, 1.25);
+}
+
+.segment:hover,
+.soft-pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(123, 74, 43, 0.28);
+  background: rgba(255, 252, 246, 0.94);
+  box-shadow: 0 12px 24px rgba(97, 63, 33, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+.segment.is-active:hover {
+  border-color: transparent;
+  background: linear-gradient(180deg, #8f5832, var(--color-brown));
+  color: #fff8ec;
+  box-shadow: 0 14px 28px rgba(116, 69, 38, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.segment.is-green:hover {
+  border-color: transparent;
+  background: linear-gradient(180deg, #35ad6d, var(--color-green));
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(38, 135, 84, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.segment:hover::after,
+.soft-pill:hover::after {
+  opacity: 0.72;
+  transform: translateX(130%) skewX(-16deg);
+}
+
+.segment:active,
+.soft-pill:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 4px 10px rgba(97, 63, 33, 0.12), inset 0 2px 4px rgba(90, 56, 30, 0.13);
+  transition-duration: 80ms;
+}
+
+.segment:focus-visible,
+.soft-pill:focus-visible,
+.rail-item:focus-visible,
+.completion-actions button:focus-visible {
+  outline: 3px solid rgba(46, 155, 93, 0.28);
+  outline-offset: 3px;
+}
+
+@keyframes button-settle {
+  0% {
+    transform: scale(0.96);
+  }
+
+  62% {
+    transform: scale(1.035);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .session-strip {
@@ -244,15 +349,6 @@ button {
 .quote-card strong {
   display: block;
   font-size: 14px;
-}
-
-.quote-card em {
-  display: block;
-  margin-top: 10px;
-  color: #9a7655;
-  font-size: 12px;
-  font-style: normal;
-  text-align: right;
 }
 
 .practice-stage {
@@ -402,6 +498,24 @@ button {
   display: block;
   color: var(--color-green);
   font-size: 42px;
+}
+
+.completion-stats,
+.completion-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.completion-actions button {
+  padding: 8px 12px;
+  border: 1px solid rgba(123, 74, 43, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.9);
+  color: var(--color-brown);
+  cursor: pointer;
+  font-weight: 800;
 }
 
 @media (max-width: 960px) {

@@ -8,20 +8,27 @@
       </div>
       <section class="session-strip">
         <div>
-          <p>今日练习 · 诗词句子 · 第 3 组</p>
+          <p>今日练习 · {{ practice.moduleLabel }} · {{ practice.activeUnit.source ?? practice.activeUnit.tags[0] }}</p>
           <div class="session-progress"><span :style="{ width: `${practice.progressPercent}%` }" /></div>
         </div>
-        <button type="button" class="soft-pill">换一组</button>
+        <button type="button" class="soft-pill" @click="practice.nextUnit">换一组</button>
       </section>
       <PracticeStage
         :text="practice.activeUnit.text"
-        :active-index="practice.session.cursor.charIndex"
+        :active-index="practice.activeTextIndex"
         :code="practice.currentCode"
         :completed-code-count="practice.session.cursor.codeIndex"
         :wrong="practice.lastStatus === 'wrong'"
       />
       <VirtualKeyboard :scheme="practice.scheme" :active-key="practice.keyboardActiveKey" :wrong-key="practice.wrongKey" />
-      <CompletionModal :open="practice.lastStatus === 'complete'" :accuracy="practice.liveStats.accuracy" />
+      <CompletionModal
+        :open="practice.lastStatus === 'complete'"
+        :accuracy="practice.liveStats.accuracy"
+        :wpm="practice.liveStats.wpm"
+        :max-combo="practice.liveStats.maxCombo"
+        @restart="practice.restartCurrent"
+        @next="practice.nextUnit"
+      />
     </main>
     <RightInsightPanel
       :accuracy="practice.liveStats.accuracy"
@@ -29,6 +36,7 @@
       :max-combo="practice.liveStats.maxCombo"
       :wpm="practice.liveStats.wpm"
       :scheme-name="practice.scheme.name"
+      :quote="practice.dailyQuote"
     />
   </div>
 </template>
