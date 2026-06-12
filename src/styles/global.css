@@ -1,0 +1,23 @@
+html,
+body,
+#app {
+  min-height: 100%;
+  margin: 0;
+  background: #f7f2ea;
+  color: var(--color-ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+
+.bootstrap-view {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--color-bg);
+}

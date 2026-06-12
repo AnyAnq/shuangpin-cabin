@@ -1,0 +1,14 @@
+:root {
+  --color-bg: #fff9ee;
+  --color-surface: rgba(255, 252, 246, 0.76);
+  --color-ink: #2e241b;
+  --color-muted: #8a725e;
+  --color-brown: #7b4a2b;
+  --color-brown-dark: #3b271c;
+  --color-green: #2f9461;
+  --color-amber: #d39b42;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --shadow-soft: 0 32px 80px rgba(112, 75, 40, 0.16);
+  font-family: Inter, "Microsoft YaHei", system-ui, sans-serif;
+}
