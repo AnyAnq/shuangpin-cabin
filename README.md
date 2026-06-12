@@ -1,5 +1,28 @@
-# Vue 3 + TypeScript + Vite
+# 双拼小筑
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个暖色调、沉浸式的双拼输入法练习网站。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 技术栈
+
+- Vite
+- Vue 3
+- TypeScript
+- Pinia
+- Dexie / IndexedDB
+- Vitest
+- Playwright
+
+## 开发
+
+```bash
+npm install
+npm run dev
+```
+
+## 验证
+
+```bash
+npm run test
+npm run build
+npx playwright test
+```

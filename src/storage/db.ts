@@ -27,7 +27,7 @@ class ShuangpinPracticeDb extends Dexie {
   preferences!: Table<PreferenceRecord, string>;
 
   constructor() {
-    super('shuangpin-practice');
+    super('shuangpin-cabin');
     this.version(1).stores({
       mistakes: 'id, scheme, module, targetChar, expectedKey, lastWrongAt',
       sessions: 'id, scheme, module, createdAt',
