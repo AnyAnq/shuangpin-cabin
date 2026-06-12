@@ -1,5 +1,7 @@
 <template>
-  <main class="bootstrap-view">
-    <h1>双拼练习法</h1>
-  </main>
+  <AppShell />
 </template>
+
+<script setup lang="ts">
+import AppShell from '../components/layout/AppShell.vue';
+</script>
