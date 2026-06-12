@@ -1,10 +1,15 @@
 import { mount } from '@vue/test-utils';
+import { createPinia } from 'pinia';
 import { describe, expect, it } from 'vitest';
 import AppShell from '../../src/components/layout/AppShell.vue';
 
 describe('AppShell', () => {
   it('渲染 V6 首页外壳的核心区域', () => {
-    const wrapper = mount(AppShell);
+    const wrapper = mount(AppShell, {
+      global: {
+        plugins: [createPinia()],
+      },
+    });
 
     expect(wrapper.text()).toContain('单字练习');
     expect(wrapper.text()).toContain('诗词句子');

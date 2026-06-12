@@ -1,6 +1,16 @@
 <template>
   <div class="segmented-control" aria-label="双拼方案">
-    <button class="segment is-green" type="button">小鹤双拼</button>
-    <button class="segment" type="button">自然码</button>
+    <button class="segment" :class="{ 'is-green': practice.schemeId === 'xiaohe' }" type="button" @click="practice.setScheme('xiaohe')">
+      小鹤双拼
+    </button>
+    <button class="segment" :class="{ 'is-green': practice.schemeId === 'ziranma' }" type="button" @click="practice.setScheme('ziranma')">
+      自然码
+    </button>
   </div>
 </template>
+
+<script setup lang="ts">
+import { usePracticeStore } from '../../stores/practiceStore';
+
+const practice = usePracticeStore();
+</script>
