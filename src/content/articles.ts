@@ -1,0 +1,36 @@
+import type { PracticeUnit } from '../domain/practice/types';
+
+export const articleUnits: PracticeUnit[] = [
+  {
+    id: 'article-001',
+    module: 'article',
+    text: '练习不是为了速度本身，而是为了让正确的路径变得自然。',
+    syllables: [
+      'lian',
+      'xi',
+      'bu',
+      'shi',
+      'wei',
+      'le',
+      'su',
+      'du',
+      'ben',
+      'shen',
+      'er',
+      'shi',
+      'wei',
+      'le',
+      'rang',
+      'zheng',
+      'que',
+      'de',
+      'lu',
+      'jing',
+      'bian',
+      'de',
+      'zi',
+      'ran',
+    ],
+    tags: ['短文', '训练'],
+  },
+];
