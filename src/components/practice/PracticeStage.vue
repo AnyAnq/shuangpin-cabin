@@ -2,12 +2,14 @@
   <section class="practice-stage">
     <div class="stage-caret">↓</div>
     <p class="target-line" :class="{ 'is-wrong': wrong }">
-      <span
-        v-for="(char, index) in chars"
-        :key="`${char}-${index}`"
-        :class="{ 'is-active': index === activeIndex, 'is-complete': index < activeIndex }"
-      >
-        {{ char }}
+      <span v-for="line in lines" :key="line.index" class="poem-line" data-poem-line>
+        <span
+          v-for="(char, index) in line.chars"
+          :key="`${char}-${line.start + index}`"
+          :class="{ 'is-active': line.start + index === activeIndex, 'is-complete': line.start + index < activeIndex }"
+        >
+          {{ char }}
+        </span>
       </span>
     </p>
     <CodeHint :code="code" :completed-count="completedCodeCount" />
@@ -26,5 +28,15 @@ const props = defineProps<{
   wrong: boolean;
 }>();
 
-const chars = computed(() => Array.from(props.text));
+const lines = computed(() => {
+  const breakIndex = props.text.search(/[，,]/);
+  const rawLines = breakIndex === -1 ? [props.text] : [props.text.slice(0, breakIndex + 1), props.text.slice(breakIndex + 1)];
+  let start = 0;
+  return rawLines.map((line, index) => {
+    const chars = Array.from(line);
+    const result = { index, start, chars };
+    start += chars.length;
+    return result;
+  });
+});
 </script>

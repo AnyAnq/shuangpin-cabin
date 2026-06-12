@@ -6,7 +6,7 @@ import { db } from '../../src/storage/db';
 
 describe('内容与本地存储', () => {
   it('提供诗词练习内容和每日一言', () => {
-    expect(poemUnits[0].text).toBe('多情却被无情恼');
+    expect(poemUnits[0].text).toBe('多情却被无情恼，今夜还如昨夜长。');
     expect(poemUnits[0].syllables).toContain('duo');
     expect(dailyQuotes[0].text).toBeTruthy();
   });

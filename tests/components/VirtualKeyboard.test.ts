@@ -4,6 +4,18 @@ import VirtualKeyboard from '../../src/components/practice/VirtualKeyboard.vue';
 import { xiaoheScheme } from '../../src/domain/schemes/xiaohe';
 
 describe('VirtualKeyboard', () => {
+  it('默认没有高亮按键', () => {
+    const wrapper = mount(VirtualKeyboard, {
+      props: {
+        scheme: xiaoheScheme,
+        activeKey: null,
+        wrongKey: null,
+      },
+    });
+
+    expect(wrapper.find('.is-hot').exists()).toBe(false);
+  });
+
   it('展示方案键位并标记当前键和错误键', () => {
     const wrapper = mount(VirtualKeyboard, {
       props: {

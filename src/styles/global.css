@@ -103,8 +103,9 @@ button {
 
 .practice-main {
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
-  gap: 20px;
+  grid-template-rows: auto auto auto auto 1fr;
+  align-content: start;
+  gap: 16px;
   padding: 22px 30px 28px 12px;
 }
 
@@ -179,8 +180,8 @@ button {
 
 .session-progress span {
   display: block;
-  width: 37%;
   height: 100%;
+  transition: width 160ms ease;
   background: linear-gradient(90deg, var(--color-green), var(--color-amber));
 }
 
@@ -256,9 +257,9 @@ button {
 
 .practice-stage {
   display: grid;
-  min-height: 300px;
+  min-height: 360px;
   place-items: center;
-  padding: 36px 26px 20px;
+  padding: 46px 26px 8px;
   text-align: center;
 }
 
@@ -277,6 +278,10 @@ button {
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1.6;
+}
+
+.poem-line {
+  display: block;
 }
 
 .target-line .is-active {
@@ -323,9 +328,9 @@ button {
 }
 
 .virtual-keyboard {
-  width: min(680px, 100%);
+  width: min(760px, 100%);
   margin: 0 auto;
-  padding: 18px;
+  padding: 20px;
   border: 1px solid rgba(123, 74, 43, 0.14);
   border-radius: 22px;
   background: rgba(255, 252, 246, 0.76);
@@ -335,13 +340,13 @@ button {
 .keyboard-row {
   display: flex;
   justify-content: center;
-  gap: 7px;
-  margin: 7px 0;
+  gap: 9px;
+  margin: 9px 0;
 }
 
 .keyboard-key {
-  width: 52px;
-  height: 52px;
+  width: 60px;
+  height: 58px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(120, 84, 52, 0.14);
@@ -349,7 +354,7 @@ button {
   background: #fffaf4;
   box-shadow: 0 4px 0 rgba(98, 67, 42, 0.12);
   color: #342820;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 900;
 }
 

@@ -9,7 +9,7 @@
       <section class="session-strip">
         <div>
           <p>今日练习 · 诗词句子 · 第 3 组</p>
-          <div class="session-progress"><span /></div>
+          <div class="session-progress"><span :style="{ width: `${practice.progressPercent}%` }" /></div>
         </div>
         <button type="button" class="soft-pill">换一组</button>
       </section>
@@ -20,7 +20,7 @@
         :completed-code-count="practice.session.cursor.codeIndex"
         :wrong="practice.lastStatus === 'wrong'"
       />
-      <VirtualKeyboard :scheme="practice.scheme" :active-key="practice.currentExpectedKey" :wrong-key="practice.wrongKey" />
+      <VirtualKeyboard :scheme="practice.scheme" :active-key="practice.keyboardActiveKey" :wrong-key="practice.wrongKey" />
       <CompletionModal :open="practice.lastStatus === 'complete'" :accuracy="practice.liveStats.accuracy" />
     </main>
     <RightInsightPanel
