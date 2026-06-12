@@ -263,13 +263,6 @@ button {
   text-align: center;
 }
 
-.stage-caret {
-  margin-bottom: 18px;
-  color: var(--color-green);
-  font-size: 24px;
-  line-height: 1;
-}
-
 .target-line {
   max-width: 760px;
   margin: 0;

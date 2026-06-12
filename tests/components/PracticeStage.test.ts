@@ -36,4 +36,18 @@ describe('PracticeStage', () => {
     expect(wrapper.findAll('[data-poem-line]')[0].text()).toBe('多情却被无情恼，');
     expect(wrapper.findAll('[data-poem-line]')[1].text()).toBe('今夜还如昨夜长。');
   });
+
+  it('不渲染目标文字上方的箭头', () => {
+    const wrapper = mount(PracticeStage, {
+      props: {
+        text: '多情却被无情恼，今夜还如昨夜长。',
+        activeIndex: 0,
+        code: 'do',
+        completedCodeCount: 0,
+        wrong: false,
+      },
+    });
+
+    expect(wrapper.find('.stage-caret').exists()).toBe(false);
+  });
 });

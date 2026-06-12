@@ -1,6 +1,5 @@
 <template>
   <section class="practice-stage">
-    <div class="stage-caret">↓</div>
     <p class="target-line" :class="{ 'is-wrong': wrong }">
       <span v-for="line in lines" :key="line.index" class="poem-line" data-poem-line>
         <span
