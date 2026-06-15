@@ -74,6 +74,24 @@ describe('在线内容 API', () => {
     expect(unit.syllables[0]).toBe('lao');
   });
 
+  it('把 ü 音节归一化为双拼编码可识别的 v 写法', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: () =>
+          Promise.resolve({
+            code: 200,
+            data: '绿女',
+          }),
+      }),
+    );
+
+    const unit = await fetchTongueTwisterUnit();
+
+    expect(unit.syllables).toEqual(['lv', 'nv']);
+  });
+
   it('把每日一言 API 响应转换为右侧文案', async () => {
     vi.stubGlobal(
       'fetch',

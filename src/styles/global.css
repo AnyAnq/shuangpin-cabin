@@ -120,6 +120,7 @@ button {
 }
 
 .practice-main {
+  position: relative;
   display: grid;
   grid-template-rows: auto auto auto auto 1fr;
   align-content: start;
@@ -237,6 +238,15 @@ button {
   transition-duration: 80ms;
 }
 
+.segment:disabled,
+.soft-pill:disabled,
+.completion-actions button:disabled {
+  cursor: wait;
+  filter: saturate(0.86);
+  opacity: 0.72;
+  transform: none;
+}
+
 .segment:focus-visible,
 .soft-pill:focus-visible,
 .rail-item:focus-visible,
@@ -274,6 +284,47 @@ button {
   margin: 0 0 6px;
   color: #6c5848;
   font-size: 14px;
+}
+
+.practice-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255, 249, 238, 0.76) 0%, rgba(255, 249, 238, 0.4) 34%, rgba(255, 249, 238, 0) 62%);
+}
+
+.practice-loading-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid rgba(123, 74, 43, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.92);
+  box-shadow: 0 18px 44px rgba(97, 63, 33, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.78);
+  color: #7a5c45;
+  font-size: 13px;
+  font-weight: 900;
+  backdrop-filter: blur(10px);
+}
+
+.practice-loading-card span {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(46, 155, 93, 0.22);
+  border-top-color: var(--color-green);
+  border-radius: 50%;
+  animation: spin 780ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .session-progress {
@@ -362,28 +413,74 @@ button {
 .target-line {
   max-width: 760px;
   margin: 0;
-  color: rgba(71, 54, 40, 0.15);
+  color: rgba(126, 101, 76, 0.25);
   font-size: clamp(34px, 5vw, 50px);
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 .poem-line {
   display: block;
 }
 
+.target-char {
+  position: relative;
+  display: inline-grid;
+  min-width: 0.86em;
+  justify-items: center;
+  margin: 0 0.02em;
+  padding: 0 0.02em 0.42em;
+  vertical-align: top;
+}
+
+.target-glyph {
+  display: block;
+  background: linear-gradient(180deg, #8f6a43, #c19054);
+  background-clip: text;
+  color: transparent;
+}
+
+.target-char:not(.is-active):not(.is-complete) .target-glyph {
+  background: linear-gradient(180deg, #98734a, #d0a05c);
+  background-clip: text;
+  opacity: 0.72;
+}
+
 .target-line .is-active {
-  color: #1f1711;
-  text-shadow: 0 12px 30px rgba(55, 38, 22, 0.12);
+  text-shadow: 0 14px 32px rgba(76, 48, 25, 0.14);
+}
+
+.target-line .is-active .target-glyph {
+  background: linear-gradient(180deg, #1f1711, #7c4d2e);
+  background-clip: text;
 }
 
 .target-line .is-complete {
-  color: rgba(91, 65, 42, 0.42);
+  opacity: 0.78;
 }
 
-.target-line.is-wrong .is-active {
-  color: #b55438;
+.target-line .is-complete .target-glyph {
+  background: linear-gradient(180deg, #9b7350, #c09a63);
+  background-clip: text;
+}
+
+.target-line.is-wrong .is-active .target-glyph {
+  background: linear-gradient(180deg, #9f3e2c, #d07147);
+  background-clip: text;
+}
+
+.char-code {
+  position: absolute;
+  bottom: 0.02em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #16814b;
+  font-size: 0.22em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .code-hint {
@@ -451,8 +548,9 @@ button {
   display: block;
   margin-top: -12px;
   color: var(--color-green);
-  font-size: 8px;
+  font-size: 8.5px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .keyboard-key.is-hot {
@@ -480,6 +578,7 @@ button {
 }
 
 .completion-modal section {
+  position: relative;
   min-width: 260px;
   padding: 24px;
   border: 1px solid rgba(123, 74, 43, 0.14);
@@ -487,6 +586,42 @@ button {
   background: #fff9ee;
   box-shadow: var(--shadow-soft);
   text-align: center;
+}
+
+.completion-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(123, 74, 43, 0.12);
+  border-radius: 50%;
+  background: rgba(255, 252, 246, 0.74);
+  color: #8a6a50;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 7px 16px rgba(97, 63, 33, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  transition:
+    transform 160ms cubic-bezier(0.2, 0.9, 0.2, 1.18),
+    background 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.completion-close:hover {
+  transform: translateY(-1px) scale(1.04);
+  background: #fffaf3;
+  color: var(--color-brown);
+  box-shadow: 0 12px 20px rgba(97, 63, 33, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+.completion-close:active {
+  transform: translateY(1px) scale(0.94);
+  transition-duration: 80ms;
 }
 
 .completion-modal p,
@@ -509,6 +644,8 @@ button {
 }
 
 .completion-actions button {
+  position: relative;
+  overflow: hidden;
   padding: 8px 12px;
   border: 1px solid rgba(123, 74, 43, 0.18);
   border-radius: 999px;
@@ -516,6 +653,55 @@ button {
   color: var(--color-brown);
   cursor: pointer;
   font-weight: 800;
+  box-shadow: 0 7px 16px rgba(97, 63, 33, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.78);
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.9, 0.2, 1.25),
+    background 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease,
+    opacity 180ms ease;
+}
+
+.completion-actions button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(115deg, transparent 12%, rgba(255, 255, 255, 0.58) 45%, transparent 72%);
+  opacity: 0;
+  transform: translateX(-130%) skewX(-16deg);
+  transition:
+    transform 460ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 180ms ease;
+}
+
+.completion-actions button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #fffaf3;
+  box-shadow: 0 14px 24px rgba(97, 63, 33, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.84);
+}
+
+.completion-actions button:hover:not(:disabled)::after {
+  opacity: 0.74;
+  transform: translateX(130%) skewX(-16deg);
+}
+
+.completion-actions button:active:not(:disabled) {
+  transform: translateY(1px) scale(0.96);
+  box-shadow: 0 4px 10px rgba(97, 63, 33, 0.12), inset 0 2px 4px rgba(90, 56, 30, 0.13);
+  transition-duration: 80ms;
+}
+
+.completion-actions button.is-primary {
+  border-color: transparent;
+  background: var(--color-green);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(38, 135, 84, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.completion-actions button.is-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #35ad6d, var(--color-green));
+  color: #fff;
 }
 
 @media (max-width: 960px) {

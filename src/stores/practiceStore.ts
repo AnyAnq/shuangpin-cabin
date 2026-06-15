@@ -36,6 +36,7 @@ export const usePracticeStore = defineStore('practice', () => {
   const wrongKey = ref<string | null>(null);
   const lastStatus = ref<'correct' | 'wrong' | 'ignored' | 'complete'>('ignored');
   const hasInteracted = ref(false);
+  const isSwitching = ref(false);
   let mistakeSaveQueue: Promise<unknown> = Promise.resolve();
   let moduleSwitchSeq = 0;
 
@@ -98,31 +99,61 @@ export const usePracticeStore = defineStore('practice', () => {
 
   async function setModule(next: PracticeModule) {
     const switchSeq = ++moduleSwitchSeq;
-    module.value = next;
-    unitIndex.value = 0;
-    await refreshOnlineUnit(next);
-    if (next === 'mistake') {
-      await refreshMistakeUnits();
+    isSwitching.value = true;
+    try {
+      module.value = next;
+      unitIndex.value = 0;
+      resetSession(unitsForModule(next)[0]);
+      await refreshOnlineUnit(next);
+      if (next === 'mistake') {
+        await refreshMistakeUnits();
+      }
+      if (switchSeq !== moduleSwitchSeq || module.value !== next) {
+        return;
+      }
+      resetSession(unitsForModule(next)[0]);
+      void saveCurrentPreferences();
+    } finally {
+      if (switchSeq === moduleSwitchSeq) {
+        isSwitching.value = false;
+      }
     }
-    if (switchSeq !== moduleSwitchSeq || module.value !== next) {
-      return;
-    }
-    resetSession(unitsForModule(next)[0]);
-    void saveCurrentPreferences();
   }
 
   async function nextUnit() {
-    await refreshOnlineUnit(module.value);
-    if (module.value === 'mistake') {
-      await refreshMistakeUnits();
+    if (isSwitching.value) {
+      return;
     }
-    const units = unitsForModule(module.value);
-    unitIndex.value = (unitIndex.value + 1) % units.length;
-    resetSession(units[unitIndex.value]);
+    closeCompletion();
+    const switchSeq = ++moduleSwitchSeq;
+    isSwitching.value = true;
+    try {
+      const targetModule = module.value;
+      await refreshOnlineUnit(targetModule);
+      if (targetModule === 'mistake') {
+        await refreshMistakeUnits();
+      }
+      if (switchSeq !== moduleSwitchSeq || module.value !== targetModule) {
+        return;
+      }
+      const units = unitsForModule(targetModule);
+      unitIndex.value = (unitIndex.value + 1) % units.length;
+      resetSession(units[unitIndex.value]);
+    } finally {
+      if (switchSeq === moduleSwitchSeq) {
+        isSwitching.value = false;
+      }
+    }
   }
 
   function restartCurrent() {
     resetSession(activeUnit.value);
+  }
+
+  function closeCompletion() {
+    if (lastStatus.value === 'complete') {
+      lastStatus.value = 'ignored';
+    }
   }
 
   async function hydratePreferences() {
@@ -263,6 +294,7 @@ export const usePracticeStore = defineStore('practice', () => {
     wrongKey,
     pendingMistake,
     lastStatus,
+    isSwitching,
     currentCode,
     currentExpectedKey,
     activeTextIndex,
@@ -277,6 +309,7 @@ export const usePracticeStore = defineStore('practice', () => {
     setModule,
     nextUnit,
     restartCurrent,
+    closeCompletion,
     hydratePreferences,
   };
 });

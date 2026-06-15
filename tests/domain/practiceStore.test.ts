@@ -200,6 +200,41 @@ describe('练习状态', () => {
     expect(store.progressPercent).toBe(0);
   });
 
+  it('完成弹窗可以关闭且保留本轮统计', async () => {
+    const store = usePracticeStore();
+    await store.setModule('character');
+
+    for (const key of store.currentCode) {
+      store.pressKey(key);
+    }
+
+    expect(store.lastStatus).toBe('complete');
+    const accuracy = store.liveStats.accuracy;
+    const maxCombo = store.liveStats.maxCombo;
+
+    store.closeCompletion();
+
+    expect(store.lastStatus).toBe('ignored');
+    expect(store.liveStats.accuracy).toBe(accuracy);
+    expect(store.liveStats.maxCombo).toBe(maxCombo);
+  });
+
+  it('完成后点击下一组会立刻关闭完成弹窗', async () => {
+    const store = usePracticeStore();
+    await store.setModule('character');
+
+    for (const key of store.currentCode) {
+      store.pressKey(key);
+    }
+
+    expect(store.lastStatus).toBe('complete');
+
+    const pendingNext = store.nextUnit();
+
+    expect(store.lastStatus).toBe('ignored');
+    await pendingNext;
+  });
+
   it('完成一轮后会保存练习记录', async () => {
     const store = usePracticeStore();
     await store.setModule('character');

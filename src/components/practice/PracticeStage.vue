@@ -5,9 +5,13 @@
         <span
           v-for="(char, index) in line.chars"
           :key="`${char}-${line.start + index}`"
+          class="target-char"
           :class="{ 'is-active': line.start + index === activeIndex, 'is-complete': line.start + index < activeIndex }"
         >
-          {{ char }}
+          <span class="target-glyph">{{ char }}</span>
+          <span v-if="codeForTextIndex(line.start + index)" class="char-code" :data-char-code="line.start + index">
+            {{ codeForTextIndex(line.start + index) }}
+          </span>
         </span>
       </span>
     </p>
@@ -25,6 +29,9 @@ const props = defineProps<{
   code: string;
   completedCodeCount: number;
   wrong: boolean;
+  codes?: string[];
+  textCharIndices?: number[];
+  completedCharCount?: number;
 }>();
 
 const lines = computed(() => {
@@ -38,4 +45,10 @@ const lines = computed(() => {
     return result;
   });
 });
+
+function codeForTextIndex(textIndex: number): string | null {
+  const practiceIndex = props.textCharIndices?.indexOf(textIndex) ?? -1;
+  if (practiceIndex < 0 || practiceIndex >= (props.completedCharCount ?? 0)) return null;
+  return props.codes?.[practiceIndex]?.split('').join(' ') ?? null;
+}
 </script>

@@ -34,16 +34,29 @@ test('刷新后默认回到诗词句子', async ({ page }) => {
   await expect(page.getByText('今日练习 · 诗词句子')).toBeVisible();
 });
 
-test('快速切换模块时旧请求不会覆盖当前诗词内容', async ({ page }) => {
+test('取题中会禁用模块切换，避免快速乱点', async ({ page }) => {
   await mockContentApi(page, { tongueTwisterDelayMs: 600 });
   await page.goto('/');
 
   await page.getByRole('button', { name: '绕口令' }).click();
-  await page.getByRole('button', { name: '诗词句子' }).click();
 
-  await expect(page.getByText('今日练习 · 诗词句子')).toBeVisible();
-  await expect(page.getByText('行到水穷处坐看云起时')).toBeVisible();
-  await expect(page.getByText('四是四，十是十')).toBeHidden();
+  await expect(page.getByRole('status')).toContainText('取题中...');
+  await expect(page.getByRole('button', { name: '诗词句子' })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '易错练习' })).toBeDisabled();
+
+  const loadingBox = await page.getByRole('status').boundingBox();
+  const mainBox = await page.locator('.practice-main').boundingBox();
+  expect(loadingBox).not.toBeNull();
+  expect(mainBox).not.toBeNull();
+  const loadingCenterX = loadingBox!.x + loadingBox!.width / 2;
+  const loadingCenterY = loadingBox!.y + loadingBox!.height / 2;
+  const mainCenterX = mainBox!.x + mainBox!.width / 2;
+  const mainCenterY = mainBox!.y + mainBox!.height / 2;
+  expect(Math.abs(loadingCenterX - mainCenterX)).toBeLessThan(20);
+  expect(Math.abs(loadingCenterY - mainCenterY)).toBeLessThan(20);
+
+  await expect(page.getByText('今日练习 · 绕口令')).toBeVisible();
+  await expect(page.getByText('四是四，十是十')).toBeVisible();
 });
 
 async function mockContentApi(page: import('@playwright/test').Page, options: { tongueTwisterDelayMs?: number } = {}) {

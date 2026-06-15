@@ -49,8 +49,10 @@ export function handlePracticeKey(session: PracticeSession, rawKey: string, now:
   session.stats.totalKeystrokes += 1;
 
   if (key !== expectedKey) {
+    session.stats.correctKeystrokes = Math.max(0, session.stats.correctKeystrokes - session.cursor.codeIndex);
     session.stats.wrongKeystrokes += 1;
     session.stats.currentCombo = 0;
+    session.cursor.codeIndex = 0;
     return toResult('wrong', session, expectedKey, key);
   }
 

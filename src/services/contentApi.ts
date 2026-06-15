@@ -59,7 +59,11 @@ function toSyllables(text: string): string[] {
     toneType: 'none',
     type: 'array',
     nonZh: 'removed',
-  });
+  }).map(normalizeSyllable);
+}
+
+function normalizeSyllable(syllable: string): string {
+  return syllable.replaceAll('ü', 'v');
 }
 
 async function getApiData<T>(path: string): Promise<T> {

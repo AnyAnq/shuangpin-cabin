@@ -21,6 +21,24 @@ describe('PracticeStage', () => {
     expect(wrapper.find('[data-code-key].is-done').text()).toBe('d');
   });
 
+  it('已完成字下方显示正确双拼编码', () => {
+    const wrapper = mount(PracticeStage, {
+      props: {
+        text: '多情',
+        activeIndex: 1,
+        code: 'qk',
+        completedCodeCount: 0,
+        wrong: false,
+        codes: ['do', 'qk'],
+        textCharIndices: [0, 1],
+        completedCharCount: 1,
+      },
+    });
+
+    expect(wrapper.find('[data-char-code="0"]').text()).toBe('d o');
+    expect(wrapper.find('[data-char-code="1"]').exists()).toBe(false);
+  });
+
   it('按两行展示诗词内容', () => {
     const wrapper = mount(PracticeStage, {
       props: {

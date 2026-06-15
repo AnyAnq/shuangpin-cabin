@@ -25,8 +25,13 @@ describe('VirtualKeyboard', () => {
       },
     });
 
-    expect(wrapper.text()).toContain('Q');
-    expect(wrapper.text()).toContain('iu');
+    expect(wrapper.find('[data-key="q"]').text()).toContain('iu');
+    expect(wrapper.find('[data-key="q"]').text()).not.toContain('q/iu');
+    expect(wrapper.find('[data-key="w"]').text()).toContain('ei');
+    expect(wrapper.find('[data-key="u"]').text()).toContain('u');
+    expect(wrapper.find('[data-key="u"]').text()).not.toContain('sh/u');
+    expect(wrapper.find('[data-key="t"]').text()).toContain('ue/üe');
+    expect(wrapper.find('[data-key="v"]').text()).toContain('zh/ui/ü');
     expect(wrapper.find('[data-key="d"]').classes()).toContain('is-hot');
     expect(wrapper.find('[data-key="s"]').classes()).toContain('is-wrong');
   });

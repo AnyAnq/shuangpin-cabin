@@ -34,6 +34,16 @@ const rows = [
 function labelFor(key: string): string {
   const schemeKey = props.scheme.keys.find((item) => item.key === key);
   if (!schemeKey) return '';
-  return schemeKey.finals.slice(0, 2).join('/');
+  const finals = schemeKey.finals.slice(0, 2).map(displayFinal);
+  if (key === 'v' && schemeKey.initials.includes('zh')) {
+    return ['zh', ...finals].join('/');
+  }
+  return finals.join('/');
+}
+
+function displayFinal(final: string): string {
+  if (final === 'v') return 'ü';
+  if (final === 've') return 'üe';
+  return final;
 }
 </script>

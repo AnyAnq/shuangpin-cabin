@@ -19,6 +19,23 @@ describe('练习引擎', () => {
     expect(session.stats.wrongKeystrokes).toBe(1);
   });
 
+  it('当前字已输入部分编码后按错，会清空当前字进度并要求重打', () => {
+    const session = createSession({
+      unit: { id: 'u1', module: 'poem', text: '多', syllables: ['duo'], tags: [] },
+      scheme: xiaoheScheme,
+      now: 1000,
+    });
+
+    handlePracticeKey(session, 'd', 1100);
+    const result = handlePracticeKey(session, 'p', 1200);
+
+    expect(result.status).toBe('wrong');
+    expect(session.cursor.charIndex).toBe(0);
+    expect(session.cursor.codeIndex).toBe(0);
+    expect(session.stats.correctKeystrokes).toBe(0);
+    expect(session.stats.wrongKeystrokes).toBe(1);
+  });
+
   it('按对完整编码后完成练习单位', () => {
     const session = createSession({
       unit: { id: 'u1', module: 'poem', text: '多', syllables: ['duo'], tags: [] },
