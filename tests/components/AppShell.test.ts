@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import { mount } from '@vue/test-utils';
 import { createPinia } from 'pinia';
 import { createRouter, createWebHistory } from 'vue-router';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import AppShell from '../../src/components/layout/AppShell.vue';
 import { usePracticeStore } from '../../src/stores/practiceStore';
 
@@ -73,6 +73,16 @@ describe('AppShell', () => {
     expect(wrapper.text()).toContain('取题中...');
     expect(wrapper.get('button.soft-pill').attributes('disabled')).toBeDefined();
     expect(wrapper.get('button.segment').attributes('disabled')).toBeDefined();
+  });
+
+  it('点击当前已选练习模块不会重新取题', async () => {
+    const { wrapper, pinia } = await mountAppShell();
+    const practice = usePracticeStore(pinia);
+    const setModuleSpy = vi.spyOn(practice, 'setModule');
+
+    await wrapper.get('button.segment.is-active').trigger('click');
+
+    expect(setModuleSpy).not.toHaveBeenCalled();
   });
 
   it('易错练习时右侧展示错因分组信息', async () => {
