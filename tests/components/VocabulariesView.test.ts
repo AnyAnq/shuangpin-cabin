@@ -68,6 +68,7 @@ describe('VocabulariesView', () => {
 
     expect(wrapper.text()).toContain('日常常用词');
     expect(wrapper.text()).toContain('已安装');
+    expect(wrapper.get('.vocabulary-card').classes()).toContain('has-bottom-action');
     expect(await db.vocabularyEntries.where('packageId').equals('daily-common').count()).toBe(2);
   });
 });

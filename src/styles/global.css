@@ -1277,12 +1277,24 @@ button {
 
 .vocabulary-card {
   display: grid;
+  grid-template-rows: auto auto auto auto auto 1fr;
   gap: 10px;
   align-content: start;
+  min-height: 300px;
   padding: 18px;
   border: 1px solid rgba(126, 85, 49, 0.12);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.7);
+}
+
+.vocabulary-card.has-bottom-action > .primary-action,
+.vocabulary-card.has-bottom-action > .vocabulary-card-actions {
+  align-self: end;
+  margin-top: auto;
+}
+
+.vocabulary-card.has-bottom-action > .primary-action {
+  width: 100%;
 }
 
 .vocabulary-card.is-installed {

@@ -22,7 +22,7 @@
           还没有安装词库。安装一个免费词库后，首页的词库练习就会亮起来。
         </div>
         <div v-else class="vocabulary-grid">
-          <article v-for="pack in installedPackages" :key="pack.id" class="vocabulary-card is-installed">
+          <article v-for="pack in installedPackages" :key="pack.id" class="vocabulary-card is-installed has-bottom-action">
             <span>已安装</span>
             <h2>{{ pack.name }}</h2>
             <p>{{ pack.description }}</p>
@@ -44,7 +44,7 @@
           <strong>{{ registryPackages.length }}</strong>
         </div>
         <div class="vocabulary-grid">
-          <article v-for="item in registryPackages" :key="item.id" class="vocabulary-card">
+          <article v-for="item in registryPackages" :key="item.id" class="vocabulary-card has-bottom-action">
             <span>{{ item.pricingType === 'paid' ? '待解锁' : installedIds.has(item.id) ? '已安装' : '免费' }}</span>
             <h2>{{ item.name }}</h2>
             <p>{{ item.description }}</p>
