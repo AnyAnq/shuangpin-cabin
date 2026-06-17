@@ -212,21 +212,23 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function hydratePreferences() {
-    await refreshDailyQuote();
-    const preference = await loadPreferences();
-    if (preference) {
-      schemeId.value = preference.scheme;
-      selectedVocabularyPackageId.value = preference.lastVocabularyPackageId ?? null;
-    }
-    await refreshVocabularyPackages();
-    if (module.value !== 'poem') {
-      return;
-    }
     module.value = 'poem';
     unitIndex.value = 0;
     isSwitching.value = true;
     try {
-      await refreshOnlineUnit(module.value);
+      const preference = await loadPreferences();
+      if (preference) {
+        schemeId.value = preference.scheme;
+        selectedVocabularyPackageId.value = preference.lastVocabularyPackageId ?? null;
+      }
+      await refreshVocabularyPackages();
+      if (module.value !== 'poem') {
+        return;
+      }
+      await Promise.all([
+        refreshDailyQuote(),
+        refreshOnlineUnit(module.value),
+      ]);
       resetSession(unitsForModule(module.value)[0]);
     } finally {
       isSwitching.value = false;

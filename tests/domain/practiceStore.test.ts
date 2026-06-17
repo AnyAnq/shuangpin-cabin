@@ -83,6 +83,36 @@ describe('练习状态', () => {
     expect(store.currentCode).toBe('xk');
   });
 
+  it('首页初始化会立刻进入取题状态，不等待每日一言返回', async () => {
+    const quote = deferredResponse({
+      code: 200,
+      data: { content: '知不足而奋进，望远山而前行。' },
+    });
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/external-api/chicken-soup')) return quote.promise;
+        if (url.includes('/poetry-api/yiyan')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: '行到水穷处坐看云起时《终南别业》 — 王维',
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
+    const store = usePracticeStore();
+
+    const hydrate = store.hydratePreferences();
+    await Promise.resolve();
+
+    expect(store.isSwitching).toBe(true);
+    expect(store.awaitingOnlineContent).toBe(true);
+
+    quote.resolve();
+    await hydrate;
+  });
+
   it('输入后更新顶部进度', async () => {
     const store = await createHydratedStore();
 
