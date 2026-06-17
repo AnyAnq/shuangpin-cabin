@@ -1088,6 +1088,42 @@ button {
   text-align: center;
 }
 
+.practice-fetch-state {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 12px;
+  min-height: 380px;
+  color: #79614e;
+  text-align: center;
+}
+
+.practice-fetch-state span {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(46, 155, 93, 0.15);
+  border-top-color: var(--color-green);
+  border-radius: 999px;
+  animation: spin 900ms linear infinite;
+}
+
+.practice-fetch-state strong {
+  color: #2d2118;
+  font-size: 24px;
+}
+
+.practice-fetch-state p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .vocabulary-empty-state > span,
 .vocabulary-hero > span,
 .vocabulary-section-head > span,

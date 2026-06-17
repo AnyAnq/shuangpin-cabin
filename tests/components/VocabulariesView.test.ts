@@ -62,7 +62,9 @@ describe('VocabulariesView', () => {
     const wrapper = mount(VocabulariesView, {
       global: { plugins: [router] },
     });
-    await flush();
+    await vi.waitFor(() => {
+      expect(wrapper.find('[data-testid="install-vocabulary-daily-common"]').exists()).toBe(true);
+    });
     await wrapper.get('[data-testid="install-vocabulary-daily-common"]').trigger('click');
     await flush();
 

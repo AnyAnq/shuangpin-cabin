@@ -113,9 +113,9 @@ function createMistakeGroup(key: string, records: MistakeRecord[], scheme: Shuan
 function createEmptyMistakeGroup(scheme: ShuangpinScheme): MistakePracticeGroup {
   return {
     id: `mistake-empty-${scheme.id}`,
-    title: '先积累错题',
-    description: '完成诗词句子或绕口令练习后，这里会自动生成错因分组。',
-    target: '先建立你的易错样本',
+    title: '太棒了，没有出过错误',
+    description: '目前还没有发现需要复练的错题，说明你的输入状态很稳。',
+    target: '继续保持，打出第一条错题后这里会自动生成复练组',
     focusKeys: [],
     total: 0,
     empty: true,
@@ -131,8 +131,8 @@ function createEmptyMistakeGroup(scheme: ShuangpinScheme): MistakePracticeGroup 
       module: 'character',
       text: '',
       syllables: [],
-      source: '冷启动',
-      tags: ['冷启动'],
+      source: '零错记录',
+      tags: ['零错记录'],
     },
   };
 }

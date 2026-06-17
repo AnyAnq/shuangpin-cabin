@@ -75,6 +75,7 @@ export const usePracticeStore = defineStore('practice', () => {
   const mistakeGroupDescription = computed(() => currentMistakeGroup.value?.description ?? '');
   const mistakeGroupFocusKeys = computed(() => currentMistakeGroup.value?.focusKeys ?? []);
   const mistakeGroupEmpty = computed(() => currentMistakeGroup.value?.empty ?? false);
+  const awaitingOnlineContent = computed(() => (module.value === 'poem' || module.value === 'article') && activeUnit.value.text.length === 0 && isSwitching.value);
   const mistakeGroupProgress = computed(() => ({
     completed: module.value === 'mistake' ? session.value.stats.completedChars : 0,
     total: currentMistakeGroup.value?.total ?? 0,
@@ -223,8 +224,13 @@ export const usePracticeStore = defineStore('practice', () => {
     }
     module.value = 'poem';
     unitIndex.value = 0;
-    await refreshOnlineUnit(module.value);
-    resetSession(unitsForModule(module.value)[0]);
+    isSwitching.value = true;
+    try {
+      await refreshOnlineUnit(module.value);
+      resetSession(unitsForModule(module.value)[0]);
+    } finally {
+      isSwitching.value = false;
+    }
   }
 
   function resetSession(unit: PracticeUnit, rememberRecent = true) {
@@ -463,6 +469,7 @@ export const usePracticeStore = defineStore('practice', () => {
     mistakeGroupDescription,
     mistakeGroupFocusKeys,
     mistakeGroupEmpty,
+    awaitingOnlineContent,
     mistakeGroupProgress,
     mistakeCompletion,
     progressPercent,

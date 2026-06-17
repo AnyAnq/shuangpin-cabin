@@ -103,7 +103,7 @@ describe('易错分组复练', () => {
     const [group] = groupMistakesForPractice([], xiaoheScheme, 20_000);
 
     expect(group.empty).toBe(true);
-    expect(group.title).toBe('先积累错题');
+    expect(group.title).toBe('太棒了，没有出过错误');
     expect(group.unit.text).toBe('');
   });
 

@@ -313,7 +313,7 @@ describe('练习状态', () => {
     await store.setModule('mistake');
 
     expect(store.mistakeGroupEmpty).toBe(true);
-    expect(store.mistakeGroupTitle).toBe('先积累错题');
+    expect(store.mistakeGroupTitle).toBe('太棒了，没有出过错误');
     expect(store.activeUnit.text).toBe('');
   });
 

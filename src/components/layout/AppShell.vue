@@ -44,6 +44,11 @@
           <button type="button" class="ghost-action" @click="practice.setModule('poem')">先练诗词句子</button>
         </div>
       </section>
+      <section v-else-if="practice.awaitingOnlineContent" class="practice-fetch-state" role="status" aria-live="polite">
+        <span />
+        <strong>正在取一组新内容</strong>
+        <p>诗词和绕口令来自在线接口，稍等一下就能开始。</p>
+      </section>
       <template v-else>
         <div v-if="practice.module === 'vocabulary' && practice.vocabularyPackages.length > 0" class="vocabulary-picker" aria-label="已安装词库">
           <button
@@ -98,6 +103,7 @@
       :mistake-completed="practice.mistakeGroupProgress.completed"
       :mistake-total="practice.mistakeGroupProgress.total"
       :mistake-target="practice.currentMistakeGroup?.target"
+      :mistake-empty="practice.mistakeGroupEmpty"
     />
   </div>
 </template>

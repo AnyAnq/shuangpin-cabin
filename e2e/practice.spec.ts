@@ -116,8 +116,8 @@ test('没有错题时易错练习显示冷启动提示', async ({ page }) => {
   await page.getByRole('button', { name: '易错练习' }).click();
 
   await expect(page.getByText('错因复练')).toBeVisible();
-  await expect(page.getByText('先积累错题')).toBeVisible();
-  await expect(page.getByText('先建立你的易错样本')).toBeVisible();
+  await expect(page.getByText('太棒了，没有出过错误')).toBeVisible();
+  await expect(page.getByText('继续保持，打出第一条错题后这里会自动生成复练组')).toBeVisible();
   await expect(page.getByText('多情云')).toBeHidden();
 });
 

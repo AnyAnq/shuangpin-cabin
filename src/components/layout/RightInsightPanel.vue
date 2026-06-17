@@ -7,11 +7,14 @@
     <section class="stat-card"><strong>{{ wpm }}</strong><span>WPM</span></section>
     <template v-if="mistakeMode">
       <p class="panel-title">错因复练</p>
-      <section class="stat-card mistake-card">
+      <section class="stat-card mistake-card" :class="{ 'is-empty': mistakeEmpty }">
         <strong>{{ mistakeTitle }}</strong>
         <span>{{ mistakeDescription }}</span>
-        <span>重点键 {{ focusKeyText }}</span>
-        <span>{{ mistakeCompleted }}/{{ mistakeTotal }} · {{ mistakeTarget }}</span>
+        <template v-if="!mistakeEmpty">
+          <span>重点键 {{ focusKeyText }}</span>
+          <span>{{ mistakeCompleted }}/{{ mistakeTotal }} · {{ mistakeTarget }}</span>
+        </template>
+        <span v-else>{{ mistakeTarget }}</span>
       </section>
     </template>
     <template v-else>
@@ -43,6 +46,7 @@ const props = defineProps<{
   mistakeCompleted?: number;
   mistakeTotal?: number;
   mistakeTarget?: string;
+  mistakeEmpty?: boolean;
 }>();
 
 const formattedElapsed = computed(() => {
