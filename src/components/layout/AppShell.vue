@@ -49,6 +49,13 @@
         <strong>正在取一组新内容</strong>
         <p>诗词和绕口令来自在线接口，稍等一下就能开始。</p>
       </section>
+      <section v-else-if="practice.module === 'mistake' && practice.mistakeGroupEmpty" class="mistake-empty-stage">
+        <span>易错练习</span>
+        <h1>{{ practice.mistakeGroupTitle }}</h1>
+        <p>{{ practice.mistakeGroupDescription }}</p>
+        <strong>{{ practice.currentMistakeGroup?.target }}</strong>
+        <button type="button" class="primary-action" @click="practice.setModule('poem')">继续诗词练习</button>
+      </section>
       <template v-else>
         <div v-if="practice.module === 'vocabulary' && practice.vocabularyPackages.length > 0" class="vocabulary-picker" aria-label="已安装词库">
           <button

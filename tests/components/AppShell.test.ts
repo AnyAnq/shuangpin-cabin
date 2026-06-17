@@ -111,4 +111,28 @@ describe('AppShell', () => {
     expect(wrapper.text()).toContain('0/2');
     expect(wrapper.text()).toContain('连续正确 3 次后降权');
   });
+
+  it('易错练习没有错题时在主区域展示鼓励文案', async () => {
+    const { wrapper, pinia } = await mountAppShell();
+    const practice = usePracticeStore(pinia);
+
+    practice.module = 'mistake';
+    practice.mistakeGroups = [{
+      id: 'empty',
+      title: '太棒了，没有出过错误',
+      description: '目前还没有发现需要复练的错题，说明你的输入状态很稳。',
+      target: '继续保持，打出第一条错题后这里会自动生成复练组',
+      focusKeys: [],
+      total: 0,
+      empty: true,
+      reason: { type: 'sequence', expectedKey: '', actualKey: '' },
+      mistakeIds: [],
+      priority: -1,
+      unit: { id: 'empty', module: 'character', text: '', syllables: [], tags: ['零错记录'] },
+    }];
+    await wrapper.vm.$nextTick();
+
+    expect(wrapper.find('.mistake-empty-stage').text()).toContain('太棒了，没有出过错误');
+    expect(wrapper.find('.right-panel .mistake-card').exists()).toBe(false);
+  });
 });

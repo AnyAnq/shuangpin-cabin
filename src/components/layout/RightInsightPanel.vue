@@ -5,19 +5,16 @@
     <section class="stat-card"><strong>{{ formattedElapsed }}</strong><span>用时</span></section>
     <section class="stat-card"><strong>{{ maxCombo }}</strong><span>最大连击</span></section>
     <section class="stat-card"><strong>{{ wpm }}</strong><span>WPM</span></section>
-    <template v-if="mistakeMode">
+    <template v-if="mistakeMode && !mistakeEmpty">
       <p class="panel-title">错因复练</p>
-      <section class="stat-card mistake-card" :class="{ 'is-empty': mistakeEmpty }">
+      <section class="stat-card mistake-card">
         <strong>{{ mistakeTitle }}</strong>
         <span>{{ mistakeDescription }}</span>
-        <template v-if="!mistakeEmpty">
-          <span>重点键 {{ focusKeyText }}</span>
-          <span>{{ mistakeCompleted }}/{{ mistakeTotal }} · {{ mistakeTarget }}</span>
-        </template>
-        <span v-else>{{ mistakeTarget }}</span>
+        <span>重点键 {{ focusKeyText }}</span>
+        <span>{{ mistakeCompleted }}/{{ mistakeTotal }} · {{ mistakeTarget }}</span>
       </section>
     </template>
-    <template v-else>
+    <template v-else-if="!mistakeMode">
       <p class="panel-title">当前方案</p>
       <section class="stat-card"><strong>{{ schemeName }}</strong><span>声母 + 韵母键位提示随输入高亮</span></section>
     </template>
