@@ -1,0 +1,8117 @@
+{
+  "schemaVersion": 1,
+  "id": "chengyu-poem",
+  "name": "成语诗词",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "来自 THUOCL 成语和诗词词库，适合四字节奏、文学词汇和长词手感训练。",
+  "tags": [
+    "chengyu",
+    "poem",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "坚定不移",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "随时随地",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全力以赴",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丰富多彩",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "余波未平",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脱颖而出",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实事求是",
+      "weight": 100,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一如既往",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "众所周知",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一年一度",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "因地制宜",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千方百计",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "息息相关",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "层出不穷",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "引人注目",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "当务之急",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "滥用职权",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "深入人心",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "解放思想",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "见义勇为",
+      "weight": 99,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "敲诈勒索",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名不虚传",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "来之不易",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名副其实",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下落不明",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "坚持不懈",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "源源不断",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "络绎不绝",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "弄虚作假",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可思议",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不正之风",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小心翼翼",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "长治久安",
+      "weight": 98,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如火如荼",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不折不扣",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "后顾之忧",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纸醉金迷",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "力所能及",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "供不应求",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一目了然",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "显而易见",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "持之以恒",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成千上万",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大街小巷",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "可想而知",
+      "weight": 97,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安居乐业",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "齐心协力",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "得天独厚",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一见钟情",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "艰苦奋斗",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全心全意",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "独一无二",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不约而同",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "紧锣密鼓",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五花八门",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一应俱全",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应运而生",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "与众不同",
+      "weight": 96,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "触目惊心",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "屡见不鲜",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无独有偶",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "行之有效",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不知不觉",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大势所趋",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千家万户",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心有余悸",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不得而知",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前所未有",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迫不及待",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雪上加霜",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迫在眉睫",
+      "weight": 95,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "此起彼伏",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脚踏实地",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "意想不到",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "错综复杂",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无可厚非",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "源远流长",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "举一反三",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "循序渐进",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不遗余力",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不言而喻",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "讨价还价",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "深恶痛绝",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三位一体",
+      "weight": 94,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "截然不同",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "记忆犹新",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "喜闻乐见",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "家喻户晓",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日新月异",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "取而代之",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莫名其妙",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名列前茅",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "排忧解难",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "各式各样",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "玩忽职守",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "任重道远",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奋发有为",
+      "weight": 93,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "举足轻重",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "比比皆是",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卓有成效",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "落地生根",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "势在必行",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "史无前例",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "理所当然",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耳熟能详",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "由来已久",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一模一样",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "厉行节约",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恶性循环",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铤而走险",
+      "weight": 92,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "举世瞩目",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "再接再厉",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "足不出户",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "翻天覆地",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "非同寻常",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挨家挨户",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不翼而飞",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参差不齐",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水涨船高",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "沸沸扬扬",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "先发制人",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轩然大波",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "土生土长",
+      "weight": 91,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出人意料",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "统筹兼顾",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "明察暗访",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刻不容缓",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "融为一体",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "焕然一新",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "以身作则",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "潜移默化",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风口浪尖",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有条不紊",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "归根结底",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发扬光大",
+      "weight": 90,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "旗帜鲜明",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "万无一失",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "可见一斑",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一视同仁",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "相辅相成",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "淋漓尽致",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耳目一新",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不了了之",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热火朝天",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有目共睹",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "久而久之",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "视而不见",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自强不息",
+      "weight": 89,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "以权谋私",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "继往开来",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赞不绝口",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "义不容辞",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "未雨绸缪",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一举一动",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绳之以法",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "尽如人意",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有所作为",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "对症下药",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出谋划策",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "四面八方",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "首当其冲",
+      "weight": 88,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "马不停蹄",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不以为然",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "必由之路",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "所作所为",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一蹴而就",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人满为患",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "身体力行",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "精益求精",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可忽视",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大吃一惊",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "竭尽全力",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拭目以待",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无家可归",
+      "weight": 87,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "哭笑不得",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铺张浪费",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不知所措",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "座无虚席",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "可乘之机",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "琳琅满目",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卷土重来",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铺天盖地",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "理直气壮",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面目全非",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "忧心忡忡",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "在所难免",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "燃眉之急",
+      "weight": 86,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "图文并茂",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不绝于耳",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "津津乐道",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数以万计",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "立竿见影",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "议论纷纷",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "与日俱增",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "衣食住行",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "精心设计",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "急功近利",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鲜为人知",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "根深蒂固",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "博大精深",
+      "weight": 85,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大有可为",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轰轰烈烈",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惊心动魄",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不亦乐乎",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "何去何从",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "独立自主",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "率先垂范",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "相得益彰",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "取信于民",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耐人寻味",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "别开生面",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水泄不通",
+      "weight": 84,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接二连三",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无能为力",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "难以为继",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "陷入僵局",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "感同身受",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不知去向",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "匪夷所思",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "背道而驰",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "难以置信",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拳打脚踢",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一帆风顺",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "掉以轻心",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "畅所欲言",
+      "weight": 83,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "习以为常",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "漏洞百出",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年久失修",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出乎意料",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一脉相承",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "毫不动摇",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "当之无愧",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肆无忌惮",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "寥寥无几",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "顺藤摸瓜",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "助人为乐",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欢聚一堂",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泪流满面",
+      "weight": 82,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接踵而至",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "直言不讳",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "义无反顾",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "力不从心",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遍地开花",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "慕名而来",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纷至沓来",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兴致勃勃",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "家常便饭",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "措手不及",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心急如焚",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一席之地",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "栩栩如生",
+      "weight": 81,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "眼花缭乱",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雪中送炭",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "得不偿失",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安然无恙",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "深入浅出",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自始至终",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "捉襟见肘",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拒之门外",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "望而却步",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "默默无闻",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "顺理成章",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "难能可贵",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "来龙去脉",
+      "weight": 80,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不谋而合",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "清清楚楚",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如出一辙",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "提心吊胆",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "徇私舞弊",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一无所知",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锲而不舍",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "别有用心",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大打出手",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "同舟共济",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雨后春笋",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兢兢业业",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泣不成声",
+      "weight": 79,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无人问津",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应有尽有",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "引以为戒",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "异军突起",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "通俗易懂",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "波澜壮阔",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无可奈何",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "归根到底",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "品学兼优",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "司空见惯",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推波助澜",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "微乎其微",
+      "weight": 78,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "相提并论",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "束手无策",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信以为真",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "死灰复燃",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苦不堪言",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "争分夺秒",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "集思广益",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛮不讲理",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自力更生",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有的放矢",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "严阵以待",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "建功立业",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人山人海",
+      "weight": 77,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "溃不成军",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国计民生",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年事已高",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绿水青山",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "半壁江山",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "求同存异",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛛丝马迹",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼龙混杂",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扑朔迷离",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "熙熙攘攘",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一技之长",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大江南北",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "屈指可数",
+      "weight": 76,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "交相辉映",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公之于众",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一拍即合",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "絮絮叨叨",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一丝不苟",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "相依为命",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "微不足道",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大有作为",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "良莠不齐",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "令人瞩目",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迎刃而解",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "从天而降",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不合时宜",
+      "weight": 75,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "现身说法",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "受益匪浅",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新陈代谢",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "声势浩大",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高高在上",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合情合理",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "量力而行",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不切实际",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "针锋相对",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "责无旁贷",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高瞻远瞩",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千千万万",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "明目张胆",
+      "weight": 74,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "连锁反应",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "适得其反",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "摇身一变",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "跃跃欲试",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "聚精会神",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承前启后",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杯水车薪",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一网打尽",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开花结果",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "慷慨解囊",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "素不相识",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重建家园",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "长此以往",
+      "weight": 73,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无可争辩",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "格格不入",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蔚然成风",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生机勃勃",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "吃苦耐劳",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "昏迷不醒",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金字招牌",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大相径庭",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "堂而皇之",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如数家珍",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "更新换代",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "争先恐后",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浓墨重彩",
+      "weight": 72,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大刀阔斧",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惊慌失措",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "所剩无几",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高官厚禄",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一心一意",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "井然有序",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一波三折",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "形迹可疑",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炙手可热",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "身临其境",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二话不说",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "流连忘返",
+      "weight": 71,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热泪盈眶",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "销声匿迹",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "打击报复",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "尽心尽力",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一以贯之",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恍然大悟",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "置之不理",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轻而易举",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人来人往",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青山绿水",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "齐头并进",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一筹莫展",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百花齐放",
+      "weight": 70,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "各执一词",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "志同道合",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绞尽脑汁",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "首屈一指",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水到渠成",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "物美价廉",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "众说纷纭",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "各自为政",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "语重心长",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "德才兼备",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乐此不疲",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方兴未艾",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五颜六色",
+      "weight": 69,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无动于衷",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锦上添花",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "荒淫无度",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推陈出新",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "畅通无阻",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "独树一帜",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "省吃俭用",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无济于事",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "情不自禁",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不足为奇",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "忍无可忍",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "埋头苦干",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "郁郁葱葱",
+      "weight": 68,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "事半功倍",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不省人事",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分门别类",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "别出心裁",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "明明白白",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热情洋溢",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大张旗鼓",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "防不胜防",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惊魂未定",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒙混过关",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "错落有致",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一点一滴",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "入不敷出",
+      "weight": 67,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "我行我素",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "深思熟虑",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "趋之若鹜",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无微不至",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "溢于言表",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "车水马龙",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "同心同德",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无所适从",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "变本加厉",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "壮士断腕",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雄心勃勃",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "崭露头角",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "以点带面",
+      "weight": 66,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "学以致用",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心中有数",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五湖四海",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "审时度势",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不择手段",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大起大落",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不厌其烦",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一针见血",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "四通八达",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可开交",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "春暖花开",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天经地义",
+      "weight": 65,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "悬而未决",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一言不发",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蜂拥而至",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扬长而去",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水落石出",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大开眼界",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "载歌载舞",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "子虚乌有",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "了如指掌",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "历历在目",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "徇私枉法",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风云变幻",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公正廉洁",
+      "weight": 64,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茁壮成长",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千丝万缕",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奋不顾身",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轻描淡写",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不解之缘",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有意无意",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "顾名思义",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有声有色",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "流离失所",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "诸如此类",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一清二楚",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "众志成城",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "救死扶伤",
+      "weight": 63,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "梦寐以求",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "逍遥法外",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "按捺不住",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信誓旦旦",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不计其数",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缺一不可",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脱胎换骨",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "真心实意",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "对簿公堂",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不辱使命",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "狂风暴雨",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日复一日",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白发苍苍",
+      "weight": 62,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山清水秀",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "随心所欲",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浩浩荡荡",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不堪设想",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "叹为观止",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不由自主",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天下第一",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如愿以偿",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "取长补短",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "所见所闻",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "近在咫尺",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一言一行",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惨不忍睹",
+      "weight": 61,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一无所获",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "既得利益",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "呼之欲出",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一厢情愿",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄金时代",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无与伦比",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无中生有",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "啃硬骨头",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轰动一时",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "街头巷尾",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "掷地有声",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "戛然而止",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "念念不忘",
+      "weight": 60,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "偷工减料",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "津津有味",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "改头换面",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "据为己有",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大同小异",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刮目相看",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "令人发指",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "目瞪口呆",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三三两两",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雷厉风行",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风雨无阻",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "江郎才尽",
+      "weight": 59,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "美轮美奂",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "货真价实",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三令五申",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "和睦相处",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "感慨万千",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拾金不昧",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "因人而异",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一纸空文",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "双管齐下",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脱口而出",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "曾几何时",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "逃之夭夭",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可估量",
+      "weight": 58,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心甘情愿",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一朝一夕",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "倾家荡产",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有利可图",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "证据确凿",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "万众一心",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "古色古香",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刻骨铭心",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东窗事发",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开门见山",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒸蒸日上",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "艰苦卓绝",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承上启下",
+      "weight": 57,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "振奋人心",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风起云涌",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乱七八糟",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浑身解数",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一意孤行",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大有人在",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年复一年",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水土不服",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绝无仅有",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奄奄一息",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生生不息",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "从头到尾",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迫不得已",
+      "weight": 56,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公平合理",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "独善其身",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恰到好处",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一触即发",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "说三道四",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不胜枚举",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "各抒己见",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "意味深长",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "聪明才智",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生死存亡",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蠢蠢欲动",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "摇摇欲坠",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "世外桃源",
+      "weight": 55,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "滔滔不绝",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欣欣向荣",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "添砖加瓦",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "相差无几",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "来势汹汹",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有朝一日",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "疑难杂症",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指日可待",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "每况愈下",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "精打细算",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "真知灼见",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遥遥无期",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "代代相传",
+      "weight": 54,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "勇往直前",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "好景不长",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "另辟蹊径",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "朝气蓬勃",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "见怪不怪",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一劳永逸",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "目不暇接",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热气腾腾",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脍炙人口",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无所事事",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甚嚣尘上",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "时不我待",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "打成一片",
+      "weight": 53,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一成不变",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "怀恨在心",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "总而言之",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支支吾吾",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "艰苦创业",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不务正业",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "身无分文",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "别具一格",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "治病救人",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "岌岌可危",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丰功伟绩",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "他山之石",
+      "weight": 52,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "避重就轻",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "按部就班",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "急转直下",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一举两得",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兴高采烈",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "同心协力",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "侃侃而谈",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恼羞成怒",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天壤之别",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "咄咄逼人",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千篇一律",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "寸步难行",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嘘寒问暖",
+      "weight": 51,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不失时机",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "直截了当",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白手起家",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人去楼空",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "置若罔闻",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "瞠目结舌",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "长途跋涉",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有说有笑",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "严于律己",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "群策群力",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前车之鉴",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一拥而上",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "毋庸讳言",
+      "weight": 50,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违法乱纪",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大政方针",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "痛定思痛",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "难上加难",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "并肩作战",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "始终如一",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数不胜数",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "啼笑皆非",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不闻不问",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不相上下",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自给自足",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有生之年",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "打草惊蛇",
+      "weight": 49,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "守望相助",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鼓舞人心",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三五成群",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铿锵有力",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接踵而来",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "勤工俭学",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赏心悦目",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "夜以继日",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "起早贪黑",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "爱不释手",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "手足无措",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一分为二",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可多得",
+      "weight": 48,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "喜出望外",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "口口相传",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "只争朝夕",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "气喘吁吁",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猝不及防",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不甘示弱",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "亡羊补牢",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "意气风发",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "摩拳擦掌",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "喜怒哀乐",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千差万别",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸甜苦辣",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惟妙惟肖",
+      "weight": 47,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自相矛盾",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中流砥柱",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "真相大白",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "早出晚归",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "繁荣昌盛",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "异口同声",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "喜气洋洋",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大是大非",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自食其力",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "言传身教",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浴血奋战",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "充满生机",
+      "weight": 46,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大惊小怪",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转危为安",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "见缝插针",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "平易近人",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "古今中外",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "怨声载道",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人声鼎沸",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千里迢迢",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "融会贯通",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "整装待发",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "得心应手",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "守土有责",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "破口大骂",
+      "weight": 45,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不可磨灭",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "永无止境",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "令人咋舌",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "犹豫不决",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "火眼金睛",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "袖手旁观",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苦口婆心",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "游刃有余",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "始终不渝",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发家致富",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耿耿于怀",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油然而生",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "害群之马",
+      "weight": 44,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伤痕累累",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "权宜之计",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "背井离乡",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支离破碎",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "皆大欢喜",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大名鼎鼎",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合二为一",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风吹草动",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "依依不舍",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "秋高气爽",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挺身而出",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "掩人耳目",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "姗姗来迟",
+      "weight": 43,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实至名归",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "事与愿违",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "翩翩起舞",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名目繁多",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凤毛麟角",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "忍气吞声",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耳濡目染",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天伦之乐",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一气呵成",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千载难逢",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "满目疮痍",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "堆积如山",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一无所有",
+      "weight": 42,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "追根溯源",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "精神抖擞",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人心惶惶",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "朝夕相处",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "当仁不让",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不依不饶",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "设身处地",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名胜古迹",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "血肉模糊",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "焦头烂额",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无缘无故",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日积月累",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "旷日持久",
+      "weight": 41,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不胫而走",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "忍俊不禁",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成群结队",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接连不断",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无稽之谈",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债台高筑",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "因材施教",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "居安思危",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "手忙脚乱",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轻重缓急",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应接不暇",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "矢志不渝",
+      "weight": 40,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "触手可及",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发人深省",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "破门而入",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "异曲同工",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自言自语",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "左邻右舍",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乐在其中",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "以身试法",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "养家糊口",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "众矢之的",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心平气和",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "若隐若现",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "繁荣富强",
+      "weight": 39,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "哗众取宠",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纵横交错",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "空穴来风",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "叫苦不迭",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "因势利导",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "德高望重",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "舆论哗然",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有恃无恐",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人命关天",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "气势磅礴",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "昙花一现",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "息事宁人",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日日夜夜",
+      "weight": 38,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "荡然无存",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欢欣鼓舞",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惊天动地",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "艰难险阻",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "险象环生",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数一数二",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "切身体会",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "以假乱真",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风风雨雨",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天寒地冻",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辞旧迎新",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "负债累累",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "任劳任怨",
+      "weight": 37,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "走投无路",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "令行禁止",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重蹈覆辙",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无时无刻",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成家立业",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炎黄子孙",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "剑拔弩张",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "将心比心",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大手大脚",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一览无余",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "为所欲为",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名正言顺",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纸上谈兵",
+      "weight": 36,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "川流不息",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "夜深人静",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一天到晚",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "美不胜收",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "善始善终",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "枝繁叶茂",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "意料之外",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "斩钉截铁",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风云人物",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "壮烈牺牲",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大有裨益",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铺平道路",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "防微杜渐",
+      "weight": 35,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无影无踪",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "举手之劳",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中西合璧",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "走马上任",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拍手称快",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一年到头",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小心谨慎",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海纳百川",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "来历不明",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汗流浃背",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "七嘴八舌",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "本末倒置",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嚎啕大哭",
+      "weight": 34,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不顾一切",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "混淆视听",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热血沸腾",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "左右为难",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风平浪静",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如履薄冰",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "先天不足",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "招摇撞骗",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "解疑释惑",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不速之客",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "心服口服",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东拼西凑",
+      "weight": 33,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一落千丈",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "原原本本",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "火上浇油",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "就事论事",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "没完没了",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "报效祖国",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "劳民伤财",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "危言耸听",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天马行空",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "煞费苦心",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自欺欺人",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "讳莫如深",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "断章取义",
+      "weight": 32,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五彩缤纷",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "进退两难",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "改过自新",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一口咬定",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "急于求成",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "严惩不贷",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "疲惫不堪",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百折不挠",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一家老小",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大显身手",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兴旺发达",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "头破血流",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浑水摸鱼",
+      "weight": 31,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "不容置疑",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "孜孜不倦",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "长久之计",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "闻名遐迩",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千辛万苦",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指手画脚",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赫赫有名",
+      "weight": 30,
+      "tags": [
+        "chengyu",
+        "poem"
+      ],
+      "source": "THUOCL"
+    }
+  ]
+}

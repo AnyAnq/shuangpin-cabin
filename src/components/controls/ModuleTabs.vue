@@ -6,6 +6,9 @@
     <button class="segment" :class="{ 'is-active': practice.module === 'article' }" type="button" :disabled="practice.isSwitching" @click="practice.setModule('article')">
       绕口令
     </button>
+    <button class="segment" :class="{ 'is-active': practice.module === 'vocabulary' }" type="button" :disabled="practice.isSwitching" @click="practice.setModule('vocabulary')">
+      词库练习
+    </button>
     <button class="segment" :class="{ 'is-active': practice.module === 'mistake' }" type="button" :disabled="practice.isSwitching" @click="practice.setModule('mistake')">
       易错练习
     </button>

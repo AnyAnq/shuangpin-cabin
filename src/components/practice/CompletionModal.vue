@@ -11,6 +11,10 @@
         <span>WPM {{ wpm }}</span>
         <span>最大连击 {{ maxCombo }}</span>
       </div>
+      <div v-if="hasMistakeResult" class="completion-stats completion-mistakes">
+        <span>本组复练 {{ practicedCount }}</span>
+        <span>连续正确 +{{ streakGain }}</span>
+      </div>
       <div class="completion-actions">
         <button type="button" :disabled="busy" @click="$emit('restart')">重练本组</button>
         <button type="button" :disabled="busy" class="is-primary" @click="$emit('next')">
@@ -23,15 +27,20 @@
 
 <script setup lang="ts">
 import { X } from '@lucide/vue';
+import { computed } from 'vue';
 
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   open: boolean;
   accuracy: number;
   wpm: number;
   maxCombo: number;
   busy: boolean;
+  practicedCount?: number | null;
+  streakGain?: number | null;
 }>(), {
   busy: false,
+  practicedCount: null,
+  streakGain: null,
 });
 
 defineEmits<{
@@ -39,4 +48,6 @@ defineEmits<{
   next: [];
   close: [];
 }>();
+
+const hasMistakeResult = computed(() => typeof props.practicedCount === 'number' && typeof props.streakGain === 'number');
 </script>

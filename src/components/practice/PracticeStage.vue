@@ -9,8 +9,25 @@
           :class="{ 'is-active': line.start + index === activeIndex, 'is-complete': line.start + index < activeIndex }"
         >
           <span class="target-glyph">{{ char }}</span>
-          <span v-if="codeForTextIndex(line.start + index)" class="char-code" :data-char-code="line.start + index">
-            {{ codeForTextIndex(line.start + index) }}
+          <span
+            v-if="codeForTextIndex(line.start + index)"
+            class="char-code"
+            :class="{ 'is-complete': isCodeComplete(line.start + index), 'is-active': line.start + index === activeIndex }"
+            :data-char-code="line.start + index"
+            :aria-label="codeForTextIndex(line.start + index) ?? undefined"
+          >
+            <span
+              v-for="(key, keyIndex) in codeKeysForTextIndex(line.start + index)"
+              :key="`${key}-${line.start + index}-${keyIndex}`"
+              class="char-code-key"
+              :class="{
+                'is-done': isCodeKeyDone(line.start + index, keyIndex),
+                'is-current': isCodeKeyCurrent(line.start + index, keyIndex),
+              }"
+              data-char-code-key
+            >
+              {{ key }}
+            </span>
           </span>
         </span>
       </span>
@@ -32,9 +49,18 @@ const props = defineProps<{
   codes?: string[];
   textCharIndices?: number[];
   completedCharCount?: number;
+  lineCharCount?: number;
 }>();
 
 const lines = computed(() => {
+  if (props.lineCharCount && props.lineCharCount > 0) {
+    const chars = Array.from(props.text);
+    const result = [];
+    for (let start = 0; start < chars.length; start += props.lineCharCount) {
+      result.push({ index: result.length, start, chars: chars.slice(start, start + props.lineCharCount) });
+    }
+    return result;
+  }
   const breakIndex = props.text.search(/[，,]/);
   const rawLines = breakIndex === -1 ? [props.text] : [props.text.slice(0, breakIndex + 1), props.text.slice(breakIndex + 1)];
   let start = 0;
@@ -48,7 +74,30 @@ const lines = computed(() => {
 
 function codeForTextIndex(textIndex: number): string | null {
   const practiceIndex = props.textCharIndices?.indexOf(textIndex) ?? -1;
-  if (practiceIndex < 0 || practiceIndex >= (props.completedCharCount ?? 0)) return null;
+  if (practiceIndex < 0) return null;
   return props.codes?.[practiceIndex]?.split('').join(' ') ?? null;
+}
+
+function codeKeysForTextIndex(textIndex: number): string[] {
+  const practiceIndex = props.textCharIndices?.indexOf(textIndex) ?? -1;
+  if (practiceIndex < 0) return [];
+  return props.codes?.[practiceIndex]?.split('') ?? [];
+}
+
+function isCodeComplete(textIndex: number): boolean {
+  const practiceIndex = props.textCharIndices?.indexOf(textIndex) ?? -1;
+  return practiceIndex >= 0 && practiceIndex < (props.completedCharCount ?? 0);
+}
+
+function isCodeKeyDone(textIndex: number, keyIndex: number): boolean {
+  const practiceIndex = props.textCharIndices?.indexOf(textIndex) ?? -1;
+  if (practiceIndex < 0) return false;
+  if (practiceIndex < (props.completedCharCount ?? 0)) return true;
+  return textIndex === props.activeIndex && keyIndex < props.completedCodeCount;
+}
+
+function isCodeKeyCurrent(textIndex: number, keyIndex: number): boolean {
+  if (textIndex !== props.activeIndex) return false;
+  return keyIndex === props.completedCodeCount;
 }
 </script>

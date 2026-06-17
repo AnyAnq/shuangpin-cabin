@@ -1,0 +1,7217 @@
+{
+  "schemaVersion": 1,
+  "id": "it-tech",
+  "name": "科技网络",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "来自 THUOCL IT 词库，适合程序员、产品、运营等技术场景输入。",
+  "tags": [
+    "it",
+    "tech",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "字符串",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "初始化",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数组",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "加载",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "客户端",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "应用程序",
+      "weight": 100,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自定义",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "配置文件",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "封装",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字段",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "解决方案",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译器",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重启",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "控件",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子类",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件名",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据结构",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据类型",
+      "weight": 99,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "构造函数",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发者",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "解决方法",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户名",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "头文件",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "命令行",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实例化",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "递归",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "父类",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多线程",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "环境变量",
+      "weight": 98,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "右键",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "服务器端",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "生命周期",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类名",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "优先级",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "官网",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "上传",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "成员变量",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "迭代",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "程序运行",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "服务端",
+      "weight": 97,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "根目录",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "链表",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件系统",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发人员",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "嵌套",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "全局变量",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存空间",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "版本号",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "下载地址",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "后缀",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "构造方法",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "结点",
+      "weight": 96,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "源文件",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "局部变量",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数调用",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "复杂度",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "赋值",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动生成",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实现类",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "堆栈",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "基类",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "整型",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数返回",
+      "weight": 95,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表单",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "运算符",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "只读",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "错误信息",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "寄存器",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "主线程",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据源",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "操作符",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "缩放",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "抽象类",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "回调函数",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "静态方法",
+      "weight": 94,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "返回结果",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "读取数据",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "显式",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "当前目录",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "变量名",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "大小写",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "作用域",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "布局文件",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "包名",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建对象",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试数据",
+      "weight": 93,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "端口号",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "复用",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储空间",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重新启动",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "抛出异常",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类库",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码实现",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "标识符",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "方法调用",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "直接访问",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编程语言",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "业务逻辑",
+      "weight": 92,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "序列化",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "成员函数",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据存储",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可执行",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "快捷键",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字节数",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "设计模式",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重定向",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "调用函数",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码块",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "方法名",
+      "weight": 91,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参考资料",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "线程安全",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "主键",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "命名空间",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "调用方法",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "执行过程",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工具类",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据传输",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "预处理",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "获取数据",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "示例代码",
+      "weight": 90,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件路径",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参数传递",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重置",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "新版本",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "偏移量",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重命名",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "跨平台",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文本文件",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工作原理",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发环境",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "依赖关系",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子目录",
+      "weight": 89,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统调用",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据集",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类对象",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "发送消息",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "句柄",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "下划线",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "浮点数",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "面向对象",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "日志文件",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "持久化",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二维",
+      "weight": 88,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "配置信息",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参数类型",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "资源文件",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "绝对路径",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "打开文件",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存管理",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安装包",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "静态变量",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "应用场景",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "基本类型",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "迭代器",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "软件开发",
+      "weight": 87,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类继承",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "正常运行",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储数据",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "点击事件",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "程序代码",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "目录结构",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类型转换",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "构造器",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多态",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "访问权限",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二叉树",
+      "weight": 86,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存地址",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内部类",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "监听器",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "分隔符",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表名",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "分页",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "冒号",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "十六进制",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络连接",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "修饰符",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重新编译",
+      "weight": 85,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开源项目",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "大数据",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "线程池",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "时间戳",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "元数据",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "属性设置",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "输入流",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统资源",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "双引号",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存分配",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "主机名",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户界面",
+      "weight": 84,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "随机数",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "结果集",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据文件",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "应用层",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "驱动程序",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发过程",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "运行环境",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据处理",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "权重",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "泛型",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件大小",
+      "weight": 83,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "输出流",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子节点",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "输入输出",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "升序",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字节码",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "库文件",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "十进制",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数组元素",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "离线",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "套接字",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "时间间隔",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "事件处理",
+      "weight": 82,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "推送",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "单线程",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码段",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储过程",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类方法",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "加锁",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "扩展名",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "负载均衡",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "插入数据",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "宏定义",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "异常处理",
+      "weight": 81,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数指针",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "换行符",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "提高效率",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "流程图",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "解压缩",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数参数",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "单元测试",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文本框",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "进制",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "执行时间",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "传递参数",
+      "weight": 80,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发工具",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "读取文件",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子树",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试用例",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参数设置",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "垃圾回收",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二维数组",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "处理方法",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "父节点",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "特殊字符",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子串",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "描述符",
+      "weight": 79,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "当前用户",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实体类",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "拖拽",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "错误提示",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "嵌入式",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "析构函数",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存泄露",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户登录",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "主函数",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "下载安装",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "目标文件",
+      "weight": 78,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "上传文件",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "回滚",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动画效果",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "基本操作",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "删除操作",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "运行时间",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安装过程",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "死锁",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实现原理",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "宽高",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "指定位置",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "单例模式",
+      "weight": 77,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "不执行",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "消息队列",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "提示信息",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "抽象方法",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "地址空间",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最小化",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "体系结构",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "默认值",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户信息",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件类型",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "单引号",
+      "weight": 76,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "带参数",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "首字母",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "机器学习",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "背景色",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "高亮",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "相对路径",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类定义",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "引用类型",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "唯一标识",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "选择器",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "操作数",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数定义",
+      "weight": 75,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "派生类",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "互斥",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "新特性",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "继承关系",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "入栈",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "执行效率",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试类",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "压缩包",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "进度条",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字符数组",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可扩展性",
+      "weight": 74,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "本地文件",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "模块化",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "删除文件",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子线程",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "死循环",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "建模",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "输入框",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二分",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络请求",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件目录",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多重",
+      "weight": 73,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编写代码",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "转义",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "对象类型",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据块",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图形界面",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数体",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建文件",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "背景颜色",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "出栈",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实例变量",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "不兼容",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "常用方法",
+      "weight": 72,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存区域",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子进程",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态规划",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "执行顺序",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "位图",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "层次结构",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类文件",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "写入文件",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工具栏",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据库表",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "保存数据",
+      "weight": 71,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "版本信息",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "线段树",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "查询语句",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参考文献",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字节流",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用例",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "地址栏",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "非阻塞",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "堆内存",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "强制转换",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "物理内存",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "移动设备",
+      "weight": 70,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "对象引用",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "库函数",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表结构",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "非静态",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存泄漏",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "选项卡",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "标准输出",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码示例",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "未定义",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "无法访问",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "写数据",
+      "weight": 69,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实际开发",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "浮点",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "状态栏",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "连接数",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "缩进",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "回调方法",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最小值",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统启动",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "结构化",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码片段",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编码方式",
+      "weight": 68,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数实现",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "参数说明",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "临时文件",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建表",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "原始数据",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "映射关系",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据交换",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "触发器",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "引用计数",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "解耦",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "对象创建",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "源程序",
+      "weight": 67,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "等待时间",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "共享数据",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "下载文件",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件拷贝",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "超链接",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "解析器",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "正则",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "虚拟内存",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "串口",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "全屏",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "空字符串",
+      "weight": 66,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "虚函数",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自适应",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "释放资源",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "响应时间",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "处理程序",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "生产环境",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据保存",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "共享内存",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "执行程序",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "整除",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "后台运行",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "指定目录",
+      "weight": 65,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态库",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "管理工具",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "模版",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "元组",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "快速排序",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户空间",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动完成",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "连接池",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自增",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "大括号",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "一对多",
+      "weight": 64,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "性能优化",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字符编码",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件上传",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据访问",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "寻址",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件复制",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数库",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "函数声明",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "序列号",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "配置项",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "菜单栏",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "管理系统",
+      "weight": 63,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络传输",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "修改文件",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "新功能",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "删除数据",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "占位符",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "传递数据",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "应用开发",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "标准输入",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件操作",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "复选框",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建线程",
+      "weight": 62,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字段名",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "不同版本",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试程序",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "第三方库",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "初始状态",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "时间段",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据分析",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "程序开发",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "脚本语言",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "增删改查",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "左移",
+      "weight": 61,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据模型",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重试",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存溢出",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "删除元素",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "批处理",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "指针变量",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "外键",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "请求参数",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "信号量",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据操作",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据转换",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "高并发",
+      "weight": 60,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "源码下载",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译错误",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "后缀名",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "启动服务",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统性能",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "普通用户",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "背景图片",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统环境",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "一维数组",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图像处理",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "一对一",
+      "weight": 59,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数组长度",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "空指针",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储方式",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "拦截器",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "维基百科",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "项目开发",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字节数组",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试环境",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "保存文件",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "错误处理",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "递归调用",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "添加数据",
+      "weight": 58,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "线程同步",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译过程",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "取值",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "属性值",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "冒泡排序",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态分配",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "配置参数",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据段",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "快捷方式",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "主目录",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "守护进程",
+      "weight": 57,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "操作方法",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工作流程",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "枚举类型",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二分查找",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动更新",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "递推",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "父进程",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内存不足",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "当前对象",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "状态转移",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "状态码",
+      "weight": 56,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类图",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态加载",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "浮点型",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络通信",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "使用场景",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件保存",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "异或",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "日志记录",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "方法参数",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "帮助文档",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "静态库",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "消息发送",
+      "weight": 55,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发效率",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安全问题",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "消息处理",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件包含",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最优解",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "输入法",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "请求数据",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "路径和",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "先进先出",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "排序算法",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "逆序",
+      "weight": 54,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统设置",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "更新数据",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "压缩文件",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "粒度",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "语法错误",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户交互",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "传输层",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "实例方法",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "访问控制",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "圆角",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统变量",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "修改时间",
+      "weight": 53,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "中间件",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络层",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "接口实现",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "命名规则",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "生成器",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "静态成员",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可移植性",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "事务处理",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "定义类",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "顺时针",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "并查集",
+      "weight": 52,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "错误代码",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户组",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二级",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "物理地址",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "建表",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "两个指针",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "八进制",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重做",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "预编译",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "显示图片",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "新浪微博",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "反序列化",
+      "weight": 51,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "加载图片",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络协议",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重新安装",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "键盘输入",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "像素点",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "依赖注入",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最佳实践",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "本地缓存",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络编程",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "伪代码",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态生成",
+      "weight": 50,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多进程",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "转义字符",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统服务",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "常用命令",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多核",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "传输协议",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最短路径",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "新技术",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "取模",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图片资源",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "成员方法",
+      "weight": 49,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "重绘",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件列表",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "访问量",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "性能测试",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图层",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可见性",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "版本控制",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可维护性",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "历史记录",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "归并排序",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安装程序",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "移出",
+      "weight": 48,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储结构",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "身份验证",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二进制数",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代理方法",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "导航栏",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "功能模块",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "移动端",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子序列",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动启动",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "依赖包",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件下载",
+      "weight": 47,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统时间",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "程序启动",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据安全",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "集合类",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图形化",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "最短路",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "调试程序",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "神经网络",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "路径名",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络接口",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "加载数据",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "异常信息",
+      "weight": 46,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "可扩展",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "云计算",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "映射文件",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "消息传递",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据丢失",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据同步",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "析构",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译程序",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "汇编语言",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "软件系统",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "请求头",
+      "weight": 45,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "连线",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "测试方法",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "超类",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "提供数据",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "软件工程",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类成员",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据挖掘",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "算法实现",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "原子操作",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "运营商",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "四舍五入",
+      "weight": 44,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "调优",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "企业级",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建目录",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "反编译",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "目标对象",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译安装",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安装配置",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多任务",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "插入排序",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "反射机制",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "示例程序",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据项",
+      "weight": 43,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "对象模型",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件存储",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工厂方法",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "编译环境",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "标记语言",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "验证码",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "窗口大小",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "权值",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "外网",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动加载",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "自动转换",
+      "weight": 42,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表空间",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "调试器",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "变量类型",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "操作过程",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "后台线程",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "接收端",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工厂模式",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据传递",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "聚类",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工厂类",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "功能实现",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "条件判断",
+      "weight": 41,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "创建用户",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户权限",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统使用",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "多用户",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "等待状态",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数学公式",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开源软件",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "分割线",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "回车键",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "分块",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类型变量",
+      "weight": 40,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "弱引用",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "知乎",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "取整",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "菜单项",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "文件读取",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开发板",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "位运算",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "应用软件",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "用户态",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类加载",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络地址",
+      "weight": 39,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络应用",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "树形结构",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "启动过程",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "标题栏",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "遍历数组",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "方差",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "灰度",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字典序",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "内网",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数据区",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "覆写",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "事件驱动",
+      "weight": 38,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "获取图片",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "链路",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储位置",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "下拉列表",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "动态创建",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "设计思想",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "安装方法",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络设备",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "归一化",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "无限循环",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "字符流",
+      "weight": 37,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代理类",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "首部",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "提交数据",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "反斜杠",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "中序遍历",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表数据",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "延迟加载",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "触摸事件",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "缓存机制",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "模式匹配",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "有向图",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "发送邮件",
+      "weight": 36,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "前缀和",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "通信协议",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统配置",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "显示文件",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "存储单元",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工作模式",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "三次握手",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "虚拟主机",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "双向链表",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "本地方法",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "网络数据",
+      "weight": 35,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "监听事件",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子查询",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "项目管理",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "外部类",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "源地址",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "引用变量",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "选择排序",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "中文字符",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "奇偶",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "头结点",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "清除缓存",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "表单提交",
+      "weight": 34,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "支付宝",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "业务需求",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "数组名",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统设计",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "图片加载",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "复制文件",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "约束条件",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "程序崩溃",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工程文件",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "信号处理",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "二维码",
+      "weight": 33,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "智能手机",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "工作区",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "健壮性",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "类加载器",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "耦合度",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "服务程序",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "当前路径",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "关联关系",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "压栈",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "系统管理",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代理模式",
+      "weight": 32,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "导入导出",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "基本语法",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开机启动",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "代码编写",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "环境搭建",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "无向图",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "开源框架",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "处理事件",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "优先队列",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "相互转换",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "加密算法",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "垃圾收集",
+      "weight": 31,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "游戏开发",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "贴图",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "删除表",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "当前版本",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "子视图",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    },
+    {
+      "text": "虚拟地址",
+      "weight": 30,
+      "tags": [
+        "it",
+        "tech"
+      ],
+      "source": "THUOCL-IT"
+    }
+  ]
+}

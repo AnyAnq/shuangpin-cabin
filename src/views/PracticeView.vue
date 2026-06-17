@@ -12,6 +12,13 @@ let wrongTimer: number | undefined;
 
 function onKeydown(event: KeyboardEvent) {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (practice.lastStatus === 'complete') {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      void practice.nextUnit();
+    }
+    return;
+  }
   const result = practice.pressKey(event.key);
   if (result.status === 'wrong') {
     window.clearTimeout(wrongTimer);

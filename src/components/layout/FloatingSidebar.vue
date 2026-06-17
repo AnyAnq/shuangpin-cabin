@@ -3,16 +3,48 @@
     <aside class="floating-rail" data-testid="floating-sidebar">
       <div class="brand-mark">拼</div>
       <nav class="rail-nav" aria-label="主导航">
-        <button class="rail-item is-active" type="button" title="练习"><NotebookText /></button>
-        <button class="rail-item" type="button" title="课程"><BookOpen /></button>
-        <button class="rail-item" type="button" title="键位对照"><Keyboard /></button>
-        <button class="rail-item" type="button" title="记录"><ChartColumn /></button>
+        <RouterLink
+          v-for="item in enabledNavItems"
+          :key="item.routeName"
+          class="rail-item"
+          :class="{ 'is-active': route.name === item.routeName }"
+          :to="{ name: item.routeName }"
+          :title="item.title"
+          :aria-label="item.label"
+        >
+          <component :is="item.icon" />
+        </RouterLink>
+        <span
+          v-for="item in disabledNavItems"
+          :key="item.label"
+          class="rail-item is-disabled"
+          :title="item.title"
+          :aria-label="item.label"
+          aria-disabled="true"
+          role="link"
+        >
+          <component :is="item.icon" />
+        </span>
       </nav>
-      <button class="rail-item rail-bottom" type="button" title="设置"><Settings /></button>
+      <span class="rail-item rail-bottom is-disabled" title="设置" aria-label="设置" aria-disabled="true" role="link">
+        <Settings />
+      </span>
     </aside>
   </div>
 </template>
 
 <script setup lang="ts">
-import { BookOpen, ChartColumn, Keyboard, NotebookText, Settings } from '@lucide/vue';
+import { RouterLink, useRoute } from 'vue-router';
+import { ChartColumn, LibraryBig, NotebookText, Settings } from '@lucide/vue';
+import type { Component } from 'vue';
+
+const route = useRoute();
+
+const enabledNavItems = [
+  { label: '练习', title: '练习', routeName: 'practice', icon: NotebookText },
+  { label: '记录', title: '记录', routeName: 'records', icon: ChartColumn },
+  { label: '词库', title: '词库', routeName: 'vocabularies', icon: LibraryBig },
+] as const;
+
+const disabledNavItems: Array<{ label: string; title: string; icon: Component }> = [];
 </script>

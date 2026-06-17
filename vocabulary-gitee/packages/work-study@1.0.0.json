@@ -1,0 +1,8118 @@
+{
+  "schemaVersion": 1,
+  "id": "work-study",
+  "name": "工作学习",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "融合 IT、财经、法律等开源主题词，偏项目、文档、协作和学习表达。",
+  "tags": [
+    "work",
+    "study",
+    "office",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "版权",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "证券",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "房地产",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "制度",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "模式",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "改革",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "权利",
+      "weight": 100,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "监督",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "规范",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "守法",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法院",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "侵犯",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "收购",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "非法",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发展",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上市公司",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违法",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "部门",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "政府",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经济",
+      "weight": 99,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "服务",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执法",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有关部门",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公司",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债券",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "披露",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "专利",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "董事长",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实现",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "市场",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "招标",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "签约",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "评论",
+      "weight": 98,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支持",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欺诈",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冷静",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "院长",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "协商",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "机构",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "能力",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "资源",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "计划",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "系统",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "省委",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分享",
+      "weight": 97,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产品",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "门户网站",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债务",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险公司",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "判决",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汇报",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "网络",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新股",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承包",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "提升",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生效",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "市场经济",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "报告",
+      "weight": 96,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拆迁",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "查处",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产业",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "标注",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "章程",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缺陷",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执行",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "行业",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "默认",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "宏观调控",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "需求",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调整",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遗产",
+      "weight": 95,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方案",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "委员会",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "跨越",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承担责任",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "集团",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利益",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "主席",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经营",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "统计",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "阴谋",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "时代",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "力度",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "收入",
+      "weight": 94,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生态",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "购买",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "回避",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "机会",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "强奸",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债权",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "近年来",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推出",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国家安全",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "价值",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "佣金",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国务院",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "字符串",
+      "weight": 93,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承接",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金融",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出台",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数量",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "责任感",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "权利人",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "银行",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "初始化",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国家法律",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "民生",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分割",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "侵权行为",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数组",
+      "weight": 92,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "费用",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "电站",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "近期",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "证券市场",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风险",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "营业执照",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违约",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "设立",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "通道",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "协议",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "创造",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全球化",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "强化",
+      "weight": 91,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "操作",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "升级",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "消费",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "市盈率",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推迟",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "救援",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "虐待",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "增值税",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商业",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财政",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违法行为",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "美元",
+      "weight": 90,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "未成年人",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "损失",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "律师",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "优惠",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "没收",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推荐",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "突破",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有车",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有效期",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年度",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "治理",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "维权",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信息披露",
+      "weight": 89,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "对价",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执法人员",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "注册",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "建设部",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "标签",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "直辖市",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "批准",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开通",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "印花税",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上升",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "医疗保险",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "渠道",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "查询",
+      "weight": 88,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辩护",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "从业人员",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "交易",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支付",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "谋杀",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "加载",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信访",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "达成",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抵触",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一审",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承诺",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "淘宝",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "环保",
+      "weight": 87,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "登记",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人事部",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "博客",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扶贫",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "战时",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "侵犯版权",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "趋势",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贿赂",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "建设工程",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "客户端",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "配置",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应用程序",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "争执",
+      "weight": 86,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "论坛",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "职权",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自定义",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违规",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金额",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年度报告",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调研",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "注册商标",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发展规划",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "机场",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "低于",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商品",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贸易",
+      "weight": 85,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经营范围",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工资",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "能源",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指标",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "裁决",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保全",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "裁定",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "评估",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "涉案",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "注销",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出口",
+      "weight": 84,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "配置文件",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "退出",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伪造",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财产",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "专题",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "总经理",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "环球",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合同",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缺席",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "封装",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "研发",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仿冒",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财经",
+      "weight": 83,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上涨",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "医疗费",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "字段",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "归还",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "队伍建设",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "超标",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债权人",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挪用",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "道路交通",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "考核",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接管",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "配偶",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "补贴",
+      "weight": 82,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "计算",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "建设用地",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "殴打",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "现金",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上市",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "资本",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乙方",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兼并",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "家产",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贷款",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "印章",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推翻",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法学院",
+      "weight": 81,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "资产",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "行情",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分配",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "理财",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "投诉",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "预期",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信号",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经营权",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "委托",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "解决方案",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红包",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鉴定",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "当事人",
+      "weight": 80,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经理",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "案例",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "预算",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "起诉",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "客服",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新材料",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "特权",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "预测",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "编译器",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "要约",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "差距",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "母公司",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "态势",
+      "weight": 79,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重启",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公司债",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "破案",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "船员",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "手按",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "控件",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "子类",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "反垄断",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高层",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "社会治安",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中央军委",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "政治部",
+      "weight": 78,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "进口",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浮动",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法医",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文件名",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前景",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "微软",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "总额",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "座谈会",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利润",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "竞价",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支出",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "农业银行",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "竞争力",
+      "weight": 77,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "融资",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "繁荣",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调查报告",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "审核",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "对冲",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债务人",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据结构",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "股份",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "收取",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "初始",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指数",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据类型",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "效应",
+      "weight": 76,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "福利",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "麻醉药品",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国有股",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文化部",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合同约定",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "补偿",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "清偿",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "构造函数",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "潜力",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分居",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违约金",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "短期",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "季度",
+      "weight": 75,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开发者",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "品种",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "级别",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "私营企业",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "幅度",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "出售",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "规范性",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄金",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产权",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国家主席",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经济法",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "期限",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "收益",
+      "weight": 74,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "营销",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商务",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "解决方法",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "用户名",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "典当",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财富",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "顾客",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发行",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财务",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "账户",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "投资者",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "专利权",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "和谐发展",
+      "weight": 73,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "受损",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "头文件",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缴纳",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "税收",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "主管部门",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "备忘录",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "货币",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "命令行",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "研究员",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基金会",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百分点",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "展期",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "废除",
+      "weight": 72,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实例化",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "递归",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "物业",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "特区",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "等级",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日期",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "父类",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "医药费",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商业贿赂",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "企业家",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "按揭贷款",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "比重",
+      "weight": 71,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "崛起",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "代理",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "用词",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "多线程",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调控",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "协同",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下毒",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全文检索",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "业绩",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "反垄断法",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "本土",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "证券法",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "农产品",
+      "weight": 70,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "笔录",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数额",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "租赁",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "弄虚作假",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公司债券",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "储备",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "查获",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "组合",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "环境变量",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "古希腊",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "周期",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "列席",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "着手",
+      "weight": 69,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "通讯",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "右键",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "加工贸易",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "服务器端",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "判决书",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恶化",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "友谊",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "责任人",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "正规",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "强制执行",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "控股公司",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国际化",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "流通",
+      "weight": 68,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生命周期",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "企业制度",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中签",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奖金",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "供给",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财政部",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信用",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类名",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "优先级",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "备案",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "捐款",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "控告",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挂牌",
+      "weight": 67,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "筹备",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下滑",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上月",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "官网",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法律文件",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上传",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开发区",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成员变量",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迭代",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泄密",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赚钱",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "程序运行",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "个体",
+      "weight": 66,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "服务端",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "变更登记",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "市场化",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "板块",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成交",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中介",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "根目录",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下跌",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年终奖",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "胁迫",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "垫付",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "涨幅",
+      "weight": 65,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "链表",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "太平洋",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "排放标准",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "受贿",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文件系统",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "废止",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "初期",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "暂行规定",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开发人员",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牟利",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嵌套",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中小企业",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "联营",
+      "weight": 64,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全局变量",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "达标",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "要件",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产量",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "婚约",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险合同",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "订单",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "均衡",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执行董事",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "存款",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嫖客",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "驻外",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "划转",
+      "weight": 63,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经营者",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "行为规范",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内存空间",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "版本号",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下载地址",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "波动",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "房屋拆迁",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承兑",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "后缀",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "娱乐活动",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "招商",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "华侨",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "构造方法",
+      "weight": 62,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "审计",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轮奸",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "宅基地",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "结点",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青霉素",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "源文件",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "电子商务",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "股票",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小产权",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "份额",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执业证",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "医疗事故",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "局部变量",
+      "weight": 61,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违约责任",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "集体经济",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "未遂",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挂靠",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "结算",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中央党校",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "隔离",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安全局",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "函数调用",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "业界",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "复杂度",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国企",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赋值",
+      "weight": 60,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "促销",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自动生成",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "签字",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前提条件",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "垄断",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利率",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实现类",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "社保",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "承包经营",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迎刃而解",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "市纪委",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "额度",
+      "weight": 59,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "月薪",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "非机动车",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "租金",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合并",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "股息",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "定价",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "低价",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "进出口",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发改委",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "反弹",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欧元",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商业企业",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "控股",
+      "weight": 58,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "感化",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "堆栈",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转让",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "改革试点",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "担保",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "外资",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指引",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "瓶颈",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "定点",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开办",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基类",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "整型",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "函数返回",
+      "weight": 57,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "优惠价格",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "股东",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "表单",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上游",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "运算符",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拘捕",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法人",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "只读",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "特别规定",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "懈怠",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "错误信息",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "滥用职权",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "收回",
+      "weight": 56,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "央行",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "农业税",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "形态",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "筹集",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转换",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信贷",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "银行卡",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "专利产品",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "被盗",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拆迁人",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "网点",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一级市场",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "走势",
+      "weight": 55,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "攀升",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "名胜古迹",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刑事辩护",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仓单",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "犯罪团伙",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "寄存器",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "虚假广告",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工业产品",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仓库",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内幕交易",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工商局",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应诉",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "厂房",
+      "weight": 54,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "主线程",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "个体户",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "被执行人",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "招标投标",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "假药",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "结构性",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赔礼道歉",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缴费",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据源",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稳步增长",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "地方法",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "到期",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "操作符",
+      "weight": 53,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缩放",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "混合",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "招商引资",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "法制办",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抽象类",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小产权房",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "回调函数",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "静态方法",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "返回结果",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "读取数据",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "步骤",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "区间",
+      "weight": 52,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "显式",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "要约收购",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参与者",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "社会公德",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商会",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "当前目录",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缺口",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国际上",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产值",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "宣告",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "变量名",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "统战部",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下调",
+      "weight": 51,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "依法治国",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "履行合同",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "款项",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利息",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大小写",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国民经济",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "责任保险",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "作用域",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自告",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "布局文件",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "包名",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "获利",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "创建对象",
+      "weight": 50,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "吸收合并",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "测试数据",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安全性",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "端口号",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "亏损",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "复用",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "存放",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "诈骗罪",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "存储空间",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重新启动",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "低迷",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "巨头",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "库存",
+      "weight": 49,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "吸纳",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恐慌",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "强制措施",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抛出异常",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类库",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "代码实现",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "电网",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上调",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经研究",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "有价证券",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "标识符",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类别",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "原告",
+      "weight": 48,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方法调用",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挪用公款",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "区别对待",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "筛选",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "华商",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "直接访问",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "编程语言",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "非法经营",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "业务逻辑",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "序列化",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "四大",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "价值判断",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "袭警",
+      "weight": 47,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "亚太",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成员函数",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据存储",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "多样化",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "可执行",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "快捷键",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "合作社",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "字节数",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "设计模式",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "资源税",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伪劣产品",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "存单",
+      "weight": 46,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重定向",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "考量",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "报酬",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "增值",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "结构优化",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调用函数",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "代码块",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "垄断行业",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方法名",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "致残",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "流动性",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参考资料",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "索赔",
+      "weight": 45,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "线程安全",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "财力",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "测量",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赝品",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "债权债务",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "余额",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "主键",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "命名空间",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红利",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经销商",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基本农田",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险单",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调用方法",
+      "weight": 44,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赌博",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "执行过程",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "构筑",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "模型",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "产权制度",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纳税人",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经济价值",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "议定书",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工具类",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "男女平等",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前手",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "兼职",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拨款",
+      "weight": 43,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扣除",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "返还",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "商业保险",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据传输",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "首创",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "付款",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "偿还",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "预处理",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "获取数据",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险代理",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "示例代码",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "集会",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "错漏",
+      "weight": 42,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内需",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "议案",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "监督权",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文件路径",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公司合并",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "惯例",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中级法院",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "突破口",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参数传递",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年会",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重置",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新版本",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "副主席",
+      "weight": 41,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "偏移量",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "密度",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "均价",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "闲置",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重命名",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "区域性",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冻结",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据库",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "跨平台",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "行长",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "核准",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一季度",
+      "weight": 40,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文本文件",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "慰问金",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "楼盘",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "观测",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "董事",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工作原理",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险金额",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开发环境",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "约瑟夫",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "依赖关系",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "子目录",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扭亏为盈",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凭证",
+      "weight": 39,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拖欠",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "编号",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "个体经营",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "劳务派遣",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遣返",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "系统调用",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "团购",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "数据集",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类对象",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发送消息",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "句柄",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下划线",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浮点数",
+      "weight": 38,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "签章",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欺骗",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面向对象",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "增长率",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日志文件",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "持久化",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "博弈",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利好",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二维",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "经济犯罪",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泡沫",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "世博",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "配置信息",
+      "weight": 37,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "实战",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参数类型",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全国性",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卖出",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贸易壁垒",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "资源文件",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "募集",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绝对路径",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "透明度",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转包",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "打开文件",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汇率",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稳健",
+      "weight": 36,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内存管理",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "购房者",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肖像权",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "信用卡",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安全监督",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "彩票",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安装包",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公务员法",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "薪酬",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "社会保险",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "折扣",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "英镑",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违章建筑",
+      "weight": 35,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "静态变量",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "投标",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应用场景",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "涉案金额",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基本类型",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "进场",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "迭代器",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "软件开发",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类继承",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "审判长",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "落下",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工商注册",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "正常运行",
+      "weight": 34,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "企业效益",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "存储数据",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "批准文号",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "点击事件",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "程序代码",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "成交量",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "裁定书",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "目录结构",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "日元",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "类型转换",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "严重程度",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "构造器",
+      "weight": 33,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "多态",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "访问权限",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "民事案件",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "交易所",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二叉树",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内存地址",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内部类",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "集合",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "核定",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "监听器",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分隔符",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基准",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "表名",
+      "weight": 32,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "分页",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "企业债券",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参保",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冒号",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "十六进制",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "总收入",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "网络连接",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "修饰符",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重新编译",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "破产",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开源项目",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大数据",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稳定性",
+      "weight": 31,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "规章",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仲裁机构",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "线程池",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "时间戳",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "参考文献",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保险法",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "元数据",
+      "weight": 30,
+      "tags": [
+        "work",
+        "study"
+      ],
+      "source": "THUOCL"
+    }
+  ]
+}

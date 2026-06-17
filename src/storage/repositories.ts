@@ -28,6 +28,11 @@ export async function listMistakesForPractice(scheme: ShuangpinSchemeId, now = D
     .slice(0, limit);
 }
 
+export async function listMistakesByScheme(scheme: ShuangpinSchemeId): Promise<MistakeRecord[]> {
+  const records = await db.mistakes.where('scheme').equals(scheme).toArray();
+  return records.sort((a, b) => b.lastWrongAt - a.lastWrongAt);
+}
+
 export async function markMistakeCorrect(id: string, now = Date.now()): Promise<void> {
   const record = await db.mistakes.get(id);
   if (!record) return;

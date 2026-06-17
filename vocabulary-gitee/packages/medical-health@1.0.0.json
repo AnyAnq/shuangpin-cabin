@@ -1,0 +1,7217 @@
+{
+  "schemaVersion": 1,
+  "id": "medical-health",
+  "name": "医学健康",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "来自 THUOCL 医学词库，适合健康、医疗和身体相关表达训练。",
+  "tags": [
+    "medical",
+    "health",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "精神",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医院",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "检查",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "死亡",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "恢复",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "意识",
+      "weight": 100,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "治疗",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卫生",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "患者",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "检测",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "接触",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "监测",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "应急",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "缓解",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "预防",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "损害",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疾病",
+      "weight": 99,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "手术",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病人",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "人体",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "感染",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "症状",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医学",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "一次性",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "诊断",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医药",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "防治",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "辐射",
+      "weight": 98,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "吸收",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "敏感",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药物",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "人民医院",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "部位",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "康复",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "自杀",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "营养",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流行",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高压",
+      "weight": 97,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗机构",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急救",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "残疾人",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "婴儿",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血液",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "皮肤",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "复苏",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "应急预案",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临床",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "扩张",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "保健",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "残疾",
+      "weight": 96,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "救护车",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抑制",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "视觉",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "良性",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "样本",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "不适",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫情",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "身高",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "多发",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中医",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "重组",
+      "weight": 95,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体内",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "损伤",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消化",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "怀孕",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "积水",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病毒",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "诊疗",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心脏",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "计划生育",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体重",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "视角",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "恶性",
+      "weight": 94,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "神经",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "癌症",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨折",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "致死",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消毒",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疲劳",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呼吸",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "公共卫生",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疼痛",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "孕妇",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "基因",
+      "weight": 93,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "瘫痪",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "昏迷",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "伤口",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "检疫",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "糖尿病",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "外科",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高血压",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心脏病",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卫生局",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "样品",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中毒",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肢体",
+      "weight": 92,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "睡眠",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生命力",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中药",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生理",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大脑",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肿瘤",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "发育",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "按摩",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乏力",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呼吸道",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "萎缩",
+      "weight": 91,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "弹性",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肌肉",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体质",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "器官",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "再生",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "发热",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呕吐",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "治愈",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "出血",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "咳嗽",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "发作",
+      "weight": 90,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急诊",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血压",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "轮椅",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "发烧",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传染病",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "头痛",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "移植",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "细菌",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "注射",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫苗",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "负荷",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "慢性",
+      "weight": 89,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急性",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "矫正",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血管",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颈部",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "视力",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "植入",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "诊治",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "二氧化碳",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "监护",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "维生素",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "烧伤",
+      "weight": 88,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急救车",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "创伤",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "分化",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "细胞",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "发病率",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "头晕",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "恶心",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "白血病",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "外伤",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗保障",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "死亡率",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "新生儿",
+      "weight": 87,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "艾滋病",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大腿",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "背部",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流泪",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腹泻",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抽样",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "水污染",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗器械",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "内科",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大拇指",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精神病",
+      "weight": 86,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脂肪",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "激光",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "化验",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "儿科",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "根治",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生命体征",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "防疫",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传染",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "窒息",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "并发症",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体温",
+      "weight": 85,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "畸形",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "硬化",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "蛋白质",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨头",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "标本",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "口腔",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "饱和",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "晚期",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "错位",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "四肢",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝脏",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "主任医师",
+      "weight": 84,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "确诊病例",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "阳性",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高危",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "献血",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "后遗症",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "处方",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "免疫力",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鉴别",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胎儿",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急诊科",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "低位",
+      "weight": 83,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨科",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "复发",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "遗传",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "输血",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "慢性病",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中风",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "失眠",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病因",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "舌尖",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脉络",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "微生物",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抗生素",
+      "weight": 82,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "开裂",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "竞争性",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "急救中心",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "过敏",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病变",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传感器",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "包扎",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "猝死",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "关节",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心痛",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "衰竭",
+      "weight": 81,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "失明",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疗法",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "剂量",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肾脏",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "紧急救援",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "擦伤",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "低压",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血糖",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "基本药物",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "分娩",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "缺氧",
+      "weight": 80,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "诱因",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "眼科",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "眼眶",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "担架",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精神疾病",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "挫伤",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "取样",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肠胃",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "意外伤害",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "安全防护",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胶囊",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "接种",
+      "weight": 79,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "应急办",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "支架",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "妇产科",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "综合征",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流产",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "刺伤",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "防风",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肺癌",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "麻木",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "解剖",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "纱布",
+      "weight": 78,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抵抗力",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肺炎",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心血管",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "免疫",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "超负荷",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "隐性",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "妇科",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "不良反应",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "食物中毒",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抑郁症",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消退",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "麻醉",
+      "weight": 77,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抽样调查",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "感染者",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "红肿",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "激素",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "分泌",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "苍白",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "炎症",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乳腺癌",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "咬伤",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "残障",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "异物",
+      "weight": 76,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "烫伤",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腹痛",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨骼",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫病",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胸闷",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "甲醛",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "指甲",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "紊乱",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呼吸系统",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "下肢",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "咽喉",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卫生监督",
+      "weight": 75,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "内分泌",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疗程",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "休克",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "住院部",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "软组织",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "主治医师",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "机能",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "产后",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "产科",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物技术",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "复活",
+      "weight": 74,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大动脉",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "月经",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "截肢",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "无偿献血",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "性行为",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "变异",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "共生",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肤色",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "针灸",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药物治疗",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "预防措施",
+      "weight": 73,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生殖",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抽搐",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "水灾",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "麻痹",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肠道",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "游离",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "紫外线",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "反射",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血流",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "先天性",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "直接接触",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "撕裂",
+      "weight": 72,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨髓",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "专科医院",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝癌",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "毒素",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "凹陷",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "金门",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "阴性",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病理",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "白内障",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "伤疤",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脱水",
+      "weight": 71,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "刺痛",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "职业病",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药剂",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "拇指",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "缝合",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呼吸机",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "一致性",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "制剂",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "县医院",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "神经系统",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "敏感性",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "妊娠",
+      "weight": 70,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "放射",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "止血",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "协和医院",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "动脉",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "幻觉",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "便秘",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "光滑",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生长发育",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "黏膜",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "尿液",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "微量元素",
+      "weight": 69,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "失调",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高危人群",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医学观察",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "知觉",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颈椎",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医德",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疑似病例",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "贫血",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "气囊",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "食指",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "坏死",
+      "weight": 68,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "嗅觉",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物学",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "突变",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "营养不良",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "神经外科",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "气管",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "皮肤病",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肋骨",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "村卫生室",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中枢",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫区",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血脂",
+      "weight": 67,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "重症监护",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "社区医院",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "人参",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "近视",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "口服",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精神障碍",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗事故",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "挥发性",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "摄取",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流行病学",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "子宫",
+      "weight": 66,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "早产",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "灼伤",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临床表现",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "愈合",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颅脑损伤",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "软化",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "闭环",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腰椎",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "超生",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乙醇",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "皮肤科",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物科技",
+      "weight": 65,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临床医学",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肺结核",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中草药",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血型",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "核酸",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "降压",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "矫治",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "咀嚼",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "采血",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "健康档案",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体征",
+      "weight": 64,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胃癌",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "预防为主",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心电图",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胆固醇",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "推拿",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "听觉",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传染性",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "接种疫苗",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "微循环",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "难产",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "器官移植",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病毒感染",
+      "weight": 63,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中指",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "静脉",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临界点",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "薄膜",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "干细胞",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "理疗",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临床试验",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "透析",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乡村医生",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "间歇性",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "免疫系统",
+      "weight": 62,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "喷雾",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "烧死",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "神经内科",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心率",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "水肿",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "土壤污染",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "县级医院",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "淋浴",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "头皮",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "失能",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "伸展",
+      "weight": 61,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "变性",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抗体",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流感疫苗",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "癫痫",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "亚健康",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "猕猴桃",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胃肠道",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "溃疡",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "塑化剂",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血站",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乳房",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "性病",
+      "weight": 60,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "潜意识",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "避孕",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精子",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "面罩",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "安眠药",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "控制措施",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "绷带",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "同源",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "神志不清",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "优生",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "海豹",
+      "weight": 59,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "兴奋剂",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体外",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脑出血",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精神科",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "眩晕",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "四强",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "氨基酸",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "挂号费",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心脑血管",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫苗接种",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "复诊",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "植物人",
+      "weight": 58,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "聋哑",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "酸痛",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "处方药",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "偶发",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "潜伏期",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "解毒",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传播途径",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "毛发",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消化系统",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肾病",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "浸润",
+      "weight": 57,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "外科手术",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肺病",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "筋骨",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肩部",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "表皮",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "二氧化氮",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻涕",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血小板",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胃病",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "角膜",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨髓移植",
+      "weight": 56,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝病",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "裂纹",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "喘息",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻腔",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心肺复苏",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "二级医院",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "哺乳期",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "变态",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "产前",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胸腔",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "功能障碍",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "登革热",
+      "weight": 55,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "绝症",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "口渴",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疼痛难忍",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "无意识",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颜面",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消炎",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "宫颈癌",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "瘙痒",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "排泄",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胰岛素",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "泌尿外科",
+      "weight": 54,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心理治疗",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "出生率",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "关节炎",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "综合防治",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻梁",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乳腺",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝硬化",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "执业医师",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "空腹",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "韩启德",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "换气",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻炎",
+      "weight": 53,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "成活",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "扭伤",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "排泄物",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腹腔",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脾胃",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "综合症",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颈椎病",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝炎",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "学名",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "昏厥",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "携带者",
+      "weight": 52,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "结核病",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "移位",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "温度计",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "菌落总数",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "梗阻",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疾患",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "痉挛",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "手足口病",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "海马",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "用药安全",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "毁容",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "临床经验",
+      "weight": 51,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "试剂",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脑震荡",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流行病",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "经络",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻孔",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "骨质疏松",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生育率",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "无菌",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "不规则",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "健脾",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肋骨骨折",
+      "weight": 50,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疗养院",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "甲醇",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "甲状腺",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "显微镜",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肺部感染",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "味蕾",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疟疾",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "缺血",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "寄生虫",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "窗口期",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "呼气",
+      "weight": 49,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药学",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "湿热",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "成熟期",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "葡萄糖",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "止痛",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "阴道",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "盲道",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "味觉",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "显性",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "亲子关系",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "斑点",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血性",
+      "weight": 48,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脐带",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血栓",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "晕厥",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "健康证",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "排便",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "预防接种",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "张璐",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "充血",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "皮疹",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腹胀",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "气泡",
+      "weight": 47,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "婚姻状况",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "膝关节",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "假肢",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "橄榄油",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "润滑油",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "退烧",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血量",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "偏瘫",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "真皮",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "交叉感染",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中医科",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "前列腺",
+      "weight": 46,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卫生保健",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肝功能",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "食欲不振",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脑血管",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "毛细血管",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "过敏反应",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "免疫功能",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血浆",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肌腱",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大肠杆菌",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "耳鸣",
+      "weight": 45,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抗菌",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药箱",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "告知义务",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "对症治疗",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肾功能",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "检定",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "增生",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "口腔科",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肿块",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "放射线",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "雌激素",
+      "weight": 44,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "可卡因",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "补肾",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肛门",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "亲子鉴定",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "细菌感染",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "疫情监测",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "优生优育",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "结石",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "头骨",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血库",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "支气管炎",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "健康促进",
+      "weight": 43,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "合作医疗",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "基因组",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "后脑",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "冻伤",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医疗设施",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生殖器",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病程",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "并指",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "正常值",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血清",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "唾液",
+      "weight": 42,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "烧伤面积",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "缓冲区",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颅骨",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "不孕不育",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "淋巴",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "颅内出血",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脑死亡",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消化内科",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "病死率",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "梅毒",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生理学",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "狂犬病",
+      "weight": 41,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心悸",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "体液",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抗衰老",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "动脉硬化",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "清热解毒",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高原反应",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "气短",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脑梗塞",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "性功能",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "转角",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "五脏",
+      "weight": 40,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "致病菌",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "吞咽",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卵巢",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "鼻塞",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "淤血",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "霉菌",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "霍乱",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "传染源",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "乙肝疫苗",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "卵子",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "补血",
+      "weight": 39,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "注射器",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "视网膜",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "避孕套",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "癌变",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大肠菌群",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "整形手术",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "太阳穴",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "耳聋",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "暴饮暴食",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "触觉",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "整形外科",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "慢病",
+      "weight": 38,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "耐药性",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "盆腔",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "膀胱",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胎盘",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "活血",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医风",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "湿疹",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胸痛",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "节育",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "食道",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "羊水",
+      "weight": 37,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "低血糖",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心绞痛",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物医学",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "主动脉",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "检出率",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脂肪肝",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "数据管理",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "循环系统",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "麻疹",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "适应症",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "中医学",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生物安全",
+      "weight": 36,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "高位截瘫",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "胃痛",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "水生植物",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肠梗阻",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "生长期",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "白细胞",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "耐药",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "社区医疗",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精液",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "软骨",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "营养学",
+      "weight": 35,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "医院感染",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "失语",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "血常规",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "迈步",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "心肺功能",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "真菌",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "大肠",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "韧带",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "剖宫产",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "三七",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "小肠",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "超声波",
+      "weight": 34,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "尿素",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消毒液",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "药膏",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "家族史",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "排尿",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "青紫",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "抗病毒",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "止痛药",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "灵芝",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "结核",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "带状",
+      "weight": 33,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "加温",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "蒲公英",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "盐酸",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "产卵",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "脾脏",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腰痛",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "痛风",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "氯胺酮",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "前列腺癌",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "腰围",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "复位",
+      "weight": 32,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "枝条",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "精神失常",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "当归",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "狂躁",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "冬虫夏草",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "粘膜",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "受体",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "消毒剂",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "易感人群",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肌肉萎缩",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肾结石",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "光谱",
+      "weight": 31,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "纤维素",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "板蓝根",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "流涕",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "结肠癌",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "皮炎",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    },
+    {
+      "text": "肾移植",
+      "weight": 30,
+      "tags": [
+        "medical",
+        "health"
+      ],
+      "source": "THUOCL-medical"
+    }
+  ]
+}

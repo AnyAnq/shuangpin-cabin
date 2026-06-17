@@ -1,0 +1,8118 @@
+{
+  "schemaVersion": 1,
+  "id": "life-consumption",
+  "name": "生活消费",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "融合饮食、地名、汽车等开源主题词，覆盖生活、出行和消费场景。",
+  "tags": [
+    "life",
+    "shopping",
+    "travel",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "土豆",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苹果",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛋糕",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛奶",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面包",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "萝卜",
+      "weight": 100,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "巧克力",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "点心",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "火锅",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海鲜",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "葡萄酒",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "包子",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "馒头",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "羊肉",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "柠檬",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香蕉",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "淀粉",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酱油",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "核桃",
+      "weight": 99,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "饮用水",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸳鸯",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青团",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米饭",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸奶",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆浆",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白糖",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方便面",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "可口可乐",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乙醇",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红柿",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "普洱茶",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西红柿",
+      "weight": 98,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茅台",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼类",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "磷酸",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "托盘",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青梅",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丁香",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中国",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轿车",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二手车",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新车",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "摩托车",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "用车",
+      "weight": 97,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "熊猫",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "车展",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "模具",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仪表",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一汽",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遥控",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "零部件",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全保",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奥迪",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "制动",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "星光",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "马自达",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牵引",
+      "weight": 96,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扭矩",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "霸道",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "加油站",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雅阁",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "多普达",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指挥官",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "试驾",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "驾校",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "比亚迪",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铃木",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雷诺",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无畏",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "幻影",
+      "weight": 95,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "磨合",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "越野车",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风华",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "沙拉",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶油",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "石膏",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "石榴",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆油",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶酪",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青菜",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶茶",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉眼",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "跃进",
+      "weight": 94,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "木耳",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铁板",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生姜",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄豆",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三七",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤肉",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大肉",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "林肯",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "北京现代",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新车型",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乐风",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "展馆",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "洋葱",
+      "weight": 93,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "娃哈哈",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香菇",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油品",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "松花",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "川菜",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海带",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五粮液",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "电瓶",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东风日产",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "多宝",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金鹰",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱿鱼",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山药",
+      "weight": 92,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "聚乙烯",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "飞碟",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "橄榄油",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冬瓜",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "果后",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "推车",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒙迪欧",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "韭菜",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纯净水",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "狗肉",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甘露",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰点",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆芽",
+      "weight": 91,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "释迦",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "比萨",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "熄火",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖水",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前保",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "胡萝卜素",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "排放标准",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香草",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "藏宝",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泡菜",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "野马",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "斯柯达",
+      "weight": 90,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铁观音",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "如虎",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼头",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鲜奶",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "盐酸",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "尾灯",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油条",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "叶酸",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "诺亚",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "虾米",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "防腐剂",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稻谷",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "粤菜",
+      "weight": 89,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "磷脂",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "健力",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香肠",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "桔子",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烟熏",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花生油",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "康师傅",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乐骋",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "健力宝",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香菜",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "斯巴鲁",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新凯",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金牛座",
+      "weight": 88,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸡尾酒",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全聚德",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "咖啡因",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "劲风",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二氧化硫",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猎豹",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中高级车",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猪肝",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "馄饨",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "威士忌",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自动挡",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冷面",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "犀牛",
+      "weight": 87,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新凯越",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拖车",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欧陆",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面皮",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "计程车",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烧肉",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "咖喱",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山鸡",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "紫菜",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百事可乐",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米线",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄油",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米粥",
+      "weight": 86,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汽车价格",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乌龙茶",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挡风玻璃",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤箱",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猕猴桃",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "家常菜",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "果肉",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰激凌",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米面",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奥克斯",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三明治",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "带鱼",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大丰收",
+      "weight": 85,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千张",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芭蕉",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "讴歌",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生菜",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酥油",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奥德赛",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉干",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碳纤维",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛肉面",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抗氧化剂",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "煎饼",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东风悦达",
+      "weight": 84,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东风本田",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "战斧",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "清汤",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "湘菜",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莱姆",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "露丝",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耗油",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海盐",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑豆",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "挑战者",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "品牌汽车",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "腊肉",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "臭豆腐",
+      "weight": 83,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奥丁",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嘉华",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖浆",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "寸金",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "柠檬汁",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白果",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天麻",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "老酒",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "富春",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花菜",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贵州茅台",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油茶",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雪梨",
+      "weight": 82,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "布丁",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "标枪",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铁蛋",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杂碎",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "咖啡豆",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高档轿车",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天津一汽",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红葡萄酒",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "明胶",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酒肉",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "棉花糖",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "千斤顶",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杜康",
+      "weight": 81,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "滑石粉",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "柑桔",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "源通",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二锅头",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "葡萄干",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莲藕",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "梅赛德斯",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "强音",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凉粉",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "梨子",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芥末",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芝士",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芦笋",
+      "weight": 80,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碳酸钙",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤鱼",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "麻辣烫",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水蜜桃",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "真空泵",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油酸",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乙酸",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "欧宝",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "培根",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炸食",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凌志",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "柠檬酸",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "颐达",
+      "weight": 79,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小灯",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扣肉",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛乳",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杏子",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凉菜",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "掌上明珠",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "果胶",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茶汤",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白油",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "戴姆勒",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "核桃仁",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸭肉",
+      "weight": 78,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "草鱼",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "满汉全席",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汽车贸易",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "番茄酱",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大富豪",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "休闲车",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "干红",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伏特加",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "被动安全",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酒酿",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜瓜",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "盖板",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糙米",
+      "weight": 77,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "火腿肠",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无花果",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "逍客",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛肉干",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣子",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑森林",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三文鱼",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乳酸钙",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一汽轿车",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "涮羊肉",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼丸",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水煮鱼",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龙井茶",
+      "weight": 76,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仪表台",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绿豆汤",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "马仔",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鹅肉",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "双喜临门",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酷路泽",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "老爷车",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "腿部空间",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肖子",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "源动力",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碧螺春",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金枪鱼",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热板",
+      "weight": 75,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "粉条",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "石蜡",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乳猪",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉末",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "玩车",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "清酒",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奇异果",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白肉",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "进气格栅",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稳定剂",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铆钉",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "菜籽油",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "意大利面",
+      "weight": 74,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛油",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "松风",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "霸王别姬",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茶多酚",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "菱角",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酒廊",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "墨鱼",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "工位",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆豉",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐干",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猪血",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "人参果",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "驴肉",
+      "weight": 73,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金玉满堂",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "油面",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "葱段",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甩尾",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "扇贝",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "英菲尼迪",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泸州老窖",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "八宝饭",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凉皮",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山核桃",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "洋河",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鼓风机",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "国珍",
+      "weight": 72,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "哈密瓜",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼生",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "部分车型",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脐橙",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红油",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红果",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西湖龙井",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "改款车",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大团圆",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "公路客运",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红椒",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "煮鸡蛋",
+      "weight": 71,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大红袍",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "薏仁",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海红",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "春卷",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新红",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "驼峰",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大众中国",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西兰花",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伯顿",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄粉",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "港红",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "狗不理",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "椒盐",
+      "weight": 70,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "头部空间",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "里脊",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乳化剂",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "砂纸",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "德尔福",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "双鹤",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣椒酱",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鳕鱼",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新爱丽舍",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金元宝",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "樟脑",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白茶",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑米",
+      "weight": 69,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汽车营销",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "腊八粥",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酥油茶",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "年度车",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白鹅",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "海蜇",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "颂歌",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "远舰",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山地车",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小酒馆",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸭脖",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤羊肉",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "亚油酸",
+      "weight": 68,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利欧",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炒面",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜味剂",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "生蚝",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金针菇",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "椰树",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苏打水",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "狮子头",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汤包",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "镀锌板",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "银鱼",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安源",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "起司",
+      "weight": 67,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芽菜",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "剑南春",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰峰",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "螺蛳",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鹅肝",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "木糖醇",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "防爆膜",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "氯化钾",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高岭土",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆皮",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "托架",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "维修厂",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "华凌",
+      "weight": 66,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杏花村",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鹿肉",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碧海银沙",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烟酸",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面筋",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丙二醇",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "领航员",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "力存",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "过桥米线",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "核黄素",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大包围",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "葡萄柚",
+      "weight": 65,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乙炔",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤全羊",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "解百纳",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜酒",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香槟酒",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前围",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鲁菜",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "家庭版",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "明矾",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白葡萄酒",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "练习曲",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛋卷",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰糖葫芦",
+      "weight": 64,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花糕",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "罗汉果",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "南翔",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "重庆火锅",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炸酱面",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鹌鹑蛋",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "逃遁",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莴笋",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣椒粉",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉粥",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆汁",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "礼记",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "孜然",
+      "weight": 63,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "吐司",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛尾",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐脑",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "火龙果",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "动物油",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "制动液",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "止回阀",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "车展期间",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "倒模",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风挡玻璃",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼子酱",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西芹",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白粥",
+      "weight": 62,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伽马",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轮定位",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金屋藏娇",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苦中作乐",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "电解液",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "动力转向",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑松",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "松茸",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烧鹅",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "啫喱",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龙丹",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轮距",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "硬脂酸",
+      "weight": 61,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "真空管",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "薄饼",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "亚麻酸",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山竹",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "沙拉酱",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "湘莲",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "志翔",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "别克凯越",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒜苗",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苹果酸",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛扒",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "吐温",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "八宝粥",
+      "weight": 60,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛骨",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "隆鑫",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小火煮",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "恒温空调",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凤爪",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芭乐",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛鞭",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "支持环",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花生仁",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "膜片",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绿豆芽",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "曲酒",
+      "weight": 59,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青果",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肠粉",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "通心粉",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "古井贡",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "羊排",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "应急灯",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泡馍",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冬枣",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "回锅肉",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糕饼",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "业界动态",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "保健茶",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸梅汤",
+      "weight": 58,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛磺酸",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苦丁茶",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "调和油",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "淀粉酶",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卤味",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖衣炮弹",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛋挞",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛杂",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "漂白剂",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "赤豆",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "柠檬黄",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "植酸",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "馍馍",
+      "weight": 57,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肥肠",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "葡萄汁",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑胡椒",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "基摩",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冠生园",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "张记",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新能源车",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "姜黄",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "上清饮",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "爆肚",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "测试机",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "手动豪华",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锅贴",
+      "weight": 56,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "琼脂",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "布加迪",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小馒头",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甲壳素",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "眼肉",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤羊肉串",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "昌河铃木",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "违章查询",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中华骏捷",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前风挡",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蔬菜汤",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "下护",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天果",
+      "weight": 55,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炒米",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣汤",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糌粑",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茭白",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花卷",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "着色剂",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甘氨酸",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "浆水",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高位刹车",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茼蒿",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑茶",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轩尼诗",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "氧化镁",
+      "weight": 54,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "四轮定位",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酒精饮料",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒜蓉",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龙凤呈祥",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸菜鱼",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烧心",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "连接管",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "提拉米苏",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "果佳",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "焦糖",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糯米饭",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "开口笑",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白豆",
+      "weight": 53,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炖肉",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "达路",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百页",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "武昌鱼",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苞米",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "楼外楼",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米果",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "土豆泥",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "车载电话",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "小茴香",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蓝带",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金耳",
+      "weight": 52,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "贾新光",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "天仁",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "马肉",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸭脖子",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "草菇",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苹果醋",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "面鲜",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "发菜",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蜜柑",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碳酸氢钠",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉夹馍",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "羊肉汤",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶油蛋糕",
+      "weight": 51,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红土地",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "板鸭",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "氢氧化钠",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛皮糖",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芬达",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丙氨酸",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉骨头",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龙眼肉",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "自动豪华",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "凉面",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大切诺基",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "安格斯",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抓饭",
+      "weight": 50,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "竹荪",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "指南者",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "太子奶",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糍粑",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "孔雀开屏",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刀削面",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白切",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蒸饺",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "通用别克",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "利嘉",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "靛蓝",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三创",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "燕麦片",
+      "weight": 49,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "石斑鱼",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "紫竹林",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "北汽控股",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "驴打滚",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "润明",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青茶",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芸豆",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "接地线",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "道酒",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花蛋糕",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冷媒",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "菠萝蜜",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "美食之旅",
+      "weight": 48,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "远光灯",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "麦饭",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "无钥匙",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "夜光杯",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前格栅",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "直列四缸",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "压缩饼干",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "麻婆豆腐",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "硫酸铜",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卤素灯",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东来顺",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "纸巾盒",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "徽菜",
+      "weight": 47,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轿车化",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金菊",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白胡椒",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "遥控钥匙",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "方糖",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "干白",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "刺五加",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "增稠剂",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "雪团",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "比目鱼",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西耶那",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "粉皮",
+      "weight": 46,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "包面",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "热干面",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖粉",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "茶饼",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "古越龙山",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "顶呱呱",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛柳",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "伊力特",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "轮眉",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "餐包",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "平菇",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼香肉丝",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酶制剂",
+      "weight": 45,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "芝士蛋糕",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "羊杂",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "果蔬汁",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "沱茶",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "青木瓜",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "没有现车",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烧麦",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "番石榴",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米糕",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牦牛肉",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金桔",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米皮",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜甜圈",
+      "weight": 44,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜面酱",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "液位计",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "脱脂牛奶",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "装饰灯",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锁芯",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼罐头",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "水果沙拉",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣子鸡",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "羊肉泡馍",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "内后视镜",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "侧围",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "路况下",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "五香粉",
+      "weight": 43,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中低音",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "泡芙",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三道茶",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "桂林米粉",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奇骏",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "螺帽",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "覆盆子",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "薄荷叶",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄花鱼",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "陆风汽车",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "新佳乐",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "菜豆腐",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "防眩目",
+      "weight": 42,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蓝城",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "前照灯",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "朗姆酒",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶汤",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金华火腿",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "抗坏血酸",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "丁酸",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "壳聚糖",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤乳猪",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "东坡肉",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱼露",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "聚乙烯醇",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "炒栗子",
+      "weight": 41,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖醋排骨",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转弯半径",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汇泉",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "佛跳墙",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "咸亨",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "沙士",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "阳春面",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鲥鱼",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "稻花香",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "高速过弯",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "叉烧包",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香辣蟹",
+      "weight": 40,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鸡杂",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "巴黎车展",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "速溶咖啡",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "老边",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "随动转向",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "西冷",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "消泡剂",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "便宜坊",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰沙",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "野猪肉",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "苹果派",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "胭脂红",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龟苓膏",
+      "weight": 39,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猴头菇",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "氯化钙",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸辣粉",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "周末风",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐乳",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "龙虎斗",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "梅甘娜",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鼠尾草",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酒石酸",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "山梨酸",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "派喜",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛肉片",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "乱穿马路",
+      "weight": 38,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "长豆",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "车载冰箱",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莼菜",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜蜜素",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "鱿鱼丝",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "慕斯",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐汤",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "玉兰片",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锅盔",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "虾球",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百里香",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "两张皮",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛肉丸",
+      "weight": 37,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "椰奶",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "非常可乐",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "硫酸亚铁",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "普利茅斯",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "香蕉船",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "隔热材料",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绿豆糕",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "座椅靠背",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "毛肚",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "锅边",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "后风挡",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "卡赛",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "三得利",
+      "weight": 36,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "缺陷产品",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "文昌鸡",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "干丝",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金威啤酒",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "金鸡独立",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄面",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "点火线圈",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "仿桃木",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "蛋黄派",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "清障车",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "姜糖",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "奶皮",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "荣氏",
+      "weight": 35,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白肚",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "绿豆粥",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "牛腿",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "花椒粉",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "云雾茶",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "虾饺",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黑椒",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "米茶",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "粉蒸肉",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "豆腐花",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "碳酸钠",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "松糕",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "手动空调",
+      "weight": 34,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "拉条",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "四轮碟刹",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "红烧鱼",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杏花楼",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "中盖",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "铅块",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "转面",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "莜面",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "诺丽",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "烤地瓜",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "一汽奥迪",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "风骏",
+      "weight": 33,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜汤",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "醪糟",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "梭子蟹",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "大盘鸡",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "甜茶",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "盐水鸭",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "全球鹰",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "硝酸钠",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "圆镜",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "珠江啤酒",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "春饼",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "杏核",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "汤类",
+      "weight": 32,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "辣白菜",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "酸汤鱼",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "广州酒家",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄袍加身",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "黄山毛峰",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "冰醋酸",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "耳朵眼",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "云吞面",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "百鸟朝凤",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "猫耳朵",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "白灼",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "肉罐头",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "嘉吉",
+      "weight": 31,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "糖炒栗子",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "韭黄",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "谭鱼头",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "燃烧过程",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "二龙戏珠",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "煎饼果子",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    },
+    {
+      "text": "麦片粥",
+      "weight": 30,
+      "tags": [
+        "life",
+        "travel"
+      ],
+      "source": "THUOCL"
+    }
+  ]
+}

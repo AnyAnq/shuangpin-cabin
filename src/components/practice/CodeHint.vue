@@ -5,7 +5,7 @@
       :key="`${key}-${index}`"
       class="code-key"
       data-code-key
-      :class="{ 'is-done': index < completedCount, 'is-current': index === completedCount }"
+      :class="{ 'is-done': index < completedCount, 'is-current': index === completedCount, 'is-hooked-l': key === 'l' }"
     >
       {{ key }}
     </span>

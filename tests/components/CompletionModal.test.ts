@@ -19,4 +19,21 @@ describe('CompletionModal', () => {
 
     expect(wrapper.emitted('close')).toHaveLength(1);
   });
+
+  it('展示易错分组本轮复练结果', () => {
+    const wrapper = mount(CompletionModal, {
+      props: {
+        open: true,
+        accuracy: 92,
+        wpm: 20,
+        maxCombo: 12,
+        busy: false,
+        practicedCount: 5,
+        streakGain: 1,
+      },
+    });
+
+    expect(wrapper.text()).toContain('本组复练 5');
+    expect(wrapper.text()).toContain('连续正确 +1');
+  });
 });

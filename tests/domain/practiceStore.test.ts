@@ -5,14 +5,17 @@ import { usePracticeStore } from '../../src/stores/practiceStore';
 import type { MistakeRecord } from '../../src/domain/practice/mistakes';
 import { db } from '../../src/storage/db';
 import { upsertMistake } from '../../src/storage/repositories';
+import { installVocabularyPackage } from '../../src/storage/vocabularyRepository';
 
 describe('练习状态', () => {
   beforeEach(async () => {
     setActivePinia(createPinia());
-    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('测试环境不请求在线内容')));
+    vi.stubGlobal('fetch', vi.fn(defaultFetch));
     await db.mistakes.clear();
     await db.sessions.clear();
     await db.preferences.clear();
+    await db.vocabularyPackages.clear();
+    await db.vocabularyEntries.clear();
   });
 
   afterEach(() => {
@@ -20,7 +23,7 @@ describe('练习状态', () => {
   });
 
   it('按错键时记录错误键且不推进', async () => {
-    const store = usePracticeStore();
+    const store = await createHydratedStore();
 
     const result = store.pressKey('s');
 
@@ -28,7 +31,7 @@ describe('练习状态', () => {
     expect(store.wrongKey).toBe('s');
     expect(store.session.cursor.charIndex).toBe(0);
     expect(store.session.cursor.codeIndex).toBe(0);
-    await waitForMistake('xiaohe-poem-001-0-d-s');
+    await waitForMistake(store.pendingMistake?.id ?? '');
   });
 
   it('默认统计为 0 且键盘不默认高亮', () => {
@@ -41,22 +44,61 @@ describe('练习状态', () => {
     expect(store.liveStats.wpm).toBe(0);
   });
 
-  it('输入后更新顶部进度', () => {
+  it('在线诗词未加载成功时不使用本地诗词兜底', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('测试环境模拟在线内容失败')));
     const store = usePracticeStore();
 
+    await store.hydratePreferences();
+
+    expect(store.module).toBe('poem');
+    expect(store.activeUnit.text).toBe('');
+    expect(store.currentCode).toBe('');
+    expect(store.pressKey('d').status).toBe('ignored');
+  });
+
+  it('首页加载时会请求在线诗词作为默认练习内容', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/poetry-api/yiyan')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: '行到水穷处坐看云起时《终南别业》 — 王维',
+          }));
+        }
+        if (url.includes('/external-api/chicken-soup')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: { content: '知不足而奋进，望远山而前行。' },
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
+    const store = usePracticeStore();
+
+    await store.hydratePreferences();
+
+    expect(store.activeUnit.text).toBe('行到水穷处坐看云起时');
+    expect(store.currentCode).toBe('xk');
+  });
+
+  it('输入后更新顶部进度', async () => {
+    const store = await createHydratedStore();
+
     expect(store.progressPercent).toBe(0);
-    store.pressKey('d');
+    store.pressKey('x');
 
     expect(store.progressPercent).toBeGreaterThan(0);
   });
 
-  it('切换自然码后刷新当前编码', () => {
-    const store = usePracticeStore();
+  it('切换自然码后刷新当前编码', async () => {
+    const store = await createHydratedStore();
 
     store.setScheme('ziranma');
 
     expect(store.scheme.id).toBe('ziranma');
-    expect(store.currentCode).toBe('do');
+    expect(store.currentCode).toBe('xy');
   });
 
   it('切换方案和模块会保存本地偏好', async () => {
@@ -101,24 +143,60 @@ describe('练习状态', () => {
     expect(store.progressPercent).toBe(0);
   });
 
+  it('没有安装词库时进入词库练习会展示安装空状态', async () => {
+    const store = usePracticeStore();
+
+    await store.setModule('vocabulary');
+
+    expect(store.module).toBe('vocabulary');
+    expect(store.vocabularyNeedsInstall).toBe(true);
+    expect(store.activeUnit.text).toBe('');
+  });
+
+  it('安装词库后可以进入 12 字词库练习', async () => {
+    await installVocabularyPackage({
+      schemaVersion: 1,
+      id: 'daily-common',
+      name: '日常常用词',
+      version: '1.0.0',
+      author: 'Shuangpin Cabin',
+      license: 'MIT',
+      pricingType: 'free',
+      description: '适合日常输入热身。',
+      tags: ['daily'],
+      entries: [
+        { text: '今天', weight: 99 },
+        { text: '事情', weight: 98 },
+        { text: '可以', weight: 97 },
+        { text: '我们', weight: 96 },
+        { text: '项目', weight: 95 },
+        { text: '完成', weight: 94 },
+      ],
+    }, 'https://example.com/daily.json');
+    const store = usePracticeStore();
+
+    await store.setModule('vocabulary');
+
+    expect(store.vocabularyNeedsInstall).toBe(false);
+    expect(store.activeUnit.module).toBe('vocabulary');
+    expect(store.activeUnit.text).toBe('今天事情可以我们项目完成');
+    expect(store.activeUnit.lineCharCount).toBe(6);
+    expect(store.session.codes).toHaveLength(12);
+  });
+
   it('快速切换模块时，较慢返回的旧请求不能覆盖当前模块题目', async () => {
     const tongueTwister = deferredResponse({
-      code: 200,
-      data: '四是四，十是十。',
+      code: 0,
+      data: { content: '四是四，十是十。' },
     });
     vi.stubGlobal(
       'fetch',
       vi.fn((url: string) => {
-        if (url.includes('tongue-twister')) return tongueTwister.promise;
-        if (url.includes('diary-poetry')) {
+        if (url.includes('/tongue-api/raokouling')) return tongueTwister.promise;
+        if (url.includes('/poetry-api/yiyan')) {
           return Promise.resolve(jsonResponse({
             code: 200,
-            data: {
-              content: '行到水穷处坐看云起时',
-              origin: '终南别业',
-              author: '王维',
-              category: '古诗文-山水',
-            },
+            data: '行到水穷处坐看云起时《终南别业》 — 王维',
           }));
         }
         return Promise.reject(new Error('未模拟的请求'));
@@ -137,6 +215,18 @@ describe('练习状态', () => {
   });
 
   it('换一组会切换到同模块下一题', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/poetry-api/yiyan')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: '行到水穷处坐看云起时《终南别业》 — 王维',
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
     const store = usePracticeStore();
     const firstId = store.activeUnit.id;
 
@@ -146,25 +236,48 @@ describe('练习状态', () => {
     expect(store.activeUnit.module).toBe('poem');
   });
 
-  it('按错键会生成待保存的易错记录', async () => {
+  it('绕口令在线内容重复时，换一组不会回退到本地绕口令', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/tongue-api/raokouling')) {
+          return Promise.resolve(jsonResponse({
+            code: 0,
+            data: { content: '四是四，十是十。十四是十四，四十是四十。' },
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
     const store = usePracticeStore();
+
+    await store.setModule('article');
+    const firstText = store.activeUnit.text;
+    await store.nextUnit();
+
+    expect(store.activeUnit.text).toBe(firstText);
+    expect(store.activeUnit.module).toBe('article');
+  });
+
+  it('按错键会生成待保存的易错记录', async () => {
+    const store = await createHydratedStore();
 
     store.pressKey('s');
 
-    expect(store.pendingMistake?.targetChar).toBe('多');
-    expect(store.pendingMistake?.expectedKey).toBe('d');
+    expect(store.pendingMistake?.targetChar).toBe('行');
+    expect(store.pendingMistake?.expectedKey).toBe('x');
     expect(store.pendingMistake?.actualKey).toBe('s');
-    await waitForMistake('xiaohe-poem-001-0-d-s');
+    await waitForMistake(store.pendingMistake?.id ?? '');
   });
 
   it('按错键会保存并合并到本地易错库', async () => {
-    const store = usePracticeStore();
+    const store = await createHydratedStore();
 
     store.pressKey('s');
     store.restartCurrent();
     store.pressKey('s');
 
-    const record = await waitForMistake('xiaohe-poem-001-0-d-s', 2);
+    const record = await waitForMistake(store.pendingMistake?.id ?? '', 2);
     expect(record.count).toBe(2);
   });
 
@@ -175,8 +288,33 @@ describe('练习状态', () => {
 
     await store.setModule('mistake');
 
-    expect(store.activeUnit.text).toBe('情');
+    expect(store.activeUnit.text.startsWith('情')).toBe(true);
     expect(store.currentCode).toBe('qk');
+  });
+
+  it('易错练习会把同错因错题组成一组并暴露组信息', async () => {
+    const store = usePracticeStore();
+    await upsertMistake(makeMistake({ id: 'same-1', targetChar: '多', targetSyllable: 'duo', expectedCode: 'do', expectedKey: 'd', actualKey: 's', count: 5 }));
+    await upsertMistake(makeMistake({ id: 'same-2', targetChar: '打', targetSyllable: 'da', expectedCode: 'da', expectedKey: 'd', actualKey: 's', count: 4 }));
+    await upsertMistake(makeMistake({ id: 'other', targetChar: '情', targetSyllable: 'qing', expectedCode: 'qk', expectedKey: 'q', actualKey: 'w', count: 1 }));
+
+    await store.setModule('mistake');
+
+    expect(store.activeUnit.text).toBe('多打');
+    expect(store.mistakeGroupTitle).toBe('声母键误按');
+    expect(store.mistakeGroupFocusKeys).toEqual(['s']);
+    expect(store.mistakeGroupProgress.total).toBe(2);
+    expect(store.mistakeGroupProgress.completed).toBe(0);
+  });
+
+  it('没有错题时易错练习会进入冷启动分组', async () => {
+    const store = usePracticeStore();
+
+    await store.setModule('mistake');
+
+    expect(store.mistakeGroupEmpty).toBe(true);
+    expect(store.mistakeGroupTitle).toBe('先积累错题');
+    expect(store.activeUnit.text).toBe('');
   });
 
   it('完成易错复练会标记该错题连续正确', async () => {
@@ -191,6 +329,26 @@ describe('练习状态', () => {
     expect(record.correctStreak).toBe(1);
   });
 
+  it('完成易错分组会标记组内所有错题连续正确', async () => {
+    const store = usePracticeStore();
+    await upsertMistake(makeMistake({ id: 'same-1', targetChar: '多', targetSyllable: 'duo', expectedCode: 'do', expectedKey: 'd', actualKey: 's', count: 5 }));
+    await upsertMistake(makeMistake({ id: 'same-2', targetChar: '打', targetSyllable: 'da', expectedCode: 'da', expectedKey: 'd', actualKey: 's', count: 4 }));
+    await store.setModule('mistake');
+
+    for (const code of store.session.codes) {
+      for (const key of code) {
+        store.pressKey(key);
+      }
+    }
+
+    const first = await waitForMistakeCorrect('same-1');
+    const second = await waitForMistakeCorrect('same-2');
+    expect(first.correctStreak).toBe(1);
+    expect(second.correctStreak).toBe(1);
+    expect(store.mistakeCompletion.practiced).toBe(2);
+    expect(store.mistakeCompletion.streakGain).toBe(1);
+  });
+
   it('完成后可以重新开始下一组', () => {
     const store = usePracticeStore();
 
@@ -201,12 +359,9 @@ describe('练习状态', () => {
   });
 
   it('完成弹窗可以关闭且保留本轮统计', async () => {
-    const store = usePracticeStore();
-    await store.setModule('character');
+    const store = await createHydratedStore();
 
-    for (const key of store.currentCode) {
-      store.pressKey(key);
-    }
+    finishActiveUnit(store);
 
     expect(store.lastStatus).toBe('complete');
     const accuracy = store.liveStats.accuracy;
@@ -220,12 +375,9 @@ describe('练习状态', () => {
   });
 
   it('完成后点击下一组会立刻关闭完成弹窗', async () => {
-    const store = usePracticeStore();
-    await store.setModule('character');
+    const store = await createHydratedStore();
 
-    for (const key of store.currentCode) {
-      store.pressKey(key);
-    }
+    finishActiveUnit(store);
 
     expect(store.lastStatus).toBe('complete');
 
@@ -236,19 +388,52 @@ describe('练习状态', () => {
   });
 
   it('完成一轮后会保存练习记录', async () => {
-    const store = usePracticeStore();
-    await store.setModule('character');
+    const store = await createHydratedStore();
 
-    for (const key of store.currentCode) {
-      store.pressKey(key);
-    }
+    finishActiveUnit(store);
 
     const session = await waitForSession();
-    expect(session.module).toBe('character');
+    expect(session.module).toBe('poem');
     expect(session.scheme).toBe('xiaohe');
-    expect(session.maxCombo).toBe(2);
+    expect(session.maxCombo).toBeGreaterThan(0);
   });
 });
+
+async function createHydratedStore() {
+  const store = usePracticeStore();
+  await store.hydratePreferences();
+  return store;
+}
+
+function finishActiveUnit(store: ReturnType<typeof usePracticeStore>) {
+  for (const code of store.session.codes) {
+    for (const key of code) {
+      store.pressKey(key);
+    }
+  }
+}
+
+function defaultFetch(url: string): Promise<Response> {
+  if (url.includes('/poetry-api/yiyan')) {
+    return Promise.resolve(jsonResponse({
+      code: 200,
+      data: '行到水穷处坐看云起时《终南别业》 — 王维',
+    }));
+  }
+  if (url.includes('/tongue-api/raokouling')) {
+    return Promise.resolve(jsonResponse({
+      code: 0,
+      data: { content: '四是四，十是十。十四是十四，四十是四十。' },
+    }));
+  }
+  if (url.includes('/external-api/chicken-soup')) {
+    return Promise.resolve(jsonResponse({
+      code: 200,
+      data: { content: '知不足而奋进，望远山而前行。' },
+    }));
+  }
+  return Promise.reject(new Error('未模拟的请求'));
+}
 
 async function waitForMistake(id: string, minCount = 1): Promise<MistakeRecord> {
   for (let attempt = 0; attempt < 10; attempt += 1) {

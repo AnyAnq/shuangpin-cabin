@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-17T00:00:00.000Z",
+  "packages": [
+    {
+      "id": "daily-common",
+      "name": "日常高频词",
+      "version": "1.0.0",
+      "description": "来自 Jieba 高频词典筛选的日常常用词，适合长期基础热身。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "daily",
+        "beginner",
+        "common",
+        "jieba"
+      ],
+      "entryCount": 1000,
+      "downloadUrl": "/api/vocabularies/packages/daily-common@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "work-study",
+      "name": "工作学习",
+      "version": "1.0.0",
+      "description": "融合 IT、财经、法律等开源主题词，偏项目、文档、协作和学习表达。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "work",
+        "study",
+        "office",
+        "thuocl"
+      ],
+      "entryCount": 900,
+      "downloadUrl": "/api/vocabularies/packages/work-study@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "life-consumption",
+      "name": "生活消费",
+      "version": "1.0.0",
+      "description": "融合饮食、地名、汽车等开源主题词，覆盖生活、出行和消费场景。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "life",
+        "shopping",
+        "travel",
+        "thuocl"
+      ],
+      "entryCount": 900,
+      "downloadUrl": "/api/vocabularies/packages/life-consumption@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "chengyu-poem",
+      "name": "成语诗词",
+      "version": "1.0.0",
+      "description": "来自 THUOCL 成语和诗词词库，适合四字节奏、文学词汇和长词手感训练。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "chengyu",
+        "poem",
+        "thuocl"
+      ],
+      "entryCount": 900,
+      "downloadUrl": "/api/vocabularies/packages/chengyu-poem@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "it-tech",
+      "name": "科技网络",
+      "version": "1.0.0",
+      "description": "来自 THUOCL IT 词库，适合程序员、产品、运营等技术场景输入。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "it",
+        "tech",
+        "thuocl"
+      ],
+      "entryCount": 800,
+      "downloadUrl": "/api/vocabularies/packages/it-tech@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "finance-business",
+      "name": "财经商业",
+      "version": "1.0.0",
+      "description": "来自 THUOCL 财经词库，适合商业、交易、市场和公司场景输入。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "finance",
+        "business",
+        "thuocl"
+      ],
+      "entryCount": 800,
+      "downloadUrl": "/api/vocabularies/packages/finance-business@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "medical-health",
+      "name": "医学健康",
+      "version": "1.0.0",
+      "description": "来自 THUOCL 医学词库，适合健康、医疗和身体相关表达训练。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "medical",
+        "health",
+        "thuocl"
+      ],
+      "entryCount": 800,
+      "downloadUrl": "/api/vocabularies/packages/medical-health@1.0.0.json",
+      "mirrorUrls": []
+    },
+    {
+      "id": "easy-confuse",
+      "name": "易混音专项",
+      "version": "1.0.0",
+      "description": "从高频词中筛选含 zh/ch/sh、ang/eng/ing/ian/uan 等常见混淆音的专项练习。",
+      "author": "Shuangpin Cabin",
+      "pricingType": "free",
+      "tags": [
+        "mistake",
+        "sound",
+        "training",
+        "jieba"
+      ],
+      "entryCount": 800,
+      "downloadUrl": "/api/vocabularies/packages/easy-confuse@1.0.0.json",
+      "mirrorUrls": []
+    }
+  ]
+}

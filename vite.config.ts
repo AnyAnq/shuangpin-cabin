@@ -11,6 +11,16 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/external-api/, ''),
       },
+      '/poetry-api': {
+        target: 'https://v2.xxapi.cn/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/poetry-api/, ''),
+      },
+      '/tongue-api': {
+        target: 'https://api.ruseo.cn/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/tongue-api/, ''),
+      },
     },
   },
 })

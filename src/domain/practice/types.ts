@@ -1,6 +1,6 @@
 import type { ShuangpinScheme } from '../schemes/types';
 
-export type PracticeModule = 'character' | 'poem' | 'article' | 'mistake';
+export type PracticeModule = 'character' | 'poem' | 'article' | 'vocabulary' | 'mistake';
 
 export interface PracticeUnit {
   id: string;
@@ -9,6 +9,7 @@ export interface PracticeUnit {
   syllables: string[];
   source?: string;
   tags: string[];
+  lineCharCount?: number;
 }
 
 export interface PracticeSession {

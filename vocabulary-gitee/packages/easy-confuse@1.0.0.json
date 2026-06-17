@@ -1,0 +1,7218 @@
+{
+  "schemaVersion": 1,
+  "id": "easy-confuse",
+  "name": "易混音专项",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "从高频词中筛选含 zh/ch/sh、ang/eng/ing/ian/uan 等常见混淆音的专项练习。",
+  "tags": [
+    "mistake",
+    "sound",
+    "training",
+    "jieba"
+  ],
+  "entries": [
+    {
+      "text": "中国",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中國",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国家",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工作",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "什么",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "什麼",
+      "weight": 100,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主要",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全国",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全國",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不是",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知道",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地区",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如果",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重要",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "美国",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成为",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成爲",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通过",
+      "weight": 99,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通過",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世界",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其中",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现在",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不能",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时间",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情况",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情況",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "领导",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时候",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学生",
+      "weight": 98,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同时",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同時",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不同",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学院",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作为",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作爲",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "活动",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "需要",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市场",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市場",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建設",
+      "weight": 97,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建设",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形成",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出现",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之间",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城市",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政治",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发现",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "记者",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国际",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "使用",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中心",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "要求",
+      "weight": 96,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政府",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人口",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建立",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武汉市",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武漢市",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "我国",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作用",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行政",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职业",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制度",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说道",
+      "weight": 95,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世紀",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世纪",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "为了",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爲了",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "組成",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "组成",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "增长",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大学",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如何",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政体",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政體",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不会",
+      "weight": 94,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不會",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时期",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表示",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "当时",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长江",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一直",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "运动",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目前",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过程",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "過程",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如此",
+      "weight": 93,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资源",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过去",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不过",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不過",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学校",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工程",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方式",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "军事",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "軍事",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十分",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完成",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "经过",
+      "weight": 92,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "非常",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中央",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比較",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比较",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表现",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "价值",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "價值",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国务院",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完全",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "內容",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "内容",
+      "weight": 91,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实行",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "思想",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事情",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实现",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "甚至",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人民政府",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形式",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不断",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不斷",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心中",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直接",
+      "weight": 90,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不知",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政策",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不要",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资本",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "期间",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先生",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解决",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解決",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建筑",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建築",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治区",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治區",
+      "weight": 89,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成立",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "英国",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先进",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先進",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "結果",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "结果",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "投资",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保护",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保護",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制定",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学习",
+      "weight": 88,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "合作",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "科学",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "項目",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "项目",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不敢",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全省",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "超过",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重点",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重點",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相关",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相關",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国内",
+      "weight": 87,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重大",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实际",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其实",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不仅",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不僅",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整个",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整個",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "了解",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "瞭解",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这时",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "劳动",
+      "weight": 86,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "控制",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目标",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目標",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全部",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法国",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比賽",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比赛",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "統治",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "统治",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不到",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "支持",
+      "weight": 85,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "交通",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明白",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作战",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作戰",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时代",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实施",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "只要",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成功",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之中",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "共同",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "来说",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "严重",
+      "weight": 84,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "嚴重",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城邦",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意见",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过来",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保持",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "坚持",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "堅持",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说话",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先后",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先後",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事业",
+      "weight": 83,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事業",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "看见",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "标准",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "程度",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国民党",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "安全",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "領域",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "领域",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如今",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不可",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "德国",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "为什么",
+      "weight": 82,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爲什麼",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "真正",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目的",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "造成",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相同",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建議",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建议",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全面",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正是",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明显",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明顯",
+      "weight": 81,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作品",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "首先",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "集中",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正式",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "材料",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行动",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保證",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保证",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现象",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现代",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实际上",
+      "weight": 80,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "資料",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资料",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同志",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直轄市",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直辖市",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "介紹",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "介绍",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "只见",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "认识",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市長",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市长",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "容易",
+      "weight": 79,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长期",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一句",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "調整",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "调整",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "师父",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "清楚",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "說明",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说明",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "此时",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "物质",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不少",
+      "weight": 78,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中学",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中學",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "调查",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重新",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知識",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知识",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出口",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动物",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作出",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通常",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方向",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "导弹",
+      "weight": 77,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "小时",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完善",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "性质",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "质量",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "位置",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指出",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考试",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指挥",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指揮",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指导",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指導",
+      "weight": 76,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "除了",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "机场",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同样",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同樣",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "状态",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "书记",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "治疗",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "治療",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "语言",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事件",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实在",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "见到",
+      "weight": 75,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "检察院",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "檢察院",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "广场",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解释",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解釋",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "双方",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "經常",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "经常",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心想",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "外国",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全市",
+      "weight": 74,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常委会",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常委會",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "从事",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "從事",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "生长",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "内部",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "简单",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "有时",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "文学",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "显示",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "顯示",
+      "weight": 73,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "还要",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "還要",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相信",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "普通",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "手中",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "封建",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "创造",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "教师",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "较大",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "文明",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相当",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相當",
+      "weight": 72,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "变成",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "變成",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资金",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中間",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中间",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相对",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相對",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职权",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不再",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "导致",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "導致",
+      "weight": 71,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "即使",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爱国",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "證明",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "证明",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制造",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "构成",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "構成",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "老师",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "区域",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "區域",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "院长",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保障",
+      "weight": 70,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "创作",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "創作",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "强调",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "运输",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不得",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "境内",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "体制",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "體制",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "例如",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "財政",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "财政",
+      "weight": 69,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成績",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成绩",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建成",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正确",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正確",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现代化",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "石首市",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "社区",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重視",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重视",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "数学",
+      "weight": 68,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比例",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "适应",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "故事",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政权",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政權",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "各国",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "听说",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正常",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "秘书长",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明确",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明確",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "优势",
+      "weight": 67,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一场",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "至少",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "确实",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实验",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "想到",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "帝国主义",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治州",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相互",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "是不是",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部长",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比如",
+      "weight": 66,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "理解",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不足",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "程序",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一中",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "适当",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "李自成",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "研制",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全国人大",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全國人大",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行使",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "空间",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形势",
+      "weight": 65,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "小说",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "检查",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "化学",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "状况",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实践",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成長",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成长",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "需求",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一致",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一时",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全体",
+      "weight": 64,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全體",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事务",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事務",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "体现",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不了",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长安",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同意",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不錯",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不错",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相应",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相應",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "观点",
+      "weight": 63,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实力",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中部",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全球",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "至于",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "至於",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发动",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职工",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资本主义",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "必要",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不肯",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表明",
+      "weight": 62,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "委员长",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主持",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常常",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "想起",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行政区划",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行政區劃",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "限制",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现实",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正在",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "态度",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不好",
+      "weight": 61,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "双手",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工资",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "效果",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "果然",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意识",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常务",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常務",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "洪山区",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解放",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "电视",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制作",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "製作",
+      "weight": 60,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成果",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "势力",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "记载",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "日常",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "检察长",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "檢察長",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "高中",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不管",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "领导人",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "推动",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成员",
+      "weight": 59,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成員",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明代",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "创新",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不久",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "持續",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "持续",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "试验",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城楼",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城樓",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "空中",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "习惯",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事实",
+      "weight": 58,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事實",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不但",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "张居正",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "張居正",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不想",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "年间",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "互相",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "听见",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "临时",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那时",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "路线",
+      "weight": 57,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "哲学",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同学",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同學",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "办公室",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "辦公室",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大事",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成本",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "素质",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "生态",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "英语",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "設置",
+      "weight": 56,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "设置",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学者",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不禁",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大明",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成分",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完整",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "机制",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "機制",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国民经济",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考察",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "皇城",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相比",
+      "weight": 55,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "观念",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "运用",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职务",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "流通",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现场",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "协调",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原料",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治县",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治縣",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事物",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "教学",
+      "weight": 54,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作者",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "理想",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "清代",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不必",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国民",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "省长",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中共中央",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相反",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情緒",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情绪",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大学生",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "民间",
+      "weight": 53,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长江大桥",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国外",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "江夏区",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明朝",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "移动",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一支",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "产值",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "產值",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "模式",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "演习",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "感情",
+      "weight": 52,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "維持",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "维持",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "志愿",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "志願",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "适合",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "校长",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一口",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整体",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整體",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "区别",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资产阶级",
+      "weight": 51,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "及时",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成熟",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "几句",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "幾句",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国防",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "操作",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全身",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "門口",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "门口",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不在",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建造",
+      "weight": 50,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "开发区",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心情",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "帝国",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十年",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "标志",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十堰",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成就",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "证券",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "合同",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直播",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "战场",
+      "weight": 49,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "統治者",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "统治者",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明清",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "走向",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "平时",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "简称",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "装置",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "裝置",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重庆",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重慶",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不行",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主动",
+      "weight": 48,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市民",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "劳动力",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重建",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "使得",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国有",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "记录",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "祖国",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "阳光",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "陽光",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时刻",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "著作",
+      "weight": 47,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "医学",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学科",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "仪式",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "儀式",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "立场",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "进口",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "進口",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "运行",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "北京市",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "支付",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资格",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "韩国",
+      "weight": 46,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国家级",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "传说",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目光",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动力",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "异常",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "異常",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作家",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行情",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动作",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "動作",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同一",
+      "weight": 45,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "至今",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国王",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "觀察",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "观察",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "所说",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全年",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解放军",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解放軍",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "小学",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "总人口",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相似",
+      "weight": 44,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "總人口",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不由得",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明天",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资产",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "眼见",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说法",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "值得",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "真实",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职能",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学术",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "上市",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "此事",
+      "weight": 43,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同年",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "登时",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这场",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "适用",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中共",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通知",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "命运",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不得不",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十堰市",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建国",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建國",
+      "weight": 42,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动手",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "荆州市",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "荊州市",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保存",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "再说",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动态",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "趋势",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地势",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过渡",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "向前",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地质",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "家长",
+      "weight": 41,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通信",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "要是",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "联合国",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正义",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正義",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "袁承志",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自动",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "編制",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "编制",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "客观",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "注重",
+      "weight": 40,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "港口",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "据说",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "航线",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "观众",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "宜昌市",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大师",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "忍不住",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不用",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中原",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "流域",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大清",
+      "weight": 39,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "热情",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "熱情",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "蒋介石",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "蔣介石",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "山区",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "想着",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制成",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "製成",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "省内",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "科学家",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "流动",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "沒想到",
+      "weight": 38,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "没想到",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成都",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "治理",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "課程",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "课程",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "暂时",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发明",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發明",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事实上",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事實上",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "县长",
+      "weight": 37,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "執政",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "执政",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "内阁",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "党中央",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "黨中央",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "战国",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "袁世凯",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "袁世凱",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全世界",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长沙",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不許",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不许",
+      "weight": 36,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "激动",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政协",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政協",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "声明",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "聲明",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现有",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "简介",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "簡介",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正好",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不够",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不夠",
+      "weight": 35,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "面试",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中华民族",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中華民族",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学会",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保险",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保險",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学位",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指示",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "王国",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "要素",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "俄国",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "调节",
+      "weight": 34,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情形",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "修建",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建有",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "愛情",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爱情",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "进程",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "進程",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十五",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发动机",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资本家",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武昌区",
+      "weight": 33,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事項",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事项",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "沟通",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "溝通",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "初中",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "可见",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常見",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "常见",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形态",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "想法",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "无不",
+      "weight": 32,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "無不",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "差不多",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "症状",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "记得",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "检察",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "檢察",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "优质",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "开国",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不如",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "手指",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "场所",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "房间",
+      "weight": 31,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不讓",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不让",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "說完",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说完",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "順治",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "顺治",
+      "weight": 30,
+      "tags": [
+        "sound",
+        "mistake"
+      ],
+      "source": "jieba-dict-big"
+    }
+  ]
+}

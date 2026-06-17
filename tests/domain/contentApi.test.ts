@@ -13,15 +13,18 @@ describe('在线内容 API', () => {
         ok: true,
         json: () =>
           Promise.resolve({
-            code: 200,
-            data: "小石与小史，谁也没读准'正直'。",
+            code: 0,
+            msg: 'success',
+            data: {
+              content: "小石与小史，谁也没读准'正直'。",
+            },
           }),
       }),
     );
 
     const unit = await fetchTongueTwisterUnit();
 
-    expect(fetch).toHaveBeenCalledWith('/external-api/tongue-twister');
+    expect(fetch).toHaveBeenCalledWith('/tongue-api/raokouling');
     expect(unit.text).toBe("小石与小史，谁也没读准'正直'。");
     expect(unit.syllables).toEqual(['xiao', 'shi', 'yu', 'xiao', 'shi', 'shui', 'ye', 'mei', 'du', 'zhun', 'zheng', 'zhi']);
     expect(unit.tags).toContain('绕口令');
@@ -35,12 +38,8 @@ describe('在线内容 API', () => {
         json: () =>
           Promise.resolve({
             code: 200,
-            data: {
-              content: '满园花菊郁金黄，中有孤丛色似霜。',
-              origin: '重阳席上赋白菊',
-              author: '白居易',
-              category: '古诗文-植物-菊花',
-            },
+            msg: '数据请求成功',
+            data: '满园花菊郁金黄，中有孤丛色似霜。《重阳席上赋白菊》 — 白居易',
           }),
       }),
     );
@@ -52,17 +51,17 @@ describe('在线内容 API', () => {
     expect(unit.syllables[0]).toBe('man');
   });
 
-  it('兼容绕口令 API 的对象 data.content 响应', async () => {
+  it('清理绕口令 API 的换行标签', async () => {
     vi.stubGlobal(
       'fetch',
       vi.fn().mockResolvedValue({
         ok: true,
         json: () =>
           Promise.resolve({
-            code: 200,
+            code: 0,
             data: {
               id: 'twister-remote',
-              content: '老彭盆碰老陈棚，棚倒盆碎真可惜。',
+              content: '老彭盆碰老陈棚，<br/>棚倒盆碎真可惜。',
             },
           }),
       }),
@@ -81,8 +80,8 @@ describe('在线内容 API', () => {
         ok: true,
         json: () =>
           Promise.resolve({
-            code: 200,
-            data: '绿女',
+            code: 0,
+            data: { content: '绿女' },
           }),
       }),
     );

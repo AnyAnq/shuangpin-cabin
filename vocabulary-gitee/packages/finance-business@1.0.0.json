@@ -1,0 +1,7217 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-business",
+  "name": "财经商业",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "来自 THUOCL 财经词库，适合商业、交易、市场和公司场景输入。",
+  "tags": [
+    "finance",
+    "business",
+    "thuocl"
+  ],
+  "entries": [
+    {
+      "text": "发展",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "部门",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "政府",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经济",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "服务",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "公司",
+      "weight": 100,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "实现",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "市场",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "评论",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "支持",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "机构",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "能力",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资源",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "计划",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "系统",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "分享",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产品",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "网络",
+      "weight": 99,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "提升",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "报告",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产业",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "执行",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "行业",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "需求",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "调整",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "方案",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "委员会",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "集团",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "利益",
+      "weight": 98,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "主席",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经营",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "统计",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "时代",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "力度",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收入",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "生态",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "购买",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "机会",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "近年来",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "推出",
+      "weight": 97,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "规范",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "价值",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国务院",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "金融",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出台",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "数量",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "银行",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "民生",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "费用",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "近期",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "风险",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "设立",
+      "weight": 96,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "通道",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "协议",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "创造",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "强化",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "操作",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "升级",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "消费",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "救援",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "商业",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财政",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "美元",
+      "weight": 95,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "损失",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "律师",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "优惠",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "推荐",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "突破",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "年度",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "治理",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "注册",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "标签",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "批准",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开通",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上升",
+      "weight": 94,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "渠道",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "查询",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "交易",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "支付",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "达成",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "承诺",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "淘宝",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "环保",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "登记",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "博客",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "趋势",
+      "weight": 93,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "配置",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "论坛",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "违规",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "金额",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "调研",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "机场",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "低于",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "商品",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "贸易",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "工资",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "能源",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "指标",
+      "weight": 92,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "评估",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保险",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出口",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "退出",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财产",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "专题",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "总经理",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "环球",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "合同",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "研发",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财经",
+      "weight": 91,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上涨",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "超标",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "董事长",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "考核",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "补贴",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "计算",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "现金",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "房地产",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上市",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资本",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "贷款",
+      "weight": 90,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资产",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "行情",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "分配",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "理财",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投诉",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "预期",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信号",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "委托",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "红包",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "鉴定",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "当事人",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经理",
+      "weight": 89,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "案例",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "预算",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "起诉",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "客服",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "特权",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "预测",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "差距",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "态势",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "高层",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "进口",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "浮动",
+      "weight": 88,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "前景",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "微软",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "总额",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "披露",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "座谈会",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "利润",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "竞价",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "支出",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "竞争力",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "融资",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "繁荣",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "审核",
+      "weight": 87,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股份",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收取",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "初始",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "指数",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "效应",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "福利",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "补偿",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "潜力",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "短期",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "季度",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "品种",
+      "weight": 86,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "级别",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "幅度",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出售",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "黄金",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产权",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "期限",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收益",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "营销",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "商务",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财富",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "顾客",
+      "weight": 85,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "发行",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财务",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "账户",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投资者",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "受损",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "缴纳",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "税收",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "主管部门",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "货币",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "研究员",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "基金会",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "百分点",
+      "weight": 84,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "物业",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "特区",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "等级",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "日期",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "企业家",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "债务",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "比重",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "崛起",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "代理",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "调控",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "协同",
+      "weight": 83,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "业绩",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "本土",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "农产品",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "数额",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收购",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "租赁",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "储备",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "查获",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "组合",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "周期",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "着手",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "通讯",
+      "weight": 82,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "证券",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "恶化",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "友谊",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "责任人",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "正规",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国际化",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "流通",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "奖金",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "供给",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财政部",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信用",
+      "weight": 81,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "备案",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "捐款",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "挂牌",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "筹备",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "下滑",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上月",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开发区",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赚钱",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "个体",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "市场化",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "板块",
+      "weight": 80,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "成交",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中介",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "下跌",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "涨幅",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "太平洋",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "受贿",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "初期",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中小企业",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "达标",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产量",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "订单",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "均衡",
+      "weight": 79,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "存款",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经营者",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "波动",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "招商",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "华侨",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "审计",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "电子商务",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股票",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "份额",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "遗产",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "结算",
+      "weight": 78,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "隔离",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "业界",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国企",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "促销",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "签字",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "垄断",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "利率",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "社保",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "招标",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "额度",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "月薪",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "租金",
+      "weight": 77,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "合并",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "定价",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "低价",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "进出口",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "发改委",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "反弹",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "欧元",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "控股",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "转让",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "担保",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "外资",
+      "weight": 76,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "伪造",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "指引",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "瓶颈",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "定点",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开办",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股东",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上游",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "法人",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "专利",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收回",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "央行",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "形态",
+      "weight": 75,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "筹集",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "转换",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信贷",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "银行卡",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "被盗",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "网点",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "走势",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "攀升",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "仓库",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "工商局",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "厂房",
+      "weight": 74,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "结构性",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "缴费",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "到期",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "混合",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "招商引资",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "步骤",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "区间",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "参与者",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "商会",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "缺口",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国际上",
+      "weight": 73,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产值",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "宣告",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "下调",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "款项",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "利息",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国民经济",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "获利",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "安全性",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "亏损",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "存放",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "低迷",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "巨头",
+      "weight": 72,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "库存",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "吸纳",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "恐慌",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "电网",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上调",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "类别",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "原告",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "筛选",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "华商",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "四大",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "亚太",
+      "weight": 71,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "多样化",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "合作社",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "考量",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "报酬",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "增值",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "归还",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "流动性",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "索赔",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财力",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "测量",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "标注",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "余额",
+      "weight": 70,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "红利",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经销商",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赌博",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "构筑",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "模型",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "纳税人",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "兼职",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "拨款",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "扣除",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "返还",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "首创",
+      "weight": 69,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "付款",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "偿还",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "集会",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "内需",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "议案",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "挪用",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "惯例",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "突破口",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "年会",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "副主席",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "密度",
+      "weight": 68,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "均价",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "闲置",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "区域性",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "冻结",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "数据库",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "行长",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "核准",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "一季度",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "楼盘",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "债券",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "观测",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "董事",
+      "weight": 67,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "凭证",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "拖欠",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "编号",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "团购",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "欺骗",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "增长率",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "博弈",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "利好",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "泡沫",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "世博",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "实战",
+      "weight": 66,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "全国性",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "卖出",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "募集",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "透明度",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "汇率",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "稳健",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "购房者",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信用卡",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "彩票",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "薪酬",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "社会保险",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "折扣",
+      "weight": 65,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "英镑",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投标",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "进场",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "落下",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "成交量",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "日元",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "交易所",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "集合",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "核定",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "基准",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "参保",
+      "weight": 64,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "总收入",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "破产",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "稳定性",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "规章",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "修正",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "津贴",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "飙升",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "免职",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "油价",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "查封",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "轮胎",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开盘",
+      "weight": 63,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "走私",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "外汇",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "免除",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "报价",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "失业率",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "打折",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "转账",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "崩溃",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保险公司",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "宏观调控",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "代理人",
+      "weight": 62,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "弊端",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信誉",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "升值",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "黑名单",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "有效期",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "石化",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "预留",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "操纵",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "长城",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股价",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "华夏",
+      "weight": 61,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "新京报",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "天价",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "违约",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "持续性",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "环球时报",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "基调",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "附加",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "仲裁",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "珠江",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "写字楼",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "董事会",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "激增",
+      "weight": 60,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "杠杆",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投资人",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "拨付",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "分割",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "跌幅",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "席位",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "延期",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "央企",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "证监会",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "兴业",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "匮乏",
+      "weight": 59,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "震荡",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "总价",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "买单",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "增值税",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "所有权",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "票据",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "期货",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "子公司",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "金融业",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "汇款",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投资额",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "多媒体",
+      "weight": 58,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保证金",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "价位",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "知情人",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "筹资",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "按计划",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "集装箱",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "机电",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "抛出",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "产出",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "贬值",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "分化",
+      "weight": 57,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中标",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "差价",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "同级",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "投机",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "合伙",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收盘",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "抽奖",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "饱和",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "阿里巴巴",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "解散",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "获准",
+      "weight": 56,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经济危机",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "下落",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "停职",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赚取",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "审慎",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "生产能力",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "波音",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "关税",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "手续费",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "充斥",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "封顶",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "储蓄",
+      "weight": 55,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "复核",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "监护人",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "暴涨",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "分红",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "盘活",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "理赔",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "社会团体",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "逆转",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "市值",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "港元",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "管理层",
+      "weight": 54,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "停滞",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "万达",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "评级",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "供不应求",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "负债",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "扣留",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "大盘",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赤字",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "深层次",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "欧元区",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "薪水",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中信",
+      "weight": 53,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "明珠",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "手势",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "不动产",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "网购",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国债",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "托管",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "不定期",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "清算",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "主业",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中国银行",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "远东",
+      "weight": 52,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "欠款",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "协议书",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "偏离",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "港币",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "白银",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "黄海",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "年薪",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "暴利",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "撤回",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经纪人",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收益率",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "房地产业",
+      "weight": 51,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "宽带",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "购进",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "境内外",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "计量",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "化验",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国际贸易",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "废止",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "圣地",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "联谊",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赌场",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "透支",
+      "weight": 50,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "发起人",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保费",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上行",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保值",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股份制",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中石化",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "发货",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "南航",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中关村",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "交易额",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "补办",
+      "weight": 49,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "差额",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "福彩",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "受惠",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中小型",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "暴跌",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "信托",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "知情者",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "对外贸易",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "会计师",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "井喷",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "本金",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中欧",
+      "weight": 48,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "成因",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "净利润",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "精密",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "通货膨胀",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "贴息",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "万里",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "交易量",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "券商",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "交易日",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "跨国公司",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "银监会",
+      "weight": 47,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "下单",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "大西洋",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "套取",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "特许",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "金融时报",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "债权",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开户",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "洗钱",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "代理商",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中海",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "购买力",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "筹码",
+      "weight": 46,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财长",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经济圈",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资本市场",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股民",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "孵化器",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "定金",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "单据",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "回扣",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "罢工",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "年报",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "盘中",
+      "weight": 45,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "平价",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "华尔街",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "报表",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上浮",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "卖点",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "变数",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "房贷",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "专款",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "建筑业",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中西",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "互换",
+      "weight": 44,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "变卖",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "股指",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "硅谷",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "技术改造",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "连云港",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "杂志社",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "挤出",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "采样",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "债权人",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "加息",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保税",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "盗取",
+      "weight": 43,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "消费税",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "完整性",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "沃尔玛",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "万科",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "市场部",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "介于",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "美联储",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "畅游",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "契约",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "放贷",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "麦当劳",
+      "weight": 42,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "面值",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "税务局",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "赔钱",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "福特",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "共产主义",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "按揭",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "持卡",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "远期",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "基点",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "按月",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "炒股",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "工行",
+      "weight": 41,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "竞标",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "违约金",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出局",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "中兴",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "独资",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "铁道",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "硬币",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "跌破",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "插队",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "高利贷",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "专营",
+      "weight": 40,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "估价",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "益处",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "工钱",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "推介会",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "回调",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "超值",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "所有者",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "抵消",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "要价",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "黑手",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "短线",
+      "weight": 39,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "萧条",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出逃",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "经理人",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "出货",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "佣金",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "体彩",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "海尔",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "东航",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "压低",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "损耗",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "图形",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "仪表",
+      "weight": 38,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "后市",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "房款",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "上证",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "支票",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "增资",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "准备金率",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "顶峰",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "发行量",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "淡出",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收款",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "开门红",
+      "weight": 37,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "盗用",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "携程",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "图表",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "古董",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "买方",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "摇摆",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资本金",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "申购",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "接洽",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "大连港",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "新世界",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "主营业务",
+      "weight": 36,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "现货",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "回报率",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "澳元",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "资本主义",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国有化",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "批发商",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "涨跌",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "主板",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "预热",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "补助金",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "顺差",
+      "weight": 35,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "诺基亚",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "可信度",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "租借",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "搜狐",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "锦江",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "母公司",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "周期性",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "新台阶",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "外债",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "最高点",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "公用事业",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "充值",
+      "weight": 34,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "网银",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "王府井",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "抛售",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "薪金",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "亚马逊",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "卡号",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "保险业",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "质押",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "套现",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "溢价",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "补足",
+      "weight": 33,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "收储",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "陆家嘴",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "可口可乐",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "九州",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "徐家汇",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "私企",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "年金",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "过热",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "吃紧",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "本息",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "汇丰",
+      "weight": 32,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "倾销",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "净值",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "遗嘱",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "遥遥领先",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "不容乐观",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "入主",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "失守",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "财团",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "逆势",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "金牛",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "批文",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "谷底",
+      "weight": 31,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "附加费",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "增发",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "拒收",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "鄂尔多斯",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "国安",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    },
+    {
+      "text": "税金",
+      "weight": 30,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "source": "THUOCL-caijing"
+    }
+  ]
+}

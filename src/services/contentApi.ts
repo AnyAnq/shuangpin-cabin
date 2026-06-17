@@ -2,24 +2,24 @@ import { pinyin } from 'pinyin-pro';
 import type { DailyQuote } from '../content/quotes';
 import type { PracticeUnit } from '../domain/practice/types';
 
-const API_BASE = '/external-api';
+const DAILY_API_BASE = '/external-api';
+const POETRY_API_BASE = '/poetry-api';
+const TONGUE_API_BASE = '/tongue-api';
 
 interface ApiResponse<T> {
   code: number;
-  msg: string;
+  msg?: string;
   data: T;
 }
 
-interface PoetryPayload {
-  content: string;
-  origin: string;
-  author: string;
-  category: string;
+interface ParsedPoetry {
+  text: string;
+  source: string;
 }
 
 export async function fetchTongueTwisterUnit(): Promise<PracticeUnit> {
-  const data = await getApiData<string | { content: string }>('/tongue-twister');
-  const text = toContentText(data);
+  const data = await getApiData<string | { content: string }>(`${TONGUE_API_BASE}/raokouling`, [0]);
+  const text = cleanContentText(toContentText(data));
   return {
     id: `api-tongue-${Date.now()}`,
     module: 'article',
@@ -30,19 +30,20 @@ export async function fetchTongueTwisterUnit(): Promise<PracticeUnit> {
 }
 
 export async function fetchPoetryUnit(): Promise<PracticeUnit> {
-  const data = await getApiData<PoetryPayload>('/diary-poetry');
+  const data = await getApiData<string>(`${POETRY_API_BASE}/yiyan?type=poetry`, [200]);
+  const poetry = parsePoetryText(data);
   return {
     id: `api-poetry-${Date.now()}`,
     module: 'poem',
-    text: data.content,
-    syllables: toSyllables(data.content),
-    source: `${data.origin} · ${data.author}`,
-    tags: data.category.split('-').filter(Boolean),
+    text: poetry.text,
+    syllables: toSyllables(poetry.text),
+    source: poetry.source,
+    tags: ['诗词', '在线内容'],
   };
 }
 
 export async function fetchDailyQuote(): Promise<DailyQuote> {
-  const data = await getApiData<{ content: string }>('/chicken-soup');
+  const data = await getApiData<{ content: string }>(`${DAILY_API_BASE}/chicken-soup`, [200]);
   return {
     text: data.content,
     source: '某日一言',
@@ -52,6 +53,26 @@ export async function fetchDailyQuote(): Promise<DailyQuote> {
 
 function toContentText(data: string | { content: string }): string {
   return typeof data === 'string' ? data : data.content;
+}
+
+function cleanContentText(text: string): string {
+  return text
+    .replace(/<br\s*\/?>/gi, '')
+    .replace(/<[^>]+>/g, '')
+    .trim();
+}
+
+function parsePoetryText(rawText: string): ParsedPoetry {
+  const text = cleanContentText(rawText);
+  const match = text.match(/^(.*?)《([^》]+)》\s*[—-]\s*(.+)$/);
+  if (!match) {
+    return { text, source: '在线诗词' };
+  }
+
+  return {
+    text: match[1].trim(),
+    source: `${match[2].trim()} · ${match[3].trim()}`,
+  };
 }
 
 function toSyllables(text: string): string[] {
@@ -66,15 +87,15 @@ function normalizeSyllable(syllable: string): string {
   return syllable.replaceAll('ü', 'v');
 }
 
-async function getApiData<T>(path: string): Promise<T> {
-  const response = await fetch(`${API_BASE}${path}`);
+async function getApiData<T>(url: string, successCodes: number[]): Promise<T> {
+  const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`内容 API 请求失败：${path}`);
+    throw new Error(`内容 API 请求失败：${url}`);
   }
 
   const payload = (await response.json()) as ApiResponse<T>;
-  if (payload.code !== 200) {
-    throw new Error(payload.msg || `内容 API 返回异常：${path}`);
+  if (!successCodes.includes(payload.code)) {
+    throw new Error(payload.msg || `内容 API 返回异常：${url}`);
   }
 
   return payload.data;

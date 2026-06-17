@@ -1,0 +1,9018 @@
+{
+  "schemaVersion": 1,
+  "id": "daily-common",
+  "name": "日常高频词",
+  "version": "1.0.0",
+  "author": "Shuangpin Cabin",
+  "license": "MIT",
+  "pricingType": "free",
+  "description": "来自 Jieba 高频词典筛选的日常常用词，适合长期基础热身。",
+  "tags": [
+    "daily",
+    "beginner",
+    "common",
+    "jieba"
+  ],
+  "entries": [
+    {
+      "text": "一个",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一個",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中国",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中國",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "我们",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "我們",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "他们",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "他們",
+      "weight": 100,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自己",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "沒有",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "没有",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国家",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "國家",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "可以",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发展",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發展",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工作",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这个",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這個",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "什么",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "什麼",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主要",
+      "weight": 99,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "問題",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "问题",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "进行",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "進行",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地方",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "已經",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "已经",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这样",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這樣",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全国",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全國",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "經濟",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "经济",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这些",
+      "weight": 98,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這些",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不是",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "公司",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人民",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "社会",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "社會",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知道",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这种",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這種",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "起來",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "起来",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地区",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地區",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如果",
+      "weight": 97,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "开始",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "開始",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "技术",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "技術",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重要",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "美国",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "美國",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成为",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成爲",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "因为",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "因爲",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通过",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通過",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "研究",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "文化",
+      "weight": 96,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "企业",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "企業",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "北京",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "历史",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "歷史",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世界",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其中",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现在",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "現在",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "天安門",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "天安门",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不能",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一些",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时间",
+      "weight": 95,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "時間",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "生产",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "生產",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情况",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "情況",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "代表",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "决定",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "決定",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "湖北",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "关系",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "關係",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "領導",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "领导",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "生活",
+      "weight": 94,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时候",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "時候",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一种",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一種",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "可能",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出來",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出来",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学生",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "學生",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以及",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "石首",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一般",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同时",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同時",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "認爲",
+      "weight": 93,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "认为",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "由于",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "由於",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "所以",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不同",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这里",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這裏",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学院",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "學院",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "两个",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "兩個",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作为",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作爲",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "会议",
+      "weight": 92,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "會議",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "但是",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部分",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "活动",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "活動",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "需要",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "怎么",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "怎麼",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "管理",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方面",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市场",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市場",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "組織",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "组织",
+      "weight": 91,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工业",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工業",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建設",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建设",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形成",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其他",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出现",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出現",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "許多",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "许多",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "日本",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之間",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之间",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一定",
+      "weight": 90,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "具有",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城市",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以上",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政治",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人们",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人們",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "委员会",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "委員會",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发现",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發現",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "記者",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "记者",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国际",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "國際",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "規定",
+      "weight": 89,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "规定",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "机关",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "機關",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武汉",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武漢",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "虽然",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "雖然",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "根据",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "根據",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法律",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "影响",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "影響",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "包括",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发生",
+      "weight": 88,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發生",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "使用",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中心",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "教育",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "要求",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政府",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "因此",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人口",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建立",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "参加",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "參加",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "产品",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "產品",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武汉市",
+      "weight": 87,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武漢市",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "而且",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一样",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一樣",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "面积",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "面積",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "各种",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "各種",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "提出",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "我国",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "我國",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作用",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "皇帝",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "必須",
+      "weight": 86,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "必须",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行政",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "編輯",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "编辑",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "职业",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "職業",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制度",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以后",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以後",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "你们",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "你們",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "說道",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说道",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世紀",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "世纪",
+      "weight": 85,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "为了",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爲了",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "应该",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "應該",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之一",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之后",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之後",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主席",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "系統",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "系统",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "有关",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "有關",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "組成",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "组成",
+      "weight": 84,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "民族",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "基本",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "增長",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "增长",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自然",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大学",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大學",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如何",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政体",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政體",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "各級",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "各级",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人员",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人員",
+      "weight": 83,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "計劃",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "计划",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不会",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不會",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "产生",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "產生",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时期",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "時期",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "最后",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "最後",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一次",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表示",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "机构",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "機構",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "当时",
+      "weight": 82,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "當時",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大家",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "特別",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "特别",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "改革",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "長江",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长江",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那么",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那麼",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这么",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這麼",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "东西",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "東西",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "能力",
+      "weight": 81,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "湖北省",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "革命",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一直",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "基础",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "基礎",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "还有",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "還有",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "得到",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "进入",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "進入",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "运动",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "運動",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目前",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "对于",
+      "weight": 80,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "對於",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过程",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "過程",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方法",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "举行",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "舉行",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "羣衆",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "群众",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "第一",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "单位",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "單位",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如此",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "孩子",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "所有",
+      "weight": 79,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "資源",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资源",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过去",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "過去",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不过",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不過",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "条件",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "條件",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学校",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "學校",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "提高",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工程",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "环境",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "環境",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "提供",
+      "weight": 78,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方式",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "百科",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "報告",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "报告",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "或者",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "下來",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "下来",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "军事",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "軍事",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部門",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部门",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分別",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分别",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "十分",
+      "weight": 77,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "上海",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完成",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一切",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那些",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "最大",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "然后",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "然後",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "农业",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "農業",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "經過",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "经过",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "专业",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "專業",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "准备",
+      "weight": 76,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "準備",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "增加",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "獲得",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "获得",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "旅游",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "旅遊",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一声",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一聲",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "覺得",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "觉得",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一起",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "理論",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "理论",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "今天",
+      "weight": 75,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "非常",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中央",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比較",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比较",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表现",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "表現",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "价值",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "價值",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国务院",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "國務院",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "科技",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完全",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "亿元",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "億元",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "有些",
+      "weight": 74,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "存在",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "达到",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "達到",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "內容",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "内容",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实行",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "實行",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "思想",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事情",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实现",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "實現",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "甚至",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人民政府",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "任务",
+      "weight": 73,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "任務",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "选举",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "選舉",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "形式",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原來",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原来",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "有人",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "突然",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不断",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不斷",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "咱们",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "咱們",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "变化",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "變化",
+      "weight": 72,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心中",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直接",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "战争",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "戰爭",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "可是",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不知",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "政策",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不要",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "資本",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资本",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "繼續",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "继续",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "年代",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "期間",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "期间",
+      "weight": 71,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "位于",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "位於",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "任何",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "权力",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "權力",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那个",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那個",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "執行",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "执行",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先生",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解决",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "解決",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建筑",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建築",
+      "weight": 70,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "能够",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "能夠",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治区",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自治區",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "称为",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "稱爲",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "結構",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "结构",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一点",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一點",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成立",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "英国",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "英國",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "社会主义",
+      "weight": 69,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "社會主義",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "統一",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "统一",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先进",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先進",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "結果",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "结果",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "投資",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "投资",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "后来",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "後來",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一下",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "水平",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保护",
+      "weight": 68,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保護",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "主任",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "关于",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "關於",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "負責",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "负责",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "制定",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "艺术",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "藝術",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "利用",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "于是",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "於是",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "学习",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "學習",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "合作",
+      "weight": 67,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "科学",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "科學",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "看到",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "項目",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "项目",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不敢",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "襄阳",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "襄陽",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "几个",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "幾個",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那裏",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那里",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "公里",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "服务",
+      "weight": 66,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "服務",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "精神",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人大",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全省",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "当然",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "當然",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "个人",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "個人",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "超过",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "超過",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重点",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重點",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "很多",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原因",
+      "weight": 65,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "及其",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "公民",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "希望",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "新聞",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "新闻",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "設計",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "设计",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相关",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相關",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国内",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "國內",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分佈",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分布",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "最高",
+      "weight": 64,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部队",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "部隊",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "它们",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "它們",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "集团",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "集團",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "信息",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "採用",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "采用",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重大",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "回來",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "回来",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "範圍",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "范围",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "引起",
+      "weight": 63,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实际",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "實際",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其实",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "其實",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不仅",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不僅",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "取得",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "丰富",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "豐富",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "农民",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "農民",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整个",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "整個",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "为主",
+      "weight": 62,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爲主",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "了解",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "瞭解",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "价格",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "價格",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "甚么",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "甚麼",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地位",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这时",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這時",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "劳动",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "勞動",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "按照",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "控制",
+      "weight": 61,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目标",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目標",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "基地",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "农村",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "農村",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "传统",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "傳統",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "受到",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全部",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法国",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法國",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比賽",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "比赛",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "军队",
+      "weight": 60,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "軍隊",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "土地",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "規模",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "规模",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "荆州",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "荊州",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "眼睛",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "左右",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "选择",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "選擇",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "批准",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "身上",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "专家",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "專家",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分析",
+      "weight": 59,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "統治",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "统治",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "加強",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "加强",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不到",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "鐵路",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "铁路",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "百度",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "每年",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "告訴",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "告诉",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "支持",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "交通",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明白",
+      "weight": 58,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "处理",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "處理",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "本級",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "本级",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作战",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作戰",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "时代",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "時代",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "皇上",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实施",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "實施",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "只要",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "成功",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "办法",
+      "weight": 57,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "辦法",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "随着",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "隨着",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之中",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "进一步",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "進一步",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心裏",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "心里",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "終於",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "终于",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大量",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人物",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "共同",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "下去",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "多少",
+      "weight": 56,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "來說",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "来说",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "严重",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "嚴重",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "詞條",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "词条",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "接受",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "收入",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以來",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以来",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "城邦",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "声音",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "聲音",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意見",
+      "weight": 55,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意见",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "过来",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "過來",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保持",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "今日",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一条",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一條",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发言人",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發言人",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "另外",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "坚持",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "堅持",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "工人",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "汽車",
+      "weight": 54,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "汽车",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "而是",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "敌人",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "敵人",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "商品",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "說話",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说话",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "改变",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "改變",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先后",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "先後",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "力量",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事业",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "事業",
+      "weight": 53,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "开发",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "看見",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "看见",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "開發",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "战略",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "戰略",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "标准",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "標準",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "是否",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出去",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "今年",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "報道",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "报道",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "程度",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "国民党",
+      "weight": 52,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "國民黨",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "平均",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "消息",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "还是",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "還是",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "安全",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "独立",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "獨立",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "注意",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "机会",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "機會",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "韋小寶",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "韦小宝",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "父亲",
+      "weight": 51,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "父親",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "此外",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "这次",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "這次",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "經驗",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "经验",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "採取",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "采取",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "喜欢",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "喜歡",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "根本",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "領域",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "领域",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "具体",
+      "weight": 50,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "具體",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "联系",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "聯繫",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "几乎",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "幾乎",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "干部",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "幹部",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "印度",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "如今",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大会",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大會",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不可",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "兄弟",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "德国",
+      "weight": 49,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "德國",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "阶段",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "階段",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "为什么",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "感到",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "爲什麼",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "无法",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "無法",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "宪法",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "憲法",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "似乎",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原则",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "原則",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "真正",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法規",
+      "weight": 48,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "法规",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "斗争",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "鬥爭",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人类",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人類",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "目的",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "造成",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一位",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "反对",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "反對",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "儿子",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "兒子",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "相同",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "以前",
+      "weight": 47,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "著名",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "众人",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "衆人",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建議",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "建议",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "迅速",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "全面",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正是",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明显",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "明顯",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "就是",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "欧洲",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "歐洲",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作品",
+      "weight": 46,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "首先",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "集中",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "正式",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "朋友",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "第二",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "召开",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "召開",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "材料",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "帮助",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "幫助",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "飛機",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "飞机",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "委员",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "委員",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行动",
+      "weight": 45,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行動",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保證",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "保证",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现象",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "現象",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "特点",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "特點",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "现代",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "現代",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "实际上",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "實際上",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "資料",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "资料",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "毛泽东",
+      "weight": 44,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "毛澤東",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "同志",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行为",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行爲",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "結束",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "结束",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直轄市",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "直辖市",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "介紹",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "介绍",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "只見",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "只见",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "勝利",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "胜利",
+      "weight": 43,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "認識",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "认识",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人数",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人數",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "姑娘",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "积极",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "積極",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "家庭",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "之前",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "更加",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "回答",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武器",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那样",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "那樣",
+      "weight": 42,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "应用",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "應用",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市長",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "市长",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "來到",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "来到",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "設立",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "设立",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "产业",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "產業",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "公路",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人才",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意义",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "意義",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "台湾",
+      "weight": 41,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "臺灣",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "容易",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "長期",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "长期",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一句",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "大道",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "扩大",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "擴大",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "官员",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "官員",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "調整",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "调整",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考慮",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考虑",
+      "weight": 40,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "联合",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "聯合",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "並且",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "并且",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "自由",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "仍然",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "拥有",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "擁有",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "民主",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "专门",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "專門",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "附近",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一天",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "师父",
+      "weight": 39,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "師父",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "結合",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "结合",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "清楚",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "說明",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "说明",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "稳定",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "穩定",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "古代",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "三个",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "三個",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "此时",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "此時",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "物質",
+      "weight": 38,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "物质",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "电话",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "電話",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "網絡",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "网络",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "利益",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "然而",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "很大",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "不少",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中学",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "中學",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "开放",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "調查",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "调查",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "開放",
+      "weight": 37,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "人家",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "重新",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "广泛",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "廣泛",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分为",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "分爲",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知識",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "知识",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "別人",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "别人",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "綜合",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "综合",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "出口",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "动物",
+      "weight": 36,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "動物",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "速度",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "总理",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "總理",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "脸上",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "臉上",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "用于",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "用於",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "設備",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "设备",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "女人",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "股东",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "股東",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "作出",
+      "weight": 35,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "展开",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "展開",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "措施",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "通常",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "电子",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "電子",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "方向",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "导弹",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "導彈",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "小时",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "小時",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "平民",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行业",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "行業",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "特色",
+      "weight": 34,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "貨幣",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "货币",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "完善",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "地理",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "功能",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "香港",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "巨大",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发表",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發表",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "性質",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "性质",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "母亲",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "母親",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "質量",
+      "weight": 33,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "质量",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "命令",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "和平",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "监督",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "監督",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "一年",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "身体",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "身體",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "面前",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "武功",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "位置",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "体系",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "體系",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "越來越",
+      "weight": 32,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "越来越",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "逐渐",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "逐漸",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指出",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "安排",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "权利",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "權利",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "訓練",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "训练",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考試",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "考试",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指挥",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指揮",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "却是",
+      "weight": 31,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "卻是",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指导",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "指導",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "发布",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "發佈",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "除了",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "从而",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    },
+    {
+      "text": "從而",
+      "weight": 30,
+      "tags": [
+        "daily",
+        "common"
+      ],
+      "source": "jieba-dict-big"
+    }
+  ]
+}
