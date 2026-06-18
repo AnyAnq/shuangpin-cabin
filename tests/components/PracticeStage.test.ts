@@ -60,6 +60,25 @@ describe('PracticeStage', () => {
     expect(firstCodeKeys.map((key) => key.text())).toEqual(['d', 'o']);
   });
 
+  it('关闭逐字编码后隐藏每个字下方的双拼引导', () => {
+    const wrapper = mount(PracticeStage, {
+      props: {
+        text: '多情',
+        activeIndex: 0,
+        code: 'do',
+        completedCodeCount: 0,
+        wrong: false,
+        codes: ['do', 'qk'],
+        textCharIndices: [0, 1],
+        completedCharCount: 0,
+        showCharacterCodes: false,
+      },
+    });
+
+    expect(wrapper.find('[data-char-code="0"]').exists()).toBe(false);
+    expect(wrapper.findAll('[data-code-key]')).toHaveLength(2);
+  });
+
   it('标记当前字下方下一次要按的双拼键', () => {
     const wrapper = mount(PracticeStage, {
       props: {

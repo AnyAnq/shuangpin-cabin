@@ -17,11 +17,14 @@ import {
   savePreferences,
   saveSession,
   upsertMistake,
+  clearMistakes,
+  clearSessions,
 } from '../storage/repositories';
 import {
   getInstalledVocabularyPackage,
   listInstalledVocabularyPackages,
   listVocabularyEntries,
+  clearVocabularyPackages,
 } from '../storage/vocabularyRepository';
 import type { VocabularyPackageRecord } from '../storage/db';
 import { fetchDailyQuote, fetchPoetryUnit, fetchTongueTwisterUnit } from '../services/contentApi';
@@ -37,6 +40,8 @@ export const usePracticeStore = defineStore('practice', () => {
   const schemeId = ref<ShuangpinSchemeId>('xiaohe');
   const scheme = computed(() => (schemeId.value === 'xiaohe' ? xiaoheScheme : ziranmaScheme));
   const module = ref<PracticeModule>('poem');
+  const defaultModule = ref<PracticeModule>('poem');
+  const showCharacterCodes = ref(true);
   const unitIndex = ref(0);
   const pendingMistake = ref<MistakeRecord | null>(null);
   const mistakeUnits = ref<PracticeUnit[]>([]);
@@ -172,6 +177,38 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
+  async function setDefaultModule(next: PracticeModule) {
+    defaultModule.value = next;
+    await saveCurrentPreferences();
+  }
+
+  async function setShowCharacterCodes(next: boolean) {
+    showCharacterCodes.value = next;
+    await saveCurrentPreferences();
+  }
+
+  async function clearMistakeRecords() {
+    await clearMistakes();
+    if (module.value === 'mistake') {
+      await refreshMistakeUnits();
+      unitIndex.value = 0;
+      resetSession(unitsForModule('mistake')[0]);
+    }
+  }
+
+  async function clearPracticeSessions() {
+    await clearSessions();
+  }
+
+  async function clearInstalledVocabularies() {
+    await clearVocabularyPackages();
+    await refreshVocabularyPackages();
+    if (module.value === 'vocabulary') {
+      unitIndex.value = 0;
+      resetSession(unitsForModule('vocabulary')[0]);
+    }
+  }
+
   async function nextUnit() {
     if (isSwitching.value) {
       return;
@@ -212,18 +249,25 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function hydratePreferences() {
-    module.value = 'poem';
     unitIndex.value = 0;
     isSwitching.value = true;
     try {
       const preference = await loadPreferences();
+      let nextModule: PracticeModule = 'poem';
       if (preference) {
         schemeId.value = preference.scheme;
         selectedVocabularyPackageId.value = preference.lastVocabularyPackageId ?? null;
+        defaultModule.value = preference.defaultModule ?? 'poem';
+        showCharacterCodes.value = preference.showCharacterCodes ?? true;
+        nextModule = preference.defaultModule ?? 'poem';
       }
+      module.value = nextModule === 'character' ? 'poem' : nextModule;
       await refreshVocabularyPackages();
-      if (module.value !== 'poem') {
-        return;
+      if (module.value === 'mistake') {
+        await refreshMistakeUnits();
+      }
+      if (module.value === 'vocabulary') {
+        await refreshVocabularyUnits();
       }
       await Promise.all([
         refreshDailyQuote(),
@@ -341,6 +385,8 @@ export const usePracticeStore = defineStore('practice', () => {
       id: 'default',
       scheme: schemeId.value,
       module: module.value,
+      defaultModule: defaultModule.value,
+      showCharacterCodes: showCharacterCodes.value,
       lastVocabularyPackageId: selectedVocabularyPackageId.value ?? undefined,
       updatedAt: Date.now(),
     });
@@ -449,6 +495,8 @@ export const usePracticeStore = defineStore('practice', () => {
     schemeId,
     scheme,
     module,
+    defaultModule,
+    showCharacterCodes,
     activeUnit,
     session,
     wrongKey,
@@ -480,6 +528,11 @@ export const usePracticeStore = defineStore('practice', () => {
     clearWrongKey,
     setScheme,
     setModule,
+    setDefaultModule,
+    setShowCharacterCodes,
+    clearMistakeRecords,
+    clearPracticeSessions,
+    clearInstalledVocabularies,
     nextUnit,
     restartCurrent,
     closeCompletion,

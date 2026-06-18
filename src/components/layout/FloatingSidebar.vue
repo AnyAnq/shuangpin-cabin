@@ -26,9 +26,9 @@
           <component :is="item.icon" />
         </span>
       </nav>
-      <span class="rail-item rail-bottom is-disabled" title="设置" aria-label="设置" aria-disabled="true" role="link">
+      <button class="rail-item rail-bottom" type="button" title="设置" aria-label="设置" @click="$emit('open-settings')">
         <Settings />
-      </span>
+      </button>
     </aside>
   </div>
 </template>
@@ -37,6 +37,10 @@
 import { RouterLink, useRoute } from 'vue-router';
 import { ChartColumn, LibraryBig, NotebookText, Settings } from '@lucide/vue';
 import type { Component } from 'vue';
+
+defineEmits<{
+  (event: 'open-settings'): void;
+}>();
 
 const route = useRoute();
 

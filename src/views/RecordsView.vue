@@ -1,6 +1,7 @@
 <template>
   <div class="app-shell learning-shell">
-    <FloatingSidebar />
+    <FloatingSidebar @open-settings="settingsOpen = true" />
+    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
     <main class="learning-main">
       <section class="learning-header">
         <div>
@@ -113,6 +114,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
+import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
 import type { MistakeRecord } from '../domain/practice/mistakes';
 import { buildMistakeReview } from '../domain/practice/mistakeReview';
 import { usePracticeStore } from '../stores/practiceStore';
@@ -121,6 +123,7 @@ import { listMistakesByScheme } from '../storage/repositories';
 const practice = usePracticeStore();
 const router = useRouter();
 const mistakes = ref<MistakeRecord[]>([]);
+const settingsOpen = ref(false);
 const review = computed(() => buildMistakeReview(mistakes.value, practice.scheme));
 
 onMounted(loadMistakes);

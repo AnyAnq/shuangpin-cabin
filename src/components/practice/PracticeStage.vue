@@ -10,7 +10,7 @@
         >
           <span class="target-glyph">{{ char }}</span>
           <span
-            v-if="codeForTextIndex(line.start + index)"
+            v-if="showCharacterCodes && codeForTextIndex(line.start + index)"
             class="char-code"
             :class="{ 'is-complete': isCodeComplete(line.start + index), 'is-active': line.start + index === activeIndex }"
             :data-char-code="line.start + index"
@@ -40,7 +40,7 @@
 import { computed } from 'vue';
 import CodeHint from './CodeHint.vue';
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   text: string;
   activeIndex: number;
   code: string;
@@ -50,7 +50,12 @@ const props = defineProps<{
   textCharIndices?: number[];
   completedCharCount?: number;
   lineCharCount?: number;
-}>();
+  showCharacterCodes?: boolean;
+}>(), {
+  showCharacterCodes: true,
+});
+
+const showCharacterCodes = computed(() => props.showCharacterCodes);
 
 const lines = computed(() => {
   if (props.lineCharCount && props.lineCharCount > 0) {

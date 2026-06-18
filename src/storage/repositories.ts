@@ -55,3 +55,11 @@ export function savePreferences(record: PreferenceRecord): Promise<string> {
 export function loadPreferences(id = 'default'): Promise<PreferenceRecord | undefined> {
   return db.preferences.get(id);
 }
+
+export function clearMistakes(): Promise<void> {
+  return db.mistakes.clear();
+}
+
+export function clearSessions(): Promise<void> {
+  return db.sessions.clear();
+}

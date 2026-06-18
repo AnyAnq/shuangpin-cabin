@@ -55,6 +55,13 @@ export async function uninstallVocabularyPackage(packageId: string): Promise<voi
   });
 }
 
+export async function clearVocabularyPackages(): Promise<void> {
+  await db.transaction('rw', db.vocabularyPackages, db.vocabularyEntries, async () => {
+    await db.vocabularyEntries.clear();
+    await db.vocabularyPackages.clear();
+  });
+}
+
 export async function listVocabularyEntries(packageId: string): Promise<VocabularyEntryRecord[]> {
   const entries = await db.vocabularyEntries.where('packageId').equals(packageId).toArray();
   return entries.sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0));

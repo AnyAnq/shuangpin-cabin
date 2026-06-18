@@ -19,6 +19,8 @@ export interface PreferenceRecord {
   id: string;
   scheme: ShuangpinSchemeId;
   module: PracticeModule;
+  defaultModule?: PracticeModule;
+  showCharacterCodes?: boolean;
   lastVocabularyPackageId?: string;
   updatedAt: number;
 }

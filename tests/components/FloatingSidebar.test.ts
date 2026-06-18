@@ -30,7 +30,7 @@ describe('FloatingSidebar', () => {
     expect(wrapper.find('[aria-label="键位对照"]').exists()).toBe(false);
     expect(wrapper.get('[aria-label="记录"]').attributes('href')).toBe('/records');
     expect(wrapper.get('[aria-label="词库"]').attributes('href')).toBe('/vocabularies');
-    expect(wrapper.get('[aria-label="设置"]').attributes('aria-disabled')).toBe('true');
+    expect(wrapper.get('[aria-label="设置"]').attributes('type')).toBe('button');
     expect(wrapper.get('[aria-label="记录"]').classes()).toContain('is-active');
   });
 });

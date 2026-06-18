@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { usePracticeStore } from '../../src/stores/practiceStore';
 import type { MistakeRecord } from '../../src/domain/practice/mistakes';
 import { db } from '../../src/storage/db';
-import { upsertMistake } from '../../src/storage/repositories';
+import { clearMistakes, clearSessions, upsertMistake } from '../../src/storage/repositories';
 import { installVocabularyPackage } from '../../src/storage/vocabularyRepository';
 
 describe('练习状态', () => {
@@ -161,6 +161,37 @@ describe('练习状态', () => {
 
     expect(store.module).toBe('poem');
     expect(store.activeUnit.module).toBe('poem');
+  });
+
+  it('可以保存默认模块和逐字编码偏好', async () => {
+    const store = usePracticeStore();
+
+    await store.setDefaultModule('article');
+    await store.setShowCharacterCodes(false);
+
+    const preference = await waitForPreference();
+    expect(preference.defaultModule).toBe('article');
+    expect(preference.showCharacterCodes).toBe(false);
+  });
+
+  it('清空本地错题和练习记录', async () => {
+    await upsertMistake(makeMistake({ id: 'mistake-clear' }));
+    await db.sessions.put({
+      id: 'session-clear',
+      scheme: 'xiaohe',
+      module: 'poem',
+      accuracy: 100,
+      wpm: 30,
+      maxCombo: 10,
+      elapsedMs: 1000,
+      createdAt: Date.now(),
+    });
+
+    await clearMistakes();
+    await clearSessions();
+
+    expect(await db.mistakes.count()).toBe(0);
+    expect(await db.sessions.count()).toBe(0);
   });
 
   it('可以切换练习模块并重置题目', async () => {

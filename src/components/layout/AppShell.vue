@@ -1,6 +1,7 @@
 <template>
   <div class="app-shell">
-    <FloatingSidebar />
+    <FloatingSidebar @open-settings="settingsOpen = true" />
+    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
     <main class="practice-main">
       <div class="practice-topbar">
         <ModuleTabs />
@@ -79,6 +80,7 @@
           :text-char-indices="practice.session.textCharIndices"
           :completed-char-count="practice.session.stats.completedChars"
           :line-char-count="practice.activeUnit.lineCharCount"
+          :show-character-codes="practice.showCharacterCodes"
           :wrong="practice.lastStatus === 'wrong'"
         />
         <VirtualKeyboard :scheme="practice.scheme" :active-key="practice.keyboardActiveKey" :wrong-key="practice.wrongKey" />
@@ -116,6 +118,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import { usePracticeStore } from '../../stores/practiceStore';
 import { RouterLink } from 'vue-router';
 import ModuleTabs from '../controls/ModuleTabs.vue';
@@ -125,6 +128,8 @@ import VirtualKeyboard from '../practice/VirtualKeyboard.vue';
 import SchemeSwitch from '../controls/SchemeSwitch.vue';
 import FloatingSidebar from './FloatingSidebar.vue';
 import RightInsightPanel from './RightInsightPanel.vue';
+import SettingsDrawer from '../settings/SettingsDrawer.vue';
 
 const practice = usePracticeStore();
+const settingsOpen = ref(false);
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div class="app-shell vocabulary-page">
-    <FloatingSidebar />
+    <FloatingSidebar @open-settings="settingsOpen = true" />
+    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
     <main class="vocabulary-main">
       <section class="vocabulary-hero">
         <span>词库中心</span>
@@ -75,6 +76,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
+import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
 import type { VocabularyRegistryItem } from '../domain/vocabulary';
 import { downloadVocabularyPackage, fetchVocabularyRegistry } from '../services/vocabularyRegistryService';
 import { installVocabularyPackage, listInstalledVocabularyPackages, uninstallVocabularyPackage } from '../storage/vocabularyRepository';
@@ -88,6 +90,7 @@ const installedPackages = ref<VocabularyPackageRecord[]>([]);
 const registryError = ref('');
 const loadingRegistry = ref(false);
 const installingId = ref<string | null>(null);
+const settingsOpen = ref(false);
 const installedIds = computed(() => new Set(installedPackages.value.map((pack) => pack.id)));
 
 onMounted(() => {
