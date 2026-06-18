@@ -61,6 +61,8 @@ export const usePracticeStore = defineStore('practice', () => {
   const isSwitching = ref(false);
   let mistakeSaveQueue: Promise<unknown> = Promise.resolve();
   let moduleSwitchSeq = 0;
+  let preferenceHydrateSeq = 0;
+  let hasManualPracticeSelection = false;
 
   const currentCode = computed(() => session.value.codes[session.value.cursor.charIndex] ?? '');
   const currentExpectedKey = computed(() => currentCode.value[session.value.cursor.codeIndex] ?? null);
@@ -150,6 +152,8 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function setModule(next: PracticeModule) {
+    hasManualPracticeSelection = true;
+    preferenceHydrateSeq += 1;
     const switchSeq = ++moduleSwitchSeq;
     isSwitching.value = true;
     try {
@@ -169,7 +173,7 @@ export const usePracticeStore = defineStore('practice', () => {
       const units = unitsForModule(next);
       unitIndex.value = selectFreshUnitIndex(next, units, 0);
       resetSession(units[unitIndex.value]);
-      void saveCurrentPreferences();
+      await saveCurrentPreferences();
     } finally {
       if (switchSeq === moduleSwitchSeq) {
         isSwitching.value = false;
@@ -249,6 +253,10 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function hydratePreferences() {
+    if (hasManualPracticeSelection) {
+      return;
+    }
+    const hydrateSeq = ++preferenceHydrateSeq;
     unitIndex.value = 0;
     isSwitching.value = true;
     try {
@@ -273,9 +281,14 @@ export const usePracticeStore = defineStore('practice', () => {
         refreshDailyQuote(),
         refreshOnlineUnit(module.value),
       ]);
+      if (hydrateSeq !== preferenceHydrateSeq) {
+        return;
+      }
       resetSession(unitsForModule(module.value)[0]);
     } finally {
-      isSwitching.value = false;
+      if (hydrateSeq === preferenceHydrateSeq) {
+        isSwitching.value = false;
+      }
     }
   }
 
@@ -461,13 +474,15 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function setVocabularyPackage(packageId: string) {
+    hasManualPracticeSelection = true;
+    preferenceHydrateSeq += 1;
     selectedVocabularyPackageId.value = packageId;
     unitIndex.value = 0;
     await refreshVocabularyUnits();
     if (module.value === 'vocabulary') {
       resetSession(unitsForModule('vocabulary')[0]);
     }
-    void saveCurrentPreferences();
+    await saveCurrentPreferences();
   }
 
   async function refreshOnlineUnit(targetModule: PracticeModule) {
