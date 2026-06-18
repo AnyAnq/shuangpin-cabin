@@ -27,7 +27,15 @@ import {
   clearVocabularyPackages,
 } from '../storage/vocabularyRepository';
 import type { VocabularyPackageRecord } from '../storage/db';
-import { fetchDailyQuote, fetchPoetryUnit, fetchTongueTwisterUnit } from '../services/contentApi';
+import {
+  fetchDailyQuote,
+  fetchPoetryUnit,
+  fetchTongueTwisterUnit,
+  prefetchPoetryUnit,
+  prefetchTongueTwisterUnit,
+  consumeCachedPoetryUnit,
+  consumeCachedTongueTwisterUnit,
+} from '../services/contentApi';
 
 const RECENT_UNIT_TEXT_LIMIT = 6;
 const MIXED_VOCABULARY_PACKAGE_ID = '__mixed_vocabulary__';
@@ -60,6 +68,7 @@ export const usePracticeStore = defineStore('practice', () => {
   const lastStatus = ref<'correct' | 'wrong' | 'ignored' | 'complete'>('ignored');
   const hasInteracted = ref(false);
   const isSwitching = ref(false);
+  let prefetchQueue: Promise<void> = Promise.resolve();
   let mistakeSaveQueue: Promise<unknown> = Promise.resolve();
   let moduleSwitchSeq = 0;
   let preferenceHydrateSeq = 0;
@@ -229,6 +238,37 @@ export const usePracticeStore = defineStore('practice', () => {
     isSwitching.value = true;
     try {
       const targetModule = module.value;
+      
+      // First attempt to consume cached unit (instant switch)
+      if (targetModule === 'poem') {
+        const cached = consumeCachedPoetryUnit();
+        if (cached) {
+          const units = unitsForModule(targetModule);
+          unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
+          resetSession(units[unitIndex.value]);
+          if (switchSeq === moduleSwitchSeq) {
+            isSwitching.value = false;
+          }
+          // Kick off background preload for next unit
+          startBackgroundPrefetch();
+          return;
+        }
+      } else if (targetModule === 'article') {
+        const cached = consumeCachedTongueTwisterUnit();
+        if (cached) {
+          const units = unitsForModule(targetModule);
+          unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
+          resetSession(units[unitIndex.value]);
+          if (switchSeq === moduleSwitchSeq) {
+            isSwitching.value = false;
+          }
+          // Kick off background preload for next unit
+          startBackgroundPrefetch();
+          return;
+        }
+      }
+      
+      // Fallback: fetch fresh content if no cache available
       await refreshOnlineUnit(targetModule);
       if (targetModule === 'mistake') {
         await refreshMistakeUnits();
@@ -242,6 +282,9 @@ export const usePracticeStore = defineStore('practice', () => {
       const units = unitsForModule(targetModule);
       unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
       resetSession(units[unitIndex.value]);
+      
+      // Kick off background preload for next unit
+      startBackgroundPrefetch();
     } finally {
       if (switchSeq === moduleSwitchSeq) {
         isSwitching.value = false;
@@ -292,6 +335,7 @@ export const usePracticeStore = defineStore('practice', () => {
         return;
       }
       resetSession(unitsForModule(module.value)[0]);
+      startBackgroundPrefetch();
     } finally {
       if (hydrateSeq === preferenceHydrateSeq) {
         isSwitching.value = false;
@@ -527,14 +571,45 @@ export const usePracticeStore = defineStore('practice', () => {
   async function refreshOnlineUnit(targetModule: PracticeModule) {
     try {
       if (targetModule === 'article') {
-        onlineTongueTwisterUnit.value = await fetchTongueTwisterUnit();
+        // First check if cached version exists from preload
+        const cached = consumeCachedTongueTwisterUnit();
+        if (cached) {
+          onlineTongueTwisterUnit.value = cached;
+        } else {
+          onlineTongueTwisterUnit.value = await fetchTongueTwisterUnit();
+        }
       }
       if (targetModule === 'poem') {
-        onlinePoemUnit.value = await fetchPoetryUnit();
+        // First check if cached version exists from preload
+        const cached = consumeCachedPoetryUnit();
+        if (cached) {
+          onlinePoemUnit.value = cached;
+        } else {
+          onlinePoemUnit.value = await fetchPoetryUnit();
+        }
       }
     } catch {
       // 内容完全依赖在线 API；失败时保留已有在线内容或空状态，等待用户重试。
     }
+  }
+
+  function startBackgroundPrefetch() {
+    // Chain prefetch tasks sequentially to avoid concurrent requests
+    prefetchQueue = prefetchQueue
+      .then(() => {
+        if (module.value === 'poem') return prefetchPoetryUnit();
+        if (module.value === 'article') return prefetchTongueTwisterUnit();
+        return Promise.resolve();
+      })
+      .then(() => {
+        // After first prefetch, start second prefetch for continuous buffer
+        if (module.value === 'poem') return prefetchPoetryUnit();
+        if (module.value === 'article') return prefetchTongueTwisterUnit();
+        return Promise.resolve();
+      })
+      .catch(() => {
+        // Silently ignore prefetch errors
+      });
   }
 
   async function refreshDailyQuote() {

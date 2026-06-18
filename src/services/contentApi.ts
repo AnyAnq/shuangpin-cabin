@@ -100,3 +100,53 @@ async function getApiData<T>(url: string, successCodes: number[]): Promise<T> {
 
   return payload.data;
 }
+
+// 内容缓存：用于后台预加载
+const contentCache = {
+  poem: null as PracticeUnit | null,
+  article: null as PracticeUnit | null,
+};
+
+/**
+ * 预加载诗词单元到缓存，不返回任何值
+ * 用于后台异步预加载，不阻塞主流程
+ */
+export async function prefetchPoetryUnit(): Promise<void> {
+  try {
+    contentCache.poem = await fetchPoetryUnit();
+  } catch {
+    // 预加载失败不抛出异常，允许主流程继续
+  }
+}
+
+/**
+ * 预加载绕口令单元到缓存，不返回任何值
+ * 用于后台异步预加载，不阻塞主流程
+ */
+export async function prefetchTongueTwisterUnit(): Promise<void> {
+  try {
+    contentCache.article = await fetchTongueTwisterUnit();
+  } catch {
+    // 预加载失败不抛出异常，允许主流程继续
+  }
+}
+
+/**
+ * 消费缓存中的诗词单元，返回后清空缓存
+ * 如果缓存为空则返回 null
+ */
+export function consumeCachedPoetryUnit(): PracticeUnit | null {
+  const cached = contentCache.poem;
+  contentCache.poem = null;
+  return cached;
+}
+
+/**
+ * 消费缓存中的绕口令单元，返回后清空缓存
+ * 如果缓存为空则返回 null
+ */
+export function consumeCachedTongueTwisterUnit(): PracticeUnit | null {
+  const cached = contentCache.article;
+  contentCache.article = null;
+  return cached;
+}
