@@ -74,7 +74,7 @@
 
 ### 标准 JSON 格式
 
-JSON 词库必须是一个完整的词库包对象，不能只写词条数组。推荐文件名示例：`my-tech-vocabulary.json`。
+JSON 词库必须是一个词库包对象，不能只写词条数组。推荐文件名示例：`my-tech-vocabulary.json`。
 
 ```json
 {
@@ -104,11 +104,11 @@ JSON 词库必须是一个完整的词库包对象，不能只写词条数组。
 | `name` | 是 | 词库显示名称。 |
 | `version` | 是 | 词库版本号，例如 `1.0.0`。 |
 | `author` | 是 | 作者或来源。 |
-| `license` | 是 | 授权说明。本地自用可以写 `Personal`。 |
-| `pricingType` | 是 | 可选值：`owned`、`free`、`paid`。自定义本地词库推荐 `owned`。 |
-| `description` | 是 | 词库描述。 |
-| `tags` | 是 | 词库标签数组。 |
 | `entries` | 是 | 词条数组。每个词条至少需要 `text`。 |
+| `license` | 否 | 授权说明，默认 `Personal`。 |
+| `pricingType` | 否 | 可选值：`owned`、`free`、`paid`，默认 `owned`。 |
+| `description` | 否 | 词库描述，默认 `从本地文件导入的自定义词库`。 |
+| `tags` | 否 | 词库标签数组，默认 `["custom", "local"]`。 |
 
 词条字段：
 

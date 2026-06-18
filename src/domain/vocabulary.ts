@@ -129,10 +129,10 @@ export function validateVocabularyPackage(input: unknown): VocabularyPackageFile
     name: input.name,
     version: input.version,
     author: input.author,
-    license: input.license,
-    pricingType: input.pricingType,
-    description: input.description,
-    tags: [...input.tags],
+    license: typeof input.license === 'string' ? input.license : 'Personal',
+    pricingType: isPricingType(input.pricingType) ? input.pricingType : 'owned',
+    description: typeof input.description === 'string' ? input.description : '从本地文件导入的自定义词库',
+    tags: Array.isArray(input.tags) ? [...input.tags] : [...DEFAULT_LOCAL_TAGS],
     entries,
   };
 }
@@ -386,11 +386,10 @@ function isPackageMeta(item: Record<string, unknown>): item is Omit<VocabularyPa
     && typeof item.name === 'string'
     && typeof item.version === 'string'
     && typeof item.author === 'string'
-    && typeof item.license === 'string'
-    && isPricingType(item.pricingType)
-    && typeof item.description === 'string'
-    && Array.isArray(item.tags)
-    && item.tags.every((tag) => typeof tag === 'string');
+    && (item.license === undefined || typeof item.license === 'string')
+    && (item.pricingType === undefined || isPricingType(item.pricingType))
+    && (item.description === undefined || typeof item.description === 'string')
+    && (item.tags === undefined || (Array.isArray(item.tags) && item.tags.every((tag) => typeof tag === 'string')));
 }
 
 function isPricingType(value: unknown): value is VocabularyPricingType {

@@ -153,6 +153,23 @@ describe('外置词库领域规则', () => {
     expect(report.previewEntries).toEqual([{ text: '今天', weight: 100, tags: undefined, source: undefined }]);
   });
 
+  it('导入 JSON 包时允许省略本地元信息字段并补默认值', () => {
+    const report = parseLocalVocabularyFile('minimal.json', JSON.stringify({
+      schemaVersion: 1,
+      id: 'minimal-json',
+      name: '最小 JSON 词库',
+      version: '1.0.0',
+      author: '用户',
+      entries: [{ text: '今天', weight: 100 }],
+    }), 1718697600000);
+
+    expect(report.packageFile.license).toBe('Personal');
+    expect(report.packageFile.pricingType).toBe('owned');
+    expect(report.packageFile.description).toBe('从本地文件导入的自定义词库');
+    expect(report.packageFile.tags).toEqual(['custom', 'local']);
+    expect(report.validCount).toBe(1);
+  });
+
   it('导出文件能再次通过词库包校验', () => {
     const exported = createVocabularyExportFile({
       id: 'local-export',
