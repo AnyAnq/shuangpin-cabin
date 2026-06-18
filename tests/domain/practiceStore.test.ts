@@ -245,6 +245,77 @@ describe('练习状态', () => {
     expect(store.session.codes).toHaveLength(12);
   });
 
+  it('混合词库会使用全部已安装词库生成练习', async () => {
+    await installVocabularyPackage({
+      schemaVersion: 1,
+      id: 'local-tech',
+      name: '技术词库',
+      version: '1.0.0',
+      author: '本地导入',
+      license: 'Personal',
+      pricingType: 'owned',
+      description: '本地技术词库。',
+      tags: ['tech'],
+      entries: [
+        { text: '字符串', weight: 99 },
+        { text: '初始化', weight: 98 },
+        { text: '数组', weight: 97 },
+      ],
+    }, 'local-file:tech.json', { sourceType: 'local' });
+    await installVocabularyPackage({
+      schemaVersion: 1,
+      id: 'remote-daily',
+      name: '在线日常词库',
+      version: '1.0.0',
+      author: 'Shuangpin Cabin',
+      license: 'MIT',
+      pricingType: 'free',
+      description: '在线日常词库。',
+      tags: ['daily'],
+      entries: [
+        { text: '今天', weight: 96 },
+        { text: '事情', weight: 95 },
+        { text: '完成', weight: 94 },
+      ],
+    }, 'https://example.com/daily.json');
+    const store = usePracticeStore();
+
+    await store.setModule('vocabulary');
+    await store.setMixedVocabularyPackage();
+
+    expect(store.isMixedVocabularyMode).toBe(true);
+    expect(store.currentVocabularyPackage?.name).toBe('混合词库');
+    expect(store.activeUnit.source).toBe('混合词库');
+    expect(store.activeUnit.text).toBe('字符串初始化数组今天事情');
+  });
+
+  it('只有一个本地词库时也可以进入混合词库模式', async () => {
+    await installVocabularyPackage({
+      schemaVersion: 1,
+      id: 'local-only',
+      name: '本地词库',
+      version: '1.0.0',
+      author: '本地导入',
+      license: 'Personal',
+      pricingType: 'owned',
+      description: '本地词库。',
+      tags: ['local'],
+      entries: [
+        { text: '今天', weight: 99 },
+        { text: '事情', weight: 98 },
+        { text: '完成', weight: 97 },
+      ],
+    }, 'local-file:local.json', { sourceType: 'local' });
+    const store = usePracticeStore();
+
+    await store.setModule('vocabulary');
+    await store.setMixedVocabularyPackage();
+
+    expect(store.isMixedVocabularyMode).toBe(true);
+    expect(store.activeUnit.source).toBe('混合词库');
+    expect(store.activeUnit.text).toBe('今天事情完成');
+  });
+
   it('快速切换模块时，较慢返回的旧请求不能覆盖当前模块题目', async () => {
     const tongueTwister = deferredResponse({
       code: 0,

@@ -60,6 +60,15 @@
       <template v-else>
         <div v-if="practice.module === 'vocabulary' && practice.vocabularyPackages.length > 0" class="vocabulary-picker" aria-label="已安装词库">
           <button
+            type="button"
+            class="is-mixed"
+            :class="{ 'is-active': practice.isMixedVocabularyMode }"
+            :disabled="practice.isSwitching"
+            @click="practice.setMixedVocabularyPackage"
+          >
+            混合
+          </button>
+          <button
             v-for="pack in practice.vocabularyPackages"
             :key="pack.id"
             type="button"

@@ -170,6 +170,10 @@ test('导入本地 TXT 词库后可以开始词库练习', async ({ page }) => {
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByText('今日练习 · 词库练习 · 我的词库')).toBeVisible();
   await expectStageText(page, '今天事情可以我们项目完成');
+  await expect(page.locator('.vocabulary-picker button').first()).toHaveText('混合');
+  await page.locator('.vocabulary-picker button').first().click();
+  await expect(page.getByText('今日练习 · 词库练习 · 混合词库')).toBeVisible();
+  await expectStageText(page, '今天事情可以我们项目完成');
 });
 
 async function expectStageText(page: import('@playwright/test').Page, text: string) {
