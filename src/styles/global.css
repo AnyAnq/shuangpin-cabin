@@ -378,7 +378,8 @@ button {
 
 .settings-option,
 .settings-danger-grid button,
-.settings-about a {
+.settings-about a,
+.settings-project-row a {
   min-height: 36px;
   display: inline-flex;
   align-items: center;
@@ -403,6 +404,7 @@ button {
 .settings-option:hover,
 .settings-danger-grid button:hover,
 .settings-about a:hover,
+.settings-project-row a:hover,
 .settings-close:hover {
   transform: translateY(-1px);
   background: #fffaf3;
@@ -477,9 +479,105 @@ button {
   justify-self: start;
 }
 
-.settings-about svg {
+.settings-about svg,
+.settings-project-row svg {
   width: 15px;
   height: 15px;
+}
+
+.settings-file-input {
+  display: none;
+}
+
+.settings-import-panel {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(126, 85, 49, 0.11);
+  border-radius: 16px;
+  background: rgba(255, 250, 244, 0.72);
+}
+
+.settings-import-fields {
+  display: grid;
+  gap: 10px;
+}
+
+.settings-import-fields label {
+  display: grid;
+  gap: 5px;
+  color: #79614e;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.settings-import-fields input {
+  min-width: 0;
+  border: 1px solid rgba(126, 85, 49, 0.16);
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: rgba(255, 252, 246, 0.86);
+  color: #2d2118;
+  font-weight: 800;
+}
+
+.settings-import-stats,
+.settings-import-preview,
+.settings-import-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.settings-import-stats span,
+.settings-import-preview small,
+.settings-import-reasons small {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: rgba(144, 88, 58, 0.1);
+  color: #79614e;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.settings-import-error,
+.settings-import-success {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.settings-import-error {
+  color: #9b4f32;
+}
+
+.settings-import-success {
+  color: #52714d;
+}
+
+.settings-project-row span,
+.settings-project-row strong,
+.settings-project-row small {
+  display: block;
+}
+
+.settings-project-row span {
+  color: var(--color-green);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.settings-project-row small {
+  margin-top: 7px;
+  color: #9a7b5c;
+  font-size: 12px;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.settings-project-row a {
+  justify-self: start;
+  text-decoration: none;
 }
 
 @keyframes settings-slide-in {

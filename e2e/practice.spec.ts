@@ -152,15 +152,17 @@ test('导入本地 TXT 词库后可以开始词库练习', async ({ page }) => {
   await page.getByRole('link', { name: '词库' }).click();
   await expect(page.getByRole('heading', { name: '安装词库后开始练习' })).toBeVisible();
 
-  await page.getByTestId('import-vocabulary-input').setInputFiles({
+  await page.getByRole('button', { name: '设置' }).click();
+  await page.getByTestId('settings-import-vocabulary-input').setInputFiles({
     name: '我的词库.txt',
     mimeType: 'text/plain',
     buffer: Buffer.from('今天\n事情\n可以\n我们\n项目\n完成\nA计划', 'utf-8'),
   });
-  const importPanel = page.locator('.vocabulary-import-panel');
+  const importPanel = page.locator('.settings-import-panel');
   await expect(importPanel.getByText('有效词条 6').first()).toBeVisible();
   await expect(importPanel.getByText('过滤 1')).toBeVisible();
-  await page.getByTestId('confirm-local-vocabulary-import').click();
+  await page.getByTestId('settings-confirm-vocabulary-import').click();
+  await page.getByRole('button', { name: '关闭设置' }).click();
   await expect(page.getByTestId('local-vocabulary-section')).toContainText('我的词库');
 
   await page.getByTestId('local-vocabulary-section').getByRole('button', { name: '开始练习' }).click();

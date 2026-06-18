@@ -8,6 +8,8 @@
 
 **Tech Stack:** Vue 3, Vite, TypeScript, Pinia, Dexie/IndexedDB, Vitest with fake-indexeddb, Vue Test Utils, Playwright.
 
+**Approved Adjustment:** The local import entry moved from `VocabulariesView.vue` to `SettingsDrawer.vue`. The vocabulary page now only displays and manages local/online vocabularies; the settings drawer owns file selection, import preview, metadata editing, installation, and emits `vocabulary-imported` so the vocabulary page can refresh when open.
+
 ## Global Constraints
 
 - Support importing standard JSON vocabulary packages.
