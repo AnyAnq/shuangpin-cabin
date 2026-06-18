@@ -125,7 +125,7 @@ async function installPackage(item: VocabularyRegistryItem) {
   installingId.value = item.id;
   try {
     const result = await downloadVocabularyPackage(item.downloadUrl, item.mirrorUrls);
-    await installVocabularyPackage(result.packageFile, result.sourceUrl, item.checksum);
+    await installVocabularyPackage(result.packageFile, result.sourceUrl, { checksum: item.checksum });
     await refreshInstalled();
   } finally {
     installingId.value = null;

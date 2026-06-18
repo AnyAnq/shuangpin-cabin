@@ -1,15 +1,30 @@
 import type { VocabularyPackageFile } from '../domain/vocabulary';
-import { db, type VocabularyEntryRecord, type VocabularyPackageRecord } from './db';
+import { db, type VocabularyEntryRecord, type VocabularyPackageRecord, type VocabularySourceType } from './db';
+
+export interface InstallVocabularyOptions {
+  sourceType?: VocabularySourceType;
+  originalFileName?: string;
+  checksum?: string;
+}
 
 export async function listInstalledVocabularyPackages(): Promise<VocabularyPackageRecord[]> {
   return db.vocabularyPackages.orderBy('installedAt').reverse().toArray();
+}
+
+export async function listVocabularyPackagesBySource(sourceType: VocabularySourceType): Promise<VocabularyPackageRecord[]> {
+  const packages = await db.vocabularyPackages.where('sourceType').equals(sourceType).toArray();
+  return packages.sort((a, b) => b.installedAt - a.installedAt);
 }
 
 export async function getInstalledVocabularyPackage(packageId: string): Promise<VocabularyPackageRecord | undefined> {
   return db.vocabularyPackages.get(packageId);
 }
 
-export async function installVocabularyPackage(packageFile: VocabularyPackageFile, sourceUrl: string, checksum?: string): Promise<string> {
+export async function installVocabularyPackage(
+  packageFile: VocabularyPackageFile,
+  sourceUrl: string,
+  options: InstallVocabularyOptions = {},
+): Promise<string> {
   const now = Date.now();
   const existing = await db.vocabularyPackages.get(packageFile.id);
   const packageRecord: VocabularyPackageRecord = {
@@ -25,7 +40,9 @@ export async function installVocabularyPackage(packageFile: VocabularyPackageFil
     installedAt: existing?.installedAt ?? now,
     updatedAt: now,
     sourceUrl,
-    checksum,
+    sourceType: options.sourceType ?? 'remote',
+    originalFileName: options.originalFileName,
+    checksum: options.checksum,
   };
   const entries = packageFile.entries.map((entry, index): VocabularyEntryRecord => ({
     id: `${packageFile.id}-${index}`,

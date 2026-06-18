@@ -6,6 +6,7 @@ import {
   installVocabularyPackage,
   listInstalledVocabularyPackages,
   listVocabularyEntries,
+  listVocabularyPackagesBySource,
   uninstallVocabularyPackage,
 } from '../../src/storage/vocabularyRepository';
 
@@ -61,5 +62,30 @@ describe('词库安装存储', () => {
 
     expect(await listInstalledVocabularyPackages()).toHaveLength(0);
     expect(await listVocabularyEntries('daily-common')).toHaveLength(0);
+  });
+
+  it('远程安装默认记录 remote 来源', async () => {
+    await installVocabularyPackage(packageFile, 'https://example.com/daily.json');
+
+    const packages = await listVocabularyPackagesBySource('remote');
+
+    expect(packages).toHaveLength(1);
+    expect(packages[0].sourceType).toBe('remote');
+    expect(packages[0].originalFileName).toBeUndefined();
+  });
+
+  it('本地导入记录 local 来源和原始文件名', async () => {
+    await installVocabularyPackage(packageFile, 'local-file:daily.txt', {
+      sourceType: 'local',
+      originalFileName: 'daily.txt',
+    });
+
+    const localPackages = await listVocabularyPackagesBySource('local');
+    const remotePackages = await listVocabularyPackagesBySource('remote');
+
+    expect(localPackages).toHaveLength(1);
+    expect(localPackages[0].sourceType).toBe('local');
+    expect(localPackages[0].originalFileName).toBe('daily.txt');
+    expect(remotePackages).toHaveLength(0);
   });
 });
