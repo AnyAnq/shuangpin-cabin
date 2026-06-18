@@ -33,7 +33,7 @@ export async function proxyJsonRequest(context: ProxyContext, options: ProxyOpti
   return new Response(await upstream.text(), {
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
-      'Cache-Control': 'public, max-age=120',
+      'Cache-Control': 'public, max-age=5, s-maxage=5',
     },
   });
 }
