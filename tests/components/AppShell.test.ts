@@ -135,4 +135,33 @@ describe('AppShell', () => {
     expect(wrapper.find('.mistake-empty-stage').text()).toContain('太棒了，没有出过错误');
     expect(wrapper.find('.right-panel .mistake-card').exists()).toBe(false);
   });
+
+  it('词库练习选择器最左侧展示更醒目的混合按钮', async () => {
+    const { wrapper, pinia } = await mountAppShell();
+    const practice = usePracticeStore(pinia);
+
+    practice.module = 'vocabulary';
+    practice.vocabularyPackages = [{
+      id: 'local-only',
+      name: '本地词库',
+      version: '1.0.0',
+      description: '本地词库。',
+      author: '本地导入',
+      license: 'Personal',
+      pricingType: 'owned',
+      tags: ['local'],
+      entryCount: 3,
+      installedAt: 1,
+      updatedAt: 1,
+      sourceUrl: 'local-file:local.json',
+      sourceType: 'local',
+    }];
+    await wrapper.vm.$nextTick();
+
+    const buttons = wrapper.findAll('.vocabulary-picker button');
+
+    expect(buttons[0].text()).toBe('混合');
+    expect(buttons[0].classes()).toContain('is-mixed');
+    expect(wrapper.text()).toContain('本地词库');
+  });
 });

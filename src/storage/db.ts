@@ -4,6 +4,8 @@ import type { PracticeModule } from '../domain/practice/types';
 import type { ShuangpinSchemeId } from '../domain/schemes/types';
 import type { VocabularyPricingType } from '../domain/vocabulary';
 
+export type VocabularySourceType = 'remote' | 'local';
+
 export interface PracticeSessionRecord {
   id: string;
   scheme: ShuangpinSchemeId;
@@ -38,6 +40,8 @@ export interface VocabularyPackageRecord {
   installedAt: number;
   updatedAt: number;
   sourceUrl: string;
+  sourceType: VocabularySourceType;
+  originalFileName?: string;
   checksum?: string;
 }
 
@@ -71,6 +75,19 @@ class ShuangpinPracticeDb extends Dexie {
       preferences: 'id, scheme, module, updatedAt',
       vocabularyPackages: 'id, pricingType, installedAt, updatedAt',
       vocabularyEntries: 'id, packageId, text, weight, length',
+    });
+    this.version(3).stores({
+      mistakes: 'id, scheme, module, targetChar, expectedKey, lastWrongAt',
+      sessions: 'id, scheme, module, createdAt',
+      preferences: 'id, scheme, module, updatedAt',
+      vocabularyPackages: 'id, pricingType, sourceType, installedAt, updatedAt',
+      vocabularyEntries: 'id, packageId, text, weight, length',
+    }).upgrade(async (tx) => {
+      const table = tx.table<VocabularyPackageRecord, string>('vocabularyPackages');
+      const packages = await table.toArray();
+      await Promise.all(packages.map((pack) => table.update(pack.id, {
+        sourceType: pack.sourceUrl.startsWith('local-file:') ? 'local' : 'remote',
+      })));
     });
   }
 }

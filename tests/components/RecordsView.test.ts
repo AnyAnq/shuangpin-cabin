@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import { flushPromises, mount } from '@vue/test-utils';
 import { createPinia, setActivePinia } from 'pinia';
 import { createRouter, createWebHistory } from 'vue-router';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import RecordsView from '../../src/views/RecordsView.vue';
 import { usePracticeStore } from '../../src/stores/practiceStore';
 import { db } from '../../src/storage/db';
@@ -50,10 +50,11 @@ describe('RecordsView', () => {
     await flushPromises();
 
     await wrapper.get('[data-testid="start-mistake-practice"]').trigger('click');
-    await flushPromises();
+    await vi.waitFor(() => {
+      expect(router.currentRoute.value.path).toBe('/');
+    });
 
     expect(practice.module).toBe('mistake');
-    expect(router.currentRoute.value.path).toBe('/');
   });
 
   it('只展示当前方案下的错题复盘', async () => {

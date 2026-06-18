@@ -53,11 +53,12 @@ test('取题中会禁用模块切换，避免快速乱点', async ({ page }) => 
 
   await page.getByRole('button', { name: '绕口令' }).click();
 
-  await expect(page.getByRole('status')).toContainText('取题中...');
+  const loadingStatus = page.locator('.practice-loading');
+  await expect(loadingStatus).toContainText('取题中...');
   await expect(page.getByRole('button', { name: '诗词句子' })).toBeDisabled();
   await expect(page.getByRole('button', { name: '易错练习' })).toBeDisabled();
 
-  const loadingBox = await page.getByRole('status').boundingBox();
+  const loadingBox = await loadingStatus.boundingBox();
   const mainBox = await page.locator('.practice-main').boundingBox();
   expect(loadingBox).not.toBeNull();
   expect(mainBox).not.toBeNull();
@@ -140,6 +141,38 @@ test('安装外置词库后可以离线进入词库练习', async ({ page }) => 
   await page.unroute('https://example.com/daily-common.json');
   await page.getByRole('button', { name: '词库练习' }).click();
 
+  await expectStageText(page, '今天事情可以我们项目完成');
+});
+
+test('导入本地 TXT 词库后可以开始词库练习', async ({ page }) => {
+  await mockContentApi(page);
+  await mockVocabularyRegistry(page);
+  await page.goto('/');
+
+  await page.getByRole('link', { name: '词库' }).click();
+  await expect(page.getByRole('heading', { name: '安装词库后开始练习' })).toBeVisible();
+
+  await page.getByRole('button', { name: '设置' }).click();
+  await page.getByTestId('settings-import-vocabulary-input').setInputFiles({
+    name: '我的词库.txt',
+    mimeType: 'text/plain',
+    buffer: Buffer.from('今天\n事情\n可以\n我们\n项目\n完成\nA计划', 'utf-8'),
+  });
+  const importPanel = page.locator('.settings-import-panel');
+  await expect(importPanel.getByText('有效词条 6').first()).toBeVisible();
+  await expect(importPanel.getByText('过滤 1')).toBeVisible();
+  await page.getByTestId('settings-confirm-vocabulary-import').click();
+  await page.getByRole('button', { name: '关闭设置' }).click();
+  await expect(page.getByTestId('local-vocabulary-section')).toContainText('我的词库');
+
+  await page.getByTestId('local-vocabulary-section').getByRole('button', { name: '开始练习' }).click();
+
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByText('今日练习 · 词库练习 · 我的词库')).toBeVisible();
+  await expectStageText(page, '今天事情可以我们项目完成');
+  await expect(page.locator('.vocabulary-picker button').first()).toHaveText('混合');
+  await page.locator('.vocabulary-picker button').first().click();
+  await expect(page.getByText('今日练习 · 词库练习 · 混合词库')).toBeVisible();
   await expectStageText(page, '今天事情可以我们项目完成');
 });
 

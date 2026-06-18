@@ -1,7 +1,7 @@
 <template>
   <div class="app-shell vocabulary-page">
     <FloatingSidebar @open-settings="settingsOpen = true" />
-    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
+    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" @vocabulary-imported="refreshInstalled" />
     <main class="vocabulary-main">
       <section class="vocabulary-hero">
         <span>词库中心</span>
@@ -14,16 +14,42 @@
 
       <p v-if="registryError" class="vocabulary-error">{{ registryError }}</p>
 
-      <section class="vocabulary-section">
+      <section class="vocabulary-section" data-testid="local-vocabulary-section">
         <div class="vocabulary-section-head">
-          <span>已安装</span>
-          <strong>{{ installedPackages.length }}</strong>
+          <span>本地词库</span>
+          <strong>{{ localPackages.length }}</strong>
         </div>
-        <div v-if="installedPackages.length === 0" class="vocabulary-installed-empty">
-          还没有安装词库。安装一个免费词库后，首页的词库练习就会亮起来。
+        <div v-if="localPackages.length === 0" class="vocabulary-installed-empty">
+          还没有本地词库。导入 JSON、TXT 或 CSV 后，就可以用自己的内容练习。
         </div>
         <div v-else class="vocabulary-grid">
-          <article v-for="pack in installedPackages" :key="pack.id" class="vocabulary-card is-installed has-bottom-action">
+          <article v-for="pack in localPackages" :key="pack.id" class="vocabulary-card is-installed has-bottom-action">
+            <span>自定义</span>
+            <h2>{{ pack.name }}</h2>
+            <p>{{ pack.description }}</p>
+            <div class="vocabulary-card-meta">
+              <em>{{ pack.entryCount }} 词</em>
+              <em>v{{ pack.version }}</em>
+            </div>
+            <div class="vocabulary-card-actions">
+              <button type="button" class="primary-action" @click="startPractice(pack.id)">开始练习</button>
+              <button type="button" class="ghost-action" :data-testid="`export-vocabulary-${pack.id}`" @click="exportLocalPackage(pack)">导出</button>
+              <button type="button" class="ghost-action" @click="removePackage(pack.id)">卸载</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="vocabulary-section" data-testid="online-installed-vocabulary-section">
+        <div class="vocabulary-section-head">
+          <span>在线已安装词库</span>
+          <strong>{{ remoteInstalledPackages.length }}</strong>
+        </div>
+        <div v-if="remoteInstalledPackages.length === 0" class="vocabulary-installed-empty">
+          还没有安装在线词库。安装一个免费词库后，首页的词库练习就会亮起来。
+        </div>
+        <div v-else class="vocabulary-grid">
+          <article v-for="pack in remoteInstalledPackages" :key="pack.id" class="vocabulary-card is-installed has-bottom-action">
             <span>已安装</span>
             <h2>{{ pack.name }}</h2>
             <p>{{ pack.description }}</p>
@@ -39,9 +65,9 @@
         </div>
       </section>
 
-      <section class="vocabulary-section">
+      <section class="vocabulary-section" data-testid="online-vocabulary-center-section">
         <div class="vocabulary-section-head">
-          <span>可安装词库</span>
+          <span>在线词库中心</span>
           <strong>{{ registryPackages.length }}</strong>
         </div>
         <div class="vocabulary-grid">
@@ -77,9 +103,15 @@ import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
 import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
-import type { VocabularyRegistryItem } from '../domain/vocabulary';
+import { createVocabularyExportFile, type VocabularyEntry, type VocabularyRegistryItem } from '../domain/vocabulary';
 import { downloadVocabularyPackage, fetchVocabularyRegistry } from '../services/vocabularyRegistryService';
-import { installVocabularyPackage, listInstalledVocabularyPackages, uninstallVocabularyPackage } from '../storage/vocabularyRepository';
+import {
+  installVocabularyPackage,
+  listInstalledVocabularyPackages,
+  listVocabularyEntries,
+  listVocabularyPackagesBySource,
+  uninstallVocabularyPackage,
+} from '../storage/vocabularyRepository';
 import type { VocabularyPackageRecord } from '../storage/db';
 import { usePracticeStore } from '../stores/practiceStore';
 
@@ -87,6 +119,8 @@ const router = useRouter();
 const practice = usePracticeStore();
 const registryPackages = ref<VocabularyRegistryItem[]>([]);
 const installedPackages = ref<VocabularyPackageRecord[]>([]);
+const localPackages = ref<VocabularyPackageRecord[]>([]);
+const remoteInstalledPackages = ref<VocabularyPackageRecord[]>([]);
 const registryError = ref('');
 const loadingRegistry = ref(false);
 const installingId = ref<string | null>(null);
@@ -104,6 +138,8 @@ async function hydrate() {
 
 async function refreshInstalled() {
   installedPackages.value = await listInstalledVocabularyPackages();
+  localPackages.value = await listVocabularyPackagesBySource('local');
+  remoteInstalledPackages.value = await listVocabularyPackagesBySource('remote');
   await practice.refreshVocabularyPackages();
 }
 
@@ -125,7 +161,7 @@ async function installPackage(item: VocabularyRegistryItem) {
   installingId.value = item.id;
   try {
     const result = await downloadVocabularyPackage(item.downloadUrl, item.mirrorUrls);
-    await installVocabularyPackage(result.packageFile, result.sourceUrl, item.checksum);
+    await installVocabularyPackage(result.packageFile, result.sourceUrl, { checksum: item.checksum });
     await refreshInstalled();
   } finally {
     installingId.value = null;
@@ -141,6 +177,36 @@ async function startPractice(packageId: string) {
   await practice.setVocabularyPackage(packageId);
   await practice.setModule('vocabulary');
   await router.push({ name: 'practice' });
+}
+
+async function exportLocalPackage(pack: VocabularyPackageRecord) {
+  try {
+    const entries = await listVocabularyEntries(pack.id);
+    const exportFile = createVocabularyExportFile({
+      id: pack.id,
+      name: pack.name,
+      version: pack.version,
+      author: pack.author,
+      license: pack.license,
+      pricingType: pack.pricingType,
+      description: pack.description,
+      tags: pack.tags,
+    }, entries.map((entry): VocabularyEntry => ({
+      text: entry.text,
+      weight: entry.weight,
+      tags: entry.tags,
+      source: entry.source,
+    })));
+    const blob = new Blob([JSON.stringify(exportFile, null, 2)], { type: 'application/json;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${pack.id}@${pack.version}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+  } catch {
+    registryError.value = '导出失败，请稍后重试';
+  }
 }
 
 function installButtonText(item: VocabularyRegistryItem) {

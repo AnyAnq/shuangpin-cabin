@@ -30,6 +30,7 @@ import type { VocabularyPackageRecord } from '../storage/db';
 import { fetchDailyQuote, fetchPoetryUnit, fetchTongueTwisterUnit } from '../services/contentApi';
 
 const RECENT_UNIT_TEXT_LIMIT = 6;
+const MIXED_VOCABULARY_PACKAGE_ID = '__mixed_vocabulary__';
 const emptyPoemUnit = createEmptyUnit('poem');
 const emptyArticleUnit = createEmptyUnit('article');
 const emptyCharacterUnit = createEmptyUnit('character');
@@ -61,6 +62,8 @@ export const usePracticeStore = defineStore('practice', () => {
   const isSwitching = ref(false);
   let mistakeSaveQueue: Promise<unknown> = Promise.resolve();
   let moduleSwitchSeq = 0;
+  let preferenceHydrateSeq = 0;
+  let hasManualPracticeSelection = false;
 
   const currentCode = computed(() => session.value.codes[session.value.cursor.charIndex] ?? '');
   const currentExpectedKey = computed(() => currentCode.value[session.value.cursor.codeIndex] ?? null);
@@ -75,7 +78,13 @@ export const usePracticeStore = defineStore('practice', () => {
   const keyboardActiveKey = computed(() => (hasInteracted.value ? currentExpectedKey.value : null));
   const currentMistakeGroup = computed(() => (module.value === 'mistake' ? mistakeGroups.value[unitIndex.value] ?? null : null));
   const vocabularyNeedsInstall = computed(() => module.value === 'vocabulary' && vocabularyPackages.value.length === 0);
-  const currentVocabularyPackage = computed(() => vocabularyPackages.value.find((item) => item.id === selectedVocabularyPackageId.value) ?? vocabularyPackages.value[0] ?? null);
+  const isMixedVocabularyMode = computed(() => selectedVocabularyPackageId.value === MIXED_VOCABULARY_PACKAGE_ID);
+  const currentVocabularyPackage = computed(() => {
+    if (isMixedVocabularyMode.value && vocabularyPackages.value.length > 0) {
+      return createMixedVocabularyRecord(vocabularyPackages.value);
+    }
+    return vocabularyPackages.value.find((item) => item.id === selectedVocabularyPackageId.value) ?? vocabularyPackages.value[0] ?? null;
+  });
   const mistakeGroupTitle = computed(() => currentMistakeGroup.value?.title ?? '');
   const mistakeGroupDescription = computed(() => currentMistakeGroup.value?.description ?? '');
   const mistakeGroupFocusKeys = computed(() => currentMistakeGroup.value?.focusKeys ?? []);
@@ -150,6 +159,8 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function setModule(next: PracticeModule) {
+    hasManualPracticeSelection = true;
+    preferenceHydrateSeq += 1;
     const switchSeq = ++moduleSwitchSeq;
     isSwitching.value = true;
     try {
@@ -169,7 +180,7 @@ export const usePracticeStore = defineStore('practice', () => {
       const units = unitsForModule(next);
       unitIndex.value = selectFreshUnitIndex(next, units, 0);
       resetSession(units[unitIndex.value]);
-      void saveCurrentPreferences();
+      await saveCurrentPreferences();
     } finally {
       if (switchSeq === moduleSwitchSeq) {
         isSwitching.value = false;
@@ -249,6 +260,10 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function hydratePreferences() {
+    if (hasManualPracticeSelection) {
+      return;
+    }
+    const hydrateSeq = ++preferenceHydrateSeq;
     unitIndex.value = 0;
     isSwitching.value = true;
     try {
@@ -273,9 +288,14 @@ export const usePracticeStore = defineStore('practice', () => {
         refreshDailyQuote(),
         refreshOnlineUnit(module.value),
       ]);
+      if (hydrateSeq !== preferenceHydrateSeq) {
+        return;
+      }
       resetSession(unitsForModule(module.value)[0]);
     } finally {
-      isSwitching.value = false;
+      if (hydrateSeq === preferenceHydrateSeq) {
+        isSwitching.value = false;
+      }
     }
   }
 
@@ -429,6 +449,9 @@ export const usePracticeStore = defineStore('practice', () => {
       vocabularyUnits.value = [];
       return;
     }
+    if (selectedVocabularyPackageId.value === MIXED_VOCABULARY_PACKAGE_ID) {
+      return;
+    }
     if (!selectedVocabularyPackageId.value || !vocabularyPackages.value.some((item) => item.id === selectedVocabularyPackageId.value)) {
       selectedVocabularyPackageId.value = vocabularyPackages.value[0].id;
     }
@@ -438,6 +461,22 @@ export const usePracticeStore = defineStore('practice', () => {
     await refreshVocabularyPackages();
     if (!selectedVocabularyPackageId.value) {
       vocabularyUnits.value = [];
+      return;
+    }
+
+    if (selectedVocabularyPackageId.value === MIXED_VOCABULARY_PACKAGE_ID) {
+      const entries = (await Promise.all(vocabularyPackages.value.map((pack) => listVocabularyEntries(pack.id)))).flat();
+      const packageFile = createVocabularyPackageFromEntries({
+        id: MIXED_VOCABULARY_PACKAGE_ID,
+        name: '混合词库',
+        version: '1.0.0',
+        author: 'Shuangpin Cabin',
+        license: 'Personal',
+        pricingType: 'owned',
+        description: '全部已安装词库的混合练习。',
+        tags: ['mixed', 'vocabulary'],
+      }, entries);
+      vocabularyUnits.value = buildVocabularyPracticeUnits(packageFile);
       return;
     }
 
@@ -461,13 +500,28 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function setVocabularyPackage(packageId: string) {
+    hasManualPracticeSelection = true;
+    preferenceHydrateSeq += 1;
     selectedVocabularyPackageId.value = packageId;
     unitIndex.value = 0;
     await refreshVocabularyUnits();
     if (module.value === 'vocabulary') {
       resetSession(unitsForModule('vocabulary')[0]);
     }
-    void saveCurrentPreferences();
+    await saveCurrentPreferences();
+  }
+
+  async function setMixedVocabularyPackage() {
+    if (vocabularyPackages.value.length === 0) return;
+    hasManualPracticeSelection = true;
+    preferenceHydrateSeq += 1;
+    selectedVocabularyPackageId.value = MIXED_VOCABULARY_PACKAGE_ID;
+    unitIndex.value = 0;
+    await refreshVocabularyUnits();
+    if (module.value === 'vocabulary') {
+      resetSession(unitsForModule('vocabulary')[0]);
+    }
+    await saveCurrentPreferences();
   }
 
   async function refreshOnlineUnit(targetModule: PracticeModule) {
@@ -513,6 +567,7 @@ export const usePracticeStore = defineStore('practice', () => {
     currentMistakeGroup,
     vocabularyPackages,
     selectedVocabularyPackageId,
+    isMixedVocabularyMode,
     vocabularyNeedsInstall,
     currentVocabularyPackage,
     mistakeGroupTitle,
@@ -540,6 +595,7 @@ export const usePracticeStore = defineStore('practice', () => {
     refreshVocabularyPackages,
     refreshVocabularyUnits,
     setVocabularyPackage,
+    setMixedVocabularyPackage,
   };
 });
 
@@ -551,5 +607,24 @@ function createEmptyUnit(module: PracticeUnit['module']): PracticeUnit {
     syllables: [],
     source: '等待在线内容',
     tags: ['在线内容'],
+  };
+}
+
+function createMixedVocabularyRecord(packages: VocabularyPackageRecord[]): VocabularyPackageRecord {
+  const now = Date.now();
+  return {
+    id: MIXED_VOCABULARY_PACKAGE_ID,
+    name: '混合词库',
+    version: '1.0.0',
+    description: '全部已安装词库的混合练习。',
+    author: 'Shuangpin Cabin',
+    license: 'Personal',
+    pricingType: 'owned',
+    tags: ['mixed', 'vocabulary'],
+    entryCount: packages.reduce((sum, pack) => sum + pack.entryCount, 0),
+    installedAt: Math.min(...packages.map((pack) => pack.installedAt), now),
+    updatedAt: Math.max(...packages.map((pack) => pack.updatedAt), now),
+    sourceUrl: 'mixed:installed-vocabularies',
+    sourceType: 'local',
   };
 }
