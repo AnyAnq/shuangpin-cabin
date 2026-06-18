@@ -145,9 +145,6 @@ export function parseLocalVocabularyFile(fileName: string, text: string, now = D
     } catch {
       throw new Error('JSON 格式不正确');
     }
-    if (Array.isArray(payload)) {
-      return createPlainVocabularyReport(fileName, payload.map(jsonArrayItemToLine).join('\n'), now);
-    }
     const rawEntryCount = isRecord(payload) && Array.isArray(payload.entries) ? payload.entries.length : 0;
     const packageFile = validateVocabularyPackage(payload);
     const filteredCount = Math.max(0, rawEntryCount - packageFile.entries.length);
@@ -163,10 +160,6 @@ export function parseLocalVocabularyFile(fileName: string, text: string, now = D
     };
   }
 
-  return createPlainVocabularyReport(fileName, text, now);
-}
-
-function createPlainVocabularyReport(fileName: string, text: string, now: number): LocalVocabularyParseReport {
   const parsed = parsePlainVocabularyEntries(text);
   const packageFile = createLocalVocabularyPackage({
     name: baseNameFromFileName(fileName),
@@ -352,17 +345,6 @@ function toSyllables(text: string): string[] {
 function baseNameFromFileName(fileName: string) {
   const normalized = fileName.split(/[\\/]/).pop() ?? fileName;
   return normalized.replace(/\.[^.]+$/, '') || '本地词库';
-}
-
-function jsonArrayItemToLine(item: unknown) {
-  if (typeof item === 'string') return item;
-  if (isRecord(item)) {
-    const text = typeof item.text === 'string' ? item.text : '';
-    const weight = typeof item.weight === 'number' ? String(item.weight) : '';
-    const tags = Array.isArray(item.tags) ? item.tags.filter((tag): tag is string => typeof tag === 'string').join('|') : '';
-    return [text, weight, tags].join(',');
-  }
-  return '';
 }
 
 function slugFromName(name: string) {

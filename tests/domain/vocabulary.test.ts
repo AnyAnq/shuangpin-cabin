@@ -153,24 +153,6 @@ describe('外置词库领域规则', () => {
     expect(report.previewEntries).toEqual([{ text: '今天', weight: 100, tags: undefined, source: undefined }]);
   });
 
-  it('导入 JSON 字符串数组时按简易词表处理', () => {
-    const report = parseLocalVocabularyFile('剪贴板文本1.json', JSON.stringify([
-      '今天',
-      '事情',
-      '事情',
-      'A计划',
-      '项目',
-    ]), 1718697600000);
-
-    expect(report.fileKind).toBe('plain');
-    expect(report.packageFile.id).toBe('local-剪贴板文本1-1718697600000');
-    expect(report.packageFile.name).toBe('剪贴板文本1');
-    expect(report.validCount).toBe(3);
-    expect(report.duplicateCount).toBe(1);
-    expect(report.filteredCount).toBe(1);
-    expect(report.packageFile.entries.map((entry) => entry.text)).toEqual(['今天', '事情', '项目']);
-  });
-
   it('导出文件能再次通过词库包校验', () => {
     const exported = createVocabularyExportFile({
       id: 'local-export',
