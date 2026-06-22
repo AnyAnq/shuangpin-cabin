@@ -9,7 +9,7 @@
         <p>词库从外部仓库下载安装到浏览器本地，练习时只读取已安装内容。</p>
         <div class="membership-strip" data-testid="membership-status">
           <strong>{{ membershipStatusText }}</strong>
-          <small>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码；付款时备注邮箱，管理员核对后发码。兑换后当前浏览器永久有效。</small>
+          <small>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码；付款时备注邮箱，管理员核对后发码。兑换后当前浏览器永久有效（兑换码可多次使用）。</small>
         </div>
         <button type="button" class="soft-pill" :disabled="loadingRegistry" @click="loadRegistry">
           {{ loadingRegistry ? '刷新中...' : '刷新词库' }}
@@ -128,6 +128,20 @@
             <small v-else>请配置 VITE_ALIPAY_SPONSOR_QR_IMAGE_URL</small>
           </div>
         </div>
+        <form class="sponsor-form" @submit.prevent="submitSponsor">
+          <label>
+            邮箱
+            <input v-model.trim="sponsorForm.email" type="email" placeholder="付款备注中的邮箱" required>
+          </label>
+          <label>
+            付款时间
+            <input v-model="sponsorForm.sponsoredAt" type="datetime-local" required>
+          </label>
+          <button type="submit" class="primary-action" data-testid="submit-sponsor-claim" :disabled="submittingSponsor">
+            {{ submittingSponsor ? '提交中...' : '提交信息' }}
+          </button>
+        </form>
+        <p v-if="sponsorNotice" class="sponsor-notice">{{ sponsorNotice }}</p>
         <form class="redeem-form" @submit.prevent="redeemCode">
           <label>
             兑换码
@@ -149,7 +163,7 @@ import { useRouter } from 'vue-router';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
 import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
 import { createVocabularyExportFile, type VocabularyEntry, type VocabularyRegistryItem } from '../domain/vocabulary';
-import { defaultMembershipState, fetchMembershipState, hasStoredMembershipToken, redeemMembershipCode, type MembershipState } from '../services/membershipService';
+import { defaultMembershipState, fetchMembershipState, hasStoredMembershipToken, redeemMembershipCode, submitSponsorClaim, type MembershipState } from '../services/membershipService';
 import { downloadVocabularyPackage, fetchVocabularyRegistry } from '../services/vocabularyRegistryService';
 import {
   installVocabularyPackage,
@@ -173,6 +187,8 @@ const installingId = ref<string | null>(null);
 const settingsOpen = ref(false);
 const membership = ref<MembershipState>(defaultMembershipState);
 const sponsorDialogOpen = ref(false);
+const submittingSponsor = ref(false);
+const sponsorNotice = ref('');
 const redeemingCode = ref(false);
 const redeemNotice = ref('');
 const redeemCodeInput = ref('');
@@ -180,11 +196,15 @@ const membershipTokenPresent = ref(hasStoredMembershipToken());
 const sponsorThreshold = Number(import.meta.env.VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY ?? 10);
 const wechatSponsorQr = import.meta.env.VITE_WECHAT_SPONSOR_QR_IMAGE_URL ?? '/sponsor/wechat.png';
 const alipaySponsorQr = import.meta.env.VITE_ALIPAY_SPONSOR_QR_IMAGE_URL ?? '/sponsor/alipay.jpg';
+const sponsorForm = ref({
+  email: '',
+  sponsoredAt: toDatetimeLocal(new Date()),
+});
 const installedIds = computed(() => new Set(installedPackages.value.map((pack) => pack.id)));
 const hasMemberAccess = computed(() => membership.value.membership.lifetime || membershipTokenPresent.value);
 const membershipStatusText = computed(() => {
   if (hasMemberAccess.value) return '永久会员已开通';
-  return '可用兑换码解锁当前浏览器';
+  return '可用兑换码解锁词库服务';
 });
 
 onMounted(() => {
@@ -238,9 +258,30 @@ async function installPackage(item: VocabularyRegistryItem) {
 }
 
 function openSponsorDialog(item: VocabularyRegistryItem) {
+  sponsorNotice.value = '';
   redeemNotice.value = '';
+  sponsorForm.value.sponsoredAt = toDatetimeLocal(new Date());
   sponsorDialogOpen.value = true;
   void item;
+}
+
+async function submitSponsor() {
+  submittingSponsor.value = true;
+  sponsorNotice.value = '';
+  try {
+    await submitSponsorClaim({
+      channel: 'wechat',
+      amountCny: sponsorThreshold,
+      sponsoredAt: new Date(sponsorForm.value.sponsoredAt).toISOString(),
+      note: '用户仅提交邮箱和付款时间，请按微信或支付宝账单核对。',
+      email: sponsorForm.value.email,
+    });
+    sponsorNotice.value = '已提交信息，管理员核对到账后会发送兑换码。';
+  } catch {
+    sponsorNotice.value = '提交失败，请检查邮箱和时间后重试。';
+  } finally {
+    submittingSponsor.value = false;
+  }
 }
 
 async function redeemCode() {
@@ -310,4 +351,8 @@ function registryBadgeText(item: VocabularyRegistryItem) {
   return '免费';
 }
 
+function toDatetimeLocal(date: Date) {
+  const offsetMs = date.getTimezoneOffset() * 60_000;
+  return new Date(date.getTime() - offsetMs).toISOString().slice(0, 16);
+}
 </script>

@@ -207,12 +207,12 @@ describe('VocabulariesView', () => {
     });
 
     expect(wrapper.text()).toContain('赞助满 10 元');
-    expect(wrapper.text()).toContain('可用兑换码解锁当前浏览器');
+    expect(wrapper.text()).toContain('可用兑换码解锁词库服务');
     expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
   });
 
-  it('赞助弹窗只展示收款码和兑换码，不再收集赞助表单', async () => {
-    vi.stubGlobal('fetch', vi.fn((url: string) => {
+  it('赞助弹窗只收集邮箱和付款时间，不再收集渠道金额备注', async () => {
+    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
       if (url.endsWith('/api/me')) {
         return Promise.resolve(jsonResponse({
           authenticated: false,
@@ -238,8 +238,12 @@ describe('VocabulariesView', () => {
           }],
         }));
       }
-      return Promise.reject(new Error(`未模拟请求：${url}`));
-    }));
+      if (url.endsWith('/api/sponsor-claims')) {
+        return Promise.resolve(jsonResponse({ id: 'claim_1', status: 'pending' }));
+      }
+      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
+    });
+    vi.stubGlobal('fetch', fetchMock);
 
     const wrapper = mount(VocabulariesView, {
       global: { plugins: [routerForVocabulary()] },
@@ -252,18 +256,29 @@ describe('VocabulariesView', () => {
     const dialog = wrapper.get('[data-testid="sponsor-dialog"]');
 
     expect(dialog.text()).toContain('备注邮箱');
-    expect(dialog.find('form.sponsor-form').exists()).toBe(false);
-    expect(dialog.find('input[type="email"]').exists()).toBe(false);
+    expect(dialog.find('form.sponsor-form').exists()).toBe(true);
+    expect(dialog.find('input[type="email"]').exists()).toBe(true);
+    expect(dialog.find('input[type="datetime-local"]').exists()).toBe(true);
     expect(dialog.find('select').exists()).toBe(false);
     expect(dialog.find('input[type="number"]').exists()).toBe(false);
-    expect(dialog.find('input[type="datetime-local"]').exists()).toBe(false);
     expect(dialog.find('textarea').exists()).toBe(false);
     expect(dialog.text()).not.toContain('付款备注邮箱');
     expect(dialog.text()).not.toContain('赞助渠道');
     expect(dialog.text()).not.toContain('赞助金额');
     expect(dialog.text()).not.toContain('赞助时间');
-    expect(dialog.find('[data-testid="submit-sponsor-claim"]').exists()).toBe(false);
+    expect(dialog.find('[data-testid="submit-sponsor-claim"]').exists()).toBe(true);
     expect(dialog.find('[data-testid="redeem-membership-code"]').exists()).toBe(true);
+
+    await wrapper.get('input[type="email"]').setValue('reader@example.com');
+    await wrapper.get('form.sponsor-form').trigger('submit');
+    await flush();
+
+    expect(fetchMock).toHaveBeenCalledWith('/api/sponsor-claims', expect.objectContaining({
+      method: 'POST',
+      credentials: 'include',
+      body: expect.stringContaining('reader@example.com'),
+    }));
+    expect(wrapper.text()).toContain('已提交信息');
   });
 
   it('兑换码成功后当前浏览器显示会员并允许安装付费词库', async () => {

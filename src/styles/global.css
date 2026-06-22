@@ -1832,11 +1832,17 @@ button {
   background: #fff;
 }
 
+.sponsor-form,
 .redeem-form {
   display: grid;
   gap: 12px;
 }
 
+.sponsor-form {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sponsor-form label,
 .redeem-form label {
   display: grid;
   gap: 6px;
@@ -1845,6 +1851,7 @@ button {
   color: var(--color-text);
 }
 
+.sponsor-form input,
 .redeem-form input {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.34);
@@ -1855,8 +1862,13 @@ button {
   color: var(--color-text);
 }
 
+.sponsor-form .primary-action,
 .redeem-form .primary-action {
   width: 100%;
+}
+
+.sponsor-form .primary-action {
+  grid-column: 1 / -1;
 }
 
 .sponsor-notice {

@@ -24,7 +24,7 @@
           <article v-for="claim in claims" :key="claim.id" class="admin-claim-card">
             <div>
               <strong>{{ claim.email }}</strong>
-              <small>{{ claim.channel === 'wechat' ? '微信' : '支付宝' }} · {{ claim.amount_cny }} 元 · {{ claim.sponsored_at }}</small>
+              <small>{{ claimMetaText(claim) }}</small>
               <p>{{ claim.note || '无备注' }}</p>
             </div>
             <div class="admin-claim-actions">
@@ -69,5 +69,12 @@ async function review(id: string, action: 'approve' | 'thanks-only' | 'reject') 
   } catch {
     error.value = '审核失败，请稍后重试。';
   }
+}
+
+function claimMetaText(claim: SponsorClaimRecord) {
+  if (claim.note.includes('用户仅提交邮箱和付款时间')) {
+    return `微信/支付宝 · 待核对 · ${claim.sponsored_at}`;
+  }
+  return `${claim.channel === 'wechat' ? '微信' : '支付宝'} · ${claim.amount_cny} 元 · ${claim.sponsored_at}`;
 }
 </script>
