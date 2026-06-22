@@ -329,7 +329,7 @@ export const usePracticeStore = defineStore('practice', () => {
       }
       await Promise.all([
         refreshDailyQuote(),
-        refreshOnlineUnit(module.value),
+        refreshOnlineUnit(module.value, false),
       ]);
       if (hydrateSeq !== preferenceHydrateSeq) {
         return;
@@ -568,11 +568,11 @@ export const usePracticeStore = defineStore('practice', () => {
     await saveCurrentPreferences();
   }
 
-  async function refreshOnlineUnit(targetModule: PracticeModule) {
+  async function refreshOnlineUnit(targetModule: PracticeModule, useCache = true) {
     try {
       if (targetModule === 'article') {
         // First check if cached version exists from preload
-        const cached = consumeCachedTongueTwisterUnit();
+        const cached = useCache ? consumeCachedTongueTwisterUnit() : null;
         if (cached) {
           onlineTongueTwisterUnit.value = cached;
         } else {
@@ -581,7 +581,7 @@ export const usePracticeStore = defineStore('practice', () => {
       }
       if (targetModule === 'poem') {
         // First check if cached version exists from preload
-        const cached = consumeCachedPoetryUnit();
+        const cached = useCache ? consumeCachedPoetryUnit() : null;
         if (cached) {
           onlinePoemUnit.value = cached;
         } else {
