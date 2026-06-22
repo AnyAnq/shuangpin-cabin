@@ -2,14 +2,6 @@ name = "shuangpin-cabin"
 compatibility_date = "2026-06-22"
 pages_build_output_dir = "dist"
 
-[[d1_databases]]
-binding = "DB"
-database_name = "shuangpin-cabin-local"
-database_id = "local-shuangpin-cabin"
-
 [vars]
-AUTH_DEV_MODE = "true"
-SESSION_SECRET = "test-secret"
-ADMIN_EMAILS = "admin@example.com"
+AUTH_DEV_MODE = "false"
 MEMBERSHIP_SPONSOR_THRESHOLD_CNY = "10"
-GITEE_ACCESS_TOKEN = ""

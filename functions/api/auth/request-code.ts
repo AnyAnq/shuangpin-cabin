@@ -28,10 +28,10 @@ export async function handleRequestCode(context: AuthRequestContext): Promise<Re
   if (context.env.RESEND_API_KEY && context.env.AUTH_EMAIL_FROM) {
     const sent = await sendCodeEmail(context.env.RESEND_API_KEY, context.env.AUTH_EMAIL_FROM, email, code);
     if (!sent) return json({ error: 'EMAIL_SEND_FAILED', message: '验证码发送失败' }, 502);
-  } else if (context.env.SESSION_SECRET !== 'test-secret' && context.env.AUTH_DEV_MODE !== 'true') {
+  } else if (context.env.AUTH_DEV_MODE !== 'true') {
     return json({ error: 'EMAIL_UNCONFIGURED', message: '邮件服务未配置' }, 500);
   }
-  if (context.env.SESSION_SECRET === 'test-secret' || context.env.AUTH_DEV_MODE === 'true') {
+  if (context.env.AUTH_DEV_MODE === 'true') {
     payload.devCode = code;
   }
   return json(payload);

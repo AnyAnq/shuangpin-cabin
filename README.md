@@ -190,7 +190,7 @@ TXT/CSV 规则：
 
 ```text
 GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
-ADMIN_EMAILS=admin@example.com
+ADMIN_EMAILS=你的管理员邮箱
 MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
 VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
 VITE_WECHAT_SPONSOR_QR_IMAGE_URL=/sponsor/wechat.png
@@ -198,7 +198,10 @@ VITE_ALIPAY_SPONSOR_QR_IMAGE_URL=/sponsor/alipay.jpg
 SESSION_SECRET=生产环境随机密钥
 RESEND_API_KEY=Resend 邮件 API Key
 AUTH_EMAIL_FROM=双拼小筑 <login@example.com>
+AUTH_DEV_MODE=false
 ```
+
+正式环境请不要开启 `AUTH_DEV_MODE`。只有本地调试或 Preview 内测需要直接显示验证码时，才临时设置 `AUTH_DEV_MODE=true`。
 
 官方词库包应保存在 Gitee 私有仓库中，前端只通过 `/api/vocabularies/...` 请求。未登录用户下载会员词库会得到 `401`，已登录但未开通永久会员会得到 `403`，永久会员才会由后端代理读取私有词库包。
 
