@@ -1,4 +1,5 @@
-import { ensureMembershipSchema, grantLifetimeMembership, json, requireAdmin, requireUser, type AuthContext, type MembershipEnv } from './auth';
+import { ensureMembershipSchema, grantLifetimeMembership, json, requireAdmin, type AuthContext, type MembershipEnv } from './auth';
+import { createRedeemMembershipCode } from './redeem';
 
 type SponsorChannel = 'wechat' | 'alipay';
 type SponsorStatus = 'pending' | 'approved' | 'rejected' | 'thanks_only';
@@ -8,6 +9,7 @@ interface SponsorClaimInput {
   amountCny?: number;
   sponsoredAt?: string;
   note?: string;
+  email?: string;
 }
 
 interface SponsorRouteContext extends AuthContext {
@@ -25,15 +27,16 @@ interface SponsorClaimRow {
 }
 
 export async function handleCreateSponsorClaim(context: AuthContext): Promise<Response> {
-  const user = await requireUser(context);
-  if (user instanceof Response) return user;
-
   const input = await readJson<SponsorClaimInput>(context.request);
+  const email = normalizeEmail(input.email);
   const channel = input.channel;
   const amountCny = Number(input.amountCny);
   const sponsoredAt = typeof input.sponsoredAt === 'string' && input.sponsoredAt ? input.sponsoredAt : new Date().toISOString();
   const note = typeof input.note === 'string' ? input.note.trim().slice(0, 500) : '';
 
+  if (!email) {
+    return json({ error: 'INVALID_EMAIL', message: '请填写付款备注邮箱' }, 400);
+  }
   if (channel !== 'wechat' && channel !== 'alipay') {
     return json({ error: 'INVALID_CHANNEL', message: '请选择微信或支付宝' }, 400);
   }
@@ -46,6 +49,7 @@ export async function handleCreateSponsorClaim(context: AuthContext): Promise<Re
   await ensureMembershipSchema(context.env.DB);
 
   const now = new Date().toISOString();
+  const userId = await ensureSponsorUser(context.env.DB, email, now);
   const id = createSponsorClaimId();
   await context.env.DB.prepare(`
     INSERT INTO sponsor_claims (
@@ -53,9 +57,20 @@ export async function handleCreateSponsorClaim(context: AuthContext): Promise<Re
       reviewed_by, reviewed_at, created_at, updated_at
     )
     VALUES (?, ?, ?, ?, ?, ?, ?, 'pending', NULL, NULL, ?, ?)
-  `).bind(id, user.id, user.email, channel, amountCny, sponsoredAt, note, now, now).run();
+  `).bind(id, userId, email, channel, amountCny, sponsoredAt, note, now, now).run();
 
   return json({ id, status: 'pending' }, 201);
+}
+
+async function ensureSponsorUser(db: NonNullable<MembershipEnv['DB']>, email: string, now: string): Promise<string> {
+  const existing = await db.prepare('SELECT id FROM users WHERE email = ? LIMIT 1').bind(email).first<{ id: string }>();
+  if (existing) return existing.id;
+  const id = createSponsorClaimId();
+  await db.prepare(`
+    INSERT INTO users (id, email, created_at, updated_at)
+    VALUES (?, ?, ?, ?)
+  `).bind(id, email, now, now).run();
+  return id;
 }
 
 export async function handleListSponsorClaims(context: AuthContext): Promise<Response> {
@@ -119,19 +134,25 @@ async function reviewSponsorClaim(context: SponsorRouteContext, status: SponsorS
     LIMIT 1
   `).bind(id).first<SponsorClaimRow>();
   if (!claim) return json({ error: 'NOT_FOUND' }, 404);
+  if (claim.status !== 'pending') {
+    return json({ id, status: claim.status });
+  }
 
   const now = new Date().toISOString();
+  let redeemCode: string | undefined;
+  if (status === 'approved') {
+    const redeem = await createRedeemMembershipCode(context.env.DB, `claim:${claim.id};email:${claim.email}`, now);
+    redeemCode = redeem.code;
+  }
+
   await context.env.DB.prepare(`
     UPDATE sponsor_claims
     SET status = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?
     WHERE id = ?
   `).bind(status, admin.id, now, now, id).run();
 
-  if (status === 'approved') {
-    await grantLifetimeMembership(context.env.DB, claim.user_id, 'sponsor', now);
-  }
   await writeAdminLog(context.env, admin.id, `sponsor_claim_${status}`, claim.user_id, { claimId: claim.id, email: claim.email }, now);
-  return json({ id, status });
+  return json({ id, status, redeemCode });
 }
 
 async function writeAdminLog(env: MembershipEnv, adminId: string, action: string, targetUserId: string, detail: unknown, now: string) {

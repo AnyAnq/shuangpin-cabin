@@ -4,6 +4,7 @@ import { downloadVocabularyPackage } from '../../src/services/vocabularyRegistry
 describe('词库下载服务', () => {
   beforeEach(() => {
     vi.unstubAllGlobals();
+    localStorage.clear();
   });
 
   it('主下载地址失败后尝试备用地址', async () => {
@@ -31,8 +32,8 @@ describe('词库下载服务', () => {
 
     const result = await downloadVocabularyPackage('https://primary.example.com/daily.json', ['https://mirror.example.com/daily.json']);
 
-    expect(fetchMock).toHaveBeenCalledWith('https://primary.example.com/daily.json');
-    expect(fetchMock).toHaveBeenCalledWith('https://mirror.example.com/daily.json');
+    expect(fetchMock).toHaveBeenCalledWith('https://primary.example.com/daily.json', { headers: {} });
+    expect(fetchMock).toHaveBeenCalledWith('https://mirror.example.com/daily.json', { headers: {} });
     expect(result.sourceUrl).toBe('https://mirror.example.com/daily.json');
     expect(result.packageFile.name).toBe('日常常用词');
   });

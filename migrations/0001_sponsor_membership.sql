@@ -71,3 +71,17 @@ CREATE TABLE IF NOT EXISTS admin_audit_logs (
   detail_json TEXT NOT NULL,
   created_at TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS redeem_codes (
+  id TEXT PRIMARY KEY,
+  code_hash TEXT NOT NULL UNIQUE,
+  token_hash TEXT,
+  email_note TEXT NOT NULL DEFAULT '',
+  status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active', 'redeemed', 'revoked')),
+  created_at TEXT NOT NULL,
+  redeemed_at TEXT,
+  revoked_at TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_redeem_codes_token_hash
+  ON redeem_codes (token_hash);

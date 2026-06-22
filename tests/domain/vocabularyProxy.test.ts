@@ -55,6 +55,34 @@ describe('Cloudflare 词库代理', () => {
     expect(response.status).toBe(403);
   });
 
+  it('带有效兑换会员 token 时可以代理版本化词库包', async () => {
+    const fetcher = vi.fn(() => Promise.resolve(giteeContentResponse({
+      schemaVersion: 1,
+      id: 'work-study',
+      name: '工作学习',
+      version: '1.0.0',
+      author: 'Shuangpin Cabin',
+      license: 'MIT',
+      pricingType: 'paid',
+      description: '适合工作学习场景。',
+      tags: ['work'],
+      entries: [{ text: '项目' }],
+    })));
+    const db = new MemoryD1();
+    await db.seedRedeemToken('member-token-1');
+
+    const response = await proxyVocabularyRequest(['packages', 'work-study@1.0.0.json'], fetcher as unknown as typeof fetch, {
+      request: new Request('https://example.com/api/vocabularies/packages/work-study@1.0.0.json', {
+        headers: { 'X-Membership-Token': 'member-token-1' },
+      }),
+      env: { DB: db },
+    });
+    const packageFile = await response.json();
+
+    expect(response.status).toBe(200);
+    expect(packageFile.entries).toEqual([{ text: '项目' }]);
+  });
+
   it('管理员即使未开通会员也可以代理版本化词库包用于测试审核', async () => {
     const fetcher = vi.fn(() => Promise.resolve(giteeContentResponse({
       schemaVersion: 1,
@@ -178,6 +206,7 @@ class MemoryD1 {
     users: [],
     sessions: [],
     entitlements: [],
+    redeem_codes: [],
   };
 
   async seedSession(userId: string, email: string, token: string) {
@@ -188,6 +217,18 @@ class MemoryD1 {
       token_hash: await sha256Hex(token),
       expires_at: '2099-01-01T00:00:00.000Z',
       created_at: now(),
+    });
+  }
+
+  async seedRedeemToken(token: string) {
+    this.tables.redeem_codes.push({
+      id: 'redeem_1',
+      code_hash: 'unused',
+      token_hash: await sha256Hex(token),
+      status: 'redeemed',
+      created_at: now(),
+      redeemed_at: now(),
+      revoked_at: null,
     });
   }
 
@@ -214,6 +255,9 @@ class MemoryD1 {
     }
     if (sql.includes('FROM entitlements')) {
       return this.tables.entitlements.find((row) => row.user_id === values[0] && row.feature === values[1] && row.active === 1) ?? null;
+    }
+    if (sql.includes('FROM redeem_codes') && sql.includes('token_hash')) {
+      return this.tables.redeem_codes.find((row) => row.token_hash === values[0] && row.status === 'redeemed') ?? null;
     }
     return null;
   }

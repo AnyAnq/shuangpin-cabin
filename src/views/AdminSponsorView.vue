@@ -5,11 +5,14 @@
       <section class="vocabulary-hero">
         <span>管理员</span>
         <h1>赞助审核</h1>
-        <p>核对微信或支付宝到账后，确认达标赞助并赠送永久会员；未达标但有效的支持可标记为普通赞助。</p>
+        <p>核对微信或支付宝到账后，确认达标赞助并生成一次性兑换码；未达标但有效的支持可标记为普通赞助。</p>
         <button type="button" class="soft-pill" @click="loadClaims">刷新</button>
       </section>
 
       <p v-if="error" class="vocabulary-error">{{ error }}</p>
+      <p v-if="latestRedeemCode" class="admin-redeem-code" data-testid="latest-redeem-code">
+        兑换码：<strong>{{ latestRedeemCode }}</strong>
+      </p>
 
       <section class="vocabulary-section">
         <div class="vocabulary-section-head">
@@ -25,7 +28,7 @@
               <p>{{ claim.note || '无备注' }}</p>
             </div>
             <div class="admin-claim-actions">
-              <button type="button" class="primary-action" @click="review(claim.id, 'approve')">赠送会员</button>
+              <button type="button" class="primary-action" @click="review(claim.id, 'approve')">生成兑换码</button>
               <button type="button" class="ghost-action" @click="review(claim.id, 'thanks-only')">普通赞助</button>
               <button type="button" class="ghost-action" @click="review(claim.id, 'reject')">驳回</button>
             </div>
@@ -43,6 +46,7 @@ import { fetchSponsorClaims, reviewSponsorClaim, type SponsorClaimRecord } from 
 
 const claims = ref<SponsorClaimRecord[]>([]);
 const error = ref('');
+const latestRedeemCode = ref('');
 
 onMounted(() => {
   void loadClaims();
@@ -59,7 +63,8 @@ async function loadClaims() {
 
 async function review(id: string, action: 'approve' | 'thanks-only' | 'reject') {
   try {
-    await reviewSponsorClaim(id, action);
+    const result = await reviewSponsorClaim(id, action);
+    if (result.redeemCode) latestRedeemCode.value = result.redeemCode;
     await loadClaims();
   } catch {
     error.value = '审核失败，请稍后重试。';

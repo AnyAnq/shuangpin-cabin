@@ -11,6 +11,7 @@ describe('VocabulariesView', () => {
     setActivePinia(createPinia());
     await db.vocabularyPackages.clear();
     await db.vocabularyEntries.clear();
+    localStorage.clear();
   });
 
   it('展示远程可安装词库并支持安装', async () => {
@@ -167,7 +168,7 @@ describe('VocabulariesView', () => {
     expect(wrapper.text()).not.toContain('导入词库');
   });
 
-  it('付费词库对未登录用户展示登录后赞助入口', async () => {
+  it('付费词库对未兑换浏览器展示赞助入口', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
       if (url.endsWith('/api/me')) {
         return Promise.resolve(jsonResponse({
@@ -206,15 +207,16 @@ describe('VocabulariesView', () => {
     });
 
     expect(wrapper.text()).toContain('赞助满 10 元');
-    expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('登录后赞助');
+    expect(wrapper.text()).toContain('可用兑换码解锁当前浏览器');
+    expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
   });
 
-  it('已登录非会员可以提交赞助声明', async () => {
+  it('未登录用户可以用付款备注邮箱提交赞助声明', async () => {
     const fetchMock = vi.fn((url: string, init?: RequestInit) => {
       if (url.endsWith('/api/me')) {
         return Promise.resolve(jsonResponse({
-          authenticated: true,
-          user: { email: 'reader@example.com' },
+          authenticated: false,
+          user: null,
           membership: { lifetime: false },
           admin: false,
         }));
@@ -251,14 +253,84 @@ describe('VocabulariesView', () => {
     });
 
     await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
+    await wrapper.get('input[type="email"]').setValue('reader@example.com');
     await wrapper.get('[data-testid="submit-sponsor-claim"]').trigger('click');
     await flush();
 
     expect(fetchMock).toHaveBeenCalledWith('/api/sponsor-claims', expect.objectContaining({
       method: 'POST',
       credentials: 'include',
+      body: expect.stringContaining('reader@example.com'),
     }));
     expect(wrapper.text()).toContain('已提交赞助记录');
+  });
+
+  it('兑换码成功后当前浏览器显示会员并允许安装付费词库', async () => {
+    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: false,
+          user: null,
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
+      if (url.endsWith('/registry.json')) {
+        return Promise.resolve(jsonResponse({
+          schemaVersion: 1,
+          updatedAt: '2026-06-22T00:00:00.000Z',
+          packages: [{
+            id: 'it-tech',
+            name: '技术术语词库',
+            version: '1.0.0',
+            description: '适合技术场景输入。',
+            author: 'Shuangpin Cabin',
+            pricingType: 'paid',
+            tags: ['it'],
+            entryCount: 1,
+            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
+          }],
+        }));
+      }
+      if (url.endsWith('/api/redeem')) {
+        return Promise.resolve(jsonResponse({ token: 'member-token-1' }));
+      }
+      if (url.endsWith('/api/vocabularies/packages/it-tech@1.0.0.json')) {
+        expect((init?.headers as Record<string, string>)['X-Membership-Token']).toBe('member-token-1');
+        return Promise.resolve(jsonResponse({
+          schemaVersion: 1,
+          id: 'it-tech',
+          name: '技术术语词库',
+          version: '1.0.0',
+          author: 'Shuangpin Cabin',
+          license: 'MIT',
+          pricingType: 'paid',
+          description: '适合技术场景输入。',
+          tags: ['it'],
+          entries: [{ text: '字符串', weight: 1 }],
+        }));
+      }
+      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
+    });
+    vi.stubGlobal('fetch', fetchMock);
+
+    const wrapper = mount(VocabulariesView, {
+      global: { plugins: [routerForVocabulary()] },
+    });
+    await vi.waitFor(() => {
+      expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').exists()).toBe(true);
+    });
+
+    await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
+    await wrapper.get('input[placeholder="输入管理员发给你的兑换码"]').setValue('SP-TEST-001');
+    await wrapper.get('form.redeem-form').trigger('submit');
+    await flush();
+
+    expect(wrapper.text()).toContain('永久会员已开通');
+    await wrapper.get('[data-testid="install-vocabulary-it-tech"]').trigger('click');
+    await flush();
+
+    expect(await db.vocabularyEntries.where('packageId').equals('it-tech').count()).toBe(1);
   });
 });
 

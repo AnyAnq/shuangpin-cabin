@@ -18,10 +18,17 @@ export async function fetchSponsorClaims(status = 'pending'): Promise<SponsorCla
   return payload.claims ?? [];
 }
 
-export async function reviewSponsorClaim(id: string, action: 'approve' | 'thanks-only' | 'reject'): Promise<void> {
+export interface SponsorReviewResult {
+  id: string;
+  status: SponsorClaimRecord['status'];
+  redeemCode?: string;
+}
+
+export async function reviewSponsorClaim(id: string, action: 'approve' | 'thanks-only' | 'reject'): Promise<SponsorReviewResult> {
   const response = await fetch(`/api/admin/sponsor-claims/${encodeURIComponent(id)}/${action}`, {
     method: 'POST',
     credentials: 'include',
   });
   if (!response.ok) throw new Error('审核失败');
+  return response.json() as Promise<SponsorReviewResult>;
 }

@@ -3,17 +3,17 @@ import { handleApproveSponsorClaim, handleCreateSponsorClaim, handleThanksOnlySp
 import { hasLifetimeMembership } from '../../functions/_shared/auth';
 
 describe('赞助会员 API 规则', () => {
-  it('用户提交赞助记录后进入待审核状态', async () => {
+  it('未登录用户使用付款备注邮箱提交赞助记录后进入待审核状态', async () => {
     const env = createEnv();
-    await seedSession(env, 'u_1', 'reader@example.com', 'token-1');
 
     const response = await handleCreateSponsorClaim({
       request: jsonRequest('https://example.com/api/sponsor-claims', {
+        email: 'reader@example.com',
         channel: 'wechat',
         amountCny: 10,
         sponsoredAt: '2026-06-22T10:00:00.000Z',
         note: '已备注邮箱',
-      }, 'session=token-1'),
+      }),
       env,
     });
 
@@ -21,11 +21,11 @@ describe('赞助会员 API 规则', () => {
     expect(await response.json()).toMatchObject({ status: 'pending' });
     expect(env.DB.tables.sponsor_claims).toHaveLength(1);
     expect(env.DB.tables.sponsor_claims[0]).toMatchObject({
-      user_id: 'u_1',
       email: 'reader@example.com',
       channel: 'wechat',
       status: 'pending',
     });
+    expect(env.DB.tables.users[0]).toMatchObject({ email: 'reader@example.com' });
   });
 
   it('非管理员不能审核赞助记录', async () => {
@@ -43,7 +43,7 @@ describe('赞助会员 API 规则', () => {
     expect(await hasLifetimeMembership(env.DB, 'u_1')).toBe(false);
   });
 
-  it('管理员确认达标赞助后赠送永久会员且重复确认不重复授权', async () => {
+  it('管理员确认达标赞助后生成一次性兑换码且重复确认不重复生成', async () => {
     const env = createEnv();
     env.DB.tables.sponsor_claims.push(pendingClaim('claim_1', 'u_1', 'reader@example.com', 10));
     await seedSession(env, 'admin_1', 'admin@example.com', 'admin-token');
@@ -53,16 +53,20 @@ describe('赞助会员 API 规则', () => {
       env: { ...env, ADMIN_EMAILS: 'admin@example.com' },
       params: { id: 'claim_1' },
     });
+    const firstPayload = await first.json() as { redeemCode?: string };
     const second = await handleApproveSponsorClaim({
       request: jsonRequest('https://example.com/api/admin/sponsor-claims/claim_1/approve', {}, 'session=admin-token'),
       env: { ...env, ADMIN_EMAILS: 'admin@example.com' },
       params: { id: 'claim_1' },
     });
+    const secondPayload = await second.json() as { redeemCode?: string };
 
     expect(first.status).toBe(200);
     expect(second.status).toBe(200);
-    expect(await hasLifetimeMembership(env.DB, 'u_1')).toBe(true);
-    expect(env.DB.tables.entitlements.filter((row) => row.user_id === 'u_1' && row.active === 1)).toHaveLength(1);
+    expect(firstPayload.redeemCode).toMatch(/^SP-/);
+    expect(secondPayload.redeemCode).toBeUndefined();
+    expect(env.DB.tables.redeem_codes).toHaveLength(1);
+    expect(await hasLifetimeMembership(env.DB, 'u_1')).toBe(false);
     expect(env.DB.tables.sponsor_claims[0].status).toBe('approved');
   });
 
@@ -149,6 +153,7 @@ class MemoryD1 {
     entitlements: [],
     sponsor_claims: [],
     admin_audit_logs: [],
+    redeem_codes: [],
   };
 
   prepare(sql: string) {
@@ -178,6 +183,9 @@ class MemoryD1 {
     if (sql.includes('FROM entitlements')) {
       return this.tables.entitlements.find((row) => row.user_id === values[0] && row.feature === values[1] && row.active === 1) ?? null;
     }
+    if (sql.includes('FROM users') && sql.includes('WHERE email = ?')) {
+      return this.tables.users.find((row) => row.email === values[0]) ?? null;
+    }
     if (sql.includes('FROM sponsor_claims') && sql.includes('WHERE id = ?')) {
       return this.tables.sponsor_claims.find((row) => row.id === values[0]) ?? null;
     }
@@ -193,6 +201,15 @@ class MemoryD1 {
   }
 
   run(sql: string, values: unknown[]) {
+    if (sql.startsWith('INSERT INTO users')) {
+      this.tables.users.push({
+        id: values[0],
+        email: values[1],
+        created_at: values[2],
+        updated_at: values[3],
+      });
+      return;
+    }
     if (sql.startsWith('INSERT INTO sponsor_claims')) {
       this.tables.sponsor_claims.push({
         id: values[0],
@@ -207,6 +224,19 @@ class MemoryD1 {
         reviewed_at: null,
         created_at: values[7],
         updated_at: values[7],
+      });
+      return;
+    }
+    if (sql.startsWith('INSERT INTO redeem_codes')) {
+      this.tables.redeem_codes.push({
+        id: values[0],
+        code_hash: values[1],
+        token_hash: null,
+        email_note: values[2],
+        status: 'active',
+        created_at: values[3],
+        redeemed_at: null,
+        revoked_at: null,
       });
       return;
     }

@@ -1,4 +1,5 @@
 import { validateVocabularyPackage, validateVocabularyRegistry, type VocabularyPackageFile, type VocabularyRegistry } from '../domain/vocabulary';
+import { membershipHeaders } from './membershipService';
 
 const DEFAULT_REGISTRY_URL = import.meta.env.VITE_VOCABULARY_REGISTRY_URL ?? '/api/vocabularies/registry.json';
 
@@ -25,7 +26,7 @@ export async function downloadVocabularyPackage(downloadUrl: string, mirrorUrls:
 }
 
 async function fetchJson(url: string): Promise<unknown> {
-  const response = await fetch(url);
+  const response = await fetch(url, { headers: membershipHeaders() });
   if (!response.ok) {
     throw new Error(`词库请求失败：${url}`);
   }

@@ -1,4 +1,5 @@
 import { getCurrentUser, hasLifetimeMembership, isAdmin, json, type MembershipEnv } from '../../_shared/auth';
+import { hasRedeemMembershipToken, readMembershipToken } from '../../_shared/redeem';
 
 const GITEE_CONTENTS_BASE = 'https://gitee.com/api/v5/repos/IQueue/shuangpin-vocabularies/contents';
 const GITEE_REF = 'master';
@@ -58,11 +59,14 @@ async function canDownloadVocabularyPackage(context?: Omit<VocabularyProxyContex
   const request = context?.request;
   const db = context?.env?.DB;
   if (!request || !db) {
-    return json({ error: 'AUTH_REQUIRED', message: '请先登录' }, 401);
+    return json({ error: 'MEMBERSHIP_TOKEN_REQUIRED', message: '请先兑换永久会员' }, 401);
+  }
+  if (await hasRedeemMembershipToken(db, readMembershipToken(request))) {
+    return true;
   }
   const user = await getCurrentUser(request, db);
   if (!user) {
-    return json({ error: 'AUTH_REQUIRED', message: '请先登录' }, 401);
+    return json({ error: 'MEMBERSHIP_TOKEN_REQUIRED', message: '请先兑换永久会员' }, 401);
   }
   if (isAdmin(user, context.env ?? {})) {
     return true;

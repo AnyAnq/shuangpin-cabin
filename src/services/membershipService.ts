@@ -9,11 +9,14 @@ export interface MembershipState {
   admin: boolean;
 }
 
+const MEMBERSHIP_TOKEN_KEY = 'shuangpin-cabin-membership-token';
+
 export interface SponsorClaimInput {
   channel: 'wechat' | 'alipay';
   amountCny: number;
   sponsoredAt: string;
   note: string;
+  email: string;
 }
 
 export const defaultMembershipState: MembershipState = {
@@ -47,23 +50,27 @@ export async function submitSponsorClaim(input: SponsorClaimInput): Promise<void
   }
 }
 
-export async function requestLoginCode(email: string): Promise<{ devCode?: string }> {
-  const response = await fetch('/api/auth/request-code', {
-    method: 'POST',
-    credentials: 'include',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email }),
-  });
-  if (!response.ok) throw new Error('验证码发送失败');
-  return await response.json() as { devCode?: string };
+export function getStoredMembershipToken(): string {
+  return localStorage.getItem(MEMBERSHIP_TOKEN_KEY) ?? '';
 }
 
-export async function verifyLoginCode(email: string, code: string): Promise<void> {
-  const response = await fetch('/api/auth/verify-code', {
+export function hasStoredMembershipToken(): boolean {
+  return getStoredMembershipToken().length > 0;
+}
+
+export async function redeemMembershipCode(code: string): Promise<void> {
+  const response = await fetch('/api/redeem', {
     method: 'POST',
-    credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, code }),
+    body: JSON.stringify({ code }),
   });
-  if (!response.ok) throw new Error('登录失败');
+  if (!response.ok) throw new Error('兑换失败');
+  const payload = await response.json() as { token?: string };
+  if (!payload.token) throw new Error('兑换失败');
+  localStorage.setItem(MEMBERSHIP_TOKEN_KEY, payload.token);
+}
+
+export function membershipHeaders(): HeadersInit {
+  const token = getStoredMembershipToken();
+  return token ? { 'X-Membership-Token': token } : {};
 }

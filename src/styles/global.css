@@ -1689,28 +1689,6 @@ button {
   line-height: 1.65;
 }
 
-.membership-login-form {
-  display: grid;
-  grid-template-columns: minmax(160px, 1fr) 120px auto auto;
-  gap: 8px;
-}
-
-.membership-login-form input,
-.membership-login-form button {
-  min-height: 36px;
-  border: 1px solid rgba(148, 163, 184, 0.34);
-  border-radius: 8px;
-  padding: 8px 10px;
-  font: inherit;
-}
-
-.membership-login-form button {
-  background: #fff;
-  color: #9a3412;
-  font-weight: 800;
-  cursor: pointer;
-}
-
 .vocabulary-error {
   padding: 12px 16px;
   border-radius: 16px;
@@ -1836,8 +1814,7 @@ button {
   gap: 12px;
 }
 
-.sponsor-qr-grid > div,
-.sponsor-login-note {
+.sponsor-qr-grid > div {
   display: grid;
   gap: 10px;
   padding: 14px;
@@ -1855,13 +1832,15 @@ button {
   background: #fff;
 }
 
-.sponsor-form {
+.sponsor-form,
+.redeem-form {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.sponsor-form label {
+.sponsor-form label,
+.redeem-form label {
   display: grid;
   gap: 6px;
   font-size: 13px;
@@ -1875,7 +1854,8 @@ button {
 
 .sponsor-form input,
 .sponsor-form select,
-.sponsor-form textarea {
+.sponsor-form textarea,
+.redeem-form input {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.34);
   border-radius: 8px;
@@ -1885,7 +1865,8 @@ button {
   color: var(--color-text);
 }
 
-.sponsor-form .primary-action {
+.sponsor-form .primary-action,
+.redeem-form .primary-action {
   grid-column: 1 / -1;
 }
 
@@ -1899,6 +1880,19 @@ button {
 .admin-claim-list {
   display: grid;
   gap: 12px;
+}
+
+.admin-redeem-code {
+  padding: 12px 16px;
+  border: 1px solid rgba(22, 163, 74, 0.22);
+  border-radius: 8px;
+  background: rgba(240, 253, 244, 0.92);
+  color: #166534;
+}
+
+.admin-redeem-code strong {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 0;
 }
 
 .admin-claim-card {
