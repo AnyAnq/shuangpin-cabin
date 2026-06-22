@@ -6,5 +6,10 @@ test-results/
 .superpowers/
 .vite-scaffold/
 .worktrees/
+.wrangler/
+public/sponsor/*.png
+public/sponsor/*.jpg
+public/sponsor/*.jpeg
+public/sponsor/*.webp
 .env
 .env.*

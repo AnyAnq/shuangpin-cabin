@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Shuangpin Cabin",
   "license": "MIT",
-  "pricingType": "free",
+  "pricingType": "paid",
   "description": "来自 Jieba 高频词典筛选的日常常用词，适合长期基础热身。",
   "tags": [
     "daily",

@@ -1,0 +1,162 @@
+import { ensureMembershipSchema, grantLifetimeMembership, json, requireAdmin, requireUser, type AuthContext, type MembershipEnv } from './auth';
+
+type SponsorChannel = 'wechat' | 'alipay';
+type SponsorStatus = 'pending' | 'approved' | 'rejected' | 'thanks_only';
+
+interface SponsorClaimInput {
+  channel?: SponsorChannel;
+  amountCny?: number;
+  sponsoredAt?: string;
+  note?: string;
+}
+
+interface SponsorRouteContext extends AuthContext {
+  params?: {
+    id?: string;
+  };
+}
+
+interface SponsorClaimRow {
+  id: string;
+  user_id: string;
+  email: string;
+  amount_cny: number;
+  status: SponsorStatus;
+}
+
+export async function handleCreateSponsorClaim(context: AuthContext): Promise<Response> {
+  const user = await requireUser(context);
+  if (user instanceof Response) return user;
+
+  const input = await readJson<SponsorClaimInput>(context.request);
+  const channel = input.channel;
+  const amountCny = Number(input.amountCny);
+  const sponsoredAt = typeof input.sponsoredAt === 'string' && input.sponsoredAt ? input.sponsoredAt : new Date().toISOString();
+  const note = typeof input.note === 'string' ? input.note.trim().slice(0, 500) : '';
+
+  if (channel !== 'wechat' && channel !== 'alipay') {
+    return json({ error: 'INVALID_CHANNEL', message: '请选择微信或支付宝' }, 400);
+  }
+  if (!Number.isFinite(amountCny) || amountCny <= 0) {
+    return json({ error: 'INVALID_AMOUNT', message: '请填写有效赞助金额' }, 400);
+  }
+  if (!context.env.DB) {
+    return json({ error: 'DB_UNAVAILABLE', message: '数据库未配置' }, 500);
+  }
+  await ensureMembershipSchema(context.env.DB);
+
+  const now = new Date().toISOString();
+  const id = createSponsorClaimId();
+  await context.env.DB.prepare(`
+    INSERT INTO sponsor_claims (
+      id, user_id, email, channel, amount_cny, sponsored_at, note, status,
+      reviewed_by, reviewed_at, created_at, updated_at
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, 'pending', NULL, NULL, ?, ?)
+  `).bind(id, user.id, user.email, channel, amountCny, sponsoredAt, note, now, now).run();
+
+  return json({ id, status: 'pending' }, 201);
+}
+
+export async function handleListSponsorClaims(context: AuthContext): Promise<Response> {
+  const admin = await requireAdmin(context);
+  if (admin instanceof Response) return admin;
+  if (!context.env.DB) return json({ error: 'DB_UNAVAILABLE' }, 500);
+  await ensureMembershipSchema(context.env.DB);
+  const url = new URL(context.request.url);
+  const status = url.searchParams.get('status') ?? 'pending';
+  const result = await context.env.DB.prepare(`
+    SELECT id, user_id, email, channel, amount_cny, sponsored_at, note, status, reviewed_by, reviewed_at, created_at, updated_at
+    FROM sponsor_claims
+    WHERE (? = '' OR status = ?)
+    ORDER BY created_at DESC
+  `).bind(status, status).all();
+  return json({ claims: result.results });
+}
+
+export async function handleApproveSponsorClaim(context: SponsorRouteContext): Promise<Response> {
+  return reviewSponsorClaim(context, 'approved');
+}
+
+export async function handleThanksOnlySponsorClaim(context: SponsorRouteContext): Promise<Response> {
+  return reviewSponsorClaim(context, 'thanks_only');
+}
+
+export async function handleRejectSponsorClaim(context: SponsorRouteContext): Promise<Response> {
+  return reviewSponsorClaim(context, 'rejected');
+}
+
+export async function handleGrantMemberByEmail(context: AuthContext): Promise<Response> {
+  const admin = await requireAdmin(context);
+  if (admin instanceof Response) return admin;
+  if (!context.env.DB) return json({ error: 'DB_UNAVAILABLE' }, 500);
+
+  const input = await readJson<{ email?: string }>(context.request);
+  const email = normalizeEmail(input.email);
+  if (!email) return json({ error: 'INVALID_EMAIL', message: '请填写邮箱' }, 400);
+
+  const user = await context.env.DB.prepare('SELECT id, email FROM users WHERE email = ? LIMIT 1').bind(email).first<{ id: string; email: string }>();
+  if (!user) return json({ error: 'USER_NOT_FOUND', message: '用户不存在，请先登录一次' }, 404);
+
+  const now = new Date().toISOString();
+  await grantLifetimeMembership(context.env.DB, user.id, 'admin-grant', now);
+  await writeAdminLog(context.env, admin.id, 'grant_lifetime_membership', user.id, { email }, now);
+  return json({ ok: true });
+}
+
+async function reviewSponsorClaim(context: SponsorRouteContext, status: SponsorStatus): Promise<Response> {
+  const admin = await requireAdmin(context);
+  if (admin instanceof Response) return admin;
+  if (!context.env.DB) return json({ error: 'DB_UNAVAILABLE' }, 500);
+
+  const id = context.params?.id;
+  if (!id) return json({ error: 'NOT_FOUND' }, 404);
+
+  const claim = await context.env.DB.prepare(`
+    SELECT id, user_id, email, amount_cny, status
+    FROM sponsor_claims
+    WHERE id = ?
+    LIMIT 1
+  `).bind(id).first<SponsorClaimRow>();
+  if (!claim) return json({ error: 'NOT_FOUND' }, 404);
+
+  const now = new Date().toISOString();
+  await context.env.DB.prepare(`
+    UPDATE sponsor_claims
+    SET status = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?
+    WHERE id = ?
+  `).bind(status, admin.id, now, now, id).run();
+
+  if (status === 'approved') {
+    await grantLifetimeMembership(context.env.DB, claim.user_id, 'sponsor', now);
+  }
+  await writeAdminLog(context.env, admin.id, `sponsor_claim_${status}`, claim.user_id, { claimId: claim.id, email: claim.email }, now);
+  return json({ id, status });
+}
+
+async function writeAdminLog(env: MembershipEnv, adminId: string, action: string, targetUserId: string, detail: unknown, now: string) {
+  if (!env.DB) return;
+  await env.DB.prepare(`
+    INSERT INTO admin_audit_logs (id, admin_id, action, target_user_id, detail_json, created_at)
+    VALUES (?, ?, ?, ?, ?, ?)
+  `).bind(createSponsorClaimId(), adminId, action, targetUserId, JSON.stringify(detail), now).run();
+}
+
+async function readJson<T>(request: Request): Promise<T> {
+  try {
+    return await request.json() as T;
+  } catch {
+    return {} as T;
+  }
+}
+
+function normalizeEmail(email: unknown) {
+  return typeof email === 'string' && email.includes('@') ? email.trim().toLowerCase() : '';
+}
+
+function createSponsorClaimId() {
+  const random = typeof crypto.randomUUID === 'function'
+    ? crypto.randomUUID()
+    : Math.random().toString(36).slice(2);
+  return `claim_${random.replace(/-/g, '')}`;
+}

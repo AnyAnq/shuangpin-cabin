@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "description": "来自 Jieba 高频词典筛选的日常常用词，适合长期基础热身。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "daily",
         "beginner",
@@ -25,7 +25,7 @@
       "version": "1.0.0",
       "description": "融合 IT、财经、法律等开源主题词，偏项目、文档、协作和学习表达。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "work",
         "study",
@@ -42,7 +42,7 @@
       "version": "1.0.0",
       "description": "融合饮食、地名、汽车等开源主题词，覆盖生活、出行和消费场景。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "life",
         "shopping",
@@ -59,7 +59,7 @@
       "version": "1.0.0",
       "description": "来自 THUOCL 成语和诗词词库，适合四字节奏、文学词汇和长词手感训练。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "chengyu",
         "poem",
@@ -75,7 +75,7 @@
       "version": "1.0.0",
       "description": "来自 THUOCL IT 词库，适合程序员、产品、运营等技术场景输入。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "it",
         "tech",
@@ -91,7 +91,7 @@
       "version": "1.0.0",
       "description": "来自 THUOCL 财经词库，适合商业、交易、市场和公司场景输入。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "finance",
         "business",
@@ -107,7 +107,7 @@
       "version": "1.0.0",
       "description": "来自 THUOCL 医学词库，适合健康、医疗和身体相关表达训练。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "medical",
         "health",
@@ -123,7 +123,7 @@
       "version": "1.0.0",
       "description": "从高频词中筛选含 zh/ch/sh、ang/eng/ing/ian/uan 等常见混淆音的专项练习。",
       "author": "Shuangpin Cabin",
-      "pricingType": "free",
+      "pricingType": "paid",
       "tags": [
         "mistake",
         "sound",

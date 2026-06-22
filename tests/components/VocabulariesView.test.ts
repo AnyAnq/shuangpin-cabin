@@ -15,6 +15,14 @@ describe('VocabulariesView', () => {
 
   it('展示远程可安装词库并支持安装', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: false,
+          user: null,
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -69,6 +77,14 @@ describe('VocabulariesView', () => {
 
   it('分区展示本地词库、在线已安装词库和在线词库中心', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: false,
+          user: null,
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -125,6 +141,14 @@ describe('VocabulariesView', () => {
 
   it('词库页不再展示本地导入入口', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: false,
+          user: null,
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -141,6 +165,100 @@ describe('VocabulariesView', () => {
 
     expect(wrapper.find('[data-testid="import-vocabulary-input"]').exists()).toBe(false);
     expect(wrapper.text()).not.toContain('导入词库');
+  });
+
+  it('付费词库对未登录用户展示登录后赞助入口', async () => {
+    vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: false,
+          user: null,
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
+      if (url.endsWith('/registry.json')) {
+        return Promise.resolve(jsonResponse({
+          schemaVersion: 1,
+          updatedAt: '2026-06-22T00:00:00.000Z',
+          packages: [{
+            id: 'it-tech',
+            name: '技术术语词库',
+            version: '1.0.0',
+            description: '适合技术场景输入。',
+            author: 'Shuangpin Cabin',
+            pricingType: 'paid',
+            tags: ['it'],
+            entryCount: 80,
+            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
+          }],
+        }));
+      }
+      return Promise.reject(new Error(`未模拟请求：${url}`));
+    }));
+
+    const wrapper = mount(VocabulariesView, {
+      global: { plugins: [routerForVocabulary()] },
+    });
+
+    await vi.waitFor(() => {
+      expect(wrapper.text()).toContain('技术术语词库');
+    });
+
+    expect(wrapper.text()).toContain('赞助满 10 元');
+    expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('登录后赞助');
+  });
+
+  it('已登录非会员可以提交赞助声明', async () => {
+    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
+      if (url.endsWith('/api/me')) {
+        return Promise.resolve(jsonResponse({
+          authenticated: true,
+          user: { email: 'reader@example.com' },
+          membership: { lifetime: false },
+          admin: false,
+        }));
+      }
+      if (url.endsWith('/registry.json')) {
+        return Promise.resolve(jsonResponse({
+          schemaVersion: 1,
+          updatedAt: '2026-06-22T00:00:00.000Z',
+          packages: [{
+            id: 'it-tech',
+            name: '技术术语词库',
+            version: '1.0.0',
+            description: '适合技术场景输入。',
+            author: 'Shuangpin Cabin',
+            pricingType: 'paid',
+            tags: ['it'],
+            entryCount: 80,
+            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
+          }],
+        }));
+      }
+      if (url.endsWith('/api/sponsor-claims')) {
+        return Promise.resolve(jsonResponse({ id: 'claim_1', status: 'pending' }));
+      }
+      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
+    });
+    vi.stubGlobal('fetch', fetchMock);
+
+    const wrapper = mount(VocabulariesView, {
+      global: { plugins: [routerForVocabulary()] },
+    });
+    await vi.waitFor(() => {
+      expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
+    });
+
+    await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
+    await wrapper.get('[data-testid="submit-sponsor-claim"]').trigger('click');
+    await flush();
+
+    expect(fetchMock).toHaveBeenCalledWith('/api/sponsor-claims', expect.objectContaining({
+      method: 'POST',
+      credentials: 'include',
+    }));
+    expect(wrapper.text()).toContain('已提交赞助记录');
   });
 });
 

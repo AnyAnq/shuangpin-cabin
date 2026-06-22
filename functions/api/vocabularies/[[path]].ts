@@ -1,3 +1,5 @@
+import { getCurrentUser, hasLifetimeMembership, isAdmin, json, type MembershipEnv } from '../../_shared/auth';
+
 const GITEE_CONTENTS_BASE = 'https://gitee.com/api/v5/repos/IQueue/shuangpin-vocabularies/contents';
 const GITEE_REF = 'master';
 
@@ -7,22 +9,30 @@ interface GiteeContentFile {
 }
 
 interface VocabularyProxyContext {
+  request?: Request;
+  env?: MembershipEnv & {
+    GITEE_ACCESS_TOKEN?: string;
+  };
   params: {
     path?: string | string[];
   };
 }
 
 export async function onRequestGet(context: VocabularyProxyContext): Promise<Response> {
-  return proxyVocabularyRequest(context.params.path);
+  return proxyVocabularyRequest(context.params.path, fetch, context);
 }
 
-export async function proxyVocabularyRequest(pathParam?: string | string[], fetcher: typeof fetch = fetch): Promise<Response> {
+export async function proxyVocabularyRequest(pathParam?: string | string[], fetcher: typeof fetch = fetch, context?: Omit<VocabularyProxyContext, 'params'>): Promise<Response> {
   const path = normalizeVocabularyPath(pathParam);
   if (!path) {
     return new Response('Not found', { status: 404 });
   }
+  if (path.startsWith('packages/')) {
+    const access = await canDownloadVocabularyPackage(context);
+    if (access instanceof Response) return access;
+  }
 
-  const upstream = await fetcher(`${GITEE_CONTENTS_BASE}/${encodeGiteePath(path)}?ref=${GITEE_REF}`, {
+  const upstream = await fetcher(buildGiteeContentsUrl(path, context?.env?.GITEE_ACCESS_TOKEN), {
     headers: { Accept: 'application/json' },
   });
   if (!upstream.ok) {
@@ -42,6 +52,32 @@ export async function proxyVocabularyRequest(pathParam?: string | string[], fetc
         : 'public, max-age=86400',
     },
   });
+}
+
+async function canDownloadVocabularyPackage(context?: Omit<VocabularyProxyContext, 'params'>): Promise<true | Response> {
+  const request = context?.request;
+  const db = context?.env?.DB;
+  if (!request || !db) {
+    return json({ error: 'AUTH_REQUIRED', message: '请先登录' }, 401);
+  }
+  const user = await getCurrentUser(request, db);
+  if (!user) {
+    return json({ error: 'AUTH_REQUIRED', message: '请先登录' }, 401);
+  }
+  if (isAdmin(user, context.env ?? {})) {
+    return true;
+  }
+  if (!await hasLifetimeMembership(db, user.id)) {
+    return json({ error: 'MEMBERSHIP_REQUIRED', message: '赞助满 10 元可获赠永久会员后安装官方在线词库' }, 403);
+  }
+  return true;
+}
+
+function buildGiteeContentsUrl(path: string, accessToken?: string): string {
+  const url = new URL(`${GITEE_CONTENTS_BASE}/${encodeGiteePath(path)}`);
+  url.searchParams.set('ref', GITEE_REF);
+  if (accessToken) url.searchParams.set('access_token', accessToken);
+  return url.toString();
 }
 
 function encodeGiteePath(path: string): string {

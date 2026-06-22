@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Shuangpin Cabin",
   "license": "MIT",
-  "pricingType": "free",
+  "pricingType": "paid",
   "description": "从高频词中筛选含 zh/ch/sh、ang/eng/ing/ian/uan 等常见混淆音的专项练习。",
   "tags": [
     "mistake",

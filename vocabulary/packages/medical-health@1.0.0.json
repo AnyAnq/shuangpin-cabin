@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Shuangpin Cabin",
   "license": "MIT",
-  "pricingType": "free",
+  "pricingType": "paid",
   "description": "来自 THUOCL 医学词库，适合健康、医疗和身体相关表达训练。",
   "tags": [
     "medical",

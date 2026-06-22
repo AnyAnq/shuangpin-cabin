@@ -1669,6 +1669,48 @@ button {
   justify-self: start;
 }
 
+.membership-strip {
+  display: grid;
+  gap: 4px;
+  max-width: 620px;
+  padding: 12px 14px;
+  border: 1px solid rgba(236, 113, 65, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 247, 237, 0.82);
+}
+
+.membership-strip strong {
+  font-size: 15px;
+  color: #9a3412;
+}
+
+.membership-strip small {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.membership-login-form {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 120px auto auto;
+  gap: 8px;
+}
+
+.membership-login-form input,
+.membership-login-form button {
+  min-height: 36px;
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.membership-login-form button {
+  background: #fff;
+  color: #9a3412;
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .vocabulary-error {
   padding: 12px 16px;
   border-radius: 16px;
@@ -1721,6 +1763,11 @@ button {
   width: 100%;
 }
 
+.sponsor-action {
+  background: linear-gradient(135deg, #f97316, #e11d48);
+  box-shadow: 0 12px 24px rgba(225, 29, 72, 0.18);
+}
+
 .vocabulary-card.is-installed {
   background: rgba(255, 250, 244, 0.94);
 }
@@ -1729,6 +1776,158 @@ button {
   margin: 0;
   color: #2d2118;
   font-size: 20px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.42);
+}
+
+.sponsor-dialog {
+  position: relative;
+  width: min(680px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 10px;
+  background: #fffaf5;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.24);
+}
+
+.dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.sponsor-dialog > span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #be123c;
+}
+
+.sponsor-dialog h2,
+.sponsor-dialog p {
+  margin: 0;
+}
+
+.sponsor-dialog p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.sponsor-qr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sponsor-qr-grid > div,
+.sponsor-login-note {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.sponsor-qr-grid img {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.sponsor-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sponsor-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.sponsor-form label:last-of-type {
+  grid-column: 1 / -1;
+}
+
+.sponsor-form input,
+.sponsor-form select,
+.sponsor-form textarea {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  border-radius: 8px;
+  padding: 10px 11px;
+  font: inherit;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.sponsor-form .primary-action {
+  grid-column: 1 / -1;
+}
+
+.sponsor-notice {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(22, 163, 74, 0.1);
+  color: #166534;
+}
+
+.admin-claim-list {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-claim-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid rgba(126, 85, 49, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.admin-claim-card div:first-child {
+  display: grid;
+  gap: 6px;
+}
+
+.admin-claim-card small,
+.admin-claim-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.admin-claim-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
 }
 
 .vocabulary-tags,

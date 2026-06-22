@@ -57,6 +57,7 @@
 | UI 图标 | lucide-vue |
 | 在线内容 | 诗词、绕口令、词库 |
 | API 代理 | Vite dev proxy / Serverless Functions |
+| 会员与赞助 | Cloudflare Pages Functions + D1 |
 | 单元测试 | Vitest + fake-indexeddb |
 | 端到端测试 | Playwright |
 
@@ -163,6 +164,43 @@ TXT/CSV 规则：
 8. 回到首页选择 **词库练习**，点击对应词库开始练习；如果想混合所有已安装词库，点击词库按钮最左侧的 **混合**。
 
 导入后的词库保存在当前浏览器本地，不会上传到远程服务器。更换浏览器、清理浏览器数据或清空已安装词库后，需要重新导入。
+
+## 赞助与永久会员
+
+双拼小筑的付款定位是 **赞助支持项目**，不是购买词库内容。赞助满 10 元可获赠永久会员，永久会员权益用于解锁官方在线词库的安装和更新服务。
+
+免费范围：
+
+- 本地词库导入、练习和导出永久免费。
+- 诗词句子、绕口令、每日一言等在线练习内容永久免费。
+- 已安装到浏览器本地的词库可以继续用于练习。
+
+赞助流程：
+
+1. 使用邮箱登录。
+2. 在词库中心点击付费词库上的 **赞助支持**。
+3. 使用微信或支付宝扫码赞助。
+4. 付款备注中填写登录邮箱。
+5. 回到页面点击 **我已赞助**，提交赞助渠道、金额、时间和备注。
+6. 管理员核对到账后，通常 24 小时内赠送永久会员。
+
+管理员可访问 `/admin/sponsors` 审核赞助记录。达标赞助点击 **赠送会员**，未达标但有效的支持可标记为 **普通赞助**，无法核对的记录可驳回。
+
+部署时需要配置 D1 数据库并执行 `migrations/0001_sponsor_membership.sql`。相关环境变量：
+
+```text
+GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
+ADMIN_EMAILS=admin@example.com
+MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
+VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
+VITE_WECHAT_SPONSOR_QR_IMAGE_URL=https://example.com/wechat-qr.png
+VITE_ALIPAY_SPONSOR_QR_IMAGE_URL=https://example.com/alipay-qr.png
+SESSION_SECRET=生产环境随机密钥
+RESEND_API_KEY=Resend 邮件 API Key
+AUTH_EMAIL_FROM=双拼小筑 <login@example.com>
+```
+
+官方词库包应保存在 Gitee 私有仓库中，前端只通过 `/api/vocabularies/...` 请求。未登录用户下载会员词库会得到 `401`，已登录但未开通永久会员会得到 `403`，永久会员才会由后端代理读取私有词库包。
 
 ## 快速开始
 
