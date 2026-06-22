@@ -1,7 +1,0 @@
-name = "shuangpin-cabin"
-compatibility_date = "2026-06-22"
-pages_build_output_dir = "dist"
-
-[vars]
-AUTH_DEV_MODE = "false"
-MEMBERSHIP_SPONSOR_THRESHOLD_CNY = "10"
