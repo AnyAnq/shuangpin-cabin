@@ -1,4 +1,4 @@
-const GITEE_BASE = 'https://gitee.com/IQueue/shuangpin-vocabularies/raw/master';
+const VOCABULARY_BASE = 'https://raw.githubusercontent.com/AnyAnq/shuangpin-cabin/master/vocabulary-gitee';
 
 interface VocabularyProxyContext {
   params: {
@@ -16,7 +16,7 @@ export async function proxyVocabularyRequest(pathParam?: string | string[], fetc
     return new Response('Not found', { status: 404 });
   }
 
-  const upstream = await fetcher(`${GITEE_BASE}/${path}`);
+  const upstream = await fetcher(`${VOCABULARY_BASE}/${path}`);
   if (!upstream.ok) {
     return new Response('Vocabulary file not found', { status: upstream.status });
   }

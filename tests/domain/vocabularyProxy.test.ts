@@ -7,7 +7,7 @@ describe('Cloudflare 词库代理', () => {
 
     const response = await proxyVocabularyRequest(undefined, fetcher as unknown as typeof fetch);
 
-    expect(fetcher).toHaveBeenCalledWith('https://gitee.com/IQueue/shuangpin-vocabularies/raw/master/registry.json');
+    expect(fetcher).toHaveBeenCalledWith('https://raw.githubusercontent.com/AnyAnq/shuangpin-cabin/master/vocabulary-gitee/registry.json');
     expect(response.status).toBe(200);
     expect(response.headers.get('Content-Type')).toContain('application/json');
   });
