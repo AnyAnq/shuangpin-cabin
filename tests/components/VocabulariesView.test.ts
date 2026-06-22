@@ -211,8 +211,8 @@ describe('VocabulariesView', () => {
     expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
   });
 
-  it('未登录用户可以用付款备注邮箱提交赞助声明', async () => {
-    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
+  it('赞助弹窗只展示收款码和兑换码，不再收集赞助表单', async () => {
+    vi.stubGlobal('fetch', vi.fn((url: string) => {
       if (url.endsWith('/api/me')) {
         return Promise.resolve(jsonResponse({
           authenticated: false,
@@ -238,12 +238,8 @@ describe('VocabulariesView', () => {
           }],
         }));
       }
-      if (url.endsWith('/api/sponsor-claims')) {
-        return Promise.resolve(jsonResponse({ id: 'claim_1', status: 'pending' }));
-      }
-      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
-    });
-    vi.stubGlobal('fetch', fetchMock);
+      return Promise.reject(new Error(`未模拟请求：${url}`));
+    }));
 
     const wrapper = mount(VocabulariesView, {
       global: { plugins: [routerForVocabulary()] },
@@ -253,16 +249,21 @@ describe('VocabulariesView', () => {
     });
 
     await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
-    await wrapper.get('input[type="email"]').setValue('reader@example.com');
-    await wrapper.get('[data-testid="submit-sponsor-claim"]').trigger('click');
-    await flush();
+    const dialog = wrapper.get('[data-testid="sponsor-dialog"]');
 
-    expect(fetchMock).toHaveBeenCalledWith('/api/sponsor-claims', expect.objectContaining({
-      method: 'POST',
-      credentials: 'include',
-      body: expect.stringContaining('reader@example.com'),
-    }));
-    expect(wrapper.text()).toContain('已提交赞助记录');
+    expect(dialog.text()).toContain('备注邮箱');
+    expect(dialog.find('form.sponsor-form').exists()).toBe(false);
+    expect(dialog.find('input[type="email"]').exists()).toBe(false);
+    expect(dialog.find('select').exists()).toBe(false);
+    expect(dialog.find('input[type="number"]').exists()).toBe(false);
+    expect(dialog.find('input[type="datetime-local"]').exists()).toBe(false);
+    expect(dialog.find('textarea').exists()).toBe(false);
+    expect(dialog.text()).not.toContain('付款备注邮箱');
+    expect(dialog.text()).not.toContain('赞助渠道');
+    expect(dialog.text()).not.toContain('赞助金额');
+    expect(dialog.text()).not.toContain('赞助时间');
+    expect(dialog.find('[data-testid="submit-sponsor-claim"]').exists()).toBe(false);
+    expect(dialog.find('[data-testid="redeem-membership-code"]').exists()).toBe(true);
   });
 
   it('兑换码成功后当前浏览器显示会员并允许安装付费词库', async () => {

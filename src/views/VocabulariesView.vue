@@ -115,7 +115,7 @@
         <button type="button" class="dialog-close" aria-label="关闭赞助弹窗" @click="sponsorDialogOpen = false">×</button>
         <span>赞助项目</span>
         <h2>赞助项目，获赠永久会员</h2>
-        <p>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码。付款时请备注邮箱，提交记录后管理员核对到账并发送兑换码。</p>
+        <p>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码。付款时请在微信或支付宝备注邮箱，管理员核对到账后发送兑换码。</p>
         <div class="sponsor-qr-grid">
           <div>
             <strong>微信赞助</strong>
@@ -128,35 +128,6 @@
             <small v-else>请配置 VITE_ALIPAY_SPONSOR_QR_IMAGE_URL</small>
           </div>
         </div>
-        <form class="sponsor-form" @submit.prevent="submitSponsor">
-          <label>
-            付款备注邮箱
-            <input v-model.trim="sponsorForm.email" type="email" placeholder="例如 reader@example.com" required>
-          </label>
-          <label>
-            赞助渠道
-            <select v-model="sponsorForm.channel">
-              <option value="wechat">微信</option>
-              <option value="alipay">支付宝</option>
-            </select>
-          </label>
-          <label>
-            赞助金额
-            <input v-model.number="sponsorForm.amountCny" type="number" min="1" step="1">
-          </label>
-          <label>
-            赞助时间
-            <input v-model="sponsorForm.sponsoredAt" type="datetime-local">
-          </label>
-          <label>
-            备注
-            <textarea v-model="sponsorForm.note" rows="3" placeholder="例如：已备注邮箱 reader@example.com"></textarea>
-          </label>
-          <button type="button" class="primary-action" data-testid="submit-sponsor-claim" :disabled="submittingSponsor" @click="submitSponsor">
-            {{ submittingSponsor ? '提交中...' : '我已赞助' }}
-          </button>
-        </form>
-        <p v-if="sponsorNotice" class="sponsor-notice">{{ sponsorNotice }}</p>
         <form class="redeem-form" @submit.prevent="redeemCode">
           <label>
             兑换码
@@ -178,7 +149,7 @@ import { useRouter } from 'vue-router';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
 import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
 import { createVocabularyExportFile, type VocabularyEntry, type VocabularyRegistryItem } from '../domain/vocabulary';
-import { defaultMembershipState, fetchMembershipState, hasStoredMembershipToken, redeemMembershipCode, submitSponsorClaim, type MembershipState } from '../services/membershipService';
+import { defaultMembershipState, fetchMembershipState, hasStoredMembershipToken, redeemMembershipCode, type MembershipState } from '../services/membershipService';
 import { downloadVocabularyPackage, fetchVocabularyRegistry } from '../services/vocabularyRegistryService';
 import {
   installVocabularyPackage,
@@ -202,8 +173,6 @@ const installingId = ref<string | null>(null);
 const settingsOpen = ref(false);
 const membership = ref<MembershipState>(defaultMembershipState);
 const sponsorDialogOpen = ref(false);
-const submittingSponsor = ref(false);
-const sponsorNotice = ref('');
 const redeemingCode = ref(false);
 const redeemNotice = ref('');
 const redeemCodeInput = ref('');
@@ -211,13 +180,6 @@ const membershipTokenPresent = ref(hasStoredMembershipToken());
 const sponsorThreshold = Number(import.meta.env.VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY ?? 10);
 const wechatSponsorQr = import.meta.env.VITE_WECHAT_SPONSOR_QR_IMAGE_URL ?? '/sponsor/wechat.png';
 const alipaySponsorQr = import.meta.env.VITE_ALIPAY_SPONSOR_QR_IMAGE_URL ?? '/sponsor/alipay.jpg';
-const sponsorForm = ref({
-  email: '',
-  channel: 'wechat' as const,
-  amountCny: sponsorThreshold,
-  sponsoredAt: toDatetimeLocal(new Date()),
-  note: '',
-});
 const installedIds = computed(() => new Set(installedPackages.value.map((pack) => pack.id)));
 const hasMemberAccess = computed(() => membership.value.membership.lifetime || membershipTokenPresent.value);
 const membershipStatusText = computed(() => {
@@ -276,32 +238,9 @@ async function installPackage(item: VocabularyRegistryItem) {
 }
 
 function openSponsorDialog(item: VocabularyRegistryItem) {
-  sponsorNotice.value = '';
   redeemNotice.value = '';
-  sponsorForm.value.note = sponsorForm.value.email ? `付款备注邮箱：${sponsorForm.value.email}` : '';
-  sponsorForm.value.amountCny = sponsorThreshold;
-  sponsorForm.value.sponsoredAt = toDatetimeLocal(new Date());
   sponsorDialogOpen.value = true;
   void item;
-}
-
-async function submitSponsor() {
-  submittingSponsor.value = true;
-  sponsorNotice.value = '';
-  try {
-    await submitSponsorClaim({
-      channel: sponsorForm.value.channel,
-      amountCny: sponsorForm.value.amountCny,
-      sponsoredAt: new Date(sponsorForm.value.sponsoredAt).toISOString(),
-      note: sponsorForm.value.note,
-      email: sponsorForm.value.email,
-    });
-    sponsorNotice.value = '已提交赞助记录，管理员核对到账后会发送兑换码。';
-  } catch {
-    sponsorNotice.value = '赞助记录提交失败，请稍后重试。';
-  } finally {
-    submittingSponsor.value = false;
-  }
 }
 
 async function redeemCode() {
@@ -371,8 +310,4 @@ function registryBadgeText(item: VocabularyRegistryItem) {
   return '免费';
 }
 
-function toDatetimeLocal(date: Date) {
-  const offsetMs = date.getTimezoneOffset() * 60_000;
-  return new Date(date.getTime() - offsetMs).toISOString().slice(0, 16);
-}
 </script>

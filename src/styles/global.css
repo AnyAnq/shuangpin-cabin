@@ -1832,14 +1832,11 @@ button {
   background: #fff;
 }
 
-.sponsor-form,
 .redeem-form {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.sponsor-form label,
 .redeem-form label {
   display: grid;
   gap: 6px;
@@ -1848,13 +1845,6 @@ button {
   color: var(--color-text);
 }
 
-.sponsor-form label:last-of-type {
-  grid-column: 1 / -1;
-}
-
-.sponsor-form input,
-.sponsor-form select,
-.sponsor-form textarea,
 .redeem-form input {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.34);
@@ -1865,9 +1855,8 @@ button {
   color: var(--color-text);
 }
 
-.sponsor-form .primary-action,
 .redeem-form .primary-action {
-  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .sponsor-notice {
