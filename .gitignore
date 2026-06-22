@@ -7,9 +7,8 @@ test-results/
 .vite-scaffold/
 .worktrees/
 .wrangler/
-public/sponsor/*.png
-public/sponsor/*.jpg
-public/sponsor/*.jpeg
-public/sponsor/*.webp
+public/sponsor/*
+!public/sponsor/wechat.png
+!public/sponsor/alipay.jpg
 .env
 .env.*

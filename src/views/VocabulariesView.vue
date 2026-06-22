@@ -205,8 +205,8 @@ const sponsorDialogOpen = ref(false);
 const submittingSponsor = ref(false);
 const sponsorNotice = ref('');
 const sponsorThreshold = Number(import.meta.env.VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY ?? 10);
-const wechatSponsorQr = import.meta.env.VITE_WECHAT_SPONSOR_QR_IMAGE_URL ?? '';
-const alipaySponsorQr = import.meta.env.VITE_ALIPAY_SPONSOR_QR_IMAGE_URL ?? '';
+const wechatSponsorQr = import.meta.env.VITE_WECHAT_SPONSOR_QR_IMAGE_URL ?? '/sponsor/wechat.png';
+const alipaySponsorQr = import.meta.env.VITE_ALIPAY_SPONSOR_QR_IMAGE_URL ?? '/sponsor/alipay.jpg';
 const sponsorForm = ref({
   channel: 'wechat' as const,
   amountCny: sponsorThreshold,
