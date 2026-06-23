@@ -45,7 +45,7 @@
 
 - 不用传统输入框打断注意力。
 - 不用频繁弹窗切断练习节奏。
-- 不把统计面板做成冷冰冰的数据后台。
+- 不把统计面板做成冷冰冰的数据面板。
 - 把错误反馈设计成“下一步怎么练”，而不是单纯责备用户按错。
 
 ## 技术架构
@@ -58,8 +58,8 @@
 | 拼音与编码 | pinyin-pro + 本地双拼方案映射 |
 | UI 图标 | lucide-vue |
 | 在线内容 | 诗词、绕口令、词库 |
-| API 代理 | Vite dev proxy / Serverless Functions |
-| 会员与赞助 | Cloudflare Pages Functions + D1 |
+| API 代理 | 本地开发代理 / 接口代理 |
+| 会员与赞助 | 赞助兑换码机制 |
 | 单元测试 | Vitest + fake-indexeddb |
 | 端到端测试 | Playwright |
 
@@ -186,29 +186,10 @@ TXT/CSV 规则：
 
 1. 在词库中心点击付费词库上的 **赞助支持**。
 2. 使用微信或支付宝扫码赞助。
-3. 付款备注中填写邮箱，方便管理员人工核对。
+3. 付款备注中填写邮箱，方便人工核对。
 4. 回到页面提交邮箱和付款时间。
-5. 管理员核对到账后，通常 24 小时内生成兑换码并发送给赞助用户。
+5. 核对到账后，通常 24 小时内生成兑换码并发送给赞助用户。
 6. 用户在赞助弹窗输入兑换码，兑换成功后当前浏览器永久有效；同一个兑换码最多可兑换 3 次，达到上限后自动失效。
-
-管理员可访问 `/admin/sponsors` 审核赞助记录。达标赞助点击 **生成兑换码**，页面会保留已批准邮箱、对应兑换码以及使用次数；未达标但有效的支持可标记为 **普通赞助**，无法核对的记录可驳回。
-
-部署时需要配置 D1 数据库并执行 `migrations/0001_sponsor_membership.sql`。相关环境变量：
-
-```text
-GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
-ADMIN_EMAILS=你的管理员邮箱
-ADMIN_PASSWORD=你的后台管理密码
-MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
-VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
-VITE_WECHAT_SPONSOR_QR_IMAGE_URL=/sponsor/wechat.png
-VITE_ALIPAY_SPONSOR_QR_IMAGE_URL=/sponsor/alipay.jpg
-SESSION_SECRET=生产环境随机密钥
-```
-
-用户赞助和兑换流程不需要邮箱验证码，也不需要配置 Resend。后台管理页使用 `ADMIN_PASSWORD` 登录，登录后会为 `ADMIN_EMAILS` 中的第一个邮箱创建管理员会话；如果不使用后台页面，也可以直接在 Cloudflare D1 控制台按迁移结构手动写入 `redeem_codes` 记录。
-
-官方词库包应保存在 Gitee 私有仓库中，前端只通过 `/api/vocabularies/...` 请求。未兑换的浏览器下载会员词库会得到 `401` 或 `403`，兑换成功的浏览器会携带本地保存的会员 token，由后端代理读取私有词库包。
 
 ## 快速开始
 
