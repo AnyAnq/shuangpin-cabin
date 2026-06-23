@@ -171,6 +171,11 @@ TXT/CSV 规则：
 
 双拼小筑的付款定位是 **赞助支持项目**，不是购买词库内容。赞助满 10 元可获赠永久会员兑换码，每个兑换码最多可兑换 3 次；兑换后对应浏览器永久有效，用于解锁官方在线词库的安装和更新服务。
 
+赞助入口：
+
+- [微信赞助二维码](https://shuangpin-cabin.pages.dev/sponsor/wechat.png)
+- [支付宝赞助二维码](https://shuangpin-cabin.pages.dev/sponsor/alipay.jpg)
+
 免费范围：
 
 - 本地词库导入、练习和导出永久免费。
