@@ -1896,6 +1896,37 @@ button {
   letter-spacing: 0;
 }
 
+.admin-login-form {
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) auto;
+  gap: 10px;
+  align-items: end;
+  padding: 16px;
+  border: 1px solid rgba(126, 85, 49, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.admin-login-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.admin-login-form input {
+  min-height: 40px;
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  border-radius: 8px;
+  padding: 10px 11px;
+  font: inherit;
+}
+
+.admin-login-form small {
+  grid-column: 1 / -1;
+  color: #be123c;
+}
+
 .admin-claim-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

@@ -10,6 +10,22 @@
       </section>
 
       <p v-if="error" class="vocabulary-error">{{ error }}</p>
+      <form v-if="needsLogin" class="admin-login-form" @submit.prevent="login">
+        <label>
+          管理员密码
+          <input
+            v-model="adminPassword"
+            type="password"
+            data-testid="admin-password-input"
+            autocomplete="current-password"
+            placeholder="输入管理员密码"
+          >
+        </label>
+        <button type="submit" class="primary-action" :disabled="loggingIn">
+          {{ loggingIn ? '登录中...' : '进入后台' }}
+        </button>
+        <small v-if="loginError">{{ loginError }}</small>
+      </form>
       <p v-if="latestRedeemCode" class="admin-redeem-code" data-testid="latest-redeem-code">
         兑换码：<strong>{{ latestRedeemCode }}</strong>
       </p>
@@ -42,11 +58,15 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
-import { fetchSponsorClaims, reviewSponsorClaim, type SponsorClaimRecord } from '../services/adminSponsorService';
+import { fetchSponsorClaims, loginAdmin, reviewSponsorClaim, type SponsorClaimRecord } from '../services/adminSponsorService';
 
 const claims = ref<SponsorClaimRecord[]>([]);
 const error = ref('');
 const latestRedeemCode = ref('');
+const needsLogin = ref(false);
+const adminPassword = ref('');
+const loggingIn = ref(false);
+const loginError = ref('');
 
 onMounted(() => {
   void loadClaims();
@@ -56,8 +76,24 @@ async function loadClaims() {
   error.value = '';
   try {
     claims.value = await fetchSponsorClaims('pending');
+    needsLogin.value = false;
   } catch {
+    needsLogin.value = true;
     error.value = '无法加载赞助记录，请确认当前账号具有管理员权限。';
+  }
+}
+
+async function login() {
+  loggingIn.value = true;
+  loginError.value = '';
+  try {
+    await loginAdmin(adminPassword.value);
+    adminPassword.value = '';
+    await loadClaims();
+  } catch {
+    loginError.value = '管理员密码不正确或后台未配置密码。';
+  } finally {
+    loggingIn.value = false;
   }
 }
 

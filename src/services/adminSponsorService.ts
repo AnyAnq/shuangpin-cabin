@@ -18,6 +18,16 @@ export async function fetchSponsorClaims(status = 'pending'): Promise<SponsorCla
   return payload.claims ?? [];
 }
 
+export async function loginAdmin(password: string): Promise<void> {
+  const response = await fetch('/api/admin/login', {
+    method: 'POST',
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password }),
+  });
+  if (!response.ok) throw new Error('管理员登录失败');
+}
+
 export interface SponsorReviewResult {
   id: string;
   status: SponsorClaimRecord['status'];

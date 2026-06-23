@@ -13,6 +13,7 @@ export interface D1DatabaseLike {
 export interface MembershipEnv {
   DB?: D1DatabaseLike;
   ADMIN_EMAILS?: string;
+  ADMIN_PASSWORD?: string;
   MEMBERSHIP_SPONSOR_THRESHOLD_CNY?: string;
   SESSION_SECRET?: string;
   AUTH_DEV_MODE?: string;

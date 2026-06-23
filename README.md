@@ -191,6 +191,7 @@ TXT/CSV 规则：
 ```text
 GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
 ADMIN_EMAILS=你的管理员邮箱
+ADMIN_PASSWORD=你的后台管理密码
 MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
 VITE_MEMBERSHIP_SPONSOR_THRESHOLD_CNY=10
 VITE_WECHAT_SPONSOR_QR_IMAGE_URL=/sponsor/wechat.png
@@ -198,7 +199,7 @@ VITE_ALIPAY_SPONSOR_QR_IMAGE_URL=/sponsor/alipay.jpg
 SESSION_SECRET=生产环境随机密钥
 ```
 
-用户赞助和兑换流程不需要邮箱验证码，也不需要配置 Resend。`ADMIN_EMAILS` 仍用于识别管理员账号；如果不使用后台页面，也可以直接在 Cloudflare D1 控制台按迁移结构手动写入 `redeem_codes` 记录。
+用户赞助和兑换流程不需要邮箱验证码，也不需要配置 Resend。后台管理页使用 `ADMIN_PASSWORD` 登录，登录后会为 `ADMIN_EMAILS` 中的第一个邮箱创建管理员会话；如果不使用后台页面，也可以直接在 Cloudflare D1 控制台按迁移结构手动写入 `redeem_codes` 记录。
 
 官方词库包应保存在 Gitee 私有仓库中，前端只通过 `/api/vocabularies/...` 请求。未兑换的浏览器下载会员词库会得到 `401` 或 `403`，兑换成功的浏览器会携带本地保存的会员 token，由后端代理读取私有词库包。
 
