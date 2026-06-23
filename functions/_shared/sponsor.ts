@@ -26,6 +26,13 @@ interface SponsorClaimRow {
   status: SponsorStatus;
 }
 
+interface SponsorRedeemCodeRow {
+  plain_code?: string | null;
+  status?: string | null;
+  redemption_count?: number | null;
+  max_redemptions?: number | null;
+}
+
 export async function handleCreateSponsorClaim(context: AuthContext): Promise<Response> {
   const input = await readJson<SponsorClaimInput>(context.request);
   const email = normalizeEmail(input.email);
@@ -81,10 +88,28 @@ export async function handleListSponsorClaims(context: AuthContext): Promise<Res
   const url = new URL(context.request.url);
   const status = url.searchParams.get('status') ?? 'pending';
   const result = await context.env.DB.prepare(`
-    SELECT id, user_id, email, channel, amount_cny, sponsored_at, note, status, reviewed_by, reviewed_at, created_at, updated_at
+    SELECT
+      sponsor_claims.id,
+      sponsor_claims.user_id,
+      sponsor_claims.email,
+      sponsor_claims.channel,
+      sponsor_claims.amount_cny,
+      sponsor_claims.sponsored_at,
+      sponsor_claims.note,
+      sponsor_claims.status,
+      sponsor_claims.reviewed_by,
+      sponsor_claims.reviewed_at,
+      sponsor_claims.created_at,
+      sponsor_claims.updated_at,
+      redeem_codes.plain_code AS redeem_code,
+      redeem_codes.status AS redeem_status,
+      redeem_codes.redemption_count,
+      redeem_codes.max_redemptions
     FROM sponsor_claims
-    WHERE (? = '' OR status = ?)
-    ORDER BY created_at DESC
+    LEFT JOIN redeem_codes
+      ON redeem_codes.email_note LIKE ('claim:' || sponsor_claims.id || ';%')
+    WHERE (? = '' OR sponsor_claims.status = ?)
+    ORDER BY sponsor_claims.created_at DESC
   `).bind(status, status).all();
   return json({ claims: result.results });
 }
@@ -135,7 +160,14 @@ async function reviewSponsorClaim(context: SponsorRouteContext, status: SponsorS
   `).bind(id).first<SponsorClaimRow>();
   if (!claim) return json({ error: 'NOT_FOUND' }, 404);
   if (claim.status !== 'pending') {
-    return json({ id, status: claim.status });
+    const existingRedeem = await findRedeemCodeForClaim(context.env.DB, claim.id);
+    return json({
+      id,
+      status: claim.status,
+      redeemCode: existingRedeem?.plain_code ?? undefined,
+      redemptionCount: existingRedeem?.redemption_count ?? undefined,
+      maxRedemptions: existingRedeem?.max_redemptions ?? undefined,
+    });
   }
 
   const now = new Date().toISOString();
@@ -153,6 +185,16 @@ async function reviewSponsorClaim(context: SponsorRouteContext, status: SponsorS
 
   await writeAdminLog(context.env, admin.id, `sponsor_claim_${status}`, claim.user_id, { claimId: claim.id, email: claim.email }, now);
   return json({ id, status, redeemCode });
+}
+
+async function findRedeemCodeForClaim(db: NonNullable<MembershipEnv['DB']>, claimId: string): Promise<SponsorRedeemCodeRow | null> {
+  return db.prepare(`
+    SELECT plain_code, status, redemption_count, max_redemptions
+    FROM redeem_codes
+    WHERE email_note LIKE ?
+    ORDER BY created_at DESC
+    LIMIT 1
+  `).bind(`claim:${claimId};%`).first<SponsorRedeemCodeRow>();
 }
 
 async function writeAdminLog(env: MembershipEnv, adminId: string, action: string, targetUserId: string, detail: unknown, now: string) {

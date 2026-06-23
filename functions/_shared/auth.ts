@@ -145,10 +145,34 @@ export async function ensureMembershipSchema(db: D1DatabaseLike): Promise<void> 
       status TEXT NOT NULL DEFAULT 'active',
       created_at TEXT NOT NULL,
       redeemed_at TEXT,
-      revoked_at TEXT
+      revoked_at TEXT,
+      plain_code TEXT,
+      max_redemptions INTEGER NOT NULL DEFAULT 3,
+      redemption_count INTEGER NOT NULL DEFAULT 0
     )
   `).bind().run();
+  await addColumnIfMissing(db, 'redeem_codes', 'plain_code TEXT');
+  await addColumnIfMissing(db, 'redeem_codes', 'max_redemptions INTEGER NOT NULL DEFAULT 3');
+  await addColumnIfMissing(db, 'redeem_codes', 'redemption_count INTEGER NOT NULL DEFAULT 0');
   await db.prepare('CREATE INDEX IF NOT EXISTS idx_redeem_codes_token_hash ON redeem_codes (token_hash)').bind().run();
+  await db.prepare(`
+    CREATE TABLE IF NOT EXISTS redeem_code_redemptions (
+      id TEXT PRIMARY KEY,
+      redeem_code_id TEXT NOT NULL,
+      token_hash TEXT NOT NULL UNIQUE,
+      redeemed_at TEXT NOT NULL
+    )
+  `).bind().run();
+  await db.prepare('CREATE INDEX IF NOT EXISTS idx_redeem_code_redemptions_token_hash ON redeem_code_redemptions (token_hash)').bind().run();
+  await db.prepare('CREATE INDEX IF NOT EXISTS idx_redeem_code_redemptions_code_id ON redeem_code_redemptions (redeem_code_id)').bind().run();
+}
+
+async function addColumnIfMissing(db: D1DatabaseLike, table: string, columnDefinition: string): Promise<void> {
+  try {
+    await db.prepare(`ALTER TABLE ${table} ADD COLUMN ${columnDefinition}`).bind().run();
+  } catch {
+    // Existing D1 databases may already have the column; ignore duplicate-column errors.
+  }
 }
 
 export function isAdmin(user: AuthUser | null, env: Pick<MembershipEnv, 'ADMIN_EMAILS'>): boolean {

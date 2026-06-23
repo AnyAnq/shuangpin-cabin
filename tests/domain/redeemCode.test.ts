@@ -3,7 +3,7 @@ import { handleRedeemCode } from '../../functions/api/redeem';
 import { hasRedeemMembershipToken } from '../../functions/_shared/redeem';
 
 describe('兑换码会员', () => {
-  it('一次性兑换码兑换后返回当前浏览器使用的会员 token', async () => {
+  it('兑换码兑换后返回当前浏览器使用的会员 token 并记录使用次数', async () => {
     const db = new MemoryD1();
     await db.seedRedeemCode('SP-TEST-001');
 
@@ -16,10 +16,12 @@ describe('兑换码会员', () => {
     expect(response.status).toBe(200);
     expect(payload.token).toMatch(/^member_/);
     expect(await hasRedeemMembershipToken(db, payload.token)).toBe(true);
-    expect(db.tables.redeem_codes[0].status).toBe('redeemed');
+    expect(db.tables.redeem_codes[0].status).toBe('active');
+    expect(db.tables.redeem_codes[0].redemption_count).toBe(1);
+    expect(db.tables.redeem_code_redemptions).toHaveLength(1);
   });
 
-  it('兑换码只能兑换一次', async () => {
+  it('兑换码最多可以兑换三次，第四次失效', async () => {
     const db = new MemoryD1();
     await db.seedRedeemCode('SP-TEST-001');
 
@@ -31,9 +33,22 @@ describe('兑换码会员', () => {
       request: jsonRequest({ code: 'SP-TEST-001' }),
       env: { DB: db },
     });
+    const third = await handleRedeemCode({
+      request: jsonRequest({ code: 'SP-TEST-001' }),
+      env: { DB: db },
+    });
+    const fourth = await handleRedeemCode({
+      request: jsonRequest({ code: 'SP-TEST-001' }),
+      env: { DB: db },
+    });
 
     expect(first.status).toBe(200);
-    expect(second.status).toBe(409);
+    expect(second.status).toBe(200);
+    expect(third.status).toBe(200);
+    expect(fourth.status).toBe(409);
+    expect(db.tables.redeem_codes[0].status).toBe('redeemed');
+    expect(db.tables.redeem_codes[0].redemption_count).toBe(3);
+    expect(db.tables.redeem_code_redemptions).toHaveLength(3);
   });
 });
 
@@ -50,6 +65,7 @@ type Row = Record<string, unknown>;
 class MemoryD1 {
   tables: Record<string, Row[]> = {
     redeem_codes: [],
+    redeem_code_redemptions: [],
   };
 
   async seedRedeemCode(code: string) {
@@ -59,6 +75,9 @@ class MemoryD1 {
       token_hash: null,
       email_note: '',
       status: 'active',
+      plain_code: normalizeRedeemCode(code),
+      max_redemptions: 3,
+      redemption_count: 0,
       created_at: now(),
       redeemed_at: null,
       revoked_at: null,
@@ -89,16 +108,28 @@ class MemoryD1 {
     if (sql.includes('FROM redeem_codes') && sql.includes('token_hash')) {
       return this.tables.redeem_codes.find((row) => row.token_hash === values[0] && row.status === 'redeemed') ?? null;
     }
+    if (sql.includes('FROM redeem_code_redemptions')) {
+      return this.tables.redeem_code_redemptions.find((row) => row.token_hash === values[0]) ?? null;
+    }
     return null;
   }
 
   run(sql: string, values: unknown[]) {
+    if (sql.startsWith('INSERT INTO redeem_code_redemptions')) {
+      this.tables.redeem_code_redemptions.push({
+        id: values[0],
+        redeem_code_id: values[1],
+        token_hash: values[2],
+        redeemed_at: values[3],
+      });
+      return;
+    }
     if (sql.startsWith('UPDATE redeem_codes')) {
-      const row = this.tables.redeem_codes.find((item) => item.id === values[2]);
+      const row = this.tables.redeem_codes.find((item) => item.id === values[3]);
       if (row) {
-        row.token_hash = values[0];
-        row.redeemed_at = values[1];
-        row.status = 'redeemed';
+        row.redemption_count = values[0];
+        row.status = values[1];
+        row.redeemed_at = values[2];
       }
     }
   }

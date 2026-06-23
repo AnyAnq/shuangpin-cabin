@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { handleApproveSponsorClaim, handleCreateSponsorClaim, handleThanksOnlySponsorClaim } from '../../functions/_shared/sponsor';
+import { handleApproveSponsorClaim, handleCreateSponsorClaim, handleListSponsorClaims, handleThanksOnlySponsorClaim } from '../../functions/_shared/sponsor';
 import { hasLifetimeMembership } from '../../functions/_shared/auth';
 
 describe('赞助会员 API 规则', () => {
@@ -43,7 +43,7 @@ describe('赞助会员 API 规则', () => {
     expect(await hasLifetimeMembership(env.DB, 'u_1')).toBe(false);
   });
 
-  it('管理员确认达标赞助后生成一次性兑换码且重复确认不重复生成', async () => {
+  it('管理员确认达标赞助后生成可用三次的兑换码且重复确认返回原兑换码', async () => {
     const env = createEnv();
     env.DB.tables.sponsor_claims.push(pendingClaim('claim_1', 'u_1', 'reader@example.com', 10));
     await seedSession(env, 'admin_1', 'admin@example.com', 'admin-token');
@@ -64,10 +64,55 @@ describe('赞助会员 API 规则', () => {
     expect(first.status).toBe(200);
     expect(second.status).toBe(200);
     expect(firstPayload.redeemCode).toMatch(/^SP-/);
-    expect(secondPayload.redeemCode).toBeUndefined();
+    expect(secondPayload.redeemCode).toBe(firstPayload.redeemCode);
     expect(env.DB.tables.redeem_codes).toHaveLength(1);
+    expect(env.DB.tables.redeem_codes[0]).toMatchObject({
+      plain_code: firstPayload.redeemCode,
+      max_redemptions: 3,
+      redemption_count: 0,
+    });
     expect(await hasLifetimeMembership(env.DB, 'u_1')).toBe(false);
     expect(env.DB.tables.sponsor_claims[0].status).toBe('approved');
+  });
+
+  it('管理员列表会返回已批准邮箱对应的兑换码和使用次数', async () => {
+    const env = createEnv();
+    env.DB.tables.sponsor_claims.push({
+      ...pendingClaim('claim_1', 'u_1', 'reader@example.com', 10),
+      status: 'approved',
+    });
+    env.DB.tables.redeem_codes.push({
+      id: 'redeem_1',
+      code_hash: 'hash',
+      token_hash: null,
+      email_note: 'claim:claim_1;email:reader@example.com',
+      status: 'active',
+      plain_code: 'SPTEST001',
+      max_redemptions: 3,
+      redemption_count: 2,
+      created_at: now(),
+      redeemed_at: now(),
+      revoked_at: null,
+    });
+    await seedSession(env, 'admin_1', 'admin@example.com', 'admin-token');
+
+    const response = await handleListSponsorClaims({
+      request: new Request('https://example.com/api/admin/sponsor-claims?status=approved', {
+        headers: { Cookie: 'session=admin-token' },
+      }),
+      env: { ...env, ADMIN_EMAILS: 'admin@example.com' },
+    });
+    const payload = await response.json() as { claims: Array<Record<string, unknown>> };
+
+    expect(response.status).toBe(200);
+    expect(payload.claims[0]).toMatchObject({
+      email: 'reader@example.com',
+      status: 'approved',
+      redeem_code: 'SPTEST001',
+      redeem_status: 'active',
+      redemption_count: 2,
+      max_redemptions: 3,
+    });
   });
 
   it('管理员标记普通赞助不会赠送会员', async () => {
@@ -189,13 +234,28 @@ class MemoryD1 {
     if (sql.includes('FROM sponsor_claims') && sql.includes('WHERE id = ?')) {
       return this.tables.sponsor_claims.find((row) => row.id === values[0]) ?? null;
     }
+    if (sql.includes('FROM redeem_codes') && sql.includes('email_note')) {
+      const needle = String(values[0]).replace('%', '');
+      return this.tables.redeem_codes.find((row) => String(row.email_note).startsWith(needle)) ?? null;
+    }
     return null;
   }
 
   all(sql: string, values: unknown[]) {
     if (sql.includes('FROM sponsor_claims')) {
       const status = values[0];
-      return this.tables.sponsor_claims.filter((row) => !status || row.status === status);
+      return this.tables.sponsor_claims
+        .filter((row) => !status || row.status === status)
+        .map((row) => {
+          const redeem = this.tables.redeem_codes.find((item) => String(item.email_note).includes(`claim:${row.id};`));
+          return redeem ? {
+            ...row,
+            redeem_code: redeem.plain_code,
+            redeem_status: redeem.status,
+            redemption_count: redeem.redemption_count,
+            max_redemptions: redeem.max_redemptions,
+          } : row;
+        });
     }
     return [];
   }
@@ -237,6 +297,9 @@ class MemoryD1 {
         created_at: values[3],
         redeemed_at: null,
         revoked_at: null,
+        plain_code: values[4],
+        max_redemptions: 3,
+        redemption_count: 0,
       });
       return;
     }

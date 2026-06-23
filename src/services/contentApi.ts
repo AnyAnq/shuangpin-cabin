@@ -101,10 +101,24 @@ async function getApiData<T>(url: string, successCodes: number[]): Promise<T> {
   return payload.data;
 }
 
+type OnlineContentCacheKind = 'poem' | 'article';
+
+const CONTENT_CACHE_TARGET_SIZE = 3;
+
 // 内容缓存：用于后台预加载
 const contentCache = {
-  poem: null as PracticeUnit | null,
-  article: null as PracticeUnit | null,
+  poem: [] as PracticeUnit[],
+  article: [] as PracticeUnit[],
+};
+
+const contentCacheInFlight = {
+  poem: null as Promise<void> | null,
+  article: null as Promise<void> | null,
+};
+
+const contentCacheVersion = {
+  poem: 0,
+  article: 0,
 };
 
 /**
@@ -112,11 +126,7 @@ const contentCache = {
  * 用于后台异步预加载，不阻塞主流程
  */
 export async function prefetchPoetryUnit(): Promise<void> {
-  try {
-    contentCache.poem = await fetchPoetryUnit();
-  } catch {
-    // 预加载失败不抛出异常，允许主流程继续
-  }
+  await ensureContentCache('poem', Math.min(CONTENT_CACHE_TARGET_SIZE, contentCache.poem.length + 1));
 }
 
 /**
@@ -124,11 +134,44 @@ export async function prefetchPoetryUnit(): Promise<void> {
  * 用于后台异步预加载，不阻塞主流程
  */
 export async function prefetchTongueTwisterUnit(): Promise<void> {
-  try {
-    contentCache.article = await fetchTongueTwisterUnit();
-  } catch {
-    // 预加载失败不抛出异常，允许主流程继续
+  await ensureContentCache('article', Math.min(CONTENT_CACHE_TARGET_SIZE, contentCache.article.length + 1));
+}
+
+export async function ensureContentCache(kind: OnlineContentCacheKind, targetSize = CONTENT_CACHE_TARGET_SIZE, excludedTexts: string[] = []): Promise<void> {
+  if (contentCache[kind].length >= targetSize) {
+    return;
   }
+  if (contentCacheInFlight[kind]) {
+    return contentCacheInFlight[kind] ?? Promise.resolve();
+  }
+  const version = contentCacheVersion[kind];
+  const promise = fillContentCache(kind, targetSize, excludedTexts, version)
+    .finally(() => {
+      if (contentCacheInFlight[kind] === promise) {
+        contentCacheInFlight[kind] = null;
+      }
+    });
+  contentCacheInFlight[kind] = promise;
+  return promise;
+}
+
+export function getContentCacheSize(kind: OnlineContentCacheKind): number {
+  return contentCache[kind].length;
+}
+
+export function clearContentCache(kind?: OnlineContentCacheKind): void {
+  if (kind) {
+    contentCacheVersion[kind] += 1;
+    contentCache[kind] = [];
+    contentCacheInFlight[kind] = null;
+    return;
+  }
+  contentCacheVersion.poem += 1;
+  contentCacheVersion.article += 1;
+  contentCache.poem = [];
+  contentCache.article = [];
+  contentCacheInFlight.poem = null;
+  contentCacheInFlight.article = null;
 }
 
 /**
@@ -136,9 +179,7 @@ export async function prefetchTongueTwisterUnit(): Promise<void> {
  * 如果缓存为空则返回 null
  */
 export function consumeCachedPoetryUnit(): PracticeUnit | null {
-  const cached = contentCache.poem;
-  contentCache.poem = null;
-  return cached;
+  return contentCache.poem.shift() ?? null;
 }
 
 /**
@@ -146,7 +187,31 @@ export function consumeCachedPoetryUnit(): PracticeUnit | null {
  * 如果缓存为空则返回 null
  */
 export function consumeCachedTongueTwisterUnit(): PracticeUnit | null {
-  const cached = contentCache.article;
-  contentCache.article = null;
-  return cached;
+  return contentCache.article.shift() ?? null;
+}
+
+async function fillContentCache(kind: OnlineContentCacheKind, targetSize: number, excludedTexts: string[], version: number): Promise<void> {
+  const excluded = new Set(excludedTexts.map(normalizeCacheText).filter(Boolean));
+  const maxAttempts = Math.max(targetSize * 3, 6);
+  let attempts = 0;
+  while (contentCacheVersion[kind] === version && contentCache[kind].length < targetSize && attempts < maxAttempts) {
+    attempts += 1;
+    try {
+      const unit = kind === 'poem' ? await fetchPoetryUnit() : await fetchTongueTwisterUnit();
+      if (contentCacheVersion[kind] !== version) {
+        return;
+      }
+      const text = normalizeCacheText(unit.text);
+      if (!text || excluded.has(text) || contentCache[kind].some((item) => normalizeCacheText(item.text) === text)) {
+        continue;
+      }
+      contentCache[kind].push(unit);
+    } catch {
+      return;
+    }
+  }
+}
+
+function normalizeCacheText(text: string): string {
+  return text.replace(/\s+/g, '');
 }

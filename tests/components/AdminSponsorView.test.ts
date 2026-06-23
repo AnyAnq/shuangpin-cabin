@@ -20,6 +20,19 @@ describe('AdminSponsorView', () => {
             note: '用户仅提交邮箱和付款时间',
             status: 'pending',
             created_at: '2026-06-23T10:00:00.000Z',
+          }, {
+            id: 'claim_2',
+            email: 'approved@example.com',
+            channel: 'alipay',
+            amount_cny: 10,
+            sponsored_at: '2026-06-23T11:00:00.000Z',
+            note: '',
+            status: 'approved',
+            created_at: '2026-06-23T11:00:00.000Z',
+            redeem_code: 'SP-TEST-001',
+            redeem_status: 'active',
+            redemption_count: 2,
+            max_redemptions: 3,
           }],
         }));
       }
@@ -51,6 +64,9 @@ describe('AdminSponsorView', () => {
       body: JSON.stringify({ password: 'secret-pass' }),
     }));
     expect(wrapper.text()).toContain('reader@example.com');
+    expect(wrapper.text()).toContain('approved@example.com');
+    expect(wrapper.text()).toContain('SP-TEST-001');
+    expect(wrapper.text()).toContain('已使用 2 / 3 次');
     expect(wrapper.text()).not.toContain('无法加载赞助记录');
   });
 });

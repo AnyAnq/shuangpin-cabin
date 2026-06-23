@@ -7,6 +7,10 @@ export interface SponsorClaimRecord {
   note: string;
   status: 'pending' | 'approved' | 'rejected' | 'thanks_only';
   created_at: string;
+  redeem_code?: string | null;
+  redeem_status?: 'active' | 'redeemed' | 'revoked' | null;
+  redemption_count?: number | null;
+  max_redemptions?: number | null;
 }
 
 export async function fetchSponsorClaims(status = 'pending'): Promise<SponsorClaimRecord[]> {

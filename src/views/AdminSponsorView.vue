@@ -5,7 +5,7 @@
       <section class="vocabulary-hero">
         <span>管理员</span>
         <h1>赞助审核</h1>
-        <p>核对微信或支付宝到账后，确认达标赞助并生成一次性兑换码；未达标但有效的支持可标记为普通赞助。</p>
+        <p>核对微信或支付宝到账后，确认达标赞助并生成兑换码；每个兑换码最多可使用 3 次，已批准记录会保留邮箱和发放的兑换码。</p>
         <button type="button" class="soft-pill" @click="loadClaims">刷新</button>
       </section>
 
@@ -32,22 +32,27 @@
 
       <section class="vocabulary-section">
         <div class="vocabulary-section-head">
-          <span>待处理赞助</span>
+          <span>赞助记录</span>
           <strong>{{ claims.length }}</strong>
         </div>
-        <div v-if="claims.length === 0" class="vocabulary-installed-empty">暂无待处理赞助记录。</div>
+        <div v-if="claims.length === 0" class="vocabulary-installed-empty">暂无赞助记录。</div>
         <div v-else class="admin-claim-list">
           <article v-for="claim in claims" :key="claim.id" class="admin-claim-card">
             <div>
               <strong>{{ claim.email }}</strong>
               <small>{{ claimMetaText(claim) }}</small>
               <p>{{ claim.note || '无备注' }}</p>
+              <p v-if="claim.redeem_code" class="admin-code-line">
+                兑换码：<strong>{{ claim.redeem_code }}</strong>
+                <span>{{ redeemUsageText(claim) }}</span>
+              </p>
             </div>
-            <div class="admin-claim-actions">
+            <div v-if="claim.status === 'pending'" class="admin-claim-actions">
               <button type="button" class="primary-action" @click="review(claim.id, 'approve')">生成兑换码</button>
               <button type="button" class="ghost-action" @click="review(claim.id, 'thanks-only')">普通赞助</button>
               <button type="button" class="ghost-action" @click="review(claim.id, 'reject')">驳回</button>
             </div>
+            <span v-else class="admin-status-pill">{{ statusText(claim) }}</span>
           </article>
         </div>
       </section>
@@ -75,7 +80,7 @@ onMounted(() => {
 async function loadClaims() {
   error.value = '';
   try {
-    claims.value = await fetchSponsorClaims('pending');
+    claims.value = await fetchSponsorClaims('');
     needsLogin.value = false;
   } catch {
     needsLogin.value = true;
@@ -112,5 +117,19 @@ function claimMetaText(claim: SponsorClaimRecord) {
     return `微信/支付宝 · 待核对 · ${claim.sponsored_at}`;
   }
   return `${claim.channel === 'wechat' ? '微信' : '支付宝'} · ${claim.amount_cny} 元 · ${claim.sponsored_at}`;
+}
+
+function redeemUsageText(claim: SponsorClaimRecord) {
+  const used = claim.redemption_count ?? 0;
+  const total = claim.max_redemptions ?? 3;
+  return `已使用 ${used} / ${total} 次`;
+}
+
+function statusText(claim: SponsorClaimRecord) {
+  if (claim.status === 'approved') {
+    return claim.redeem_status === 'redeemed' ? '已用完' : '已批准';
+  }
+  if (claim.status === 'thanks_only') return '普通赞助';
+  return '已驳回';
 }
 </script>

@@ -9,7 +9,7 @@
         <p>词库从外部仓库下载安装到浏览器本地，练习时只读取已安装内容。</p>
         <div class="membership-strip" data-testid="membership-status">
           <strong>{{ membershipStatusText }}</strong>
-          <small>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码；付款时备注邮箱，管理员核对后发码。兑换后当前浏览器永久有效（兑换码可多次使用）。</small>
+          <small>赞助满 {{ sponsorThreshold }} 元，可获赠永久会员兑换码；付款时备注邮箱，管理员核对后发码。每个兑换码最多可兑换 3 次，兑换后当前浏览器永久有效。</small>
         </div>
         <button type="button" class="soft-pill" :disabled="loadingRegistry" @click="loadRegistry">
           {{ loadingRegistry ? '刷新中...' : '刷新词库' }}
@@ -292,7 +292,7 @@ async function redeemCode() {
     membershipTokenPresent.value = true;
     redeemNotice.value = '兑换成功，当前浏览器已解锁永久会员。';
   } catch {
-    redeemNotice.value = '兑换失败，请检查兑换码是否正确或是否已使用。';
+    redeemNotice.value = '兑换失败，请检查兑换码是否正确，或是否已达到 3 次使用上限。';
   } finally {
     redeemingCode.value = false;
   }

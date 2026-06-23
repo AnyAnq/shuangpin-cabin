@@ -2,6 +2,7 @@ import 'fake-indexeddb/auto';
 import { createPinia, setActivePinia } from 'pinia';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { usePracticeStore } from '../../src/stores/practiceStore';
+import { clearContentCache, getContentCacheSize } from '../../src/services/contentApi';
 import type { MistakeRecord } from '../../src/domain/practice/mistakes';
 import { db } from '../../src/storage/db';
 import { clearMistakes, clearSessions, upsertMistake } from '../../src/storage/repositories';
@@ -16,6 +17,7 @@ describe('练习状态', () => {
     await db.preferences.clear();
     await db.vocabularyPackages.clear();
     await db.vocabularyEntries.clear();
+    clearContentCache();
   });
 
   afterEach(() => {
@@ -368,6 +370,75 @@ describe('练习状态', () => {
     expect(store.activeUnit.module).toBe('poem');
   });
 
+  it('有预取诗词时单击换一组会立刻切换到缓存的新题', async () => {
+    const poetryResponses = [
+      '行到水穷处坐看云起时《终南别业》 — 王维',
+      '春眠不觉晓处处闻啼鸟《春晓》 — 孟浩然',
+    ];
+    let poetryIndex = 0;
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/poetry-api/yiyan')) {
+          const data = poetryResponses[Math.min(poetryIndex, poetryResponses.length - 1)];
+          poetryIndex += 1;
+          return Promise.resolve(jsonResponse({ code: 200, data }));
+        }
+        if (url.includes('/external-api/chicken-soup')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: { content: '知不足而奋进，望远山而前行。' },
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
+    const store = usePracticeStore();
+
+    await store.hydratePreferences();
+    await waitFor(() => poetryIndex >= 2);
+
+    expect(store.activeUnit.text).toBe('行到水穷处坐看云起时');
+
+    await store.nextUnit();
+
+    expect(store.activeUnit.text).toBe('春眠不觉晓处处闻啼鸟');
+  });
+
+  it('首页取到当前诗词后会后台静默补齐 3 题缓存', async () => {
+    const poetryResponses = [
+      '行到水穷处坐看云起时《终南别业》 — 王维',
+      '春眠不觉晓处处闻啼鸟《春晓》 — 孟浩然',
+      '白日依山尽黄河入海流《登鹳雀楼》 — 王之涣',
+      '欲穷千里目更上一层楼《登鹳雀楼》 — 王之涣',
+    ];
+    let poetryIndex = 0;
+    vi.stubGlobal(
+      'fetch',
+      vi.fn((url: string) => {
+        if (url.includes('/poetry-api/yiyan')) {
+          const data = poetryResponses[Math.min(poetryIndex, poetryResponses.length - 1)];
+          poetryIndex += 1;
+          return Promise.resolve(jsonResponse({ code: 200, data }));
+        }
+        if (url.includes('/external-api/chicken-soup')) {
+          return Promise.resolve(jsonResponse({
+            code: 200,
+            data: { content: '知不足而奋进，望远山而前行。' },
+          }));
+        }
+        return Promise.reject(new Error('未模拟的请求'));
+      }),
+    );
+    const store = usePracticeStore();
+
+    await store.hydratePreferences();
+    await waitFor(() => getContentCacheSize('poem') === 3);
+
+    expect(store.activeUnit.text).toBe('行到水穷处坐看云起时');
+    expect(getContentCacheSize('poem')).toBe(3);
+  });
+
   it('绕口令在线内容重复时，换一组不会回退到本地绕口令', async () => {
     vi.stubGlobal(
       'fetch',
@@ -613,6 +684,14 @@ async function waitForSession() {
     await new Promise((resolve) => setTimeout(resolve, 0));
   }
   throw new Error('未找到练习记录');
+}
+
+async function waitFor(predicate: () => boolean) {
+  for (let attempt = 0; attempt < 20; attempt += 1) {
+    if (predicate()) return;
+    await new Promise((resolve) => setTimeout(resolve, 0));
+  }
+  throw new Error('等待条件超时');
 }
 
 async function waitForMistakeCorrect(id: string): Promise<MistakeRecord> {

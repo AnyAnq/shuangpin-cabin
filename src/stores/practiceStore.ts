@@ -31,10 +31,9 @@ import {
   fetchDailyQuote,
   fetchPoetryUnit,
   fetchTongueTwisterUnit,
-  prefetchPoetryUnit,
-  prefetchTongueTwisterUnit,
   consumeCachedPoetryUnit,
   consumeCachedTongueTwisterUnit,
+  ensureContentCache,
 } from '../services/contentApi';
 
 const RECENT_UNIT_TEXT_LIMIT = 6;
@@ -189,6 +188,7 @@ export const usePracticeStore = defineStore('practice', () => {
       const units = unitsForModule(next);
       unitIndex.value = selectFreshUnitIndex(next, units, 0);
       resetSession(units[unitIndex.value]);
+      startBackgroundPrefetch(next);
       await saveCurrentPreferences();
     } finally {
       if (switchSeq === moduleSwitchSeq) {
@@ -243,27 +243,27 @@ export const usePracticeStore = defineStore('practice', () => {
       if (targetModule === 'poem') {
         const cached = consumeCachedPoetryUnit();
         if (cached) {
+          onlinePoemUnit.value = cached;
           const units = unitsForModule(targetModule);
           unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
           resetSession(units[unitIndex.value]);
           if (switchSeq === moduleSwitchSeq) {
             isSwitching.value = false;
           }
-          // Kick off background preload for next unit
-          startBackgroundPrefetch();
+          startBackgroundPrefetch(targetModule);
           return;
         }
       } else if (targetModule === 'article') {
         const cached = consumeCachedTongueTwisterUnit();
         if (cached) {
+          onlineTongueTwisterUnit.value = cached;
           const units = unitsForModule(targetModule);
           unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
           resetSession(units[unitIndex.value]);
           if (switchSeq === moduleSwitchSeq) {
             isSwitching.value = false;
           }
-          // Kick off background preload for next unit
-          startBackgroundPrefetch();
+          startBackgroundPrefetch(targetModule);
           return;
         }
       }
@@ -283,8 +283,7 @@ export const usePracticeStore = defineStore('practice', () => {
       unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
       resetSession(units[unitIndex.value]);
       
-      // Kick off background preload for next unit
-      startBackgroundPrefetch();
+      startBackgroundPrefetch(targetModule);
     } finally {
       if (switchSeq === moduleSwitchSeq) {
         isSwitching.value = false;
@@ -335,7 +334,7 @@ export const usePracticeStore = defineStore('practice', () => {
         return;
       }
       resetSession(unitsForModule(module.value)[0]);
-      startBackgroundPrefetch();
+      startBackgroundPrefetch(module.value);
     } finally {
       if (hydrateSeq === preferenceHydrateSeq) {
         isSwitching.value = false;
@@ -593,23 +592,26 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
-  function startBackgroundPrefetch() {
-    // Chain prefetch tasks sequentially to avoid concurrent requests
+  function startBackgroundPrefetch(targetModule: PracticeModule) {
+    const excludedTexts = getPrefetchExcludedTexts(targetModule);
     prefetchQueue = prefetchQueue
       .then(() => {
-        if (module.value === 'poem') return prefetchPoetryUnit();
-        if (module.value === 'article') return prefetchTongueTwisterUnit();
-        return Promise.resolve();
-      })
-      .then(() => {
-        // After first prefetch, start second prefetch for continuous buffer
-        if (module.value === 'poem') return prefetchPoetryUnit();
-        if (module.value === 'article') return prefetchTongueTwisterUnit();
+        if (targetModule === 'poem') return ensureContentCache('poem', 3, excludedTexts);
+        if (targetModule === 'article') return ensureContentCache('article', 3, excludedTexts);
         return Promise.resolve();
       })
       .catch(() => {
         // Silently ignore prefetch errors
       });
+  }
+
+  function getPrefetchExcludedTexts(targetModule: PracticeModule) {
+    if (targetModule !== 'poem' && targetModule !== 'article') {
+      return [];
+    }
+    const currentTexts = unitsForModule(targetModule).map((unit) => unit.text);
+    const recentTexts = recentUnitTexts.value[targetModule] ?? [];
+    return [...currentTexts, ...recentTexts];
   }
 
   async function refreshDailyQuote() {
