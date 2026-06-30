@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { X } from '@lucide/vue';
-import { computed } from 'vue';
+import { computed, onBeforeUnmount, onMounted } from 'vue';
 
 const props = withDefaults(defineProps<{
   open: boolean;
@@ -43,11 +43,26 @@ const props = withDefaults(defineProps<{
   streakGain: null,
 });
 
-defineEmits<{
+const emit = defineEmits<{
   restart: [];
   next: [];
   close: [];
 }>();
 
 const hasMistakeResult = computed(() => typeof props.practicedCount === 'number' && typeof props.streakGain === 'number');
+
+function handleWindowKeydown(event: KeyboardEvent) {
+  if (!props.open || props.busy) return;
+  if (event.key !== 'Enter' && event.key !== ' ') return;
+  event.preventDefault();
+  emit('next');
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', handleWindowKeydown);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleWindowKeydown);
+});
 </script>
