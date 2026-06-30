@@ -49,6 +49,16 @@ describe('练习引擎', () => {
     expect(session.stats.completedChars).toBe(1);
   });
 
+  it('零声母汉字岸的练习提示为 an', () => {
+    const session = createSession({
+      unit: { id: 'u1', module: 'poem', text: '岸', syllables: ['an'], tags: [] },
+      scheme: xiaoheScheme,
+      now: 1000,
+    });
+
+    expect(session.codes).toEqual(['an']);
+  });
+
   it('忽略非字母输入', () => {
     const session = createSession({
       unit: { id: 'u1', module: 'poem', text: '多', syllables: ['duo'], tags: [] },

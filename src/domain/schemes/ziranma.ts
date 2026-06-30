@@ -74,6 +74,9 @@ function splitSyllable(syllable: string): [string, string] {
 
 function encodeSyllable(syllable: string): string {
   const [initial, final] = splitSyllable(syllable);
+  if (!initial && finalMap[final]) {
+    return final;
+  }
   const first = initial ? initialMap[initial] : finalMap[final]?.[0];
   const second = finalMap[final];
   if (!first || !second) {
