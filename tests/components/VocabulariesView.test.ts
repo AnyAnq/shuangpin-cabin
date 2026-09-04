@@ -16,14 +16,6 @@ describe('VocabulariesView', () => {
 
   it('展示远程可安装词库并支持安装', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -55,7 +47,7 @@ describe('VocabulariesView', () => {
           entries: [{ text: '今天', weight: 99 }, { text: '事情', weight: 98 }],
         }));
       }
-      return Promise.reject(new Error('未模拟请求'));
+      return Promise.resolve(notFoundResponse());
     }));
     const router = routerForVocabulary();
     router.push('/vocabularies');
@@ -78,14 +70,6 @@ describe('VocabulariesView', () => {
 
   it('分区展示本地词库、在线已安装词库和在线词库中心', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -93,7 +77,7 @@ describe('VocabulariesView', () => {
           packages: [],
         }));
       }
-      return Promise.reject(new Error('未模拟请求'));
+      return Promise.resolve(notFoundResponse());
     }));
     await installRecord({
       id: 'local-pack',
@@ -142,14 +126,6 @@ describe('VocabulariesView', () => {
 
   it('词库页不再展示本地导入入口', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -157,7 +133,7 @@ describe('VocabulariesView', () => {
           packages: [],
         }));
       }
-      return Promise.reject(new Error('未模拟请求'));
+      return Promise.resolve(notFoundResponse());
     }));
     const wrapper = mount(VocabulariesView, {
       global: { plugins: [routerForVocabulary()] },
@@ -168,129 +144,8 @@ describe('VocabulariesView', () => {
     expect(wrapper.text()).not.toContain('导入词库');
   });
 
-  it('付费词库对未兑换浏览器展示赞助入口', async () => {
+  it('付费标记的词库也直接提供安装按钮并可安装', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
-      if (url.endsWith('/registry.json')) {
-        return Promise.resolve(jsonResponse({
-          schemaVersion: 1,
-          updatedAt: '2026-06-22T00:00:00.000Z',
-          packages: [{
-            id: 'it-tech',
-            name: '技术术语词库',
-            version: '1.0.0',
-            description: '适合技术场景输入。',
-            author: 'Shuangpin Cabin',
-            pricingType: 'paid',
-            tags: ['it'],
-            entryCount: 80,
-            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
-          }],
-        }));
-      }
-      return Promise.reject(new Error(`未模拟请求：${url}`));
-    }));
-
-    const wrapper = mount(VocabulariesView, {
-      global: { plugins: [routerForVocabulary()] },
-    });
-
-    await vi.waitFor(() => {
-      expect(wrapper.text()).toContain('技术术语词库');
-    });
-
-    expect(wrapper.text()).toContain('赞助满 10 元');
-    expect(wrapper.text()).toContain('可用兑换码解锁词库服务');
-    expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
-  });
-
-  it('赞助弹窗只收集邮箱和付款时间，不再收集渠道金额备注', async () => {
-    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
-      if (url.endsWith('/registry.json')) {
-        return Promise.resolve(jsonResponse({
-          schemaVersion: 1,
-          updatedAt: '2026-06-22T00:00:00.000Z',
-          packages: [{
-            id: 'it-tech',
-            name: '技术术语词库',
-            version: '1.0.0',
-            description: '适合技术场景输入。',
-            author: 'Shuangpin Cabin',
-            pricingType: 'paid',
-            tags: ['it'],
-            entryCount: 80,
-            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
-          }],
-        }));
-      }
-      if (url.endsWith('/api/sponsor-claims')) {
-        return Promise.resolve(jsonResponse({ id: 'claim_1', status: 'pending' }));
-      }
-      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
-    });
-    vi.stubGlobal('fetch', fetchMock);
-
-    const wrapper = mount(VocabulariesView, {
-      global: { plugins: [routerForVocabulary()] },
-    });
-    await vi.waitFor(() => {
-      expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').text()).toContain('赞助支持');
-    });
-
-    await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
-    const dialog = wrapper.get('[data-testid="sponsor-dialog"]');
-
-    expect(dialog.text()).toContain('备注邮箱');
-    expect(dialog.find('form.sponsor-form').exists()).toBe(true);
-    expect(dialog.find('input[type="email"]').exists()).toBe(true);
-    expect(dialog.find('input[type="datetime-local"]').exists()).toBe(true);
-    expect(dialog.find('select').exists()).toBe(false);
-    expect(dialog.find('input[type="number"]').exists()).toBe(false);
-    expect(dialog.find('textarea').exists()).toBe(false);
-    expect(dialog.text()).not.toContain('付款备注邮箱');
-    expect(dialog.text()).not.toContain('赞助渠道');
-    expect(dialog.text()).not.toContain('赞助金额');
-    expect(dialog.text()).not.toContain('赞助时间');
-    expect(dialog.find('[data-testid="submit-sponsor-claim"]').exists()).toBe(true);
-    expect(dialog.find('[data-testid="redeem-membership-code"]').exists()).toBe(true);
-
-    await wrapper.get('input[type="email"]').setValue('reader@example.com');
-    await wrapper.get('form.sponsor-form').trigger('submit');
-    await flush();
-
-    expect(fetchMock).toHaveBeenCalledWith('/api/sponsor-claims', expect.objectContaining({
-      method: 'POST',
-      credentials: 'include',
-      body: expect.stringContaining('reader@example.com'),
-    }));
-    expect(wrapper.text()).toContain('已提交信息');
-  });
-
-  it('兑换码成功后当前浏览器显示会员并允许安装付费词库', async () => {
-    const fetchMock = vi.fn((url: string, init?: RequestInit) => {
-      if (url.endsWith('/api/me')) {
-        return Promise.resolve(jsonResponse({
-          authenticated: false,
-          user: null,
-          membership: { lifetime: false },
-          admin: false,
-        }));
-      }
       if (url.endsWith('/registry.json')) {
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
@@ -308,11 +163,7 @@ describe('VocabulariesView', () => {
           }],
         }));
       }
-      if (url.endsWith('/api/redeem')) {
-        return Promise.resolve(jsonResponse({ token: 'member-token-1' }));
-      }
       if (url.endsWith('/api/vocabularies/packages/it-tech@1.0.0.json')) {
-        expect((init?.headers as Record<string, string>)['X-Membership-Token']).toBe('member-token-1');
         return Promise.resolve(jsonResponse({
           schemaVersion: 1,
           id: 'it-tech',
@@ -326,27 +177,51 @@ describe('VocabulariesView', () => {
           entries: [{ text: '字符串', weight: 1 }],
         }));
       }
-      return Promise.reject(new Error(`未模拟请求：${url} ${init?.method ?? 'GET'}`));
+      return Promise.resolve(notFoundResponse());
+    }));
+
+    const wrapper = mount(VocabulariesView, {
+      global: { plugins: [routerForVocabulary()] },
     });
-    vi.stubGlobal('fetch', fetchMock);
+
+    await vi.waitFor(() => {
+      expect(wrapper.get('[data-testid="install-vocabulary-it-tech"]').exists()).toBe(true);
+    });
+    expect(wrapper.find('[data-testid="sponsor-vocabulary-it-tech"]').exists()).toBe(false);
+    await wrapper.get('[data-testid="install-vocabulary-it-tech"]').trigger('click');
+    await flush();
+
+    expect(await db.vocabularyEntries.where('packageId').equals('it-tech').count()).toBe(1);
+  });
+
+  it('赞助弹窗只展示自愿赞助说明和二维码', async () => {
+    vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/registry.json')) {
+        return Promise.resolve(jsonResponse({
+          schemaVersion: 1,
+          updatedAt: '2026-06-22T00:00:00.000Z',
+          packages: [],
+        }));
+      }
+      return Promise.resolve(notFoundResponse());
+    }));
 
     const wrapper = mount(VocabulariesView, {
       global: { plugins: [routerForVocabulary()] },
     });
     await vi.waitFor(() => {
-      expect(wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').exists()).toBe(true);
+      expect(wrapper.get('[data-testid="open-sponsor-dialog"]').exists()).toBe(true);
     });
 
-    await wrapper.get('[data-testid="sponsor-vocabulary-it-tech"]').trigger('click');
-    await wrapper.get('input[placeholder="输入管理员发给你的兑换码"]').setValue('SP-TEST-001');
-    await wrapper.get('form.redeem-form').trigger('submit');
-    await flush();
+    await wrapper.get('[data-testid="open-sponsor-dialog"]').trigger('click');
+    const dialog = wrapper.get('[data-testid="sponsor-dialog"]');
 
-    expect(wrapper.text()).toContain('永久会员已开通');
-    await wrapper.get('[data-testid="install-vocabulary-it-tech"]').trigger('click');
-    await flush();
-
-    expect(await db.vocabularyEntries.where('packageId').equals('it-tech').count()).toBe(1);
+    expect(dialog.text()).toContain('微信赞助');
+    expect(dialog.text()).toContain('支付宝赞助');
+    expect(dialog.find('form').exists()).toBe(false);
+    expect(dialog.find('input').exists()).toBe(false);
+    expect(dialog.text()).not.toContain('兑换码');
+    expect(dialog.text()).not.toContain('邮箱');
   });
 });
 
@@ -354,6 +229,13 @@ function jsonResponse(payload: unknown): Response {
   return {
     ok: true,
     json: () => Promise.resolve(payload),
+  } as Response;
+}
+
+function notFoundResponse(): Response {
+  return {
+    ok: false,
+    json: () => Promise.resolve({}),
   } as Response;
 }
 

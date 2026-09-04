@@ -1,6 +1,6 @@
 # 双拼练习外置词库包
 
-这个目录可以上传到 Gitee 仓库，用作网站的外置词库源。启用赞助会员后，官方词库包建议放在 Gitee 私有仓库，只允许 Cloudflare Pages Function 通过 `GITEE_ACCESS_TOKEN` 读取。
+这个目录可以上传到 Gitee 仓库，用作网站的外置词库源。官方词库包建议放在 Gitee 私有仓库，只允许 Cloudflare Pages Function 通过 `GITEE_ACCESS_TOKEN` 读取。所有词库对用户免费开放。
 
 ## 推荐目录
 
@@ -33,4 +33,4 @@ GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
 - 当前 `registry.json` 默认使用同域代理地址 `/api/vocabularies/...`。
 - 词库 JSON 必须是纯 JSON，不能写注释。
 - 词条只能放纯中文，不要带标点、空格、英文、数字。
-- 会员词库不要公开放在 Gitee Pages 或 raw 静态地址，应由后端代理鉴权后读取。
+- 词库文件不要公开放在 Gitee Pages 或 raw 静态地址，统一由后端代理读取。

@@ -32,8 +32,8 @@ describe('词库下载服务', () => {
 
     const result = await downloadVocabularyPackage('https://primary.example.com/daily.json', ['https://mirror.example.com/daily.json']);
 
-    expect(fetchMock).toHaveBeenCalledWith('https://primary.example.com/daily.json', { headers: {} });
-    expect(fetchMock).toHaveBeenCalledWith('https://mirror.example.com/daily.json', { headers: {} });
+    expect(fetchMock).toHaveBeenCalledWith('https://primary.example.com/daily.json');
+    expect(fetchMock).toHaveBeenCalledWith('https://mirror.example.com/daily.json');
     expect(result.sourceUrl).toBe('https://mirror.example.com/daily.json');
     expect(result.packageFile.name).toBe('日常常用词');
   });

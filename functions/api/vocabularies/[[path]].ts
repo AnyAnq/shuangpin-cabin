@@ -1,6 +1,3 @@
-import { getCurrentUser, hasLifetimeMembership, isAdmin, json, type MembershipEnv } from '../../_shared/auth';
-import { hasRedeemMembershipToken, readMembershipToken } from '../../_shared/redeem';
-
 const GITEE_CONTENTS_BASE = 'https://gitee.com/api/v5/repos/IQueue/shuangpin-vocabularies/contents';
 const GITEE_REF = 'master';
 
@@ -10,8 +7,7 @@ interface GiteeContentFile {
 }
 
 interface VocabularyProxyContext {
-  request?: Request;
-  env?: MembershipEnv & {
+  env?: {
     GITEE_ACCESS_TOKEN?: string;
   };
   params: {
@@ -27,10 +23,6 @@ export async function proxyVocabularyRequest(pathParam?: string | string[], fetc
   const path = normalizeVocabularyPath(pathParam);
   if (!path) {
     return new Response('Not found', { status: 404 });
-  }
-  if (path.startsWith('packages/')) {
-    const access = await canDownloadVocabularyPackage(context);
-    if (access instanceof Response) return access;
   }
 
   const upstream = await fetcher(buildGiteeContentsUrl(path, context?.env?.GITEE_ACCESS_TOKEN), {
@@ -53,28 +45,6 @@ export async function proxyVocabularyRequest(pathParam?: string | string[], fetc
         : 'public, max-age=86400',
     },
   });
-}
-
-async function canDownloadVocabularyPackage(context?: Omit<VocabularyProxyContext, 'params'>): Promise<true | Response> {
-  const request = context?.request;
-  const db = context?.env?.DB;
-  if (!request || !db) {
-    return json({ error: 'MEMBERSHIP_TOKEN_REQUIRED', message: '请先兑换永久会员' }, 401);
-  }
-  if (await hasRedeemMembershipToken(db, readMembershipToken(request))) {
-    return true;
-  }
-  const user = await getCurrentUser(request, db);
-  if (!user) {
-    return json({ error: 'MEMBERSHIP_TOKEN_REQUIRED', message: '请先兑换永久会员' }, 401);
-  }
-  if (isAdmin(user, context.env ?? {})) {
-    return true;
-  }
-  if (!await hasLifetimeMembership(db, user.id)) {
-    return json({ error: 'MEMBERSHIP_REQUIRED', message: '赞助满 10 元可获赠永久会员后安装官方在线词库' }, 403);
-  }
-  return true;
 }
 
 function buildGiteeContentsUrl(path: string, accessToken?: string): string {
