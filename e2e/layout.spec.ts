@@ -76,7 +76,7 @@ test('正文汉字之间保留更宽的横向间距', async ({ page }) => {
 });
 
 async function mockContentApi(page: import('@playwright/test').Page) {
-  await page.route('**/external-api/chicken-soup', async (route) => {
+  await page.route('**/external-api/one', async (route) => {
     await route.fulfill({
       json: { code: 200, msg: '请求成功', data: { content: '知不足而奋进，望远山而前行。' } },
     });

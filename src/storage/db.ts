@@ -2,7 +2,6 @@ import Dexie, { type Table } from 'dexie';
 import type { MistakeRecord } from '../domain/practice/mistakes';
 import type { PracticeModule } from '../domain/practice/types';
 import type { ShuangpinSchemeId } from '../domain/schemes/types';
-import type { VocabularyPricingType } from '../domain/vocabulary';
 
 export type VocabularySourceType = 'remote' | 'local';
 
@@ -10,6 +9,7 @@ export interface PracticeSessionRecord {
   id: string;
   scheme: ShuangpinSchemeId;
   module: PracticeModule;
+  lessonId?: string;
   accuracy: number;
   wpm: number;
   maxCombo: number;
@@ -23,6 +23,7 @@ export interface PreferenceRecord {
   module: PracticeModule;
   defaultModule?: PracticeModule;
   showCharacterCodes?: boolean;
+  dailyGoalMinutes?: number;
   lastVocabularyPackageId?: string;
   updatedAt: number;
 }
@@ -34,7 +35,6 @@ export interface VocabularyPackageRecord {
   description: string;
   author: string;
   license: string;
-  pricingType: VocabularyPricingType;
   tags: string[];
   entryCount: number;
   installedAt: number;
@@ -89,6 +89,12 @@ class ShuangpinPracticeDb extends Dexie {
         sourceType: pack.sourceUrl.startsWith('local-file:') ? 'local' : 'remote',
       })));
     });
+    this.version(4).stores({
+      vocabularyPackages: 'id, sourceType, installedAt, updatedAt',
+    }).upgrade(tx => tx.table('vocabularyPackages').toCollection().modify(pack => {
+      // 仅在升级旧数据库时移除已停用的元数据。
+      delete pack.pricingType;
+    }));
   }
 }
 

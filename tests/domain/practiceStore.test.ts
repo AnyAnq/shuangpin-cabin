@@ -7,6 +7,8 @@ import type { MistakeRecord } from '../../src/domain/practice/mistakes';
 import { db } from '../../src/storage/db';
 import { clearMistakes, clearSessions, upsertMistake } from '../../src/storage/repositories';
 import { installVocabularyPackage } from '../../src/storage/vocabularyRepository';
+import * as repositories from '../../src/storage/repositories';
+import * as vocabularyRepository from '../../src/storage/vocabularyRepository';
 
 describe('练习状态', () => {
   beforeEach(async () => {
@@ -21,6 +23,7 @@ describe('练习状态', () => {
   });
 
   afterEach(() => {
+    vi.restoreAllMocks();
     vi.unstubAllGlobals();
   });
 
@@ -68,7 +71,7 @@ describe('练习状态', () => {
             data: '行到水穷处坐看云起时《终南别业》 — 王维',
           }));
         }
-        if (url.includes('/external-api/chicken-soup')) {
+        if (url.includes('/external-api/one')) {
           return Promise.resolve(jsonResponse({
             code: 200,
             data: { content: '知不足而奋进，望远山而前行。' },
@@ -93,7 +96,7 @@ describe('练习状态', () => {
     vi.stubGlobal(
       'fetch',
       vi.fn((url: string) => {
-        if (url.includes('/external-api/chicken-soup')) return quote.promise;
+        if (url.includes('/external-api/one')) return quote.promise;
         if (url.includes('/poetry-api/yiyan')) {
           return Promise.resolve(jsonResponse({
             code: 200,
@@ -224,7 +227,6 @@ describe('练习状态', () => {
       version: '1.0.0',
       author: 'Shuangpin Cabin',
       license: 'MIT',
-      pricingType: 'free',
       description: '适合日常输入热身。',
       tags: ['daily'],
       entries: [
@@ -243,7 +245,6 @@ describe('练习状态', () => {
     expect(store.vocabularyNeedsInstall).toBe(false);
     expect(store.activeUnit.module).toBe('vocabulary');
     expect(store.activeUnit.text).toBe('今天事情可以我们项目完成');
-    expect(store.activeUnit.lineCharCount).toBe(6);
     expect(store.session.codes).toHaveLength(12);
   });
 
@@ -255,7 +256,6 @@ describe('练习状态', () => {
       version: '1.0.0',
       author: '本地导入',
       license: 'Personal',
-      pricingType: 'owned',
       description: '本地技术词库。',
       tags: ['tech'],
       entries: [
@@ -271,7 +271,6 @@ describe('练习状态', () => {
       version: '1.0.0',
       author: 'Shuangpin Cabin',
       license: 'MIT',
-      pricingType: 'free',
       description: '在线日常词库。',
       tags: ['daily'],
       entries: [
@@ -299,7 +298,6 @@ describe('练习状态', () => {
       version: '1.0.0',
       author: '本地导入',
       license: 'Personal',
-      pricingType: 'owned',
       description: '本地词库。',
       tags: ['local'],
       entries: [
@@ -316,6 +314,114 @@ describe('练习状态', () => {
     expect(store.isMixedVocabularyMode).toBe(true);
     expect(store.activeUnit.source).toBe('混合词库');
     expect(store.activeUnit.text).toBe('今天事情完成');
+  });
+
+
+  it('旧偏好晚返回不能覆盖手动选择的练习', async () => {
+    const saved = {
+      id: 'default', scheme: 'ziranma' as const, module: 'poem' as const,
+      defaultModule: 'poem' as const, updatedAt: 1,
+    };
+    let resolvePreference!: (value: typeof saved) => void;
+    const preference = new Promise<typeof saved>(resolve => { resolvePreference = resolve; });
+    vi.spyOn(repositories, 'loadPreferences').mockReturnValueOnce(preference);
+    const store = usePracticeStore();
+
+    const hydration = store.hydratePreferences();
+    await store.setModule('article');
+    resolvePreference(saved);
+    await hydration;
+
+    expect(store.module).toBe('article');
+    expect(store.activeUnit.module).toBe('article');
+    expect(store.schemeId).toBe('xiaohe');
+    expect(store.session.unit).toEqual(store.activeUnit);
+    expect(store.isSwitching).toBe(false);
+  });
+
+  it.each(['单个', '混合'])('较早的%s词库加载晚返回不能覆盖最新选择', async mode => {
+    for (const [id, text] of [['a', '今天'], ['b', '项目']]) {
+      await installVocabularyPackage({
+        schemaVersion: 1, id, name: id, version: '1.0.0', author: 'test',
+        license: 'Personal', description: '', tags: [],
+        entries: [{ text, weight: 1 }],
+      }, 'local-file:' + id, { sourceType: 'local' });
+    }
+    const store = usePracticeStore();
+    await store.setModule('vocabulary');
+    const entriesA = await vocabularyRepository.listVocabularyEntries('a');
+    const readEntries = vocabularyRepository.listVocabularyEntries;
+    let releaseEntries!: (value: typeof entriesA) => void;
+    const pendingEntries = new Promise<typeof entriesA>(resolve => { releaseEntries = resolve; });
+    const reader = vi.spyOn(vocabularyRepository, 'listVocabularyEntries')
+      .mockImplementation(id => id === 'a' ? pendingEntries : readEntries(id));
+
+    const oldSelection = mode === '混合' ? store.setMixedVocabularyPackage() : store.setVocabularyPackage('a');
+    await vi.waitFor(() => expect(reader).toHaveBeenCalledWith('a'));
+    await store.setVocabularyPackage('b');
+    releaseEntries(entriesA);
+    await oldSelection;
+
+    expect(store.selectedVocabularyPackageId).toBe('b');
+    expect(store.activeUnit.source).toBe('b');
+    expect(store.activeUnit.text).toBe('项目');
+    expect(store.session.unit).toEqual(store.activeUnit);
+    expect(store.isSwitching).toBe(false);
+  });
+
+
+  it('词库加载中切换方案仍保留最新选择的词库', async () => {
+    for (const id of ['a', 'b']) {
+      await installVocabularyPackage({
+        schemaVersion: 1, id, name: id, version: '1.0.0', author: 'test',
+        license: 'Personal', description: '', tags: [],
+        entries: [{ text: id === 'a' ? '今天' : '项目', weight: 1 }],
+      }, 'local-file:' + id, { sourceType: 'local' });
+    }
+    const store = usePracticeStore();
+    await store.setVocabularyPackage('a');
+    const entries = await vocabularyRepository.listVocabularyEntries('b');
+    const readEntries = vocabularyRepository.listVocabularyEntries;
+    let release!: (value: typeof entries) => void;
+    const pending = new Promise<typeof entries>(resolve => { release = resolve; });
+    const reader = vi.spyOn(vocabularyRepository, 'listVocabularyEntries')
+      .mockImplementation(id => id === 'b' ? pending : readEntries(id));
+
+    const selection = store.setVocabularyPackage('b');
+    await vi.waitFor(() => expect(reader).toHaveBeenCalledWith('b'));
+    store.setScheme('ziranma');
+    release(entries);
+    await selection;
+    await vi.waitFor(() => expect(store.isSwitching).toBe(false));
+
+    expect(store.selectedVocabularyPackageId).toBe('b');
+    expect(store.activeUnit.source).toBe('b');
+    expect(store.session.scheme.id).toBe('ziranma');
+  });
+
+  it('初始化等待每日一言时清空词库，旧快照不能恢复已清空集合', async () => {
+    await installVocabularyPackage({
+      schemaVersion: 1, id: 'local', name: '本地', version: '1.0.0', author: 'test',
+      license: 'Personal', description: '', tags: [],
+      entries: [{ text: '今天', weight: 1 }],
+    }, 'local-file:local', { sourceType: 'local' });
+    const quote = deferredResponse({ code: 200, data: { content: '一言' } });
+    let poetryRequested = false;
+    vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.includes('/external-api/one')) return quote.promise;
+      if (url.includes('/poetry-api/yiyan')) poetryRequested = true;
+      return defaultFetch(url);
+    }));
+    const store = usePracticeStore();
+    const hydration = store.hydratePreferences();
+    await waitFor(() => poetryRequested);
+    await store.clearInstalledVocabularies();
+    quote.resolve();
+    await hydration;
+
+    expect(await db.vocabularyPackages.count()).toBe(0);
+    expect(store.vocabularyPackages).toHaveLength(0);
+    expect(store.selectedVocabularyPackageId).toBeNull();
   });
 
   it('快速切换模块时，较慢返回的旧请求不能覆盖当前模块题目', async () => {
@@ -346,6 +452,32 @@ describe('练习状态', () => {
     expect(store.module).toBe('poem');
     expect(store.activeUnit.module).toBe('poem');
     expect(store.activeUnit.text).toBe('行到水穷处坐看云起时');
+  });
+
+  it.each(['poem', 'article'] as const)('%s 换组失败会提示、保留输入进度，重试成功后清除提示', async module => {
+    const store = usePracticeStore();
+    await store.setModule(module);
+    store.pressKey(store.currentExpectedKey!);
+    const session = store.session;
+    clearContentCache();
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('连接失败')));
+
+    await store.nextUnit();
+
+    expect(store.session).toBe(session);
+    expect(store.session.cursor.codeIndex).toBe(1);
+    expect(store.contentLoadError).toContain('新内容暂时加载失败');
+    expect(store.isSwitching).toBe(false);
+
+    const text = '江上舟摇，楼上帘招。';
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(
+      module === 'poem' ? { code: 200, data: text } : { code: 0, data: { content: text } },
+    )));
+    await store.nextUnit();
+
+    expect(store.activeUnit.text).toBe(text);
+    expect(store.contentLoadError).toBe('');
+    expect(store.session.cursor.codeIndex).toBe(0);
   });
 
   it('换一组会切换到同模块下一题', async () => {
@@ -384,7 +516,7 @@ describe('练习状态', () => {
           poetryIndex += 1;
           return Promise.resolve(jsonResponse({ code: 200, data }));
         }
-        if (url.includes('/external-api/chicken-soup')) {
+        if (url.includes('/external-api/one')) {
           return Promise.resolve(jsonResponse({
             code: 200,
             data: { content: '知不足而奋进，望远山而前行。' },
@@ -421,7 +553,7 @@ describe('练习状态', () => {
           poetryIndex += 1;
           return Promise.resolve(jsonResponse({ code: 200, data }));
         }
-        if (url.includes('/external-api/chicken-soup')) {
+        if (url.includes('/external-api/one')) {
           return Promise.resolve(jsonResponse({
             code: 200,
             data: { content: '知不足而奋进，望远山而前行。' },
@@ -471,6 +603,20 @@ describe('练习状态', () => {
     expect(store.pendingMistake?.expectedKey).toBe('x');
     expect(store.pendingMistake?.actualKey).toBe('s');
     await waitForMistake(store.pendingMistake?.id ?? '');
+  });
+
+
+  it('韵母按错后保存原始错因并进入韵母复练组', async () => {
+    const store = await createHydratedStore();
+    store.pressKey(store.currentCode[0]);
+    store.pressKey('p');
+
+    const record = await waitForMistake(store.pendingMistake?.id ?? '');
+    expect(record.errorType).toBe('final-key');
+    expect(record.expectedKey).toBe('k');
+    expect(store.session.cursor.codeIndex).toBe(0);
+    await store.setModule('mistake');
+    expect(store.mistakeGroupTitle).toBe('韵母键误按');
   });
 
   it('按错键会保存并合并到本地易错库', async () => {
@@ -629,7 +775,7 @@ function defaultFetch(url: string): Promise<Response> {
       data: { content: '四是四，十是十。十四是十四，四十是四十。' },
     }));
   }
-  if (url.includes('/external-api/chicken-soup')) {
+  if (url.includes('/external-api/one')) {
     return Promise.resolve(jsonResponse({
       code: 200,
       data: { content: '知不足而奋进，望远山而前行。' },

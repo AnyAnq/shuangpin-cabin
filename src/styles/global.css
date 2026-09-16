@@ -134,7 +134,9 @@ button {
 
 .practice-main {
   position: relative;
+  min-width: 0;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto auto auto auto 1fr;
   align-content: start;
   gap: 16px;
@@ -753,17 +755,48 @@ button {
 
 .practice-stage {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
   min-height: 360px;
   place-items: center;
   padding: 46px 26px 8px;
   text-align: center;
 }
 
+.practice-copy {
+  width: fit-content;
+  max-width: min(760px, 100%);
+  min-width: 0;
+  text-align: center;
+}
+
+.practice-heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin-bottom: 20px;
+  color: var(--color-brown-dark);
+}
+
+.practice-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.practice-author {
+  font-size: 14px;
+  color: var(--color-brown);
+}
+
 .target-line {
-  max-width: 760px;
   margin: 0;
   color: rgba(126, 101, 76, 0.25);
-  font-size: clamp(34px, 5vw, 50px);
+  font-size: clamp(28px, 4vw, 44px);
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1.45;
@@ -773,14 +806,36 @@ button {
   display: block;
 }
 
+.poem-line + .poem-line {
+  margin-top: 12px;
+}
+
+.practice-clause {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.text-group {
+  display: inline-flex;
+  align-items: flex-start;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
 .target-char {
   position: relative;
   display: inline-grid;
-  min-width: 0.86em;
+  min-width: max(1em, 40px);
   justify-items: center;
-  margin: 0 0.08em;
-  padding: 0 0.02em 0.42em;
+  margin: 0 4px;
+  padding: 0 0 24px;
   vertical-align: top;
+}
+
+.target-punctuation {
+  min-width: 0;
+  margin: 0;
 }
 
 .target-glyph {
@@ -828,7 +883,7 @@ button {
   align-items: center;
   transform: translateX(-50%);
   color: rgba(125, 104, 84, 0.4);
-  font-size: 0.3em;
+  font-size: max(12px, 0.3em);
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1;
@@ -910,6 +965,7 @@ button {
 }
 
 .virtual-keyboard {
+  align-self: start;
   width: min(760px, 100%);
   margin: 0 auto;
   padding: 20px;
@@ -1852,4 +1908,60 @@ button {
   .vocabulary-benefits {
     grid-template-columns: 1fr;
   }
+}
+
+/* Learning paths and weekly practice records share the existing cabin palette. */
+.lesson-summary { margin: 0; color: var(--color-brown); font-weight: 700; }
+.lesson-list { list-style: none; padding: 0; margin: 0; }
+.lesson-list > li { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; gap: 20px; padding: 28px 0; border-top: 1px solid rgba(123,74,43,.2); align-items: start; }
+.lesson-number { font-size: 28px; color: var(--color-brown); font-variant-numeric: tabular-nums; }
+.lesson-content h2 { margin: 0 0 8px; font-size: 24px; }
+.lesson-content strong { color: var(--color-brown); }
+.lesson-content p { max-width: 52ch; color: #705746; line-height: 1.8; margin: 8px 0 16px; }
+.lesson-preview { font-size: 18px; letter-spacing: .15em; line-height: 1.8; overflow-wrap: anywhere; }
+.lesson-action { display: grid; gap: 12px; justify-items: end; color: #705746; font-size: 13px; }
+.lesson-passed .lesson-number, .lesson-passed .lesson-action > span { color: #236f48; }
+.lesson-footnote, .progress-note { color: #705746; line-height: 1.7; font-size: 13px; }
+.lesson-guide { display: flex; gap: 18px; justify-content: space-between; align-items: start; padding: 16px 20px; border-left: 3px solid var(--color-green); background: rgba(255,252,246,.72); border-radius: 4px 16px 16px 4px; }
+.lesson-guide strong { color: var(--color-brown-dark); }
+.lesson-guide p { margin: 8px 0; line-height: 1.6; font-size: 14px; }
+.lesson-guide small { color: #705746; }
+.lesson-guide a { flex-shrink: 0; color: var(--color-brown); }
+.completion-message { max-width: 32ch; color: #705746; line-height: 1.6; }
+.progress-panel .records-panel-head p { color: #705746; font-size: 13px; margin: 0; }
+.daily-goal-label { display: grid; gap: 6px; color: #705746; font-size: 13px; flex-shrink: 0; }
+.daily-goal-label select { font: inherit; padding: 8px 10px; border: 1px solid rgba(123,74,43,.25); border-radius: 8px; color: var(--color-ink); background: #fffcf6; }
+.daily-goal { display: grid; gap: 10px; margin: 22px 0; }
+.daily-goal > div { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+.daily-goal span { color: #705746; font-size: 13px; }
+.daily-goal progress { width: 100%; height: 10px; accent-color: var(--color-green); }
+.progress-summary { display: flex; flex-wrap: wrap; gap: 16px 32px; color: #705746; padding-bottom: 18px; }
+.progress-summary strong { font-size: 23px; color: var(--color-brown-dark); }
+.trend-charts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 32px; }
+.trend-chart h3 { font-size: 15px; font-weight: 600; }
+.trend-bars { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 8px; text-align: center; }
+.trend-day { min-width: 0; display: grid; gap: 8px; font-size: 12px; color: #705746; font-variant-numeric: tabular-nums; }
+.trend-track { height: 110px; display: flex; align-items: end; border-bottom: 1px solid rgba(123,74,43,.2); background: rgba(123,74,43,.04); }
+.trend-bar { width: 100%; background: var(--color-green); border-radius: 4px 4px 0 0; }
+.trend-bar.wpm { background: #976637; }
+.progress-details { margin-top: 22px; }
+.progress-details summary { cursor: pointer; color: var(--color-brown); }
+.progress-table-scroll { overflow-x: auto; }
+.progress-details table { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 13px; text-align: left; }
+.progress-details caption { text-align: left; margin: 8px 0; }
+.progress-details th, .progress-details td { padding: 10px 8px; border-bottom: 1px solid rgba(123,74,43,.12); white-space: nowrap; }
+.lesson-list button:focus-visible, .daily-goal-label select:focus-visible, .progress-details summary:focus-visible, .lesson-guide a:focus-visible { outline: 3px solid var(--color-green); outline-offset: 4px; }
+@media (max-width: 760px) {
+  .learning-main { min-width: 0; padding: 20px 16px 28px 6px; }
+  .learning-header { flex-wrap: wrap; }
+  .learning-header h1 { font-size: 27px; }
+  .lesson-list > li { grid-template-columns: 32px minmax(0,1fr); gap: 12px; }
+  .lesson-action { grid-column: 2; justify-items: start; }
+  .lesson-content h2 { font-size: 22px; }
+  .trend-charts { grid-template-columns: 1fr; gap: 16px; }
+  .progress-panel .records-panel-head { flex-wrap: wrap; }
+  .lesson-guide { flex-direction: column; }
+  .learning-shell .coach-card { grid-template-columns: 1fr; }
+  .learning-shell .records-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .learning-shell .mistake-row { flex-wrap: wrap; }
 }

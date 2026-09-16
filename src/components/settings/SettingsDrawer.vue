@@ -177,9 +177,8 @@ defineProps<{
   open: boolean;
 }>();
 
-const emit = defineEmits<{
+defineEmits<{
   (event: 'close'): void;
-  (event: 'vocabulary-imported'): void;
 }>();
 
 const practice = usePracticeStore();
@@ -209,7 +208,7 @@ async function clearMistakes() {
 }
 
 async function clearSessions() {
-  if (!window.confirm('确定清空练习记录吗？')) return;
+  if (!window.confirm('确定清空练习记录和课程进度吗？每日目标设置会保留。')) return;
   await practice.clearPracticeSessions();
 }
 
@@ -269,6 +268,5 @@ async function confirmLocalImport() {
   await practice.refreshVocabularyPackages();
   importNotice.value = '已导入，可到词库页开始练习';
   importReport.value = null;
-  emit('vocabulary-imported');
 }
 </script>

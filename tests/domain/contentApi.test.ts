@@ -2,6 +2,30 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { fetchDailyQuote, fetchPoetryUnit, fetchTongueTwisterUnit } from '../../src/services/contentApi';
 
 describe('在线内容 API', () => {
+  it.each([
+    '一片春愁待酒浇。江上舟摇，楼上帘招。《一剪梅·舟过吴江》 — 蒋捷',
+    '一片春愁待酒浇。江上舟摇，楼上帘招。—— 蒋捷《一剪梅·舟过吴江》',
+  ])('从两种署名顺序提取标题作者，只有正文参与练习：%s', async data => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ code: 200, data }) }));
+    const unit = await fetchPoetryUnit();
+    expect(unit).toMatchObject({
+      text: '一片春愁待酒浇。江上舟摇，楼上帘招。',
+      title: '一剪梅·舟过吴江', author: '蒋捷',
+    });
+    expect(unit.syllables).toHaveLength(15);
+  });
+
+  it.each([
+    ['<b>春眠不觉晓，</b><br/>处处闻啼鸟。\n《春晓》 -- 孟浩然', '春眠不觉晓，\n处处闻啼鸟。', '春晓', '孟浩然'],
+    ['正文提到《诗经》，仍然是正文。\n下一行。', '正文提到《诗经》，仍然是正文。\n下一行。', undefined, undefined],
+  ])('保留正文换行，只剥离明确的署名：%s', async (data, text, title, author) => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ code: 200, data }) }));
+    const unit = await fetchPoetryUnit();
+    expect(unit.text).toBe(text);
+    expect(unit.title).toBe(title);
+    expect(unit.author).toBe(author);
+  });
+
   afterEach(() => {
     vi.unstubAllGlobals();
   });
@@ -69,7 +93,7 @@ describe('在线内容 API', () => {
 
     const unit = await fetchTongueTwisterUnit();
 
-    expect(unit.text).toBe('老彭盆碰老陈棚，棚倒盆碎真可惜。');
+    expect(unit.text).toBe('老彭盆碰老陈棚，\n棚倒盆碎真可惜。');
     expect(unit.syllables[0]).toBe('lao');
   });
 
@@ -91,7 +115,7 @@ describe('在线内容 API', () => {
     expect(unit.syllables).toEqual(['lv', 'nv']);
   });
 
-  it('把每日一言 API 响应转换为右侧文案', async () => {
+  it('通过 XY-API 的 JSON 接口读取一言正文', async () => {
     vi.stubGlobal(
       'fetch',
       vi.fn().mockResolvedValue({
@@ -106,6 +130,7 @@ describe('在线内容 API', () => {
 
     const quote = await fetchDailyQuote();
 
+    expect(fetch).toHaveBeenCalledWith('/external-api/one');
     expect(quote.text).toBe('没有人瞧不起你，因为根本就没有人瞧你。');
     expect(quote.source).toBe('某日一言');
   });

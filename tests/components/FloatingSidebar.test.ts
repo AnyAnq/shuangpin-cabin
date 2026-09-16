@@ -8,6 +8,7 @@ function createTestRouter(initialPath = '/') {
     history: createWebHistory(),
     routes: [
       { path: '/', name: 'practice', component: { template: '<div />' } },
+      { path: '/lessons', name: 'lessons', component: { template: '<div />' } },
       { path: '/records', name: 'records', component: { template: '<div />' } },
       { path: '/vocabularies', name: 'vocabularies', component: { template: '<div />' } },
     ],

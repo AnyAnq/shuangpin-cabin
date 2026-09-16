@@ -15,13 +15,19 @@
       </div>
       <section class="session-strip">
         <div>
-          <p>今日练习 · {{ practice.moduleLabel }} · {{ practice.activeUnit.source ?? practice.activeUnit.tags[0] }}</p>
+          <p>今日练习 · {{ practice.moduleLabel }}<span v-if="practice.module !== 'poem'"> · {{ practice.activeUnit.source ?? practice.activeUnit.tags[0] }}</span></p>
           <div class="session-progress"><span :style="{ width: `${practice.progressPercent}%` }" /></div>
         </div>
         <button type="button" class="soft-pill" :disabled="practice.isSwitching" @click="practice.nextUnit">
-          {{ practice.isSwitching ? '取题中...' : '换一组' }}
+          {{ practice.isSwitching ? '取题中...' : practice.currentLesson ? '重练本课' : '换一组' }}
         </button>
       </section>
+      <section v-if="practice.currentLesson" class="lesson-guide" aria-label="本课指引">
+        <div><strong>{{ practice.currentLesson.title }} · {{ practice.currentLesson.focus }}</strong><p>{{ practice.currentLesson.description }}</p><small>达标目标：准确率 {{ LESSON_TARGET }}%</small></div>
+        <RouterLink :to="{ name: 'lessons' }">课程目录</RouterLink>
+      </section>
+      <p v-if="practice.sessionSaveError" role="alert">{{ practice.sessionSaveError }}</p>
+      <p v-if="practice.contentLoadError" role="alert">{{ practice.contentLoadError }}</p>
       <section v-if="practice.vocabularyNeedsInstall" class="vocabulary-empty-state">
         <span>词库练习</span>
         <h1>还没有安装词库</h1>
@@ -88,7 +94,8 @@
           :codes="practice.session.codes"
           :text-char-indices="practice.session.textCharIndices"
           :completed-char-count="practice.session.stats.completedChars"
-          :line-char-count="practice.activeUnit.lineCharCount"
+          :title="practice.activeUnit.title"
+          :author="practice.activeUnit.author"
           :show-character-codes="practice.showCharacterCodes"
           :wrong="practice.lastStatus === 'wrong'"
         />
@@ -100,6 +107,8 @@
         :wpm="practice.liveStats.wpm"
         :max-combo="practice.liveStats.maxCombo"
         :busy="practice.isSwitching"
+        :next-label="practice.nextLabel"
+        :message="practice.currentLesson ? practice.lessonPassed ? practice.nextLesson ? '本课已达标，可以进入下一阶段。' : '最后一课已达标，可以返回课程目录查看进度。' : '再练一次，达到 ' + LESSON_TARGET + '% 后进入下一阶段。' : ''"
         :practiced-count="practice.module === 'mistake' && !practice.mistakeGroupEmpty ? practice.mistakeCompletion.practiced : null"
         :streak-gain="practice.module === 'mistake' && !practice.mistakeGroupEmpty ? practice.mistakeCompletion.streakGain : null"
         @restart="practice.restartCurrent"
@@ -127,6 +136,7 @@
 </template>
 
 <script setup lang="ts">
+import { LESSON_TARGET } from '../../domain/practice/lessons';
 import { ref } from 'vue';
 import { usePracticeStore } from '../../stores/practiceStore';
 import { RouterLink } from 'vue-router';

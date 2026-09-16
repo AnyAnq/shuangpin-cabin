@@ -21,7 +21,6 @@ describe('词库下载服务', () => {
           version: '1.0.0',
           author: 'Shuangpin Cabin',
           license: 'MIT',
-          pricingType: 'free',
           description: '适合日常输入热身。',
           tags: ['daily'],
           entries: [{ text: '今天' }],

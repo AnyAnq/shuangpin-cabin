@@ -1,37 +1,50 @@
 <template>
   <section class="practice-stage">
-    <p class="target-line" :class="{ 'is-wrong': wrong }">
-      <span v-for="line in lines" :key="line.index" class="poem-line" data-poem-line>
-        <span
-          v-for="(char, index) in line.chars"
-          :key="`${char}-${line.start + index}`"
-          class="target-char"
-          :class="{ 'is-active': line.start + index === activeIndex, 'is-complete': line.start + index < activeIndex }"
-        >
-          <span class="target-glyph">{{ char }}</span>
-          <span
-            v-if="showCharacterCodes && codeForTextIndex(line.start + index)"
-            class="char-code"
-            :class="{ 'is-complete': isCodeComplete(line.start + index), 'is-active': line.start + index === activeIndex }"
-            :data-char-code="line.start + index"
-            :aria-label="codeForTextIndex(line.start + index) ?? undefined"
-          >
-            <span
-              v-for="(key, keyIndex) in codeKeysForTextIndex(line.start + index)"
-              :key="`${key}-${line.start + index}-${keyIndex}`"
-              class="char-code-key"
-              :class="{
-                'is-done': isCodeKeyDone(line.start + index, keyIndex),
-                'is-current': isCodeKeyCurrent(line.start + index, keyIndex),
-              }"
-              data-char-code-key
-            >
-              {{ key }}
+    <div class="practice-copy">
+      <header v-if="title || author" class="practice-heading">
+        <h1 v-if="title" class="practice-title">《{{ title.replace(/\s*·\s*/g, ' · ') }}》</h1>
+        <span v-if="author" class="practice-author">{{ author }}</span>
+      </header>
+      <div class="target-line" :class="{ 'is-wrong': wrong }">
+        <div v-for="(line, lineIndex) in lines" :key="lineIndex" class="poem-line" data-poem-line>
+          <span v-for="(clause, clauseIndex) in line" :key="clauseIndex" class="practice-clause">
+            <span v-for="group in clause" :key="group[0]!.index" class="text-group">
+              <span
+                v-for="glyph in group"
+                :key="glyph.index"
+                class="target-char"
+                :class="{
+                  'target-punctuation': !glyph.isHan,
+                  'is-active': glyph.index === activeIndex,
+                  'is-complete': glyph.index < activeIndex,
+                }"
+                :data-text-index="glyph.index"
+              >
+                <span class="target-glyph">{{ glyph.char }}</span>
+                <span
+                  v-if="showCharacterCodes && codeForTextIndex(glyph.index)"
+                  class="char-code"
+                  :class="{ 'is-complete': isCodeComplete(glyph.index), 'is-active': glyph.index === activeIndex }"
+                  :data-char-code="glyph.index"
+                  :aria-label="codeForTextIndex(glyph.index) ?? undefined"
+                >
+                  <span
+                    v-for="(key, keyIndex) in codeKeysForTextIndex(glyph.index)"
+                    :key="keyIndex"
+                    class="char-code-key"
+                    :class="{
+                      'is-done': isCodeKeyDone(glyph.index, keyIndex),
+                      'is-current': isCodeKeyCurrent(glyph.index, keyIndex),
+                    }"
+                    data-char-code-key
+                  >{{ key }}</span>
+                </span>
+              </span>
             </span>
           </span>
-        </span>
-      </span>
-    </p>
+        </div>
+      </div>
+    </div>
     <CodeHint :code="code" :completed-count="completedCodeCount" />
   </section>
 </template>
@@ -49,7 +62,8 @@ const props = withDefaults(defineProps<{
   codes?: string[];
   textCharIndices?: number[];
   completedCharCount?: number;
-  lineCharCount?: number;
+  title?: string;
+  author?: string;
   showCharacterCodes?: boolean;
 }>(), {
   showCharacterCodes: true,
@@ -57,24 +71,55 @@ const props = withDefaults(defineProps<{
 
 const showCharacterCodes = computed(() => props.showCharacterCodes);
 
+interface TextGlyph {
+  char: string;
+  index: number;
+  isHan: boolean;
+}
+
+const OPENING_PUNCTUATION = /^[（(【\[《〈「『“‘{｛]$/u;
+const TRAILING_PUNCTUATION = /^[，,。.!！?？;；:：、…—）)】\]》〉」』”’}｝]$/u;
+
 const lines = computed(() => {
-  if (props.lineCharCount && props.lineCharCount > 0) {
-    const chars = Array.from(props.text);
-    const result = [];
-    for (let start = 0; start < chars.length; start += props.lineCharCount) {
-      result.push({ index: result.length, start, chars: chars.slice(start, start + props.lineCharCount) });
+  const groups: TextGlyph[][] = [];
+  // Keep original code-point indices so visual wrapping never changes the input cursor.
+  Array.from(props.text).forEach((char, index) => {
+    const glyph = { char, index, isHan: /\p{Script=Han}/u.test(char) };
+    const previous = groups.at(-1);
+    const lastChar = previous?.at(-1)?.char ?? '';
+    if (previous && !/[\r\n]/.test(char + lastChar)
+      && (TRAILING_PUNCTUATION.test(char) || OPENING_PUNCTUATION.test(lastChar))) {
+      previous.push(glyph);
+    } else {
+      groups.push([glyph]);
     }
-    return result;
-  }
-  const breakIndex = props.text.search(/[，,]/);
-  const rawLines = breakIndex === -1 ? [props.text] : [props.text.slice(0, breakIndex + 1), props.text.slice(breakIndex + 1)];
-  let start = 0;
-  return rawLines.map((line, index) => {
-    const chars = Array.from(line);
-    const result = { index, start, chars };
-    start += chars.length;
-    return result;
   });
+
+  const result: TextGlyph[][][][] = [];
+  let line: TextGlyph[][][] = [];
+  let clause: TextGlyph[][] = [];
+  const finishClause = () => {
+    if (clause.length) line.push(clause);
+    clause = [];
+  };
+  const finishLine = () => {
+    finishClause();
+    if (line.length) result.push(line);
+    line = [];
+  };
+
+  for (const group of groups) {
+    const text = group.map(glyph => glyph.char).join('');
+    if (/[\r\n]/.test(text)) {
+      finishLine();
+      continue;
+    }
+    clause.push(group);
+    if (/[。！？!?]/.test(text)) finishLine();
+    else if (/[，,；;、：:]/.test(text)) finishClause();
+  }
+  finishLine();
+  return result;
 });
 
 function codeForTextIndex(textIndex: number): string | null {

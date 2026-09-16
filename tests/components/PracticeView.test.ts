@@ -24,6 +24,24 @@ describe('PracticeView', () => {
     practiceStore.clearWrongKey.mockReset();
   });
 
+  it('按钮获得焦点后仍可输入字母，但表单输入和按钮 Enter 不进入练习', () => {
+    const wrapper = mount(PracticeView, {
+      attachTo: document.body,
+      global: { stubs: { AppShell: { template: '<div><button>重练</button><input /></div>' } } },
+    });
+    const button = wrapper.get('button').element;
+    button.focus();
+    button.dispatchEvent(new KeyboardEvent('keydown', { key: 'b', bubbles: true }));
+    expect(practiceStore.pressKey).toHaveBeenCalledWith('b');
+    practiceStore.pressKey.mockClear();
+    wrapper.get('input').element.dispatchEvent(new KeyboardEvent('keydown', { key: 'x', bubbles: true }));
+    expect(practiceStore.pressKey).not.toHaveBeenCalled();
+    practiceStore.lastStatus = 'complete';
+    button.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+    expect(practiceStore.nextUnit).not.toHaveBeenCalled();
+    wrapper.unmount();
+  });
+
   it('完成弹窗打开时按 Enter 触发下一组而不是普通输入', () => {
     practiceStore.lastStatus = 'complete';
     const wrapper = mount(PracticeView, {

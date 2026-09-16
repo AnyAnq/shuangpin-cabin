@@ -4,6 +4,7 @@ import type { DailyQuote } from '../content/quotes';
 import type { MistakePracticeGroup, MistakeRecord } from '../domain/practice/mistakes';
 import { groupMistakesForPractice, mistakeGroupToPracticeUnit } from '../domain/practice/mistakes';
 import { createSession, getActiveTextIndex, handlePracticeKey } from '../domain/practice/sessionEngine';
+import { lessons, lessonUnit, LESSON_TARGET } from '../domain/practice/lessons';
 import { calculateAccuracy, calculateWpm } from '../domain/practice/stats';
 import type { PracticeModule, PracticeUnit } from '../domain/practice/types';
 import { buildVocabularyPracticeUnits, createVocabularyPackageFromEntries, type VocabularyPracticeUnit } from '../domain/vocabulary';
@@ -21,12 +22,11 @@ import {
   clearSessions,
 } from '../storage/repositories';
 import {
-  getInstalledVocabularyPackage,
   listInstalledVocabularyPackages,
   listVocabularyEntries,
   clearVocabularyPackages,
 } from '../storage/vocabularyRepository';
-import type { VocabularyPackageRecord } from '../storage/db';
+import type { PreferenceRecord, VocabularyPackageRecord } from '../storage/db';
 import {
   fetchDailyQuote,
   fetchPoetryUnit,
@@ -50,6 +50,17 @@ export const usePracticeStore = defineStore('practice', () => {
   const module = ref<PracticeModule>('poem');
   const defaultModule = ref<PracticeModule>('poem');
   const showCharacterCodes = ref(true);
+  const dailyGoalMinutes = ref(10);
+  const lessonId = ref<string>(lessons[0].id);
+  const currentLesson = computed(() => module.value === 'lesson' ? lessons.find(item => item.id === lessonId.value) ?? null : null);
+  const sessionRevision = ref(0);
+  const sessionSaveError = ref('');
+  const contentLoadError = ref('');
+  const lessonPassed = computed(() => !!currentLesson.value && liveStats.value.accuracy >= LESSON_TARGET);
+  const nextLesson = computed(() => lessons[lessons.findIndex(item => item.id === lessonId.value) + 1]);
+  const nextLabel = computed(() => currentLesson.value
+    ? lessonPassed.value && nextLesson.value ? '下一阶段' : '再练本课'
+    : '下一组');
   const unitIndex = ref(0);
   const pendingMistake = ref<MistakeRecord | null>(null);
   const mistakeUnits = ref<PracticeUnit[]>([]);
@@ -69,14 +80,14 @@ export const usePracticeStore = defineStore('practice', () => {
   const isSwitching = ref(false);
   let prefetchQueue: Promise<void> = Promise.resolve();
   let mistakeSaveQueue: Promise<unknown> = Promise.resolve();
-  let moduleSwitchSeq = 0;
-  let preferenceHydrateSeq = 0;
+  let selectionSeq = 0;
   let hasManualPracticeSelection = false;
 
   const currentCode = computed(() => session.value.codes[session.value.cursor.charIndex] ?? '');
   const currentExpectedKey = computed(() => currentCode.value[session.value.cursor.codeIndex] ?? null);
   const activeTextIndex = computed(() => getActiveTextIndex(session.value));
   const moduleLabel = computed(() => {
+    if (module.value === 'lesson') return '新手课程';
     if (module.value === 'character') return '单字练习';
     if (module.value === 'article') return '绕口令';
     if (module.value === 'vocabulary') return '词库练习';
@@ -129,7 +140,7 @@ export const usePracticeStore = defineStore('practice', () => {
   });
 
   function pressKey(key: string) {
-    if (activeUnit.value.syllables.length === 0) {
+    if (isSwitching.value || session.value.cursor.charIndex >= session.value.codes.length) {
       return {
         status: 'ignored' as const,
         currentCharIndex: session.value.cursor.charIndex,
@@ -144,8 +155,8 @@ export const usePracticeStore = defineStore('practice', () => {
       hasInteracted.value = true;
     }
     wrongKey.value = result.status === 'wrong' ? result.actualKey ?? null : null;
-    if (result.status === 'wrong' && result.expectedKey && result.actualKey) {
-      const record = createMistakeRecord(result.expectedKey, result.actualKey);
+    if (result.status === 'wrong' && result.expectedKey && result.actualKey && result.errorType) {
+      const record = createMistakeRecord(result.expectedKey, result.actualKey, result.errorType);
       pendingMistake.value = record;
       mistakeSaveQueue = mistakeSaveQueue.then(() => upsertMistake(record));
     }
@@ -161,40 +172,121 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   function setScheme(next: ShuangpinSchemeId) {
+    hasManualPracticeSelection = true;
     schemeId.value = next;
     resetSession(activeUnit.value);
-    void saveCurrentPreferences();
+    if (isSwitching.value || module.value === 'mistake') {
+      void selectPractice(module.value);
+    } else {
+      void saveCurrentPreferences();
+    }
   }
 
-  async function setModule(next: PracticeModule) {
-    hasManualPracticeSelection = true;
-    preferenceHydrateSeq += 1;
-    const switchSeq = ++moduleSwitchSeq;
+  function setModule(next: PracticeModule) {
+    return selectPractice(next);
+  }
+
+  async function selectPractice(
+    next: PracticeModule,
+    options: { restorePreferences?: boolean; packageId?: string; advance?: boolean; lessonId?: string } = {},
+  ) {
+    if (!options.restorePreferences) hasManualPracticeSelection = true;
+    const requestSeq = ++selectionSeq;
     isSwitching.value = true;
+    contentLoadError.value = '';
     try {
-      module.value = next;
-      unitIndex.value = 0;
-      resetSession(unitsForModule(next)[0], false);
-      await refreshOnlineUnit(next);
-      if (next === 'mistake') {
-        await refreshMistakeUnits();
+      if (options.restorePreferences) {
+        const preference = await loadPreferences();
+        if (requestSeq !== selectionSeq) return;
+        if (preference) applyPreferences(preference);
+        next = defaultModule.value === 'character' ? 'poem' : defaultModule.value;
       }
+
+      if (options.lessonId) lessonId.value = options.lessonId;
+      if (!options.advance) {
+        module.value = next;
+        unitIndex.value = 0;
+        resetSession(unitsForModule(next)[0], false);
+      }
+      if (options.packageId !== undefined) selectedVocabularyPackageId.value = options.packageId;
+      const quote = options.restorePreferences ? refreshDailyQuote() : Promise.resolve();
+      let packages = vocabularyPackages.value;
+      let packageId = options.packageId ?? selectedVocabularyPackageId.value;
+      if (next === 'vocabulary' || options.restorePreferences) {
+        packages = await listInstalledVocabularyPackages();
+        if (requestSeq !== selectionSeq) return;
+        if (packages.length === 0) {
+          packageId = null;
+        } else if (packageId !== MIXED_VOCABULARY_PACKAGE_ID && !packages.some(pack => pack.id === packageId)) {
+          packageId = packages[0].id;
+        }
+        vocabularyPackages.value = packages;
+        selectedVocabularyPackageId.value = packageId;
+      }
+
+      let nextVocabularyUnits = vocabularyUnits.value;
+      let groups = mistakeGroups.value;
+      let onlineUnit: PracticeUnit | null = null;
       if (next === 'vocabulary') {
-        await refreshVocabularyUnits();
+        nextVocabularyUnits = await loadVocabularyUnits(packageId, packages);
+      } else if (next === 'mistake') {
+        const selectedScheme = scheme.value;
+        groups = groupMistakesForPractice(await listMistakesForPractice(selectedScheme.id), selectedScheme);
+      } else if (next !== 'lesson') {
+        try {
+          onlineUnit = await loadOnlineUnit(next, !options.restorePreferences);
+        } catch {
+          if (requestSeq === selectionSeq) contentLoadError.value = '新内容暂时加载失败，请稍后点击“换一组”重试。';
+          return;
+        }
       }
-      if (switchSeq !== moduleSwitchSeq || module.value !== next) {
-        return;
+      await quote;
+
+      // 只有最新选择可以提交异步结果，包括题目来源与会话。
+      if (requestSeq !== selectionSeq) return;
+      if (next === 'vocabulary') vocabularyUnits.value = nextVocabularyUnits;
+      if (next === 'mistake') {
+        mistakeGroups.value = groups;
+        mistakeUnits.value = groups.map(mistakeGroupToPracticeUnit);
       }
+      if (next === 'poem') onlinePoemUnit.value = onlineUnit;
+      if (next === 'article') onlineTongueTwisterUnit.value = onlineUnit;
       const units = unitsForModule(next);
-      unitIndex.value = selectFreshUnitIndex(next, units, 0);
+      const startIndex = options.advance ? (unitIndex.value + 1) % units.length : 0;
+      unitIndex.value = selectFreshUnitIndex(next, units, startIndex);
       resetSession(units[unitIndex.value]);
       startBackgroundPrefetch(next);
-      await saveCurrentPreferences();
+      if (!options.restorePreferences && !options.advance) await saveCurrentPreferences();
     } finally {
-      if (switchSeq === moduleSwitchSeq) {
-        isSwitching.value = false;
-      }
+      if (requestSeq === selectionSeq) isSwitching.value = false;
     }
+  }
+
+  function applyPreferences(preference: PreferenceRecord) {
+    schemeId.value = preference.scheme;
+    selectedVocabularyPackageId.value = preference.lastVocabularyPackageId ?? null;
+    defaultModule.value = preference.defaultModule ?? 'poem';
+    showCharacterCodes.value = preference.showCharacterCodes ?? true;
+    dailyGoalMinutes.value = preference.dailyGoalMinutes ?? 10;
+  }
+
+  async function hydrateSettings() {
+    if (hasManualPracticeSelection) return;
+    const requestSeq = selectionSeq;
+    const preference = await loadPreferences();
+    if (preference && !hasManualPracticeSelection && requestSeq === selectionSeq) applyPreferences(preference);
+  }
+
+  async function setDailyGoalMinutes(minutes: number) {
+    if (!Number.isInteger(minutes) || minutes < 1 || minutes > 60) throw new Error('每日目标应为 1 至 60 分钟');
+    hasManualPracticeSelection = true;
+    dailyGoalMinutes.value = minutes;
+    await saveCurrentPreferences();
+  }
+
+  function startLesson(id: string) {
+    lessonUnit(id);
+    return selectPractice('lesson', { lessonId: id });
   }
 
   async function setDefaultModule(next: PracticeModule) {
@@ -209,86 +301,32 @@ export const usePracticeStore = defineStore('practice', () => {
 
   async function clearMistakeRecords() {
     await clearMistakes();
-    if (module.value === 'mistake') {
-      await refreshMistakeUnits();
-      unitIndex.value = 0;
-      resetSession(unitsForModule('mistake')[0]);
-    }
+    if (module.value === 'mistake') await setModule('mistake');
   }
 
   async function clearPracticeSessions() {
     await clearSessions();
+    sessionRevision.value += 1;
   }
 
   async function clearInstalledVocabularies() {
     await clearVocabularyPackages();
-    await refreshVocabularyPackages();
     if (module.value === 'vocabulary') {
-      unitIndex.value = 0;
-      resetSession(unitsForModule('vocabulary')[0]);
+      await setModule('vocabulary');
+    } else {
+      await refreshVocabularyPackages();
     }
   }
 
-  async function nextUnit() {
-    if (isSwitching.value) {
-      return;
+  function nextUnit() {
+    if (isSwitching.value) return Promise.resolve();
+    if (currentLesson.value) {
+      const id = lastStatus.value === 'complete' && lessonPassed.value && nextLesson.value ? nextLesson.value.id : lessonId.value;
+      closeCompletion();
+      return startLesson(id);
     }
     closeCompletion();
-    const switchSeq = ++moduleSwitchSeq;
-    isSwitching.value = true;
-    try {
-      const targetModule = module.value;
-      
-      // First attempt to consume cached unit (instant switch)
-      if (targetModule === 'poem') {
-        const cached = consumeCachedPoetryUnit();
-        if (cached) {
-          onlinePoemUnit.value = cached;
-          const units = unitsForModule(targetModule);
-          unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
-          resetSession(units[unitIndex.value]);
-          if (switchSeq === moduleSwitchSeq) {
-            isSwitching.value = false;
-          }
-          startBackgroundPrefetch(targetModule);
-          return;
-        }
-      } else if (targetModule === 'article') {
-        const cached = consumeCachedTongueTwisterUnit();
-        if (cached) {
-          onlineTongueTwisterUnit.value = cached;
-          const units = unitsForModule(targetModule);
-          unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
-          resetSession(units[unitIndex.value]);
-          if (switchSeq === moduleSwitchSeq) {
-            isSwitching.value = false;
-          }
-          startBackgroundPrefetch(targetModule);
-          return;
-        }
-      }
-      
-      // Fallback: fetch fresh content if no cache available
-      await refreshOnlineUnit(targetModule);
-      if (targetModule === 'mistake') {
-        await refreshMistakeUnits();
-      }
-      if (targetModule === 'vocabulary') {
-        await refreshVocabularyUnits();
-      }
-      if (switchSeq !== moduleSwitchSeq || module.value !== targetModule) {
-        return;
-      }
-      const units = unitsForModule(targetModule);
-      unitIndex.value = selectFreshUnitIndex(targetModule, units, (unitIndex.value + 1) % units.length);
-      resetSession(units[unitIndex.value]);
-      
-      startBackgroundPrefetch(targetModule);
-    } finally {
-      if (switchSeq === moduleSwitchSeq) {
-        isSwitching.value = false;
-      }
-    }
+    return selectPractice(module.value, { advance: true });
   }
 
   function restartCurrent() {
@@ -301,45 +339,9 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
-  async function hydratePreferences() {
-    if (hasManualPracticeSelection) {
-      return;
-    }
-    const hydrateSeq = ++preferenceHydrateSeq;
-    unitIndex.value = 0;
-    isSwitching.value = true;
-    try {
-      const preference = await loadPreferences();
-      let nextModule: PracticeModule = 'poem';
-      if (preference) {
-        schemeId.value = preference.scheme;
-        selectedVocabularyPackageId.value = preference.lastVocabularyPackageId ?? null;
-        defaultModule.value = preference.defaultModule ?? 'poem';
-        showCharacterCodes.value = preference.showCharacterCodes ?? true;
-        nextModule = preference.defaultModule ?? 'poem';
-      }
-      module.value = nextModule === 'character' ? 'poem' : nextModule;
-      await refreshVocabularyPackages();
-      if (module.value === 'mistake') {
-        await refreshMistakeUnits();
-      }
-      if (module.value === 'vocabulary') {
-        await refreshVocabularyUnits();
-      }
-      await Promise.all([
-        refreshDailyQuote(),
-        refreshOnlineUnit(module.value, false),
-      ]);
-      if (hydrateSeq !== preferenceHydrateSeq) {
-        return;
-      }
-      resetSession(unitsForModule(module.value)[0]);
-      startBackgroundPrefetch(module.value);
-    } finally {
-      if (hydrateSeq === preferenceHydrateSeq) {
-        isSwitching.value = false;
-      }
-    }
+  function hydratePreferences() {
+    if (hasManualPracticeSelection) return Promise.resolve();
+    return selectPractice(defaultModule.value, { restorePreferences: true });
   }
 
   function resetSession(unit: PracticeUnit, rememberRecent = true) {
@@ -355,6 +357,7 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   function unitsForModule(targetModule: PracticeModule): PracticeUnit[] {
+    if (targetModule === 'lesson') return [lessonUnit(lessonId.value)];
     if (targetModule === 'character') return [emptyCharacterUnit];
     if (targetModule === 'article') return [onlineTongueTwisterUnit.value ?? emptyArticleUnit];
     if (targetModule === 'vocabulary') return vocabularyUnits.value.length > 0 ? vocabularyUnits.value : [emptyVocabularyUnit];
@@ -417,7 +420,7 @@ export const usePracticeStore = defineStore('practice', () => {
     };
   }
 
-  function createMistakeRecord(expectedKey: string, actualKey: string): MistakeRecord {
+  function createMistakeRecord(expectedKey: string, actualKey: string, errorType: MistakeRecord['errorType']): MistakeRecord {
     const charIndex = session.value.cursor.charIndex;
     const targetChar = Array.from(activeUnit.value.text)[session.value.textCharIndices[charIndex] ?? charIndex] ?? '';
     const targetSyllable = activeUnit.value.syllables[charIndex] ?? '';
@@ -433,7 +436,7 @@ export const usePracticeStore = defineStore('practice', () => {
       expectedCode,
       expectedKey,
       actualKey,
-      errorType: session.value.cursor.codeIndex === 0 ? 'initial-key' : 'final-key',
+      errorType,
       contextText: activeUnit.value.text,
       count: 1,
       lastWrongAt: now,
@@ -450,21 +453,26 @@ export const usePracticeStore = defineStore('practice', () => {
       module: module.value,
       defaultModule: defaultModule.value,
       showCharacterCodes: showCharacterCodes.value,
+      dailyGoalMinutes: dailyGoalMinutes.value,
       lastVocabularyPackageId: selectedVocabularyPackageId.value ?? undefined,
       updatedAt: Date.now(),
     });
   }
 
   function saveCurrentSession() {
+    sessionSaveError.value = '';
     return saveSession({
       id: `${Date.now()}-${activeUnit.value.id}-${schemeId.value}`,
       scheme: schemeId.value,
       module: module.value,
+      lessonId: module.value === 'lesson' ? lessonId.value : undefined,
       accuracy: liveStats.value.accuracy,
       wpm: liveStats.value.wpm,
       maxCombo: liveStats.value.maxCombo,
       elapsedMs: liveStats.value.elapsedMs,
       createdAt: Date.now(),
+    }).then(() => { sessionRevision.value += 1; }).catch(() => {
+      sessionSaveError.value = '本轮记录保存失败，请检查浏览器存储空间后重练。';
     });
   }
 
@@ -479,14 +487,11 @@ export const usePracticeStore = defineStore('practice', () => {
     return Promise.all(ids.map((id) => markMistakeCorrect(id))).then(() => undefined);
   }
 
-  async function refreshMistakeUnits() {
-    const records = await listMistakesForPractice(schemeId.value);
-    mistakeGroups.value = groupMistakesForPractice(records, scheme.value);
-    mistakeUnits.value = mistakeGroups.value.map(mistakeGroupToPracticeUnit);
-  }
-
   async function refreshVocabularyPackages() {
-    vocabularyPackages.value = await listInstalledVocabularyPackages();
+    const requestSeq = selectionSeq;
+    const packages = await listInstalledVocabularyPackages();
+    if (requestSeq !== selectionSeq) return;
+    vocabularyPackages.value = packages;
     if (vocabularyPackages.value.length === 0) {
       selectedVocabularyPackageId.value = null;
       vocabularyUnits.value = [];
@@ -500,96 +505,34 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
-  async function refreshVocabularyUnits() {
-    await refreshVocabularyPackages();
-    if (!selectedVocabularyPackageId.value) {
-      vocabularyUnits.value = [];
-      return;
-    }
-
-    if (selectedVocabularyPackageId.value === MIXED_VOCABULARY_PACKAGE_ID) {
-      const entries = (await Promise.all(vocabularyPackages.value.map((pack) => listVocabularyEntries(pack.id)))).flat();
-      const packageFile = createVocabularyPackageFromEntries({
-        id: MIXED_VOCABULARY_PACKAGE_ID,
-        name: '混合词库',
-        version: '1.0.0',
-        author: 'Shuangpin Cabin',
-        license: 'Personal',
-        pricingType: 'owned',
-        description: '全部已安装词库的混合练习。',
-        tags: ['mixed', 'vocabulary'],
-      }, entries);
-      vocabularyUnits.value = buildVocabularyPracticeUnits(packageFile);
-      return;
-    }
-
-    const packageRecord = await getInstalledVocabularyPackage(selectedVocabularyPackageId.value);
-    if (!packageRecord) {
-      vocabularyUnits.value = [];
-      return;
-    }
-    const entries = await listVocabularyEntries(packageRecord.id);
-    const packageFile = createVocabularyPackageFromEntries({
-      id: packageRecord.id,
-      name: packageRecord.name,
-      version: packageRecord.version,
-      author: packageRecord.author,
-      license: packageRecord.license,
-      pricingType: packageRecord.pricingType,
-      description: packageRecord.description,
-      tags: packageRecord.tags,
-    }, entries);
-    vocabularyUnits.value = buildVocabularyPracticeUnits(packageFile);
+  async function loadVocabularyUnits(packageId: string | null, packages: VocabularyPackageRecord[]) {
+    if (!packageId || packages.length === 0) return [];
+    const mixed = packageId === MIXED_VOCABULARY_PACKAGE_ID;
+    const record = mixed ? createMixedVocabularyRecord(packages) : packages.find(pack => pack.id === packageId);
+    if (!record) return [];
+    const entries = mixed
+      ? (await Promise.all(packages.map(pack => listVocabularyEntries(pack.id)))).flat()
+      : await listVocabularyEntries(record.id);
+    return buildVocabularyPracticeUnits(createVocabularyPackageFromEntries(record, entries));
   }
 
-  async function setVocabularyPackage(packageId: string) {
-    hasManualPracticeSelection = true;
-    preferenceHydrateSeq += 1;
-    selectedVocabularyPackageId.value = packageId;
-    unitIndex.value = 0;
-    await refreshVocabularyUnits();
-    if (module.value === 'vocabulary') {
-      resetSession(unitsForModule('vocabulary')[0]);
-    }
-    await saveCurrentPreferences();
+  function setVocabularyPackage(packageId: string) {
+    return selectPractice('vocabulary', { packageId });
   }
 
-  async function setMixedVocabularyPackage() {
-    if (vocabularyPackages.value.length === 0) return;
-    hasManualPracticeSelection = true;
-    preferenceHydrateSeq += 1;
-    selectedVocabularyPackageId.value = MIXED_VOCABULARY_PACKAGE_ID;
-    unitIndex.value = 0;
-    await refreshVocabularyUnits();
-    if (module.value === 'vocabulary') {
-      resetSession(unitsForModule('vocabulary')[0]);
-    }
-    await saveCurrentPreferences();
+  function setMixedVocabularyPackage() {
+    if (vocabularyPackages.value.length === 0) return Promise.resolve();
+    return setVocabularyPackage(MIXED_VOCABULARY_PACKAGE_ID);
   }
 
-  async function refreshOnlineUnit(targetModule: PracticeModule, useCache = true) {
-    try {
-      if (targetModule === 'article') {
-        // First check if cached version exists from preload
-        const cached = useCache ? consumeCachedTongueTwisterUnit() : null;
-        if (cached) {
-          onlineTongueTwisterUnit.value = cached;
-        } else {
-          onlineTongueTwisterUnit.value = await fetchTongueTwisterUnit();
-        }
-      }
-      if (targetModule === 'poem') {
-        // First check if cached version exists from preload
-        const cached = useCache ? consumeCachedPoetryUnit() : null;
-        if (cached) {
-          onlinePoemUnit.value = cached;
-        } else {
-          onlinePoemUnit.value = await fetchPoetryUnit();
-        }
-      }
-    } catch {
-      // 内容完全依赖在线 API；失败时保留已有在线内容或空状态，等待用户重试。
+  async function loadOnlineUnit(targetModule: PracticeModule, useCache: boolean): Promise<PracticeUnit | null> {
+    if (targetModule === 'article') {
+      return (useCache ? consumeCachedTongueTwisterUnit() : null) ?? await fetchTongueTwisterUnit();
     }
+    if (targetModule === 'poem') {
+      return (useCache ? consumeCachedPoetryUnit() : null) ?? await fetchPoetryUnit();
+    }
+    return null;
   }
 
   function startBackgroundPrefetch(targetModule: PracticeModule) {
@@ -628,6 +571,17 @@ export const usePracticeStore = defineStore('practice', () => {
     module,
     defaultModule,
     showCharacterCodes,
+    dailyGoalMinutes,
+    currentLesson,
+    lessonPassed,
+    nextLesson,
+    nextLabel,
+    sessionRevision,
+    sessionSaveError,
+    contentLoadError,
+    startLesson,
+    hydrateSettings,
+    setDailyGoalMinutes,
     activeUnit,
     session,
     wrongKey,
@@ -670,7 +624,6 @@ export const usePracticeStore = defineStore('practice', () => {
     closeCompletion,
     hydratePreferences,
     refreshVocabularyPackages,
-    refreshVocabularyUnits,
     setVocabularyPackage,
     setMixedVocabularyPackage,
   };
@@ -696,7 +649,6 @@ function createMixedVocabularyRecord(packages: VocabularyPackageRecord[]): Vocab
     description: '全部已安装词库的混合练习。',
     author: 'Shuangpin Cabin',
     license: 'Personal',
-    pricingType: 'owned',
     tags: ['mixed', 'vocabulary'],
     entryCount: packages.reduce((sum, pack) => sum + pack.entryCount, 0),
     installedAt: Math.min(...packages.map((pack) => pack.installedAt), now),

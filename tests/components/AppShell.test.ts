@@ -11,6 +11,7 @@ async function mountAppShell() {
     history: createWebHistory(),
     routes: [
       { path: '/', name: 'practice', component: { template: '<div />' } },
+      { path: '/lessons', name: 'lessons', component: { template: '<div />' } },
       { path: '/records', name: 'records', component: { template: '<div />' } },
       { path: '/vocabularies', name: 'vocabularies', component: { template: '<div />' } },
     ],
@@ -29,6 +30,14 @@ async function mountAppShell() {
 }
 
 describe('AppShell', () => {
+  it('取题失败时显示可重试的提示', async () => {
+    const { wrapper, pinia } = await mountAppShell();
+    usePracticeStore(pinia).contentLoadError = '新内容暂时加载失败，请稍后点击“换一组”重试。';
+    await wrapper.vm.$nextTick();
+    expect(wrapper.get('[role="alert"]').text()).toContain('点击“换一组”重试');
+    expect(wrapper.get('button.soft-pill').attributes('disabled')).toBeUndefined();
+  });
+
   it('渲染 V6 首页外壳的核心区域', async () => {
     const { wrapper } = await mountAppShell();
 
@@ -148,7 +157,6 @@ describe('AppShell', () => {
       description: '本地词库。',
       author: '本地导入',
       license: 'Personal',
-      pricingType: 'owned',
       tags: ['local'],
       entryCount: 3,
       installedAt: 1,

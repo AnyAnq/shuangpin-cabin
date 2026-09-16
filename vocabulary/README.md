@@ -1,8 +1,8 @@
 # 双拼练习外置词库包
 
-这个目录可以上传到 Gitee 仓库，用作网站的外置词库源。官方词库包建议放在 Gitee 私有仓库，只允许 Cloudflare Pages Function 通过 `GITEE_ACCESS_TOKEN` 读取。所有词库对用户免费开放。
+官方词库源是公共仓库 [IQueue/shuangpin-vocabularies](https://gitee.com/IQueue/shuangpin-vocabularies)，所有词库免费开放，无需登录或配置 token。
 
-## 推荐目录
+## 目录结构
 
 ```text
 registry.json
@@ -15,22 +15,22 @@ sources/
   VOCABULARY_SOURCES.md
 ```
 
-## 部署步骤
+## 本地开发
 
-1. 在 Gitee 新建私有仓库，例如 `shuangpin-vocabularies`。
-2. 上传本目录下的所有文件，保持目录结构不变。
-3. 网站默认通过 Cloudflare Pages Function 代理读取 Gitee contents API，不需要 Gitee 支持跨域。
-4. 在练习网站部署环境里设置：
+运行 `npm run dev`，在词库页即可读取和安装公共仓库中的词库，无需先发布网站。
 
-```text
-VITE_VOCABULARY_REGISTRY_URL=/api/vocabularies/registry.json
-GITEE_ACCESS_TOKEN=你的 Gitee 私有仓库 token
-```
+Vite 接管 `/api/vocabularies/...`，复用 Cloudflare Pages Function 的代理逻辑读取 Gitee contents API，并把索引中的下载链接统一改为同域地址。
+
+## 部署与更新
+
+1. 将本目录下的词库文件上传到公共仓库的 `master` 分支，保持目录结构。
+2. 部署到 Cloudflare Pages 时，保留 `functions/api/vocabularies/[[path]].ts`，由它提供同域接口。
+3. 网站默认索引地址是 `/api/vocabularies/registry.json`，无需额外环境变量。需要覆盖索引地址时可设置 `VITE_VOCABULARY_REGISTRY_URL`。
+4. 更新词库时同步更新词库版本和 `registry.json` 中的版本、词条数量。
 
 ## 注意
 
-- 如果不用 Cloudflare Pages Function，才需要把 `registry.json` 里的下载地址替换为你的静态托管域名。
-- 当前 `registry.json` 默认使用同域代理地址 `/api/vocabularies/...`。
+- 索引缓存 5 分钟，带版本的词库包缓存 1 天。
+- 如果以后改用私有仓库，可在 Cloudflare Pages 服务端配置 `GITEE_ACCESS_TOKEN`；当前公共仓库不需要。
 - 词库 JSON 必须是纯 JSON，不能写注释。
 - 词条只能放纯中文，不要带标点、空格、英文、数字。
-- 词库文件不要公开放在 Gitee Pages 或 raw 静态地址，统一由后端代理读取。

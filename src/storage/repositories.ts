@@ -44,6 +44,10 @@ export async function markMistakeCorrect(id: string, now = Date.now()): Promise<
   });
 }
 
+export function listSessionsByScheme(scheme: ShuangpinSchemeId): Promise<PracticeSessionRecord[]> {
+  return db.sessions.where('scheme').equals(scheme).toArray();
+}
+
 export function saveSession(record: PracticeSessionRecord): Promise<string> {
   return db.sessions.put(record);
 }

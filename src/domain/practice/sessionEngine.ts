@@ -45,15 +45,17 @@ export function handlePracticeKey(session: PracticeSession, rawKey: string, now:
     return toResult('complete', session);
   }
 
+  if (session.stats.totalKeystrokes === 0) session.stats.startedAt = now;
   session.stats.elapsedMs = now - session.stats.startedAt;
   session.stats.totalKeystrokes += 1;
 
   if (key !== expectedKey) {
+    const errorType = session.cursor.codeIndex === 0 ? 'initial-key' : 'final-key';
     session.stats.correctKeystrokes = Math.max(0, session.stats.correctKeystrokes - session.cursor.codeIndex);
     session.stats.wrongKeystrokes += 1;
     session.stats.currentCombo = 0;
     session.cursor.codeIndex = 0;
-    return toResult('wrong', session, expectedKey, key);
+    return { ...toResult('wrong', session, expectedKey, key), errorType };
   }
 
   session.stats.correctKeystrokes += 1;

@@ -1,12 +1,12 @@
 <template>
   <div class="app-shell vocabulary-page">
     <FloatingSidebar @open-settings="settingsOpen = true" />
-    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" @vocabulary-imported="refreshInstalled" />
+    <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
     <main class="vocabulary-main">
       <section class="vocabulary-hero">
         <span>词库中心</span>
         <h1>安装词库后开始练习</h1>
-        <p>全部在线词库免费安装。词库从外部仓库下载到浏览器本地，练习时只读取已安装内容。</p>
+        <p>全部在线词库免费安装，安装后即可开始练习。</p>
         <div class="vocabulary-hero-actions">
           <button type="button" class="soft-pill" data-testid="open-sponsor-dialog" @click="openSponsorDialog">
             赞助支持
@@ -133,9 +133,7 @@ import { createVocabularyExportFile, type VocabularyEntry, type VocabularyRegist
 import { downloadVocabularyPackage, fetchVocabularyRegistry } from '../services/vocabularyRegistryService';
 import {
   installVocabularyPackage,
-  listInstalledVocabularyPackages,
   listVocabularyEntries,
-  listVocabularyPackagesBySource,
   uninstallVocabularyPackage,
 } from '../storage/vocabularyRepository';
 import type { VocabularyPackageRecord } from '../storage/db';
@@ -144,9 +142,8 @@ import { usePracticeStore } from '../stores/practiceStore';
 const router = useRouter();
 const practice = usePracticeStore();
 const registryPackages = ref<VocabularyRegistryItem[]>([]);
-const installedPackages = ref<VocabularyPackageRecord[]>([]);
-const localPackages = ref<VocabularyPackageRecord[]>([]);
-const remoteInstalledPackages = ref<VocabularyPackageRecord[]>([]);
+const localPackages = computed(() => practice.vocabularyPackages.filter(pack => pack.sourceType === 'local'));
+const remoteInstalledPackages = computed(() => practice.vocabularyPackages.filter(pack => pack.sourceType === 'remote'));
 const registryError = ref('');
 const loadingRegistry = ref(false);
 const installingId = ref<string | null>(null);
@@ -154,22 +151,15 @@ const settingsOpen = ref(false);
 const sponsorDialogOpen = ref(false);
 const wechatSponsorQr = import.meta.env.VITE_WECHAT_SPONSOR_QR_IMAGE_URL ?? '/sponsor/wechat.png';
 const alipaySponsorQr = import.meta.env.VITE_ALIPAY_SPONSOR_QR_IMAGE_URL ?? '/sponsor/alipay.jpg';
-const installedIds = computed(() => new Set(installedPackages.value.map((pack) => pack.id)));
+const installedIds = computed(() => new Set(practice.vocabularyPackages.map((pack) => pack.id)));
 
 onMounted(() => {
   void hydrate();
 });
 
 async function hydrate() {
-  await refreshInstalled();
-  await loadRegistry();
-}
-
-async function refreshInstalled() {
-  installedPackages.value = await listInstalledVocabularyPackages();
-  localPackages.value = await listVocabularyPackagesBySource('local');
-  remoteInstalledPackages.value = await listVocabularyPackagesBySource('remote');
   await practice.refreshVocabularyPackages();
+  await loadRegistry();
 }
 
 async function loadRegistry() {
@@ -190,7 +180,7 @@ async function installPackage(item: VocabularyRegistryItem) {
   try {
     const result = await downloadVocabularyPackage(item.downloadUrl, item.mirrorUrls);
     await installVocabularyPackage(result.packageFile, result.sourceUrl, { checksum: item.checksum });
-    await refreshInstalled();
+    await practice.refreshVocabularyPackages();
   } finally {
     installingId.value = null;
   }
@@ -202,12 +192,11 @@ function openSponsorDialog() {
 
 async function removePackage(packageId: string) {
   await uninstallVocabularyPackage(packageId);
-  await refreshInstalled();
+  await practice.refreshVocabularyPackages();
 }
 
 async function startPractice(packageId: string) {
   await practice.setVocabularyPackage(packageId);
-  await practice.setModule('vocabulary');
   await router.push({ name: 'practice' });
 }
 
@@ -220,7 +209,6 @@ async function exportLocalPackage(pack: VocabularyPackageRecord) {
       version: pack.version,
       author: pack.author,
       license: pack.license,
-      pricingType: pack.pricingType,
       description: pack.description,
       tags: pack.tags,
     }, entries.map((entry): VocabularyEntry => ({

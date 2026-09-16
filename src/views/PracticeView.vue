@@ -11,7 +11,11 @@ const practice = usePracticeStore();
 let wrongTimer: number | undefined;
 
 function onKeydown(event: KeyboardEvent) {
-  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (event.metaKey || event.ctrlKey || event.altKey || event.defaultPrevented) return;
+  if (event.target instanceof HTMLElement) {
+    if (event.target.closest('input, select, textarea, [contenteditable="true"]')) return;
+    if ((event.key === 'Enter' || event.key === ' ') && event.target.closest('button, a')) return;
+  }
   if (practice.lastStatus === 'complete') {
     if (event.key === 'Enter') {
       event.preventDefault();

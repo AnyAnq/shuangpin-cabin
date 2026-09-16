@@ -13,6 +13,8 @@ interface ApiResponse<T> {
 }
 
 interface ParsedPoetry {
+  title?: string;
+  author?: string;
   text: string;
   source: string;
 }
@@ -38,12 +40,14 @@ export async function fetchPoetryUnit(): Promise<PracticeUnit> {
     text: poetry.text,
     syllables: toSyllables(poetry.text),
     source: poetry.source,
+    title: poetry.title,
+    author: poetry.author,
     tags: ['诗词', '在线内容'],
   };
 }
 
 export async function fetchDailyQuote(): Promise<DailyQuote> {
-  const data = await getApiData<{ content: string }>(`${DAILY_API_BASE}/chicken-soup`, [200]);
+  const data = await getApiData<{ content: string }>(`${DAILY_API_BASE}/one`, [200]);
   return {
     text: data.content,
     source: '某日一言',
@@ -57,22 +61,23 @@ function toContentText(data: string | { content: string }): string {
 
 function cleanContentText(text: string): string {
   return text
-    .replace(/<br\s*\/?>/gi, '')
+    .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<[^>]+>/g, '')
     .trim();
 }
 
 function parsePoetryText(rawText: string): ParsedPoetry {
   const text = cleanContentText(rawText);
-  const match = text.match(/^(.*?)《([^》]+)》\s*[—-]\s*(.+)$/);
-  if (!match) {
-    return { text, source: '在线诗词' };
-  }
+  const titleFirst = text.match(/^([\s\S]+?)《([^》\r\n]+)》\s*[—-]+\s*([^《》\r\n]+)$/u);
+  const authorFirst = text.match(/^([\s\S]+?)[—-]+\s*([^《》\r\n—]+?)\s*《([^》\r\n]+)》$/u);
+  const match = titleFirst ?? authorFirst;
+  if (!match) return { text, source: '在线诗词' };
 
-  return {
-    text: match[1].trim(),
-    source: `${match[2].trim()} · ${match[3].trim()}`,
-  };
+  const body = match[1]!.trim();
+  const title = (titleFirst ? match[2] : match[3])!.trim();
+  const author = (titleFirst ? match[3] : match[2])!.trim();
+  if (!body || !title || !author) return { text, source: '在线诗词' };
+  return { text: body, title, author, source: title + ' · ' + author };
 }
 
 function toSyllables(text: string): string[] {

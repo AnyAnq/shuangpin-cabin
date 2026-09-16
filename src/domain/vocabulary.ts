@@ -1,8 +1,6 @@
 import { pinyin } from 'pinyin-pro';
 import type { PracticeUnit } from './practice/types';
 
-export type VocabularyPricingType = 'free' | 'paid' | 'owned';
-
 export interface VocabularyRegistry {
   schemaVersion: 1;
   updatedAt: string;
@@ -15,7 +13,6 @@ export interface VocabularyRegistryItem {
   version: string;
   description: string;
   author: string;
-  pricingType: VocabularyPricingType;
   tags: string[];
   entryCount: number;
   downloadUrl: string;
@@ -31,7 +28,6 @@ export interface VocabularyPackageFile {
   version: string;
   author: string;
   license: string;
-  pricingType: VocabularyPricingType;
   description: string;
   tags: string[];
   entries: VocabularyEntry[];
@@ -68,7 +64,6 @@ export interface LocalVocabularyParseReport {
 
 export interface VocabularyPracticeUnit extends PracticeUnit {
   module: 'vocabulary';
-  lineCharCount: number;
   packageId: string;
 }
 
@@ -94,8 +89,15 @@ export function validateVocabularyRegistry(input: unknown): VocabularyRegistry {
       throw new Error('词库索引格式不完整');
     }
     return {
-      schemaVersion: 1 as const,
-      ...item,
+      id: item.id,
+      name: item.name,
+      version: item.version,
+      description: item.description,
+      author: item.author,
+      entryCount: item.entryCount,
+      downloadUrl: item.downloadUrl,
+      checksum: item.checksum,
+      minAppVersion: item.minAppVersion,
       tags: [...item.tags],
       mirrorUrls: item.mirrorUrls ? [...item.mirrorUrls] : undefined,
     };
@@ -130,7 +132,6 @@ export function validateVocabularyPackage(input: unknown): VocabularyPackageFile
     version: input.version,
     author: input.author,
     license: typeof input.license === 'string' ? input.license : 'Personal',
-    pricingType: isPricingType(input.pricingType) ? input.pricingType : 'owned',
     description: typeof input.description === 'string' ? input.description : '从本地文件导入的自定义词库',
     tags: Array.isArray(input.tags) ? [...input.tags] : [...DEFAULT_LOCAL_TAGS],
     entries,
@@ -261,7 +262,6 @@ export function createLocalVocabularyPackage(meta: LocalVocabularyMetaInput, ent
     version: meta.version ?? '1.0.0',
     author: meta.author ?? '本地导入',
     license: meta.license ?? 'Personal',
-    pricingType: 'owned',
     description: meta.description ?? '从本地文件导入的自定义词库',
     tags: meta.tags && meta.tags.length > 0 ? meta.tags : DEFAULT_LOCAL_TAGS,
     entries,
@@ -269,7 +269,7 @@ export function createLocalVocabularyPackage(meta: LocalVocabularyMetaInput, ent
 }
 
 export function createVocabularyExportFile(
-  packageRecord: Pick<VocabularyPackageFile, 'id' | 'name' | 'version' | 'author' | 'license' | 'pricingType' | 'description' | 'tags'>,
+  packageRecord: Pick<VocabularyPackageFile, 'id' | 'name' | 'version' | 'author' | 'license' | 'description' | 'tags'>,
   entries: VocabularyEntry[],
 ): VocabularyPackageFile {
   return validateVocabularyPackage({
@@ -279,7 +279,7 @@ export function createVocabularyExportFile(
   });
 }
 
-export function buildVocabularyPracticeUnits(packageFile: VocabularyPackageFile, targetCharCount = 12, lineCharCount = 6): VocabularyPracticeUnit[] {
+export function buildVocabularyPracticeUnits(packageFile: VocabularyPackageFile, targetCharCount = 12): VocabularyPracticeUnit[] {
   const sortedEntries = [...packageFile.entries].sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0));
   const units: VocabularyPracticeUnit[] = [];
   let buffer = '';
@@ -290,21 +290,21 @@ export function buildVocabularyPracticeUnits(packageFile: VocabularyPackageFile,
     if (entryLength > targetCharCount) continue;
     if (Array.from(buffer).length + entryLength > targetCharCount) {
       if (Array.from(buffer).length === targetCharCount) {
-        units.push(createVocabularyUnit(packageFile, buffer, unitIndex, lineCharCount));
+        units.push(createVocabularyUnit(packageFile, buffer, unitIndex));
         unitIndex += 1;
       }
       buffer = '';
     }
     buffer += entry.text;
     if (Array.from(buffer).length === targetCharCount) {
-      units.push(createVocabularyUnit(packageFile, buffer, unitIndex, lineCharCount));
+      units.push(createVocabularyUnit(packageFile, buffer, unitIndex));
       unitIndex += 1;
       buffer = '';
     }
   }
 
   if (units.length === 0 && buffer.length > 0) {
-    units.push(createVocabularyUnit(packageFile, buffer, unitIndex, lineCharCount));
+    units.push(createVocabularyUnit(packageFile, buffer, unitIndex));
   }
 
   return units;
@@ -321,7 +321,7 @@ export function createVocabularyPackageFromEntries(
   });
 }
 
-function createVocabularyUnit(packageFile: VocabularyPackageFile, text: string, index: number, lineCharCount: number): VocabularyPracticeUnit {
+function createVocabularyUnit(packageFile: VocabularyPackageFile, text: string, index: number): VocabularyPracticeUnit {
   return {
     id: `vocabulary-${packageFile.id}-${packageFile.version}-${index}`,
     module: 'vocabulary',
@@ -329,7 +329,6 @@ function createVocabularyUnit(packageFile: VocabularyPackageFile, text: string, 
     syllables: toSyllables(text),
     source: packageFile.name,
     tags: ['词库', ...packageFile.tags],
-    lineCharCount,
     packageId: packageFile.id,
   };
 }
@@ -373,7 +372,6 @@ function isRegistryItem(item: Record<string, unknown>): item is Record<string, u
     && typeof item.version === 'string'
     && typeof item.description === 'string'
     && typeof item.author === 'string'
-    && isPricingType(item.pricingType)
     && Array.isArray(item.tags)
     && item.tags.every((tag) => typeof tag === 'string')
     && typeof item.entryCount === 'number'
@@ -387,13 +385,8 @@ function isPackageMeta(item: Record<string, unknown>): item is Omit<VocabularyPa
     && typeof item.version === 'string'
     && typeof item.author === 'string'
     && (item.license === undefined || typeof item.license === 'string')
-    && (item.pricingType === undefined || isPricingType(item.pricingType))
     && (item.description === undefined || typeof item.description === 'string')
     && (item.tags === undefined || (Array.isArray(item.tags) && item.tags.every((tag) => typeof tag === 'string')));
-}
-
-function isPricingType(value: unknown): value is VocabularyPricingType {
-  return value === 'free' || value === 'paid' || value === 'owned';
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

@@ -1,7 +1,31 @@
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { onRequestGet as getQuote } from '../../functions/external-api/[[path]]';
 import { normalizeProxyPath, proxyJsonRequest } from '../../functions/_shared/proxy';
 
 describe('Cloudflare 内容 API 代理', () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  it('一言代理连接 XY-API JSON 端点，并拒绝脚本端点', async () => {
+    const payload = { code: 200, data: { content: '认真练习，每天进步一点。' } };
+    const fetcher = vi.fn().mockResolvedValue(jsonResponse(payload));
+    vi.stubGlobal('fetch', fetcher);
+
+    const response = await getQuote({
+      request: new Request('https://example.com/external-api/one'),
+      params: { path: 'one' },
+    });
+
+    expect(fetcher).toHaveBeenCalledWith('https://api.xygeng.cn/openapi/one', expect.any(Object));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual(payload);
+    const scriptResponse = await getQuote({
+      request: new Request('https://example.com/external-api/one/get'),
+      params: { path: ['one', 'get'] },
+    });
+    expect(scriptResponse.status).toBe(404);
+    expect(fetcher).toHaveBeenCalledTimes(1);
+  });
+
   it('保留查询参数并代理到上游接口', async () => {
     const fetcher = vi.fn(() => Promise.resolve(jsonResponse({ code: 200, data: '诗词' })));
 

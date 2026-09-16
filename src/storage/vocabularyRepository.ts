@@ -34,7 +34,6 @@ export async function installVocabularyPackage(
     description: packageFile.description,
     author: packageFile.author,
     license: packageFile.license,
-    pricingType: packageFile.pricingType,
     tags: packageFile.tags,
     entryCount: packageFile.entries.length,
     installedAt: existing?.installedAt ?? now,

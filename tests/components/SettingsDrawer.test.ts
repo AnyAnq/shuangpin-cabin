@@ -29,7 +29,7 @@ describe('SettingsDrawer', () => {
     expect(wrapper.html()).not.toContain('gitee.com/IQueue/shuangpin-vocabularies');
   });
 
-  it('在设置里导入本地 TXT 词库并发出刷新事件', async () => {
+  it('在设置里导入本地 TXT 词库并更新共享集合', async () => {
     const wrapper = mount(SettingsDrawer, {
       props: { open: true },
     });
@@ -51,7 +51,10 @@ describe('SettingsDrawer', () => {
     });
 
     expect(await db.vocabularyEntries.where('packageId').startsWith('local-我的设置词库').count()).toBe(2);
-    expect(wrapper.emitted('vocabulary-imported')).toHaveLength(1);
+    await vi.waitFor(() => {
+      expect(usePracticeStore().vocabularyPackages).toHaveLength(1);
+      expect(usePracticeStore().vocabularyPackages[0].sourceType).toBe('local');
+    });
   });
 
   it('点击关闭按钮发出 close 事件', async () => {

@@ -2,9 +2,11 @@ import 'fake-indexeddb/auto';
 import { mount } from '@vue/test-utils';
 import { createPinia, setActivePinia } from 'pinia';
 import { createRouter, createWebHistory } from 'vue-router';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import VocabulariesView from '../../src/views/VocabulariesView.vue';
 import { db, type VocabularyPackageRecord } from '../../src/storage/db';
+
+import { installVocabularyPackage } from '../../src/storage/vocabularyRepository';
 
 describe('VocabulariesView', () => {
   beforeEach(async () => {
@@ -12,6 +14,11 @@ describe('VocabulariesView', () => {
     await db.vocabularyPackages.clear();
     await db.vocabularyEntries.clear();
     localStorage.clear();
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.unstubAllGlobals();
   });
 
   it('展示远程可安装词库并支持安装', async () => {
@@ -26,7 +33,6 @@ describe('VocabulariesView', () => {
             version: '1.0.0',
             description: '适合日常输入热身。',
             author: 'Shuangpin Cabin',
-            pricingType: 'free',
             tags: ['daily'],
             entryCount: 2,
             downloadUrl: 'https://example.com/daily-common.json',
@@ -41,7 +47,6 @@ describe('VocabulariesView', () => {
           version: '1.0.0',
           author: 'Shuangpin Cabin',
           license: 'MIT',
-          pricingType: 'free',
           description: '适合日常输入热身。',
           tags: ['daily'],
           entries: [{ text: '今天', weight: 99 }, { text: '事情', weight: 98 }],
@@ -86,7 +91,6 @@ describe('VocabulariesView', () => {
       description: '本地导入',
       author: '本地导入',
       license: 'Personal',
-      pricingType: 'owned',
       tags: ['custom', 'local'],
       entryCount: 2,
       installedAt: 1,
@@ -102,7 +106,6 @@ describe('VocabulariesView', () => {
       description: '在线安装',
       author: 'Shuangpin Cabin',
       license: 'MIT',
-      pricingType: 'free',
       tags: ['daily'],
       entryCount: 2,
       installedAt: 2,
@@ -124,6 +127,39 @@ describe('VocabulariesView', () => {
     expect(wrapper.find('[data-testid="export-vocabulary-remote-pack"]').exists()).toBe(false);
   });
 
+
+  it('在词库页的设置中清空后，两类卡片消失且恢复安装按钮', async () => {
+    const metadata = {
+      schemaVersion: 1 as const, id: 'remote', name: '在线测试词库', version: '1.0.0',
+      author: 'test', license: 'MIT', description: '',
+      tags: [], entries: [{ text: '今天', weight: 1 }],
+    };
+    await installVocabularyPackage(metadata, 'https://example.com/remote.json');
+    await installVocabularyPackage({ ...metadata, id: 'local', name: '本地测试词库' },
+      'local-file:local.txt', { sourceType: 'local' });
+    vi.stubGlobal('fetch', vi.fn(() => Promise.resolve(jsonResponse({
+      schemaVersion: 1, updatedAt: '2026-09-16T00:00:00Z',
+      packages: [{ ...metadata, entryCount: 1, downloadUrl: 'https://example.com/remote.json' }],
+    }))));
+    vi.spyOn(window, 'confirm').mockReturnValue(true);
+    const wrapper = mount(VocabulariesView, { global: { plugins: [routerForVocabulary()] } });
+    try {
+      await vi.waitFor(() => expect(wrapper.get('[data-testid="install-vocabulary-remote"]').text()).toBe('更新'));
+      await wrapper.get('[aria-label="设置"]').trigger('click');
+      const clearButton = wrapper.get('[aria-label="设置面板"]').findAll('button')
+        .find(button => button.text() === '清空已安装词库')!;
+      await clearButton.trigger('click');
+      await vi.waitFor(async () => {
+        expect(await db.vocabularyPackages.count()).toBe(0);
+        expect(await db.vocabularyEntries.count()).toBe(0);
+        expect(wrapper.findAll('.vocabulary-card.is-installed')).toHaveLength(0);
+        expect(wrapper.get('[data-testid="install-vocabulary-remote"]').text()).toBe('安装');
+      });
+    } finally {
+      wrapper.unmount();
+    }
+  });
+
   it('词库页不再展示本地导入入口', async () => {
     vi.stubGlobal('fetch', vi.fn((url: string) => {
       if (url.endsWith('/registry.json')) {
@@ -142,56 +178,6 @@ describe('VocabulariesView', () => {
 
     expect(wrapper.find('[data-testid="import-vocabulary-input"]').exists()).toBe(false);
     expect(wrapper.text()).not.toContain('导入词库');
-  });
-
-  it('付费标记的词库也直接提供安装按钮并可安装', async () => {
-    vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.endsWith('/registry.json')) {
-        return Promise.resolve(jsonResponse({
-          schemaVersion: 1,
-          updatedAt: '2026-06-22T00:00:00.000Z',
-          packages: [{
-            id: 'it-tech',
-            name: '技术术语词库',
-            version: '1.0.0',
-            description: '适合技术场景输入。',
-            author: 'Shuangpin Cabin',
-            pricingType: 'paid',
-            tags: ['it'],
-            entryCount: 1,
-            downloadUrl: '/api/vocabularies/packages/it-tech@1.0.0.json',
-          }],
-        }));
-      }
-      if (url.endsWith('/api/vocabularies/packages/it-tech@1.0.0.json')) {
-        return Promise.resolve(jsonResponse({
-          schemaVersion: 1,
-          id: 'it-tech',
-          name: '技术术语词库',
-          version: '1.0.0',
-          author: 'Shuangpin Cabin',
-          license: 'MIT',
-          pricingType: 'paid',
-          description: '适合技术场景输入。',
-          tags: ['it'],
-          entries: [{ text: '字符串', weight: 1 }],
-        }));
-      }
-      return Promise.resolve(notFoundResponse());
-    }));
-
-    const wrapper = mount(VocabulariesView, {
-      global: { plugins: [routerForVocabulary()] },
-    });
-
-    await vi.waitFor(() => {
-      expect(wrapper.get('[data-testid="install-vocabulary-it-tech"]').exists()).toBe(true);
-    });
-    expect(wrapper.find('[data-testid="sponsor-vocabulary-it-tech"]').exists()).toBe(false);
-    await wrapper.get('[data-testid="install-vocabulary-it-tech"]').trigger('click');
-    await flush();
-
-    expect(await db.vocabularyEntries.where('packageId').equals('it-tech').count()).toBe(1);
   });
 
   it('赞助弹窗只展示自愿赞助说明和二维码', async () => {
@@ -220,7 +206,6 @@ describe('VocabulariesView', () => {
     expect(dialog.text()).toContain('支付宝赞助');
     expect(dialog.find('form').exists()).toBe(false);
     expect(dialog.find('input').exists()).toBe(false);
-    expect(dialog.text()).not.toContain('兑换码');
     expect(dialog.text()).not.toContain('邮箱');
   });
 });
@@ -248,6 +233,7 @@ function routerForVocabulary() {
     history: createWebHistory(),
     routes: [
       { path: '/', name: 'practice', component: { template: '<div />' } },
+      { path: '/lessons', name: 'lessons', component: { template: '<div />' } },
       { path: '/records', name: 'records', component: { template: '<div />' } },
       { path: '/vocabularies', name: 'vocabularies', component: VocabulariesView },
     ],

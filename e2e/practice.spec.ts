@@ -116,7 +116,7 @@ test('没有错题时易错练习显示冷启动提示', async ({ page }) => {
 
   await page.getByRole('button', { name: '易错练习' }).click();
 
-  await expect(page.getByText('错因复练')).toBeVisible();
+  await expect(page.locator('.right-panel').getByText('错因复练')).toBeHidden();
   await expect(page.getByText('太棒了，没有出过错误')).toBeVisible();
   await expect(page.getByText('继续保持，打出第一条错题后这里会自动生成复练组')).toBeVisible();
   await expect(page.getByText('多情云')).toBeHidden();
@@ -183,7 +183,7 @@ async function expectStageText(page: import('@playwright/test').Page, text: stri
 }
 
 async function mockContentApi(page: import('@playwright/test').Page, options: { tongueTwisterDelayMs?: number } = {}) {
-  await page.route('**/external-api/chicken-soup', async (route) => {
+  await page.route('**/external-api/one', async (route) => {
     await route.fulfill({
       json: { code: 200, msg: '请求成功', data: { content: '知不足而奋进，望远山而前行。' } },
     });
@@ -219,7 +219,6 @@ async function mockVocabularyRegistry(page: import('@playwright/test').Page) {
           version: '1.0.0',
           description: '适合日常输入热身。',
           author: 'Shuangpin Cabin',
-          pricingType: 'free',
           tags: ['daily'],
           entryCount: 12,
           downloadUrl: 'https://example.com/daily-common.json',
@@ -236,7 +235,6 @@ async function mockVocabularyRegistry(page: import('@playwright/test').Page) {
         version: '1.0.0',
         author: 'Shuangpin Cabin',
         license: 'MIT',
-        pricingType: 'free',
         description: '适合日常输入热身。',
         tags: ['daily'],
         entries: [

@@ -3,6 +3,17 @@ import { createSession, handlePracticeKey } from '../../src/domain/practice/sess
 import { xiaoheScheme } from '../../src/domain/schemes/xiaohe';
 
 describe('练习引擎', () => {
+  it('计时从首次字母按键开始，不计入开始前的等待', () => {
+    const session = createSession({
+      unit: { id: 'u1', module: 'poem', text: '多', syllables: ['duo'], tags: [] },
+      scheme: xiaoheScheme, now: 1000,
+    });
+    handlePracticeKey(session, 'Shift', 20000);
+    handlePracticeKey(session, 'd', 61000);
+    handlePracticeKey(session, 'o', 62000);
+    expect(session.stats.elapsedMs).toBe(1000);
+  });
+
   it('按错键时不推进当前位置', () => {
     const session = createSession({
       unit: { id: 'u1', module: 'poem', text: '多', syllables: ['duo'], tags: [] },

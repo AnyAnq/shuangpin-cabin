@@ -8,6 +8,24 @@ import {
 } from '../../src/domain/vocabulary';
 
 describe('外置词库领域规则', () => {
+  it('旧版词库仍可导入，已停用的元数据不会进入索引或导出文件', () => {
+    const legacy = {
+      schemaVersion: 1, id: 'legacy', name: '旧词库', version: '1.0.0',
+      author: 'test', license: 'MIT', description: '', tags: [],
+      pricingType: 'paid', entries: [{ text: '今天' }],
+    };
+    const report = parseLocalVocabularyFile('legacy.json', JSON.stringify(legacy));
+    const registry = validateVocabularyRegistry({
+      schemaVersion: 1, updatedAt: '2026-09-16',
+      packages: [{ ...legacy, entryCount: 1, downloadUrl: '/legacy.json' }],
+    });
+    expect(report.validCount).toBe(1);
+    expect(report.packageFile).not.toHaveProperty('pricingType');
+    expect(registry.packages[0]).not.toHaveProperty('pricingType');
+    expect(createVocabularyExportFile(report.packageFile, report.packageFile.entries))
+      .not.toHaveProperty('pricingType');
+  });
+
   it('校验 registry 必填字段', () => {
     expect(() => validateVocabularyRegistry({
       schemaVersion: 1,
@@ -18,7 +36,6 @@ describe('外置词库领域规则', () => {
         version: '1.0.0',
         description: '适合日常输入热身。',
         author: 'Shuangpin Cabin',
-        pricingType: 'free',
         tags: ['daily'],
         entryCount: 2,
         downloadUrl: 'https://example.com/daily-common.json',
@@ -40,7 +57,6 @@ describe('外置词库领域规则', () => {
       version: '1.0.0',
       author: 'Shuangpin Cabin',
       license: 'MIT',
-      pricingType: 'free',
       description: '适合日常输入热身。',
       tags: ['daily'],
       entries: [
@@ -55,7 +71,7 @@ describe('外置词库领域规则', () => {
     expect(packageFile.entries.map((entry) => entry.text)).toEqual(['今天', '项目']);
   });
 
-  it('按权重生成 12 字练习组并提供 6/6 分行信息', () => {
+  it('按权重生成 12 字练习组', () => {
     const packageFile = validateVocabularyPackage({
       schemaVersion: 1,
       id: 'daily-common',
@@ -63,7 +79,6 @@ describe('外置词库领域规则', () => {
       version: '1.0.0',
       author: 'Shuangpin Cabin',
       license: 'MIT',
-      pricingType: 'free',
       description: '适合日常输入热身。',
       tags: ['daily'],
       entries: [
@@ -80,7 +95,6 @@ describe('外置词库领域规则', () => {
     const units = buildVocabularyPracticeUnits(packageFile);
 
     expect(units[0].text).toBe('今天事情可以我们项目完成');
-    expect(units[0].lineCharCount).toBe(6);
     expect(units[0].syllables).toHaveLength(12);
   });
 
@@ -99,7 +113,6 @@ describe('外置词库领域规则', () => {
     expect(report.packageFile.id).toBe('local-我的法律词库-1718697600000');
     expect(report.packageFile.name).toBe('我的法律词库');
     expect(report.packageFile.author).toBe('本地导入');
-    expect(report.packageFile.pricingType).toBe('owned');
     expect(report.packageFile.tags).toEqual(['custom', 'local']);
     expect(report.validCount).toBe(3);
     expect(report.duplicateCount).toBe(1);
@@ -140,7 +153,6 @@ describe('外置词库领域规则', () => {
       version: '1.0.0',
       author: '用户',
       license: 'Personal',
-      pricingType: 'owned',
       description: '用户制作',
       tags: ['custom'],
       entries: [{ text: '今天', weight: 100 }, { text: 'A计划' }],
@@ -164,7 +176,6 @@ describe('外置词库领域规则', () => {
     }), 1718697600000);
 
     expect(report.packageFile.license).toBe('Personal');
-    expect(report.packageFile.pricingType).toBe('owned');
     expect(report.packageFile.description).toBe('从本地文件导入的自定义词库');
     expect(report.packageFile.tags).toEqual(['custom', 'local']);
     expect(report.validCount).toBe(1);
@@ -177,7 +188,6 @@ describe('外置词库领域规则', () => {
       version: '1.0.0',
       author: '本地导入',
       license: 'Personal',
-      pricingType: 'owned',
       description: '导出测试',
       tags: ['custom', 'local'],
     }, [

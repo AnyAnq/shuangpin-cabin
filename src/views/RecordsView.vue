@@ -33,6 +33,8 @@
         </div>
       </section>
 
+      <ProgressPanel />
+
       <section v-if="review.topGroup" class="coach-card">
         <div>
           <span class="coach-kicker">今天先修这个</span>
@@ -113,6 +115,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
+import ProgressPanel from '../components/practice/ProgressPanel.vue';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
 import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
 import type { MistakeRecord } from '../domain/practice/mistakes';
@@ -128,9 +131,12 @@ const review = computed(() => buildMistakeReview(mistakes.value, practice.scheme
 
 onMounted(loadMistakes);
 watch(() => practice.schemeId, loadMistakes);
+let loadSeq = 0;
 
 async function loadMistakes() {
-  mistakes.value = await listMistakesByScheme(practice.schemeId);
+  const request = ++loadSeq;
+  const records = await listMistakesByScheme(practice.schemeId);
+  if (request === loadSeq) mistakes.value = records;
 }
 
 async function startReviewPractice() {
