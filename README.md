@@ -151,3 +151,7 @@ e2e/            浏览器测试
 遇到问题可以在 [GitHub Issues](https://github.com/AnyAnq/shuangpin-cabin/issues) 中反馈，附上浏览器、所选双拼方案和复现步骤；排版问题可以附一张截图。
 
 如果愿意支持项目维护，可以通过[微信](https://shuangpin-cabin.pages.dev/sponsor/wechat.png)或[支付宝](https://shuangpin-cabin.pages.dev/sponsor/alipay.jpg)赞助。
+
+## License
+
+本项目代码采用 [MIT License](LICENSE)。第三方依赖、词库和接口内容遵循各自的许可。
