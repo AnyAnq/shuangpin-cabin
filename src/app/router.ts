@@ -3,6 +3,7 @@ import PracticeView from '../views/PracticeView.vue';
 import LessonsView from '../views/LessonsView.vue';
 import RecordsView from '../views/RecordsView.vue';
 import VocabulariesView from '../views/VocabulariesView.vue';
+import TypingView from '../views/TypingView.vue';
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -12,5 +13,6 @@ export const router = createRouter({
     { path: '/lessons', name: 'lessons', component: LessonsView },
     { path: '/records', name: 'records', component: RecordsView },
     { path: '/vocabularies', name: 'vocabularies', component: VocabulariesView },
+    { path: '/typing', name: 'typing', component: TypingView },
   ],
 });

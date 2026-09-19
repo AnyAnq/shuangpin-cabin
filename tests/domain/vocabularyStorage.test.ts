@@ -27,7 +27,7 @@ const packageFile: VocabularyPackageFile = {
 };
 
 describe('词库安装存储', () => {
-  it.each([2, 3])('版本 %i 的本地数据升级后保留词库与练习数据并移除旧索引', async version => {
+  it.each([2, 3, 4])('版本 %i 的本地数据升级后保留词库与练习数据并移除旧索引', async version => {
     db.close();
     await db.delete();
     const legacy = new Dexie(db.name);
@@ -37,7 +37,7 @@ describe('词库安装存储', () => {
       preferences: 'id, scheme, module, updatedAt',
       vocabularyPackages: version === 2
         ? 'id, pricingType, installedAt, updatedAt'
-        : 'id, pricingType, sourceType, installedAt, updatedAt',
+        : version === 3 ? 'id, pricingType, sourceType, installedAt, updatedAt' : 'id, sourceType, installedAt, updatedAt',
       vocabularyEntries: 'id, packageId, text, weight, length',
     });
     const preference = { id: 'default', scheme: 'xiaohe', module: 'vocabulary', updatedAt: 1 };
@@ -48,9 +48,9 @@ describe('词库安装存储', () => {
     try {
       await legacy.open();
       await legacy.table('vocabularyPackages').put({
-        ...packageFile, pricingType: 'paid', entries: undefined, entryCount: 2,
+        ...packageFile, ...(version < 4 ? { pricingType: 'paid' } : {}), entries: undefined, entryCount: 2,
         installedAt: 1, updatedAt: 2, sourceUrl: 'local-file:daily.txt',
-        ...(version === 3 ? { sourceType: 'local' } : {}),
+        ...(version >= 3 ? { sourceType: 'local' } : {}),
       });
       await legacy.table('vocabularyEntries').bulkPut(packageFile.entries.map((entry, index) => ({
         ...entry, id: 'entry-' + index, packageId: packageFile.id, tags: [], length: entry.text.length,
@@ -61,7 +61,8 @@ describe('词库安装存储', () => {
       legacy.close();
       await db.open();
 
-      expect(db.verno).toBe(4);
+      expect(db.verno).toBe(5);
+      expect(await db.typingSessions.count()).toBe(0);
       expect(db.vocabularyPackages.schema.indexes.map(index => index.name)).not.toContain('pricingType');
       const installed = await db.vocabularyPackages.get(packageFile.id);
       expect(installed).toMatchObject({ id: packageFile.id, name: packageFile.name, sourceType: 'local', entryCount: 2 });

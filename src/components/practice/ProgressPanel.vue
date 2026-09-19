@@ -3,7 +3,7 @@
     <div class="records-panel-head">
       <div>
         <h2 id="progress-title">看见每一天的进步</h2>
-        <p>{{ practice.scheme.name }} · 最近 7 天 · 仅统计已完成的练习</p>
+        <p>{{ mode === 'typing' ? '中文跟打 · 最近 7 天 · 仅统计全文练习，错句复练单独记录' : practice.scheme.name + ' · 最近 7 天 · 仅统计已完成的练习' }}</p>
       </div>
       <label class="daily-goal-label">每日目标
         <select :value="practice.dailyGoalMinutes" :disabled="!settingsReady || savingGoal" @change="changeGoal">
@@ -15,7 +15,7 @@
     <p v-if="loading" role="status">正在读取练习记录…</p>
     <template v-else-if="!error">
       <div class="daily-goal">
-        <div><strong>今日 {{ (today.elapsedMs / 60000).toFixed(1) }} / {{ practice.dailyGoalMinutes }} 分钟</strong><span>{{ goalPercent >= 100 ? '今日目标已完成' : '完成一组，让进度向前一点' }}</span></div>
+        <div><strong>今日 {{ (todayTotalMs / 60000).toFixed(1) }} / {{ practice.dailyGoalMinutes }} 分钟</strong><span>{{ goalPercent >= 100 ? '今日目标已完成' : '键位练习、中文跟打和错句复练共同计入每日目标' }}</span></div>
         <progress :value="goalPercent" max="100" aria-label="今日练习目标" />
       </div>
       <div class="progress-summary">
@@ -56,15 +56,19 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { weeklyProgress } from '../../domain/practice/progress';
-import { listSessionsByScheme } from '../../storage/repositories';
+import { listSessionsByScheme, listTypingSessions, totalPracticeTimeToday } from '../../storage/repositories';
 import type { PracticeSessionRecord } from '../../storage/db';
 import { usePracticeStore } from '../../stores/practiceStore';
+import { useTypingStore } from '../../stores/typingStore';
 
+const props = withDefaults(defineProps<{ mode?: 'keys' | 'typing' }>(), { mode: 'keys' });
 const practice = usePracticeStore();
+const typing = useTypingStore();
 const now = ref(Date.now());
 const clock = window.setInterval(() => { now.value = Date.now(); }, 60000);
 onBeforeUnmount(() => window.clearInterval(clock));
-const records = ref<PracticeSessionRecord[]>([]);
+const records = ref<Pick<PracticeSessionRecord, 'createdAt' | 'elapsedMs' | 'accuracy' | 'wpm'>[]>([]);
+const todayTotalMs = ref(0);
 const loading = ref(true);
 const error = ref('');
 const goalError = ref('');
@@ -72,11 +76,10 @@ const settingsReady = ref(false);
 const savingGoal = ref(false);
 let loadSeq = 0;
 const days = computed(() => weeklyProgress(records.value, now.value));
-const today = computed(() => days.value[6]!);
 const totalCount = computed(() => days.value.reduce((sum, day) => sum + day.count, 0));
 const totalMs = computed(() => days.value.reduce((sum, day) => sum + day.elapsedMs, 0));
 const activeDays = computed(() => days.value.filter(day => day.count > 0).length);
-const goalPercent = computed(() => Math.min(100, today.value.elapsedMs / (practice.dailyGoalMinutes * 600)));
+const goalPercent = computed(() => Math.min(100, todayTotalMs.value / (practice.dailyGoalMinutes * 600)));
 const goalOptions = computed(() => [...new Set([5, 10, 15, 20, practice.dailyGoalMinutes])].sort((a, b) => a - b));
 const metrics = [
   { key: 'accuracy', title: '准确率', suffix: '%' },
@@ -91,7 +94,7 @@ function chartLabel(metric: 'accuracy' | 'wpm') {
   return days.value.map(day => day.label + '：' + (day[metric] === null ? '无练习' : day[metric] + (metric === 'accuracy' ? '%' : ' 字/分钟'))).join('；');
 }
 
-watch(() => [practice.schemeId, practice.sessionRevision], loadRecords, { immediate: true });
+watch(() => [practice.schemeId, practice.sessionRevision, typing.revision, props.mode, now.value], loadRecords, { immediate: true });
 onMounted(async () => {
   try { await practice.hydrateSettings(); settingsReady.value = true; }
   catch { goalError.value = '目标设置读取失败，请刷新页面重试。'; }
@@ -101,8 +104,13 @@ async function loadRecords() {
   const request = ++loadSeq;
   loading.value = true;
   try {
-    const result = await listSessionsByScheme(practice.schemeId);
-    if (request === loadSeq) { records.value = result; error.value = ''; }
+    const [result, total] = await Promise.all([
+      props.mode === 'typing'
+        ? listTypingSessions().then(items => items.filter(item => item.kind === 'full').map(item => ({ ...item, wpm: item.cpm })))
+        : listSessionsByScheme(practice.schemeId),
+      totalPracticeTimeToday(now.value),
+    ]);
+    if (request === loadSeq) { records.value = result; todayTotalMs.value = total; error.value = ''; }
   } catch {
     if (request === loadSeq) error.value = '练习记录读取失败，请刷新页面重试。';
   } finally {

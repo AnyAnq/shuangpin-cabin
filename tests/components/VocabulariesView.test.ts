@@ -233,6 +233,7 @@ function routerForVocabulary() {
     history: createWebHistory(),
     routes: [
       { path: '/', name: 'practice', component: { template: '<div />' } },
+      { path: '/typing', name: 'typing', component: { template: '<div />' } },
       { path: '/lessons', name: 'lessons', component: { template: '<div />' } },
       { path: '/records', name: 'records', component: { template: '<div />' } },
       { path: '/vocabularies', name: 'vocabularies', component: VocabulariesView },

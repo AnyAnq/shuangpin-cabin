@@ -5,7 +5,7 @@ export function localDateKey(timestamp: number): string {
   return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, '0'), String(date.getDate()).padStart(2, '0')].join('-');
 }
 
-export function weeklyProgress(records: PracticeSessionRecord[], now = Date.now()) {
+export function weeklyProgress(records: Pick<PracticeSessionRecord, 'createdAt' | 'elapsedMs' | 'accuracy' | 'wpm'>[], now = Date.now()) {
   const days = Array.from({ length: 7 }, (_, index) => {
     const date = new Date(now);
     date.setHours(0, 0, 0, 0);

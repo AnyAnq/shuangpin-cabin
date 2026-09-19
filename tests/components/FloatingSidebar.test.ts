@@ -11,6 +11,7 @@ function createTestRouter(initialPath = '/') {
       { path: '/lessons', name: 'lessons', component: { template: '<div />' } },
       { path: '/records', name: 'records', component: { template: '<div />' } },
       { path: '/vocabularies', name: 'vocabularies', component: { template: '<div />' } },
+      { path: '/typing', name: 'typing', component: { template: '<div />' } },
     ],
   });
 }
@@ -28,6 +29,7 @@ describe('FloatingSidebar', () => {
     });
 
     expect(wrapper.get('[aria-label="练习"]').attributes('href')).toBe('/');
+    expect(wrapper.get('[aria-label="提速练习"]').attributes('href')).toBe('/typing');
     expect(wrapper.find('[aria-label="键位对照"]').exists()).toBe(false);
     expect(wrapper.get('[aria-label="记录"]').attributes('href')).toBe('/records');
     expect(wrapper.get('[aria-label="词库"]').attributes('href')).toBe('/vocabularies');

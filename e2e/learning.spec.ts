@@ -26,6 +26,7 @@ test('新手课程完成、进阶、刷新恢复与方案隔离', async ({ page 
 test('完成课程后显示真实趋势，目标持久化，清空记录会刷新趋势', async ({ page }) => {
   await page.goto('/lessons');
   await page.getByTestId('lesson-initials').getByRole('button', { name: '开始练习' }).click();
+  await expect(page.getByLabel('本课指引')).toContainText('声母起步');
   await page.keyboard.type(lessons[0].syllables.split(' ').map(xiaoheScheme.encodeSyllable).join(''), { delay: 15 });
   await expect(page.getByRole('dialog')).toBeVisible();
   await page.getByRole('button', { name: '关闭完成弹窗' }).click();

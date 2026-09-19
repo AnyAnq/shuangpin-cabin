@@ -79,7 +79,7 @@
             <p>只清理当前浏览器里的练习数据，不影响线上内容源。</p>
           </div>
           <div class="settings-danger-grid">
-            <button type="button" @click="clearMistakes">清空错题记录</button>
+            <button type="button" @click="clearMistakes">清空键位错题</button>
             <button type="button" @click="clearSessions">清空练习记录</button>
             <button type="button" @click="clearVocabularies">清空已安装词库</button>
           </div>
@@ -203,12 +203,12 @@ const moduleOptions: Array<{ label: string; value: PracticeModule }> = [
 ];
 
 async function clearMistakes() {
-  if (!window.confirm('确定清空错题记录吗？')) return;
+  if (!window.confirm('确定清空键位错题记录吗？中文跟打报告中的差异会保留。')) return;
   await practice.clearMistakeRecords();
 }
 
 async function clearSessions() {
-  if (!window.confirm('确定清空练习记录和课程进度吗？每日目标设置会保留。')) return;
+  if (!window.confirm('确定清空键位练习、中文跟打报告和课程进度吗？每日目标设置会保留。')) return;
   await practice.clearPracticeSessions();
 }
 

@@ -3,7 +3,11 @@
     <FloatingSidebar @open-settings="settingsOpen = true" />
     <SettingsDrawer :open="settingsOpen" @close="settingsOpen = false" />
     <main class="learning-main">
-      <section class="learning-header">
+      <nav class="typing-record-tabs" aria-label="记录类型">
+        <RouterLink :to="{ name: 'records' }" :class="{ 'is-active': recordMode === 'keys' }">键位练习</RouterLink>
+        <RouterLink :to="{ name: 'records', query: { mode: 'typing' } }" :class="{ 'is-active': recordMode === 'typing' }">中文跟打</RouterLink>
+      </nav>
+      <section v-if="recordMode === 'keys'" class="learning-header">
         <div>
           <p class="panel-title">错因复盘</p>
           <h1>纠错教练</h1>
@@ -33,8 +37,10 @@
         </div>
       </section>
 
-      <ProgressPanel />
+      <section v-else class="learning-header"><div><h1>跟打进步记录</h1><p>比较自己的有效字速与准确率，回看每次练习。</p></div></section>
+      <ProgressPanel :mode="recordMode" />
 
+      <template v-if="recordMode === 'keys'">
       <section v-if="review.topGroup" class="coach-card">
         <div>
           <span class="coach-kicker">今天先修这个</span>
@@ -108,13 +114,15 @@
         </div>
         <p v-else class="empty-state">完成练习后会自动生成错题复盘。</p>
       </section>
+      </template>
+      <TypingRecords v-else />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
-import { useRouter } from 'vue-router';
+import { RouterLink, useRoute, useRouter } from 'vue-router';
 import ProgressPanel from '../components/practice/ProgressPanel.vue';
 import FloatingSidebar from '../components/layout/FloatingSidebar.vue';
 import SettingsDrawer from '../components/settings/SettingsDrawer.vue';
@@ -122,9 +130,12 @@ import type { MistakeRecord } from '../domain/practice/mistakes';
 import { buildMistakeReview } from '../domain/practice/mistakeReview';
 import { usePracticeStore } from '../stores/practiceStore';
 import { listMistakesByScheme } from '../storage/repositories';
+import TypingRecords from '../components/practice/TypingRecords.vue';
 
 const practice = usePracticeStore();
 const router = useRouter();
+const route = useRoute();
+const recordMode = computed(() => route.query.mode === 'typing' ? 'typing' : 'keys');
 const mistakes = ref<MistakeRecord[]>([]);
 const settingsOpen = ref(false);
 const review = computed(() => buildMistakeReview(mistakes.value, practice.scheme));

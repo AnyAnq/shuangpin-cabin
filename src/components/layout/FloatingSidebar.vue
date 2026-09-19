@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { RouterLink, useRoute } from 'vue-router';
-import { ChartColumn, GraduationCap, LibraryBig, NotebookText, Settings } from '@lucide/vue';
+import { ChartColumn, GraduationCap, LibraryBig, NotebookText, Settings, Gauge } from '@lucide/vue';
 import type { Component } from 'vue';
 
 defineEmits<{
@@ -46,6 +46,7 @@ const route = useRoute();
 
 const enabledNavItems = [
   { label: '练习', title: '练习', routeName: 'practice', icon: NotebookText },
+  { label: '提速练习', title: '提速练习', routeName: 'typing', icon: Gauge },
   { label: '新手课程', title: '新手课程', routeName: 'lessons', icon: GraduationCap },
   { label: '记录', title: '记录', routeName: 'records', icon: ChartColumn },
   { label: '词库', title: '词库', routeName: 'vocabularies', icon: LibraryBig },

@@ -10,7 +10,7 @@ test('侧边栏保留核心入口并可在记录和练习间切换', async ({ pa
   await expect(page.getByRole('heading', { name: '纠错教练' })).toBeVisible();
   await expect(page.getByRole('link', { name: '记录' })).toHaveClass(/is-active/);
 
-  await page.getByRole('link', { name: '练习' }).click();
+  await page.getByRole('link', { name: '练习', exact: true }).click();
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByText('今日练习 · 诗词句子')).toBeVisible();
 });

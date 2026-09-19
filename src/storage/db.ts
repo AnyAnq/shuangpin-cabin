@@ -2,6 +2,7 @@ import Dexie, { type Table } from 'dexie';
 import type { MistakeRecord } from '../domain/practice/mistakes';
 import type { PracticeModule } from '../domain/practice/types';
 import type { ShuangpinSchemeId } from '../domain/schemes/types';
+import type { TypingReport } from '../domain/practice/typing';
 
 export type VocabularySourceType = 'remote' | 'local';
 
@@ -61,6 +62,7 @@ class ShuangpinPracticeDb extends Dexie {
   preferences!: Table<PreferenceRecord, string>;
   vocabularyPackages!: Table<VocabularyPackageRecord, string>;
   vocabularyEntries!: Table<VocabularyEntryRecord, string>;
+  typingSessions!: Table<TypingReport, string>;
 
   constructor() {
     super('shuangpin-cabin');
@@ -95,6 +97,9 @@ class ShuangpinPracticeDb extends Dexie {
       // 仅在升级旧数据库时移除已停用的元数据。
       delete pack.pricingType;
     }));
+    this.version(5).stores({
+      typingSessions: 'id, kind, createdAt',
+    });
   }
 }
 
